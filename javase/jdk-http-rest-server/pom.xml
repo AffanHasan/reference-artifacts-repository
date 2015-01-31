@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>reference-artifacts-repository</groupId>
+    <artifactId>javase</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>reference-artifacts</groupId>
+  <artifactId>jdk-http-rest-server</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>jdk-http-rest-server</name>
+  <description>A jdk HTTP server which is dedicated for testing rest web services</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+       <!--Java EE 7 API-->
+      <dependency>
+          <groupId>javax</groupId>
+          <artifactId>javaee-api</artifactId>
+          <version>7.0</version>
+      </dependency>
+        <!--The jersey implemetaion for JAX-RS -->
+      <dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <!-- if your container implements Servlet API older than 3.0, use "jersey-container-servlet-core"  -->
+        <artifactId>jersey-container-servlet</artifactId>
+        <version>2.15</version>
+      </dependency>
+      <!--The server container implementation -->
+      <dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-jdk-http</artifactId>
+        <version>2.15</version>
+      </dependency>
+  </dependencies>
+</project>

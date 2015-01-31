@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: jdkhttprestserver.RestTestingServerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.843 sec <<< FAILURE!
+if_port_8080_is_unavailable_then_search_for_8081_or_onwards(jdkhttprestserver.RestTestingServerTest)  Time elapsed: 0.024 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.fail(Assert.java:96)
+	at jdkhttprestserver.RestTestingServerTest.if_port_8080_is_unavailable_then_search_for_8081_or_onwards(RestTestingServerTest.java:56)
+
+server_should_by_default_start_at_localhost_port_8080(jdkhttprestserver.RestTestingServerTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.fail(Assert.java:96)
+	at jdkhttprestserver.RestTestingServerTest.server_should_by_default_start_at_localhost_port_8080(RestTestingServerTest.java:51)
+
+server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it(jdkhttprestserver.RestTestingServerTest)  Time elapsed: 1.179 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.fail(Assert.java:96)
+	at jdkhttprestserver.RestTestingServerTest.server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it(RestTestingServerTest.java:46)
+

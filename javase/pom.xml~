@@ -1,0 +1,17 @@
+<project>
+	<name>javase-artifacts</name>
+	<description>Reference software artifacts related to JAVA SE</description>
+	
+	<groupId>reference-artifacts-repository</groupId>
+	<artifactId>javase</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modeVersion>4.0.0</modeVersion>
+
+	<parent>
+		<groupId>reference-artifacts-repository</groupId>
+		<artifactId>reference-artifacts-repository</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+</project>
