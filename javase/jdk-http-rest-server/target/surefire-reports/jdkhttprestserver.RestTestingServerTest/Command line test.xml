@@ -1,48 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="ubuntu" name="jdkhttprestserver.RestTestingServerTest" tests="3" failures="3" timestamp="31 Jan 2015 21:25:37 GMT" time="1.229" errors="0">
-  <testcase name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="0.019" classname="jdkhttprestserver.RestTestingServerTest">
-    <failure type="java.lang.AssertionError" message="null">
-      <![CDATA[java.lang.AssertionError: null
-	at jdkhttprestserver.RestTestingServerTest.if_port_8080_is_unavailable_then_search_for_8081_or_onwards(RestTestingServerTest.java:56)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-... Removed 28 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase name="server_should_by_default_start_at_localhost_port_8080" time="0.001" classname="jdkhttprestserver.RestTestingServerTest">
-    <failure type="java.lang.AssertionError" message="null">
-      <![CDATA[java.lang.AssertionError: null
-	at jdkhttprestserver.RestTestingServerTest.server_should_by_default_start_at_localhost_port_8080(RestTestingServerTest.java:51)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-... Removed 28 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="1.177" classname="jdkhttprestserver.RestTestingServerTest">
-    <failure type="java.lang.AssertionError" message="null">
-      <![CDATA[java.lang.AssertionError: null
-	at jdkhttprestserver.RestTestingServerTest.server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it(RestTestingServerTest.java:46)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-... Removed 28 stack frames]]>
-    </failure>
-  </testcase>
+<testsuite hostname="ubuntu" name="jdkhttprestserver.RestTestingServerTest" tests="2" failures="0" timestamp="1 Feb 2015 19:17:02 GMT" time="3.565" errors="0">
+  <testcase name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="2.957" classname="jdkhttprestserver.RestTestingServerTest"/>
+  <testcase name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="0.591" classname="jdkhttprestserver.RestTestingServerTest"/>
 </testsuite>
