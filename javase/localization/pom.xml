@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<name>localization</name>
+	<description>Reference software artifacts related to Java SE localization</description>
+	
+	<groupId>reference-artifacts-repository</groupId>
+	<artifactId>localization</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>reference-artifacts-repository</groupId>
+		<artifactId>javase</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<modules>
+    		<module>get-available-locales</module>
+    <module>language-tags-their-filtering-and-lookup</module>
+  </modules>
+</project>

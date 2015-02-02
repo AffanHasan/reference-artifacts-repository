@@ -1,0 +1,19 @@
+<project>
+
+	<name>Jax RS @QueryParam Annotation</name>
+	<description>Contains reference software artifacts for JAX-RS Query Param annotation</description>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>reference-artifacts-repository</groupId>
+	<artifactId>jax-rs-query-param-annotation</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>reference-artifacts-repository</groupId>
+		<artifactId>jax-rs-annotations</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+</project>

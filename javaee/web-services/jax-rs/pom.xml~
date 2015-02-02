@@ -1,0 +1,27 @@
+<project>
+
+	<name>JAX-RS Web Services</name>
+	<description>Contains reference software artifacts for JAX-RS</description>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>reference-artifacts-repository</groupId>
+	<artifactId>jax-rs</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>reference-artifacts-repository</groupId>
+		<artifactId>web-services</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+	</dependencies>
+
+	<modules>
+		<!-- Contains reference artifacts for jax-rs annotations -->
+		<module>jax-rs-annotations</module>
+	</modules>
+
+</project>

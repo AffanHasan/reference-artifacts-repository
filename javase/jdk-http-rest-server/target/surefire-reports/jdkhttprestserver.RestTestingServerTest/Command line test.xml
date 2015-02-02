@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="ubuntu" name="jdkhttprestserver.RestTestingServerTest" tests="2" failures="0" timestamp="1 Feb 2015 19:17:02 GMT" time="3.565" errors="0">
-  <testcase name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="2.957" classname="jdkhttprestserver.RestTestingServerTest"/>
-  <testcase name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="0.591" classname="jdkhttprestserver.RestTestingServerTest"/>
+<testsuite hostname="ubuntu" name="jdkhttprestserver.RestTestingServerTest" tests="2" failures="0" timestamp="1 Feb 2015 20:21:12 GMT" time="3.087" errors="0">
+  <testcase name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="2.668" classname="jdkhttprestserver.RestTestingServerTest"/>
+  <testcase name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="0.399" classname="jdkhttprestserver.RestTestingServerTest"/>
 </testsuite>

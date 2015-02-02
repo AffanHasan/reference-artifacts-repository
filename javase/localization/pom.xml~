@@ -1,9 +1,9 @@
 <project>
-	<name>javase-artifacts</name>
-	<description>Reference software artifacts related to Java SE</description>
+	<name>localization</name>
+	<description>Reference software artifacts related to Java SE localization</description>
 	
 	<groupId>reference-artifacts-repository</groupId>
-	<artifactId>javase</artifactId>
+	<artifactId>localization</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -11,12 +11,11 @@
 
 	<parent>
 		<groupId>reference-artifacts-repository</groupId>
-		<artifactId>reference-artifacts-repository</artifactId>
+		<artifactId>javase</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
 	<modules>
-		<module>jdk-http-rest-server</module>
 		<module>localization</module>
 	</modules>
 </project>

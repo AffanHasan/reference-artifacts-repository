@@ -10,6 +10,7 @@
 	<packaging>pom</packaging>
 
 	<dependencies>
+		<!-- TestNG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -18,8 +19,10 @@
 		</dependency>
 	</dependencies>
 
+  <!-- Sub Modules -->
   <modules>
     <module>javase</module>
+    <module>javaee</module>
   </modules>
 
 </project>

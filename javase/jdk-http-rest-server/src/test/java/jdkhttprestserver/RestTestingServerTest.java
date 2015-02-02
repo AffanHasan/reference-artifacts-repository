@@ -15,7 +15,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Application;
-import org.glassfish.jersey.server.Uri;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -142,5 +141,6 @@ public class RestTestingServerTest{
         
         httpServer.stopServer();
     }
+    
     
 }
