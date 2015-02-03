@@ -62,7 +62,7 @@ public class DefaultRestTestingServer implements RestTestingServer{
 //      Default Context
         httpServer.createContext("/", new DefaultHttpHandler());
 //      Our Under Test JA Services Context
-        httpServer.createContext("/rstest", RuntimeDelegate.getInstance().createEndpoint(app, HttpHandler.class));
+        httpServer.createContext("/rest", RuntimeDelegate.getInstance().createEndpoint(app, HttpHandler.class));
         httpServer.start();
     }
 

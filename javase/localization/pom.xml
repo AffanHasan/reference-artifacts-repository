@@ -18,6 +18,7 @@
 
 	<modules>
     		<module>get-available-locales</module>
-    <module>language-tags-their-filtering-and-lookup</module>
+    		<module>language-tags-their-filtering-and-lookup</module>
+    <module>resource-bundle</module>
   </modules>
 </project>

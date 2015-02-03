@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="3087" started-at="2015-02-02T01:21:09Z" finished-at="2015-02-02T01:21:12Z">
+  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="6959" started-at="2015-02-03T11:03:10Z" finished-at="2015-02-03T11:03:17Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="3087" started-at="2015-02-02T01:21:09Z" finished-at="2015-02-02T01:21:12Z">
+    <test name="Command line test" duration-ms="6959" started-at="2015-02-03T11:03:10Z" finished-at="2015-02-03T11:03:17Z">
       <class name="jdkhttprestserver.RestTestingServerTest">
-        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="7" started-at="2015-02-02T01:21:09Z" finished-at="2015-02-02T01:21:09Z">
+        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="25" started-at="2015-02-03T11:03:10Z" finished-at="2015-02-03T11:03:10Z">
         </test-method>
-        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="2668" started-at="2015-02-02T01:21:09Z" finished-at="2015-02-02T01:21:12Z">
+        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="5672" started-at="2015-02-03T11:03:10Z" finished-at="2015-02-03T11:03:16Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="399" started-at="2015-02-02T01:21:12Z" finished-at="2015-02-02T01:21:12Z">
+        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="1236" started-at="2015-02-03T11:03:16Z" finished-at="2015-02-03T11:03:17Z">
         </test-method>
       </class>
     </test>

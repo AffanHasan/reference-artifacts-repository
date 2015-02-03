@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project>
 
 	<name>JAX RS Annotations</name>
@@ -20,8 +21,7 @@
 	</dependencies>
 
 	<modules>
-		<!-- @QueryParam -->
-		<module>query-param</module>
-	</modules>
+    <module>jax-rs-query-param-annotation</module>
+  </modules>
 
 </project>
