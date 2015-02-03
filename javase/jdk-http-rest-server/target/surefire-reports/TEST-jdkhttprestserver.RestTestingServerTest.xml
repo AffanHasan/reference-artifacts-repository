@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="6.896" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="3.272" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/jdk-http-rest-server"/>
+    <property name="user.dir" value="/home/affan/Development/NetBeansProjects/reference-artifacts-repository"/>
     <property name="java.runtime.version" value="1.8.0_11-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
@@ -41,7 +41,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -58,6 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="5.675"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="1.221"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="2.855"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="0.417"/>
 </testsuite>
