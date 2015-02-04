@@ -1,10 +1,10 @@
 package listresourcebundle;
 
-public class Localized extends java.util.ListResourceBundle{
+public class LocalizedObjects extends java.util.ListResourceBundle{
 
     private final Object[][] localizedResources;
 
-    public Localized() {
+    public LocalizedObjects() {
         this.localizedResources = new Object [][]
         { 
             { "hello", "Hello" }            

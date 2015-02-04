@@ -1,12 +1,12 @@
-package listresourcebundle;
+
 
 import java.util.ListResourceBundle;
 
-public class Localized_ar extends ListResourceBundle {
+public class LocalizedObjects_ar extends ListResourceBundle {
 
     private final Object[][] localizedResources;
 
-    public Localized_ar() {
+    public LocalizedObjects_ar() {
         this.localizedResources = new Object [][]
         { 
             { "hello", "مرحبا" }            

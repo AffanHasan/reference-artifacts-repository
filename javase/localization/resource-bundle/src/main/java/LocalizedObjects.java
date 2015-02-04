@@ -1,20 +1,18 @@
-package listresourcebundle;
 
-import java.util.ListResourceBundle;
 
-public class Localized_de extends ListResourceBundle {
+public class LocalizedObjects extends java.util.ListResourceBundle{
 
     private final Object[][] localizedResources;
 
-    public Localized_de() {
+    public LocalizedObjects() {
         this.localizedResources = new Object [][]
         { 
-            { "hello", "hallo" }            
+            { "hello", "Hello" }         
         };
     }
     
     @Override
     protected Object[][] getContents() {
         return localizedResources;
-    }    
+    }
 }
