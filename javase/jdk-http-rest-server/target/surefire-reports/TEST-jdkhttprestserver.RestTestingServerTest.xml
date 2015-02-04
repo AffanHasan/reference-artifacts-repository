@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="3.166" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="4.971" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -58,6 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="2.782"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="0.384"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="3.642"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="1.329"/>
 </testsuite>

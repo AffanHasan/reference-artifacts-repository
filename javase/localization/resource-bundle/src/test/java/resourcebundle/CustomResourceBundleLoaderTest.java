@@ -1,5 +1,6 @@
 package resourcebundle;
 
+import customresourcebundleloader.CustomResourceBundleLoader;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
@@ -11,33 +12,7 @@ import org.testng.annotations.Test;
  * To
  * @author Affan Hasan
  */
-public class CustomBundleLoadingTest {
-    
-    private class CustomResourceBundleLoader extends ResourceBundle.Control{
-        
-        private final Locale userLocale;
-
-        CustomResourceBundleLoader( Locale userLocale ){
-            this.userLocale = userLocale;
-        }
-        
-        @Override
-        public List<Locale> getCandidateLocales(String baseName, Locale locale) {
-//          For an Arabic user of Saudi Arabia
-            if(userLocale.getCountry().equals("KSA") && userLocale.getLanguage().equals("ar")){
-                System.out.printf("\n Inside getCandidateLocales method \n");
-                return Arrays.asList(new Locale[]
-                { 
-                    userLocale,
-                    Locale.ROOT 
-                });
-            }
-//          For all other users
-            else {
-                return super.getCandidateLocales(baseName, locale); //To change body of generated methods, choose Tools | Templates.
-            }
-        }
-    }
+public class CustomResourceBundleLoaderTest {
     
     @Test
     public void custom_locale_loading_for_saudi_arab(){
