@@ -23,17 +23,20 @@ public class RestTestingServerTest{
 
     private final RestTestingServer httpServer;
     
+    private final RestTestingServer httpServer2;
+    
     private final Application dummyRestApp = new DummyRestApp();
     
     public RestTestingServerTest() {
         httpServer = new DefaultRestTestingServer();
+        httpServer2 = new DefaultRestTestingServer();
     }
     
     @BeforeTest
     public void beforeTest(){
     }
     
-    @ApplicationPath("/test")
+    @ApplicationPath("mytestrestapp")
     private class DummyRestApp extends Application{
 
         @Override
@@ -49,8 +52,40 @@ public class RestTestingServerTest{
             @GET
             @Produces("text/html")
             private String get(){
-                return "Server is up and running";
+                return "Server is running";
             }
+        }
+    }
+    
+    private void testServerIsRunning(int portNumber){
+        BufferedReader buffReader = null;
+        String message = null;
+        try {
+            URLConnection urlConnection = (new URL("http://localhost:" + portNumber + "" )).openConnection() ;
+            buffReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+            while( (message = buffReader.readLine()) != null ){
+                Assert.assertEquals(message, "Server is running") ;
+            }
+            buffReader.close();
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(RestTestingServerTest.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e){
+        }
+    }
+    
+    private void testServerIsRunning(int portNumber, String urn){
+        BufferedReader buffReader = null;
+        String message = null;
+        try {
+            URLConnection urlConnection = (new URL("http://localhost:" + portNumber + "/" + urn )).openConnection() ;
+            buffReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+            while( (message = buffReader.readLine()) != null ){
+                Assert.assertEquals(message, "Server is running") ;
+            }
+            buffReader.close();
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(RestTestingServerTest.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e){
         }
     }
     
@@ -138,9 +173,50 @@ public class RestTestingServerTest{
             }
             
         }
-        
         httpServer.stopServer();
     }
     
+    @Test
+    public void server_should_return_int_as_port_number_on_which_it_is_listening_To(){
+        int portNumber = httpServer.startServer(dummyRestApp);
+        try {
+            testServerIsRunning(portNumber);
+        } finally{
+        }
+        httpServer.stopServer();
+    }
+    
+    @Test
+    public void should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server(){
+        try {
+            String name = "unserapp";
+            int portNumber = httpServer.startServer(dummyRestApp, name);
+            testServerIsRunning(portNumber, name);
+        } finally{
+            httpServer.stopServer();
+        }
+    }
+    
+    @Test
+    public void server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation(){
+        String name = dummyRestApp.getClass().getAnnotation(ApplicationPath.class).value();
+        try {
+            int portNumber = httpServer.startServer(dummyRestApp);
+            testServerIsRunning(portNumber, name);
+        } finally{
+            httpServer.stopServer();
+        }
+    }
+    
+    @Test
+    public void server_should_be_autocloseable(){
+        int portNumber = 0;
+        try( RestTestingServer httpServer = new DefaultRestTestingServer() ){
+            portNumber = httpServer.startServer(dummyRestApp);
+            testServerIsRunning(portNumber);
+        }catch(Exception e){
+            Assert.fail();
+        }
+    }
     
 }

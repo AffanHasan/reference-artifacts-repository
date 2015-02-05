@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project>
 
 	<name>JAX-RS Web Services</name>
@@ -22,6 +23,7 @@
 	<modules>
 		<!-- Contains reference artifacts for jax-rs annotations -->
 		<module>jax-rs-annotations</module>
-	</modules>
+    <module>jax-rs-extract-parameters-from-requests</module>
+  </modules>
 
 </project>

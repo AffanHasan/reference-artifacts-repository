@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: jdkhttprestserver.RestTestingServerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.911 sec
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.019 sec <<< FAILURE!
+server_should_be_autocloseable(jdkhttprestserver.RestTestingServerTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: Not Implemented
+	at org.testng.Assert.fail(Assert.java:89)
+	at jdkhttprestserver.RestTestingServerTest.server_should_be_autocloseable(RestTestingServerTest.java:221)
+
