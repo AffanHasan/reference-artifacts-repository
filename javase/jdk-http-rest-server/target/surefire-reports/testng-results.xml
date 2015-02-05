@@ -1,70 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="6" passed="5">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="5144" started-at="2015-02-04T23:07:21Z" finished-at="2015-02-04T23:07:26Z">
+  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="4479" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:11Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="5144" started-at="2015-02-04T23:07:21Z" finished-at="2015-02-04T23:07:26Z">
+    <test name="Command line test" duration-ms="4479" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:11Z">
       <class name="jdkhttprestserver.RestTestingServerTest">
-        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="40" started-at="2015-02-04T23:07:21Z" finished-at="2015-02-04T23:07:21Z">
+        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="15" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:07Z">
         </test-method>
-        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="2588" started-at="2015-02-04T23:07:21Z" finished-at="2015-02-04T23:07:24Z">
+        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="2470" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:09Z">
         </test-method>
-        <test-method status="FAIL" signature="server_should_be_autocloseable()" name="server_should_be_autocloseable" duration-ms="2" started-at="2015-02-04T23:07:24Z" finished-at="2015-02-04T23:07:24Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Not Implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Not Implemented
-	at org.testng.Assert.fail(Assert.java:89)
-	at jdkhttprestserver.RestTestingServerTest.server_should_be_autocloseable(RestTestingServerTest.java:221)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception>
+        <test-method status="PASS" signature="server_should_be_autocloseable()" name="server_should_be_autocloseable" duration-ms="422" started-at="2015-02-05T19:59:09Z" finished-at="2015-02-05T19:59:10Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation()" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" duration-ms="1182" started-at="2015-02-04T23:07:24Z" finished-at="2015-02-04T23:07:25Z">
+        <test-method status="PASS" signature="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation()" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" duration-ms="382" started-at="2015-02-05T19:59:10Z" finished-at="2015-02-05T19:59:10Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_return_int_as_port_number_on_which_it_is_listening_To()" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" duration-ms="398" started-at="2015-02-04T23:07:25Z" finished-at="2015-02-04T23:07:26Z">
+        <test-method status="PASS" signature="server_should_return_int_as_port_number_on_which_it_is_listening_To()" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" duration-ms="396" started-at="2015-02-05T19:59:10Z" finished-at="2015-02-05T19:59:11Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="365" started-at="2015-02-04T23:07:26Z" finished-at="2015-02-04T23:07:26Z">
+        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="345" started-at="2015-02-05T19:59:11Z" finished-at="2015-02-05T19:59:11Z">
         </test-method>
-        <test-method status="PASS" signature="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server()" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" duration-ms="442" started-at="2015-02-04T23:07:26Z" finished-at="2015-02-04T23:07:26Z">
+        <test-method status="PASS" signature="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server()" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" duration-ms="432" started-at="2015-02-05T19:59:11Z" finished-at="2015-02-05T19:59:11Z">
         </test-method>
       </class>
     </test>

@@ -2,6 +2,7 @@ package jdkhttprestserver;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -71,6 +72,24 @@ public class RestTestingServerTest{
             Logger.getLogger(RestTestingServerTest.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException e){
         }
+    }
+    
+    private void testServerIsNotRunning(int portNumber){
+        try {
+            URLConnection urlConnection = (new URL("http://localhost:" + portNumber + "" )).openConnection() ;
+            BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+            String message;
+            while( (message = reader.readLine()) != null){
+                if(message.equals("Server is running"))
+                    Assert.fail();
+            }
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(RestTestingServerTest.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            return;
+        }
+        Assert.fail();
+        return;
     }
     
     private void testServerIsRunning(int portNumber, String urn){
@@ -212,11 +231,12 @@ public class RestTestingServerTest{
     public void server_should_be_autocloseable(){
         int portNumber = 0;
         try( RestTestingServer httpServer = new DefaultRestTestingServer() ){
-            portNumber = httpServer.startServer(dummyRestApp);
+             portNumber = httpServer.startServer(dummyRestApp);
             testServerIsRunning(portNumber);
         }catch(Exception e){
-            Assert.fail();
+            Assert.fail(e.toString());
         }
+        testServerIsNotRunning(portNumber);
     }
     
 }
