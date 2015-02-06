@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.BindException;
 import java.net.InetSocketAddress;
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.ext.RuntimeDelegate;
 
@@ -72,7 +73,7 @@ public class DefaultRestTestingServer implements RestTestingServer{
     @Override
     public int startServer(Application app) {
         int port = bindServer();
-        httpServer.createContext("/rest", RuntimeDelegate.getInstance().createEndpoint(app, HttpHandler.class));
+        httpServer.createContext("/" + app.getClass().getAnnotation(ApplicationPath.class).value(), RuntimeDelegate.getInstance().createEndpoint(app, HttpHandler.class));
         httpServer.start();
         return port;
     }

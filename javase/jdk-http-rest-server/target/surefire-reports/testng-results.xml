@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="4479" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:11Z">
+  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="4786" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:45Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="4479" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:11Z">
+    <test name="Command line test" duration-ms="4786" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:45Z">
       <class name="jdkhttprestserver.RestTestingServerTest">
-        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="15" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:07Z">
+        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="9" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:40Z">
         </test-method>
-        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="2470" started-at="2015-02-05T19:59:07Z" finished-at="2015-02-05T19:59:09Z">
+        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="2606" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:43Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_be_autocloseable()" name="server_should_be_autocloseable" duration-ms="422" started-at="2015-02-05T19:59:09Z" finished-at="2015-02-05T19:59:10Z">
+        <test-method status="PASS" signature="server_should_be_autocloseable()" name="server_should_be_autocloseable" duration-ms="427" started-at="2015-02-06T21:13:43Z" finished-at="2015-02-06T21:13:43Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation()" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" duration-ms="382" started-at="2015-02-05T19:59:10Z" finished-at="2015-02-05T19:59:10Z">
+        <test-method status="PASS" signature="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation()" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" duration-ms="526" started-at="2015-02-06T21:13:43Z" finished-at="2015-02-06T21:13:43Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_return_int_as_port_number_on_which_it_is_listening_To()" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" duration-ms="396" started-at="2015-02-05T19:59:10Z" finished-at="2015-02-05T19:59:11Z">
+        <test-method status="PASS" signature="server_should_return_int_as_port_number_on_which_it_is_listening_To()" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" duration-ms="409" started-at="2015-02-06T21:13:43Z" finished-at="2015-02-06T21:13:44Z">
         </test-method>
-        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="345" started-at="2015-02-05T19:59:11Z" finished-at="2015-02-05T19:59:11Z">
+        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="394" started-at="2015-02-06T21:13:44Z" finished-at="2015-02-06T21:13:44Z">
         </test-method>
-        <test-method status="PASS" signature="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server()" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" duration-ms="432" started-at="2015-02-05T19:59:11Z" finished-at="2015-02-05T19:59:11Z">
+        <test-method status="PASS" signature="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server()" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" duration-ms="388" started-at="2015-02-06T21:13:44Z" finished-at="2015-02-06T21:13:45Z">
         </test-method>
       </class>
     </test>
