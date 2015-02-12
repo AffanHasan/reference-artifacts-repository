@@ -1,0 +1,8 @@
+<suite name="specs">
+	<test name="specsrunner">
+		<packages>
+			<!--<package name="specs.currencyconversion"></package>-->
+			<package name="currconverter"></package>
+		</packages>
+	</test>
+</suite>

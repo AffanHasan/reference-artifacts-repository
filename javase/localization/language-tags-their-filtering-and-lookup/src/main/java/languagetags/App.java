@@ -38,7 +38,7 @@ public class App {
 //      -------------------------------------------------------------------------------------------------
         Collection<Locale> availableLocales = Arrays.asList( 
                 new Locale[]//Create a Collection of locales
-                { 
+                {
                     new Locale("fr", "CA"),
                     Locale.TAIWAN,
 //                  Any language spoken in the city of Karachi, Pakistan

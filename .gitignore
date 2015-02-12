@@ -4,3 +4,4 @@
 /javase/localization/resource-bundle/target/
 /javase/localization/number-formatting/target/
 /javaee/web-services/jax-rs/jax-rs-extract-parameters-from-requests/target/
+/javase/localization/currency-converter/target/

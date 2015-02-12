@@ -21,5 +21,6 @@
     		<module>language-tags-their-filtering-and-lookup</module>
     <module>resource-bundle</module>
     <module>number-formatting</module>
+    <module>currency-converter</module>
   </modules>
 </project>

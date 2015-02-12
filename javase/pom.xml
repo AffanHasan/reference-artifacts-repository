@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project>
 	<name>javase-artifacts</name>
 	<description>Reference software artifacts related to Java SE</description>
@@ -18,5 +19,6 @@
 	<modules>
 		<module>jdk-http-rest-server</module>
 		<module>localization</module>
-	</modules>
+    <module>cli-portal</module>
+  </modules>
 </project>
