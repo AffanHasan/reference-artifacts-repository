@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>reference-artifacts-repository</groupId>
   <artifactId>office-desktop</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
+
   <parent>
       <groupId>reference-artifacts-repository</groupId>
       <artifactId>javase</artifactId>
@@ -13,7 +14,10 @@
   </parent>
 
   <name>office-desktop</name>
-  <url>http://maven.apache.org</url>
+
+  <description>An application containing modules for office use, designed so that it can be used both as desktop or a distributed app</description>
+
+ <!-- <url>http://maven.apache.org</url>-->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -45,6 +49,7 @@
         <version>${jmockit.version}</version>
         <scope>runtime</scope>
     </dependency>
+
   </dependencies>
   
   <build>
@@ -66,4 +71,9 @@
     </plugins>
     
   </build>
+
+  <!--  Sub Modules -->
+  <modules>
+    <module>office-desktop-task-tracker</module>
+  </modules>
 </project>

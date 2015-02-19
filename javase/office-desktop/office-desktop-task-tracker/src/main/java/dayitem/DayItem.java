@@ -28,12 +28,18 @@ public interface DayItem {
     
     void addTask(TaskItem task, int index);
     
+    /**
+     * <p>For updating/editing a task item</p>
+     * @param task
+     * @param index 
+     */
     void replaceTask(TaskItem task, int index);
     
     void removeTask(int orderNo);
     
     /**
      * Here the index is the task item order number
+     * @param task
      * @param index 
      */
     void reorderTaskItem(TaskItem task, int index);
