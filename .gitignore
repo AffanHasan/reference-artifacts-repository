@@ -5,3 +5,5 @@
 /javase/localization/number-formatting/target/
 /javaee/web-services/jax-rs/jax-rs-extract-parameters-from-requests/target/
 /javase/localization/currency-converter/target/
+/javase/cli-portal/target/
+/javase/office-desktop/target/

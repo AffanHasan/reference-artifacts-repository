@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DefaultDayItem.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../logo.png'/>
+  <script type='text/javascript' src='../coverage.js'></script>
+  <script type='text/javascript' src='../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>office-desktop/src/main/java/dayitem/DefaultDayItem.java</caption>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>6</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package dayitem;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import taskitem.TaskItem;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ *
+ * @author Affan Hasan
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>19</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class DefaultDayItem implements DayItem {</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private final long date;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>23</td><td class='count'>19</td>
+      <td><pre class='prettyprint covered' id='l23s0'>    private final SimpleDateFormat standardDateFormat = new SimpleDateFormat("EEE, MMM dd yyyy");</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>25</td><td class='count'>19</td>
+      <td><pre class='prettyprint covered' id='l25s0'>    private final List&lt;TaskItem> taskList = new ArrayList&lt;>();</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>27</td><td class='count'>17</td>
+      <td><pre class='prettyprint covered' id='l27s0'>    public DefaultDayItem() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td class='count'>17</td>
+      <td><pre class='prettyprint covered' id='l28s0'>         date = System.currentTimeMillis();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td class='count'>17</td>
+      <td><pre class='prettyprint covered' id='l29s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * Standard date format is: &lt;b>Thu, Dec 18 2014&lt;/b>
+     * @param standardDate 
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>35</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l35s0'>    public DefaultDayItem(String standardDate) throws ParseException {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>36</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l36s0'>        date = standardDateFormat.parse(standardDate).getTime();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>37</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l37s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>39</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>40</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public long getDateAsLong() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l41s0'>        return date;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>42</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>44</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>45</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public String getStandardDate() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>46</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l46s0'>        return standardDateFormat.format(new Date(date));</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>47</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>49</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>50</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public List&lt;TaskItem> getTasks() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>51</td><td class='count'>37</td>
+      <td><pre class='prettyprint covered' id='l51s0'>        return taskList;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>52</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>54</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>55</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void addTask(TaskItem task) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>56</td><td class='count'>46</td>
+      <td><pre class='prettyprint covered' id='l56s0'>        taskList.add(task);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>57</td><td class='count'>46</td>
+      <td><pre class='prettyprint covered' id='l57s0'>        int size = taskList.size();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>58</td><td class='count'>46</td>
+      <td><pre class='prettyprint covered' id='l58s0'>        taskList.get(size - 1).setOrderNumber(size -1);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>59</td><td class='count'>46</td>
+      <td><pre class='prettyprint covered' id='l59s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>61</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>62</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void addTask(TaskItem task, int index) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>63</td><td class='count'>7</td>
+      <td><pre class='prettyprint jmp'>        <span id='l63s0' title='Executions: 7' class='covered'>if(isValidIndex(index))</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>64</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered' id='l64s0'>            taskList.add(index, task);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>65</td><td>&nbsp;</td>
+      <td><pre class='comment'>//          Reordering the order numbers</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>66</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered' id='l66s0'>            reorderTasks();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>67</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>68</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered' id='l68s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>70</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>71</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void removeTask(int orderNo) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>72</td><td class='count'>6</td>
+      <td><pre class='prettyprint jmp'>        <span id='l72s0' title='Executions: 6' class='covered'>if(isValidIndex(orderNo))</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>73</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered' id='l73s0'>            taskList.remove(orderNo);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>74</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered' id='l74s0'>            reorderTasks();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>75</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>76</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered' id='l76s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>78</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>79</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void reorderTaskItem(TaskItem task, int index) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>80</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l80s0'>        removeTask(task.getOrderNumber());</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>81</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l81s0'>        addTask(task, index);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>82</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l82s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>84</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private void reorderTasks(){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>85</td><td class='count'>9</td>
+      <td><pre class='prettyprint covered' id='l85s0'>        byte orderNo = 0;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>86</td><td class='count'>9</td>
+      <td><pre class='prettyprint jmp'>        <span id='l86s0' title='Executions: 9' class='covered'>for(TaskItem item</span> : <span id='l86s1' title='Executions: 28' class='covered'>taskList)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>87</td><td class='count'>28</td>
+      <td><pre class='prettyprint covered' id='l87s0'>            item.setOrderNumber(orderNo++);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>88</td><td class='count'>28</td>
+      <td><pre class='prettyprint covered' id='l88s0'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>89</td><td class='count'>9</td>
+      <td><pre class='prettyprint covered' id='l89s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>91</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>92</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void replaceTask(TaskItem task, int index) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>93</td><td class='count'>3</td>
+      <td><pre class='prettyprint jmp'>        <span id='l93s0' title='Executions: 3' class='covered'>if(isValidIndex(index))</span></pre></td>
+    </tr>
+    <tr>
+      <td class='line'>94</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l94s0'>            taskList.set(index, task);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>95</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l95s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>97</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private boolean isValidIndex(int indexNumber){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>98</td><td class='count'>16</td>
+      <td><pre class='prettyprint jmp'>        <span id='l98s0' title='Executions: 16' class='covered'>if(indexNumber &lt; 0 )</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>99</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered' id='l99s0'>            throw new IllegalArgumentException("orderNo must not be smaller than 0");</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>100</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>101</td><td class='count'>13</td>
+      <td><pre class='prettyprint jmp'>        else <span id='l101s0' title='Executions: 13' class='covered'>if(indexNumber == 0)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>102</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered' id='l102s0'>            return true;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>103</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>104</td><td class='count'>8</td>
+      <td><pre class='prettyprint jmp'>        else <span id='l104s0' title='Executions: 8' class='covered'>if(indexNumber > (taskList.size() - 1))</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>105</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered' id='l105s0'>            throw new IllegalArgumentException("Provided order number is too high");</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>106</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>107</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered' id='l107s0'>        return true;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>108</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>110</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>

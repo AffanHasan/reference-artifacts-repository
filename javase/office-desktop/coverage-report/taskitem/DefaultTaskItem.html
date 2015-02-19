@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DefaultTaskItem.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../logo.png'/>
+  <script type='text/javascript' src='../coverage.js'></script>
+  <script type='text/javascript' src='../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>office-desktop/src/main/java/taskitem/DefaultTaskItem.java</caption>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>6</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package taskitem;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAmount;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import javax.xml.datatype.DatatypeConstants;
+import persistence.engine.FileBasedDataStore;
+import persistence.engine.PersistenceEngine;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ *
+ * @author root
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>27</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class DefaultTaskItem implements TaskItem {</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>29</td><td class='count'>222</td>
+      <td><pre class='prettyprint covered' id='l29s0'>    private String category = "";</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>31</td><td class='count'>222</td>
+      <td><pre class='prettyprint covered' id='l31s0'>    private String description = "";</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>33</td><td>&nbsp;</td>
+      <td><pre class='comment'>//    private PersistenceEngine.STATUS_LIST status = null;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>35</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private int orderNumber;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>37</td><td class='count'>222</td>
+      <td><pre class='prettyprint covered' id='l37s0'>    private final PersistenceEngine pEngine = FileBasedDataStore.getInstance();</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>39</td><td class='count'>222</td>
+      <td><pre class='prettyprint covered' id='l39s0'>    private final List&lt;StatusObject> statusLog = new ArrayList&lt;>();</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>41</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>42</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public Instant getLastModifiedInstant() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>43</td><td class='count'>10084</td>
+      <td><pre class='prettyprint covered' id='l43s0'>        return this.statusLog.get(this.statusLog.size() - 1).getTimeStamp();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>44</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>46</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private class StatusObject{</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>48</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        private final PersistenceEngine.STATUS_LIST status;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>50</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        private final Instant timeStamp;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>52</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l52s0'>        public StatusObject() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>53</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l53s0'>            this.status = PersistenceEngine.STATUS_LIST.PENDING;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>54</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l54s0'>            this.timeStamp = Instant.now();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>55</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l55s0'>        }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>57</td><td class='count'>10305</td>
+      <td><pre class='prettyprint covered' id='l57s0'>        public StatusObject(PersistenceEngine.STATUS_LIST status) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>58</td><td class='count'>10305</td>
+      <td><pre class='prettyprint covered' id='l58s0'>            this.status = status;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>59</td><td class='count'>10305</td>
+      <td><pre class='prettyprint covered' id='l59s0'>            this.timeStamp = Instant.now();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>60</td><td class='count'>10305</td>
+      <td><pre class='prettyprint covered' id='l60s0'>        }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>62</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        public Instant getTimeStamp() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>63</td><td class='count'>313986</td>
+      <td><pre class='prettyprint covered' id='l63s0'>            return timeStamp;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>64</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>66</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        public PersistenceEngine.STATUS_LIST getStatus(){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>67</td><td class='count'>308947</td>
+      <td><pre class='prettyprint covered' id='l67s0'>            return this.status;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>68</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>70</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>72</td><td class='count'>222</td>
+      <td><pre class='prettyprint covered' id='l72s0'>    public DefaultTaskItem() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>73</td><td class='count'>222</td>
+      <td><pre class='prettyprint covered' id='l73s0'>        addStatus(PersistenceEngine.STATUS_LIST.PENDING);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>74</td><td class='count'>222</td>
+      <td><pre class='prettyprint covered' id='l74s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>76</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private StatusObject getDefaultStatusObject(){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>77</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l77s0'>        return new StatusObject();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>78</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>80</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>81</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public String getCategory() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>82</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered' id='l82s0'>        return category;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>83</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>85</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>86</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public PersistenceEngine.STATUS_LIST getStatus() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>87</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered' id='l87s0'>        return statusLog.get(statusLog.size() - 1).getStatus();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>88</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>90</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>91</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public String getDescription() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>92</td><td class='count'>7</td>
+      <td><pre class='prettyprint covered' id='l92s0'>        return description;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>93</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>95</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>96</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void setCategory(String category) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>97</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered' id='l97s0'>        this.category = category;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>98</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered' id='l98s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>100</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>101</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void setDescription(String description) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>102</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered' id='l102s0'>        this.description = description;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>103</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered' id='l103s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>105</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>106</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public int getOrderNumber() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>107</td><td class='count'>23</td>
+      <td><pre class='prettyprint covered' id='l107s0'>        return orderNumber;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>108</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>110</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>111</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void setOrderNumber(int orderNo) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>112</td><td class='count'>76</td>
+      <td><pre class='prettyprint jmp'>        <span id='l112s0' title='Executions: 76' class='covered'>if(orderNo &lt; 0)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>113</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l113s0'>            throw new IllegalArgumentException("Order Number Must Not Be Negative");</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>114</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>115</td><td class='count'>75</td>
+      <td><pre class='prettyprint covered' id='l115s0'>        this.orderNumber = orderNo;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>116</td><td class='count'>75</td>
+      <td><pre class='prettyprint covered' id='l116s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>118</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>119</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public String getTotalTime() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>120</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l120s0'>        return getDuration();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>121</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>123</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private String getDuration(){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>124</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l124s0'>        Duration dur = extractTotalDuration();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>125</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        final String duration;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>126</td><td class='count'>5042</td>
+      <td><pre class='prettyprint jmp'>        <span id='l126s0' title='Executions: 5042' class='covered'>if(dur.toHours() > 0)</span>{//If one or more hours</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>127</td><td class='count'>1441</td>
+      <td><pre class='prettyprint jmp'>            <span id='l127s0' title='Executions: 1441' class='covered'>if(dur.minus(dur.toHours(), ChronoUnit.HOURS).toMinutes() > 0)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>128</td><td class='count'>1416</td>
+      <td><pre class='prettyprint covered' id='l128s0'>                long minutes = dur.minus(dur.toHours(), ChronoUnit.HOURS).toMinutes();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>129</td><td class='count'>1416</td>
+      <td><pre class='prettyprint covered' id='l129s0'>                duration = String.valueOf(dur.toHours()) + " hour(s)" </pre></td>
+    </tr>
+    <tr>
+      <td class='line'>130</td><td class='count'>1416</td>
+      <td><pre class='prettyprint covered' id='l130s0'>                            + " " +String.valueOf(minutes) + " minute(s)";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>131</td><td class='count'>1416</td>
+      <td><pre class='prettyprint covered' id='l131s0'>            }else{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>132</td><td class='count'>25</td>
+      <td><pre class='prettyprint covered' id='l132s0'>                duration = String.valueOf(dur.toHours()) + " hour(s)";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>133</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>            }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>134</td><td class='count'>3601</td>
+      <td><pre class='prettyprint jmp'>        <span id='l134s0' title='Executions: 3601' class='covered'>}else if(dur.toMinutes() > 0)</span>{//If one or more minutes</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>135</td><td class='count'>3541</td>
+      <td><pre class='prettyprint jmp'>            <span id='l135s0' title='Executions: 3541' class='covered'>if(dur.minus(dur.toMinutes(), ChronoUnit.MINUTES).getSeconds() > 0)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>136</td><td class='count'>3481</td>
+      <td><pre class='prettyprint covered' id='l136s0'>                long seconds = dur.minus(dur.toMinutes(), ChronoUnit.MINUTES).getSeconds();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>137</td><td class='count'>3481</td>
+      <td><pre class='prettyprint covered' id='l137s0'>                duration = String.valueOf(dur.toMinutes()) + " minute(s)" </pre></td>
+    </tr>
+    <tr>
+      <td class='line'>138</td><td class='count'>3481</td>
+      <td><pre class='prettyprint covered' id='l138s0'>                            + " " +String.valueOf(seconds) + " second(s)";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>139</td><td class='count'>3481</td>
+      <td><pre class='prettyprint covered' id='l139s0'>            }else{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>140</td><td class='count'>60</td>
+      <td><pre class='prettyprint covered' id='l140s0'>                duration = String.valueOf(dur.toMinutes()) + " minute(s)";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>141</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>            }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>142</td><td class='count'>60</td>
+      <td><pre class='prettyprint jmp'>        <span id='l142s0' title='Executions: 60' class='covered'>}else if(dur.getSeconds() > 0)</span>{//If one or more seconds</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>143</td><td class='count'>59</td>
+      <td><pre class='prettyprint covered' id='l143s0'>            duration = String.valueOf(dur.getSeconds()) + " second(s)";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>144</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }else{//default</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>145</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l145s0'>            duration = "0 second(s)";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>146</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>147</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l147s0'>        return duration;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>148</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>150</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private Duration extractTotalDuration(){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>151</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l151s0'>        Duration totalTime = Duration.ZERO;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>152</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l152s0'>        Instant t1 = null;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>153</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l153s0'>        Instant t2 = null;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>154</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l154s0'>        boolean ip = false;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>155</td><td class='count'>5042</td>
+      <td><pre class='prettyprint jmp'>        <span id='l155s0' title='Executions: 5042' class='covered'>for(StatusObject obj</span> : <span id='l155s1' title='Executions: 308944' class='covered'>statusLog )</span>{</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>157</td><td class='count'>308944</td>
+      <td><pre class='prettyprint jmp'>            <span id='l157s0' title='Executions: 308944' class='covered'>if(obj.getStatus() == PersistenceEngine.STATUS_LIST.IN_PROGRESS)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>158</td><td class='count'>151951</td>
+      <td><pre class='prettyprint covered' id='l158s0'>                t1 = obj.getTimeStamp();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>159</td><td class='count'>151951</td>
+      <td><pre class='prettyprint covered' id='l159s0'>                ip = true;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>160</td><td class='count'>156993</td>
+      <td><pre class='prettyprint jmp'>            <span id='l160s0' title='Executions: 156993' class='covered'>}else if(ip)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>161</td><td class='count'>151951</td>
+      <td><pre class='prettyprint covered' id='l161s0'>                t2 = obj.getTimeStamp();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>162</td><td class='count'>151951</td>
+      <td><pre class='prettyprint covered' id='l162s0'>                totalTime = totalTime.plus(Duration.between(t1, t2));</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>163</td><td class='count'>151951</td>
+      <td><pre class='prettyprint covered' id='l163s0'>                ip = false;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>164</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>            }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>165</td><td class='count'>308944</td>
+      <td><pre class='prettyprint covered' id='l165s0'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>166</td><td class='count'>5042</td>
+      <td><pre class='prettyprint covered' id='l166s0'>        return totalTime;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>167</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>169</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    protected final void addStatus(PersistenceEngine.STATUS_LIST status){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>170</td><td class='count'>10306</td>
+      <td><pre class='prettyprint jmp'>        <span id='l170s0' title='Executions: 10306' class='covered'>if(status != null)</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>171</td><td class='count'>10305</td>
+      <td><pre class='prettyprint covered' id='l171s0'>            this.statusLog.add(new StatusObject(status));</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>172</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>173</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        else{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>174</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l174s0'>            throw new IllegalArgumentException("Status cannot be null");</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>175</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>176</td><td class='count'>10305</td>
+      <td><pre class='prettyprint covered' id='l176s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>178</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>179</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void setStatus(PersistenceEngine.STATUS_LIST status) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>180</td><td class='count'>10084</td>
+      <td><pre class='prettyprint covered' id='l180s0'>        addStatus(status);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>181</td><td class='count'>10083</td>
+      <td><pre class='prettyprint covered' id='l181s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>183</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
