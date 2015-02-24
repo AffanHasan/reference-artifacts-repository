@@ -16,9 +16,18 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
+	<properties>
+
+	</properties>
+
+	<dependencies>
+
+	</dependencies>
+
 	<modules>
 		<module>jdk-http-rest-server</module>
 		<module>localization</module>
-    <module>cli-portal</module>
-  </modules>
+	   	<module>cli-portal</module>
+    		<module>jaas</module>
+	</modules>
 </project>

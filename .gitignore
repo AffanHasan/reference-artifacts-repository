@@ -8,3 +8,5 @@
 /javase/cli-portal/target/
 /javase/office-desktop/target/
 /javase/office-desktop/office-desktop-task-tracker/target/
+/javase/office-desktop/office-desktop-javafx-ui/target/
+/javase/jaas/target/
