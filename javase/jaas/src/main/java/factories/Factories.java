@@ -4,8 +4,10 @@ import cbh.CliCallBackHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth.login.Configuration;
 import javax.security.auth.login.LoginContext;
 import javax.security.auth.login.LoginException;
+import user.DefaultUserEmailPrincipal;
 import user.DefaultUserPasswordCredential;
 import user.UserEmailPrincipal;
 import user.UserPasswordCredential;
@@ -19,7 +21,7 @@ public class Factories {
     public static class UserFactory{
         
         public static UserEmailPrincipal getUserEmailPrincipal(String email){
-            return new UserEmailPrincipal(email);
+            return new DefaultUserEmailPrincipal(email);
         }
         
         public static UserPasswordCredential getUserPasswordCredential(String password){
@@ -32,8 +34,10 @@ public class Factories {
         public static LoginContext getInstance(String lm, 
                 CallbackHandler cbh){
             try {
+                Configuration cnf;
                 return new LoginContext(lm, cbh);
             } catch (LoginException ex) {
+                System.out.println("Inside exception");
                 Logger.getLogger(Factories.class.getName()).log(Level.SEVERE, null, ex);
                 return null;
             }

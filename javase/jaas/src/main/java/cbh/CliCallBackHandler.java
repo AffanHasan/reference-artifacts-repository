@@ -18,7 +18,11 @@ public class CliCallBackHandler implements CallbackHandler{
 
     @Override
     public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
+        UserEmailCallBack uecb = (UserEmailCallBack)callbacks[0];
+        UserPasswordCallBack upcb = (UserPasswordCallBack)callbacks[1];
         
+        uecb.setEmail("blahblah@blahblah.com");
+        upcb.setPassword("opensessame");
     }
     
 }

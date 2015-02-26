@@ -9,20 +9,9 @@ import java.security.Principal;
 
 /**
  *
- * @author root
+ * @author Affan Hasan
  */
-public class UserEmailPrincipal implements Principal{
+public interface UserEmailPrincipal extends Principal{
     
-    
-    private final String _email;
-
-    public UserEmailPrincipal(String email) {
-        this._email = email;
-    }
-
-    @Override
-    public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+    String getEmail();
 }

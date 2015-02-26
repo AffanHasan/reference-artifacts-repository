@@ -1,10 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package loginmodules;
 
+import cbh.UserEmailCallBack;
+import cbh.UserPasswordCallBack;
+import factories.Factories;
 import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Level;
@@ -15,6 +13,8 @@ import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.callback.UnsupportedCallbackException;
 import javax.security.auth.login.LoginException;
 import javax.security.auth.spi.LoginModule;
+import user.UserEmailPrincipal;
+import user.UserPasswordCredential;
 
 /**
  *
@@ -24,6 +24,11 @@ public class DefaultLM implements LoginModule{
     
     private Subject _sub;
     private CallbackHandler _cbh;
+    private UserEmailPrincipal _uep;
+    private UserPasswordCredential _upc;
+    
+    private boolean _isloginSucceeeded;
+    private boolean _isCommitSucceeeded;
 
     @Override
     public void initialize(Subject subject, CallbackHandler callbackHandler, Map<String, ?> sharedState, Map<String, ?> options) {
@@ -33,20 +38,43 @@ public class DefaultLM implements LoginModule{
 
     @Override
     public boolean login() throws LoginException {
+        Callback[] callBacks = {
+                                new UserEmailCallBack(),
+                                new UserPasswordCallBack()
+                               };
         try {
-            Callback[] callBacks = {
-                
-            };
             _cbh.handle(callBacks);
         } catch (IOException | UnsupportedCallbackException ex) {
             Logger.getLogger(DefaultLM.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return false;
+        
+        //Verify the user identity
+        UserEmailCallBack uecb = ((UserEmailCallBack) callBacks[0]);
+        UserPasswordCallBack upcb = ((UserPasswordCallBack) callBacks[1]);
+        
+        String _userEmail = "blahblah@blahblah.com";
+        String _userPassword = "opensessame";
+        
+        if(_userEmail.equals(uecb.getEmail()) && _userPassword.equals(upcb.getPassword())){
+            this._uep = Factories.UserFactory.getUserEmailPrincipal(_userEmail);
+            this._upc = Factories.UserFactory.getUserPasswordCredential(_userPassword);
+            _isloginSucceeeded = true;
+            return _isloginSucceeeded;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
     public boolean commit() throws LoginException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(!_isloginSucceeeded)
+            return false;
+        
+        this._sub.getPrincipals().add(this._uep);
+        this._sub.getPrivateCredentials().add(_upc);
+        this._isCommitSucceeeded = true;
+        return _isCommitSucceeeded;
     }
 
     @Override

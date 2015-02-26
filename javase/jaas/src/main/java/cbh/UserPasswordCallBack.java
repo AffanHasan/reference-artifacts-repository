@@ -15,11 +15,11 @@ public class UserPasswordCallBack implements Callback{
     
     private String _password;
     
-    void setPassword(String password){
+    public void setPassword(String password){
         this._password = password;
     }
     
-    String getPassword(){
+    public String getPassword(){
         return _password;
     }
 }
