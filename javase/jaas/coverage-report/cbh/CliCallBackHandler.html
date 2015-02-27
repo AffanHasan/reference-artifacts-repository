@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CliCallBackHandler.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../logo.png'/>
+  <script type='text/javascript' src='../coverage.js'></script>
+  <script type='text/javascript' src='../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>jaas/src/main/java/cbh/CliCallBackHandler.java</caption>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>6</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package cbh;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import factories.Factories;
+import java.io.IOException;
+import javax.security.auth.callback.Callback;
+import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth.callback.UnsupportedCallbackException;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ *
+ * @author Affan Hasan
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>18</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l18s0'>public class CliCallBackHandler implements CallbackHandler{</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>20</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>22</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l22s0'>        UserEmailCallBack uecb = (UserEmailCallBack)callbacks[0];</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>23</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l23s0'>        UserPasswordCallBack upcb = (UserPasswordCallBack)callbacks[1];</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>25</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l25s0'>        uecb.setEmail(System.console().readLine(Factories.LocalizedTextFactory.getInstance().getString("provideEmail")));</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>26</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l26s0'>        upcb.setPassword(new String(System.console().readPassword(Factories.LocalizedTextFactory.getInstance().getString("providePassword"))));</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>27</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l27s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>29</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>

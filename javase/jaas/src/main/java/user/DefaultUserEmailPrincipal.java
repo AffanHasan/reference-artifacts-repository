@@ -21,4 +21,5 @@ public class DefaultUserEmailPrincipal implements UserEmailPrincipal {
     public String getName() {
         return this.getEmail();
     }
+    
 }

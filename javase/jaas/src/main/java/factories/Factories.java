@@ -1,6 +1,7 @@
 package factories;
 
 import cbh.CliCallBackHandler;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.security.auth.callback.CallbackHandler;
@@ -48,6 +49,15 @@ public class Factories {
         
         public static CliCallBackHandler getCliLoginCallBackHandler(){
             return new CliCallBackHandler();
+        }
+    }
+    
+    public static class LocalizedTextFactory{
+        
+        private static final String _bundleName = "jaas";
+        
+        public static ResourceBundle getInstance(){
+            return ResourceBundle.getBundle(_bundleName);
         }
     }
 }

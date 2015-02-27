@@ -5,6 +5,7 @@
  */
 package cbh;
 
+import factories.Factories;
 import java.io.IOException;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
@@ -21,8 +22,8 @@ public class CliCallBackHandler implements CallbackHandler{
         UserEmailCallBack uecb = (UserEmailCallBack)callbacks[0];
         UserPasswordCallBack upcb = (UserPasswordCallBack)callbacks[1];
         
-        uecb.setEmail("blahblah@blahblah.com");
-        upcb.setPassword("opensessame");
+        uecb.setEmail(System.console().readLine(Factories.LocalizedTextFactory.getInstance().getString("provideEmail")));
+        upcb.setPassword(new String(System.console().readPassword(Factories.LocalizedTextFactory.getInstance().getString("providePassword"))));
     }
     
 }

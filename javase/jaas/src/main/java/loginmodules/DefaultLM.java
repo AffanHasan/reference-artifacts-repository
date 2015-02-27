@@ -62,7 +62,8 @@ public class DefaultLM implements LoginModule{
             return _isloginSucceeeded;
         }
         else{
-            return false;
+            _isloginSucceeeded = false;
+            return _isloginSucceeeded;
         }
     }
 

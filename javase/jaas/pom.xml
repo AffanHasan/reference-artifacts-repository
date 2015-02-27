@@ -34,12 +34,12 @@
     </dependency>
 
     <!--JMockit Coverage-->
-<!--    <dependency>
+    <dependency>
 	<groupId>org.jmockit</groupId>
 	<artifactId>jmockit-coverage</artifactId>
 	<version>${jmockit.version}</version>
 	<scope>runtime</scope>
-    </dependency>-->
+    </dependency>
   
   </dependencies>
   
@@ -47,7 +47,7 @@
     <plugins>
       
       <!-- This plugin "maven-resources-plugin" is used to copy the property files to the target directory -->
-<!--      <plugin>
+      <plugin>
         <artifactId>maven-resources-plugin</artifactId>
         <version>2.7</version>
         <executions>
@@ -62,14 +62,15 @@
               <outputDirectory>${basedir}/target/classes/</outputDirectory>
               <resources>          
                 <resource>
-                  <directory>src/main/java/resources/</directory>
+                  <!--Localized resources-->
+                  <directory>src/main/java/resources/localizedtext</directory>
                   <filtering>true</filtering>
                 </resource>
               </resources>              
             </configuration>            
           </execution>
         </executions>
-      </plugin>-->
+      </plugin>
     </plugins>
   </build>
 </project>
