@@ -35,7 +35,7 @@ public class Factories {
         public static LoginContext getInstance(String lm, 
                 CallbackHandler cbh){
             try {
-                Configuration cnf;
+                Configuration.getConfiguration();
                 return new LoginContext(lm, cbh);
             } catch (LoginException ex) {
                 System.out.println("Inside exception");
@@ -45,7 +45,14 @@ public class Factories {
         }
     }
     
-    public static class CBHFactory{
+    public interface Flyer{
+        
+        public static String identifyMySelf(){
+            return "";
+        }
+    }
+    
+    public static class CBHFactory implements Flyer{
         
         public static CliCallBackHandler getCliLoginCallBackHandler(){
             return new CliCallBackHandler();

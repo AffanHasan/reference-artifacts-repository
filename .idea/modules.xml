@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/javase/cli-portal/cli-portal.iml" filepath="$PROJECT_DIR$/javase/cli-portal/cli-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/localization/currency-converter/currency-converter.iml" filepath="$PROJECT_DIR$/javase/localization/currency-converter/currency-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/localization/get-available-locales/get-available-locales.iml" filepath="$PROJECT_DIR$/javase/localization/get-available-locales/get-available-locales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/jaas/jaas.iml" filepath="$PROJECT_DIR$/javase/jaas/jaas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee/javaee.iml" filepath="$PROJECT_DIR$/javaee/javaee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/javase.iml" filepath="$PROJECT_DIR$/javase/javase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs.iml" filepath="$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs-annotations/jax-rs-annotations.iml" filepath="$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs-annotations/jax-rs-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs-extract-parameters-from-requests/jax-rs-extract-parameters-from-requests.iml" filepath="$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs-extract-parameters-from-requests/jax-rs-extract-parameters-from-requests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs-annotations/jax-rs-query-param-annotation/jax-rs-query-param-annotation.iml" filepath="$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs-annotations/jax-rs-query-param-annotation/jax-rs-query-param-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/jdk-http-rest-server/jdk-http-rest-server.iml" filepath="$PROJECT_DIR$/javase/jdk-http-rest-server/jdk-http-rest-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/localization/language-tags-their-filtering-and-lookup/language-tags-their-filtering-and-lookup.iml" filepath="$PROJECT_DIR$/javase/localization/language-tags-their-filtering-and-lookup/language-tags-their-filtering-and-lookup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/localization/localization.iml" filepath="$PROJECT_DIR$/javase/localization/localization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/localization/number-formatting/number-formatting.iml" filepath="$PROJECT_DIR$/javase/localization/number-formatting/number-formatting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reference-artifacts-repository.iml" filepath="$PROJECT_DIR$/reference-artifacts-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/localization/resource-bundle/resource-bundle.iml" filepath="$PROJECT_DIR$/javase/localization/resource-bundle/resource-bundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" filepath="$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaee/web-services/web-services.iml" filepath="$PROJECT_DIR$/javaee/web-services/web-services.iml" />
+    </modules>
+  </component>
+</project>

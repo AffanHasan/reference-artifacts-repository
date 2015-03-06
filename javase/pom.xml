@@ -29,5 +29,6 @@
 		<module>localization</module>
 	   	<module>cli-portal</module>
     		<module>jaas</module>
-	</modules>
+    <module>string-format-validators</module>
+  </modules>
 </project>

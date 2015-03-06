@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="str.frmt.validators.EmailValidatorTest" duration-ms="37" started-at="2015-03-05T12:07:41Z" finished-at="2015-03-05T12:07:41Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="37" started-at="2015-03-05T12:07:41Z" finished-at="2015-03-05T12:07:41Z">
+      <class name="str.frmt.validators.EmailValidatorTest">
+        <test-method status="PASS" signature="must_return_regex_as_string()[pri:0, instance:str.frmt.validators.EmailValidatorTest@7dc36524]" name="must_return_regex_as_string" duration-ms="20" started-at="2015-03-05T17:07:41Z" finished-at="2015-03-05T17:07:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- must_return_regex_as_string -->
+        <test-method status="PASS" signature="must_throw_illegal_args_exception_when_email_is_null()[pri:0, instance:str.frmt.validators.EmailValidatorTest@7dc36524]" name="must_throw_illegal_args_exception_when_email_is_null" duration-ms="0" started-at="2015-03-05T17:07:41Z" finished-at="2015-03-05T17:07:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- must_throw_illegal_args_exception_when_email_is_null -->
+        <test-method status="PASS" signature="plain_email_test()[pri:0, instance:str.frmt.validators.EmailValidatorTest@7dc36524]" name="plain_email_test" duration-ms="3" started-at="2015-03-05T17:07:41Z" finished-at="2015-03-05T17:07:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- plain_email_test -->
+      </class> <!-- str.frmt.validators.EmailValidatorTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- str.frmt.validators.EmailValidatorTest -->
+</testng-results>

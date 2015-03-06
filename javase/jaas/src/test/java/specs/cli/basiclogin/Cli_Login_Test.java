@@ -16,23 +16,23 @@ import user.UserEmailPrincipal;
 import user.UserPasswordCredential;
 
 public class Cli_Login_Test {
-    
-    private final LoginContext lc;
-    
+
+    private final LoginContext _lc;
+
     {
-        lc = Factories.LCFactory.getInstance("DefaultLM", 
-            Factories.CBHFactory.getCliLoginCallBackHandler());    
+        _lc = Factories.LCFactory.getInstance("DefaultLM",
+                Factories.CBHFactory.getCliLoginCallBackHandler());
     }
-    
-    private Subject sub;
-    
+
+    private Subject _sub;
+
     private final String _userEmailStr = "blahblah@blahblah.com";
     private final String _userPasswordStr = "opensessame";
-    
+
     @BeforeClass
     public void initFixtures(){
     }
-    
+
     private void mockSystemAndConsoleClassesBehavior(@Mocked Console _console, @Mocked System _system){
 
         new Expectations() {
@@ -63,28 +63,33 @@ public class Cli_Login_Test {
      * @param _system 
      */
     @Test
-    public void login(@Mocked Console _console, @Mocked System _system){
+    public void basic_login(@Mocked Console _console, @Mocked System _system){
         
         mockSystemAndConsoleClassesBehavior(_console, _system);
         
         try {
-            lc.login();
+            _lc.login();
         } catch (LoginException ex) {
             Logger.getLogger(Cli_Login_Test.class.getName()).log(Level.SEVERE, null, ex);
         }
 //      Getting Subject
-        sub = lc.getSubject();
+        _sub = _lc.getSubject();
 //      Assert that subject only possess one email address
-        Assert.assertTrue(sub.getPrincipals(UserEmailPrincipal.class).size() == 1);
+        Assert.assertTrue(_sub.getPrincipals(UserEmailPrincipal.class).size() == 1);
 //      Assert That Subject contains correct email address
-        for(UserEmailPrincipal obj : sub.getPrincipals(UserEmailPrincipal.class)){
+        for(UserEmailPrincipal obj : _sub.getPrincipals(UserEmailPrincipal.class)){
             Assert.assertTrue(obj.getEmail().equals(_userEmailStr));
         }
 //      Assert That User Has Only 1 UserPasswordCredential
-        Assert.assertTrue(sub.getPrivateCredentials(UserPasswordCredential.class).size() == 1);
+        Assert.assertTrue(_sub.getPrivateCredentials(UserPasswordCredential.class).size() == 1);
 //      Assert That Subject Contains Correct Password
-        for(UserPasswordCredential obj : sub.getPrivateCredentials(UserPasswordCredential.class)){
+        for(UserPasswordCredential obj : _sub.getPrivateCredentials(UserPasswordCredential.class)){
             Assert.assertTrue(obj.getPassword().equals(_userPasswordStr));
         }
+    }
+    
+    @Test(dependsOnMethods = {"basic_login"})
+    public void basic_authorization(){
+//        _sub.do
     }
 }
