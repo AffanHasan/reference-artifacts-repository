@@ -8,10 +8,19 @@ import java.util.regex.Pattern;
  */
 class DefaultEmailValidator implements EmailValidator{
 
-    private final String _regex =
-            "(\\Q(\\E.*\\Q)\\E)?[0-9]*[a-zA-Z]+[0-9]*\\Q.\\E?[a-zA-Z]+[0-9]*(\\Q(\\E.*\\Q)\\E)?@[a-z]+.com";
+    private final String _comments = "(\\Q(\\E.*\\Q)\\E)?";
+    private final String _dotCharacter = "\\Q.\\E?";
 
-    private final Pattern _pattern = Pattern.compile(_regex);
+    private final String _regex;
+
+    private final Pattern _pattern;
+
+    DefaultEmailValidator(){
+       this._regex =
+               _comments + "[0-9]*[a-zA-Z]+[0-9]*" + _dotCharacter + "[a-zA-Z]+[0-9]*" + _comments + "@[a-z]+.com";
+
+        this._pattern = Pattern.compile(_regex);
+    }
 
     @Override
     public boolean isEmailValid(String email) {
