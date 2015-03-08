@@ -5,7 +5,9 @@
     <classes>
       <class name="str.frmt.validators.EmailValidatorTest">
         <methods>
-          <include name="validate_local_part_ending_with_comments_is_valid"/>
+          <include name="validate_local_part_ending_with_underscore_is_valid"/>
+          <include name="validate_local_part_starting_with_underscore_is_valid"/>
+          <include name="validate_local_part_containing_underscore_is_valid"/>
         </methods>
       </class> <!-- str.frmt.validators.EmailValidatorTest -->
     </classes>

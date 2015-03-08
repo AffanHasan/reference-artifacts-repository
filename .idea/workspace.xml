@@ -7,6 +7,7 @@
     <list default="true" id="ede6b090-fea2-40cb-8d74-2d05bb4f1639" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reference-artifacts-repository.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +57,8 @@
       <file leaf-file-name="EmailValidatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70316625" vertical-offset="2482" max-vertical-offset="3240">
-              <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.9010554" vertical-offset="2797" max-vertical-offset="3600">
+              <caret line="233" column="73" selection-start-line="233" selection-start-column="73" selection-end-line="233" selection-end-column="73" />
               <folding>
                 <element signature="e#422#423#0" expanded="true" />
                 <element signature="e#513#514#0" expanded="true" />
@@ -69,11 +70,11 @@
       <file leaf-file-name="DefaultEmailValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
               <folding>
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#879#880#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -814,19 +815,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
           <folding>
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70316625" vertical-offset="2482" max-vertical-offset="3240">
-          <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.9010554" vertical-offset="2797" max-vertical-offset="3600">
+          <caret line="233" column="73" selection-start-line="233" selection-start-column="73" selection-end-line="233" selection-end-column="73" />
           <folding>
             <element signature="e#422#423#0" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />

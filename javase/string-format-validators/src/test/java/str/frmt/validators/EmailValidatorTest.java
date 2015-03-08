@@ -209,4 +209,28 @@ public class EmailValidatorTest {
     public void validate_local_part_containing_comments_is_in_valid(){
         Assert.assertFalse(_emailValidatorFixture.isEmailValid("johny(office address)depp@carribean.com"));
     }
+
+    /**
+     * johny_depp@carribean.com
+     */
+    @Test
+    public void validate_local_part_containing_underscore_is_valid(){
+        Assert.assertTrue(_emailValidatorFixture.isEmailValid("johny_depp@carribean.com"));
+    }
+
+    /**
+     * _johnydepp@carribean.com
+     */
+    @Test
+    public void validate_local_part_starting_with_underscore_is_valid(){
+        Assert.assertTrue(_emailValidatorFixture.isEmailValid("_johnydepp@carribean.com"));
+    }
+
+    /**
+     * johnydepp_@carribean.com
+     */
+    @Test
+    public void validate_local_part_ending_with_underscore_is_valid(){
+        Assert.assertTrue(_emailValidatorFixture.isEmailValid("johnydepp_@carribean.com"));
+    }
 }

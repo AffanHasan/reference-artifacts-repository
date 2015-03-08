@@ -17,7 +17,7 @@ class DefaultEmailValidator implements EmailValidator{
 
     DefaultEmailValidator(){
        this._regex =
-               _comments + "[0-9]*[a-zA-Z]+[0-9]*" + _dotCharacter + "[a-zA-Z]+[0-9]*" + _comments + "@[a-z]+.com";
+               _comments + "[0-9]*[a-zA-Z_]+[0-9]*" + _dotCharacter + "[a-zA-Z_]+[0-9]*" + _comments + "@[a-z]+.com";
 
         this._pattern = Pattern.compile(_regex);
     }
