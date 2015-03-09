@@ -28,7 +28,8 @@
 		<module>jdk-http-rest-server</module>
 		<module>localization</module>
 	   	<module>cli-portal</module>
-    		<module>jaas</module>
-    <module>string-format-validators</module>
+        <module>jaas</module>
+        <module>string-format-validators</module>
+        <module>regex-pattern-tester</module>
   </modules>
 </project>

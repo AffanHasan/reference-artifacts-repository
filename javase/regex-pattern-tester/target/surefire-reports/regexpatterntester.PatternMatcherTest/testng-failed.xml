@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [regexpatterntester.PatternMatcherTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="regexpatterntester.PatternMatcherTest">
+        <methods>
+          <include name="must_match_all_characters_when_no_regex_pattern_is_set_initially"/>
+        </methods>
+      </class> <!-- regexpatterntester.PatternMatcherTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [regexpatterntester.PatternMatcherTest] -->

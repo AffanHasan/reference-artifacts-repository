@@ -5,8 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede6b090-fea2-40cb-8d74-2d05bb4f1639" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/DefaultPatternMatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/Factories.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/PatternMatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/regex-pattern-tester.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/string-format-validators.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/bullet_point.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/collapseall.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/emailable-report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/failed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/navigator-bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/Command line test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/groups.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-alphabetical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-not-run.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/reporter-output.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/testng.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/passed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/skipped.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/str.frmt.validators.EmailValidatorTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng-reports.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng-reports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng-results.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/Command line test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/groups.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-alphabetical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-not-run.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/reporter-output.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/testng.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest/testng-failed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/EmailValidatorTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidator_LocalPart_Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultEmailValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultEmailValidator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/emailable-report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/pom.xml" afterPath="$PROJECT_DIR$/javase/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-failed.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-failed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-results.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reference-artifacts-repository.iws" />
@@ -29,6 +103,7 @@
     <ignored path="$PROJECT_DIR$/javaee/web-services/jax-rs/jax-rs-extract-parameters-from-requests/target/" />
     <ignored path="$PROJECT_DIR$/javase/localization/target/" />
     <ignored path="$PROJECT_DIR$/javase/string-format-validators/target/" />
+    <ignored path="$PROJECT_DIR$/javase/regex-pattern-tester/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,34 +128,7 @@
     <favorites_list name="reference-artifacts-repository" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="EmailValidatorTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9010554" vertical-offset="2797" max-vertical-offset="3600">
-              <caret line="233" column="73" selection-start-line="233" selection-start-column="73" selection-end-line="233" selection-end-column="73" />
-              <folding>
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultEmailValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
-              <folding>
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,7 +148,21 @@
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java" />
         <option value="$PROJECT_DIR$/javase/jaas/src/main/java/jaas/App.java" />
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/AbstractEmailValidatorTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidator_LocalPart_Test.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidator_DomainName_Test.java" />
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java" />
+        <option value="$PROJECT_DIR$/javase/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/test/java/regexpatterntester/AppTest.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/Factories.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/DefaultPatterMatcher.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/defaultpatternmatcher.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/PatternMatcher.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/test/java/regexpatterntester/PatternMatcherTest.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/DefaultPatternMatcher.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/gui/Runner.java" />
+        <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/gui/App.java" />
       </list>
     </option>
   </component>
@@ -196,7 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="string-format-validators" />
+              <option name="myItemId" value="regex-pattern-tester" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,7 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="string-format-validators" />
+              <option name="myItemId" value="regex-pattern-tester" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -230,7 +292,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="validators" />
+              <option name="myItemId" value="regexpatterntester" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,7 +310,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="string-format-validators" />
+              <option name="myItemId" value="regex-pattern-tester" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -264,7 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="validators" />
+              <option name="myItemId" value="regexpatterntester" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,7 +408,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/string-format-validators/src/main/java/str/frmt/validators/App.java" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="117" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
@@ -628,7 +690,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,6 +717,32 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.4996651" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5003349" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23978567" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.50063694" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -674,7 +762,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -744,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30861723" vertical-offset="86" max-vertical-offset="585">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/string-format-validators/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46308726" vertical-offset="0" max-vertical-offset="745">
@@ -786,51 +867,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/jaas/src/main/java/jaas/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35620052" vertical-offset="0" max-vertical-offset="758">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23746702" vertical-offset="0" max-vertical-offset="758">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="false" />
+            <element signature="e#285#286#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/AbstractEmailValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16107382" vertical-offset="0" max-vertical-offset="745">
+          <caret line="8" column="4" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidator_DomainName_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0067114094" vertical-offset="500" max-vertical-offset="1245">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidator_LocalPart_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1874" max-vertical-offset="3615">
+          <caret line="145" column="74" selection-start-line="145" selection-start-column="74" selection-end-line="145" selection-end-column="74" />
+          <folding>
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+        <state vertical-scroll-proportion="0.59366757" vertical-offset="0" max-vertical-offset="758">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java">
+    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9010554" vertical-offset="2797" max-vertical-offset="3600">
-          <caret line="233" column="73" selection-start-line="233" selection-start-column="73" selection-end-line="233" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.29683378" vertical-offset="0" max-vertical-offset="758">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59366757" vertical-offset="0" max-vertical-offset="758">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/jaas/src/main/java/jaas/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5145119" vertical-offset="0" max-vertical-offset="758">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25725594" vertical-offset="0" max-vertical-offset="758">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/Factories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4353562" vertical-offset="0" max-vertical-offset="758">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="false" />
+            <element signature="e#314#315#0" expanded="false" />
+            <element signature="e#449#450#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/test/java/regexpatterntester/PatternMatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1140">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/PatternMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/gui/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25725594" vertical-offset="0" max-vertical-offset="1110">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/DefaultPatternMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="870">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
           </folding>
         </state>
       </provider>

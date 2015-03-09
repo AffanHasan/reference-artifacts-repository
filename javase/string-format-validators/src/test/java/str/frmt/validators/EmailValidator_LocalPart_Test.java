@@ -3,9 +3,10 @@ package str.frmt.validators;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class EmailValidatorTest {
-
-    private final EmailValidator _emailValidatorFixture = Factories.EmailValidatorFactory.getInstance();
+/**
+ * Contains Tests for "local part" in an email address
+ */
+public class EmailValidator_LocalPart_Test extends AbstractEmailValidatorTest{
 
     @Test
     public void must_return_regex_as_string(){

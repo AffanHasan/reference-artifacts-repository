@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest">
-              <span class="suite-name border-passed">str.frmt.validators.EmailValidatorTest</span>
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-str.frmt.validators.EmailValidatorTest">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-str.frmt.validators.EmailValidatorTest">
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-str.frmt.validators.EmailValidatorTest">
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-str.frmt.validators.EmailValidatorTest">
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-str.frmt.validators.EmailValidatorTest">
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-str.frmt.validators.EmailValidatorTest">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-str.frmt.validators.EmailValidatorTest">
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,156 +90,195 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods,   28 passed</span>
+                    <span class="method-stats">34 methods, 1 failed,   33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_DomainName_Test" hash-for-method="domain_names_can_not_contain_two_consecutive_dot_characters">domain_names_can_not_contain_two_consecutive_dot_characters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-str.frmt.validators.EmailValidatorTest" class="hide-methods passed suite-str.frmt.validators.EmailValidatorTest"> (hide)</a> <!-- hide-methods passed suite-str.frmt.validators.EmailValidatorTest -->
-                      <a href="#" panel-name="suite-str.frmt.validators.EmailValidatorTest" class="show-methods passed suite-str.frmt.validators.EmailValidatorTest"> (show)</a> <!-- show-methods passed suite-str.frmt.validators.EmailValidatorTest -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
-                    <div class="method-list-content passed suite-str.frmt.validators.EmailValidatorTest">
+                    <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="must_return_regex_as_string">must_return_regex_as_string</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_DomainName_Test" hash-for-method="domain_names_can_contain_A_TO_Z_characters">domain_names_can_contain_A_TO_Z_characters</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="must_throw_illegal_args_exception_when_email_is_null">must_throw_illegal_args_exception_when_email_is_null</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_DomainName_Test" hash-for-method="domain_names_can_contain_a_to_z_characters">domain_names_can_contain_a_to_z_characters</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="plain_email_test">plain_email_test</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_DomainName_Test" hash-for-method="domain_names_can_contain_valid_ip_addresses_within_square_brackets1">domain_names_can_contain_valid_ip_addresses_within_square_brackets1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid">validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_DomainName_Test" hash-for-method="domain_names_can_contain_valid_ip_addresses_within_square_brackets2">domain_names_can_contain_valid_ip_addresses_within_square_brackets2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part">validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_DomainName_Test" hash-for-method="domain_names_can_not_contain_more_than_64_characters">domain_names_can_not_contain_more_than_64_characters</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part">validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="must_return_regex_as_string">must_return_regex_as_string</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part">validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="must_throw_illegal_args_exception_when_email_is_null">must_throw_illegal_args_exception_when_email_is_null</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_containing_at_the_rate_character_is_in_valid">validate_local_part_containing_at_the_rate_character_is_in_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="plain_email_test">plain_email_test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_containing_colon_character_is_in_valid">validate_local_part_containing_colon_character_is_in_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid">validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_containing_comments_is_in_valid">validate_local_part_containing_comments_is_in_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part">validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_containing_digits_from_0_to_9_is_valid">validate_local_part_containing_digits_from_0_to_9_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part">validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_containing_underscore_is_valid">validate_local_part_containing_underscore_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part">validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_ending_with_at_the_rate_character_is_in_valid">validate_local_part_ending_with_at_the_rate_character_is_in_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_containing_at_the_rate_character_is_in_valid">validate_local_part_containing_at_the_rate_character_is_in_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_ending_with_colon_character_is_in_valid">validate_local_part_ending_with_colon_character_is_in_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_containing_colon_character_is_in_valid">validate_local_part_containing_colon_character_is_in_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_ending_with_comments_is_valid">validate_local_part_ending_with_comments_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_containing_comments_is_in_valid">validate_local_part_containing_comments_is_in_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_ending_with_digits_from_0_to_9_is_valid">validate_local_part_ending_with_digits_from_0_to_9_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_containing_digits_from_0_to_9_is_valid">validate_local_part_containing_digits_from_0_to_9_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_ending_with_underscore_is_valid">validate_local_part_ending_with_underscore_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_containing_underscore_is_valid">validate_local_part_containing_underscore_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_starting_from_0_to_9_is_valid">validate_local_part_starting_from_0_to_9_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_ending_with_at_the_rate_character_is_in_valid">validate_local_part_ending_with_at_the_rate_character_is_in_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_starting_with_and_ending_with_empty_comments_is_valid">validate_local_part_starting_with_and_ending_with_empty_comments_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_ending_with_colon_character_is_in_valid">validate_local_part_ending_with_colon_character_is_in_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_starting_with_at_the_rate_character_is_in_valid">validate_local_part_starting_with_at_the_rate_character_is_in_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_ending_with_comments_is_valid">validate_local_part_ending_with_comments_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_starting_with_colon_character_is_in_valid">validate_local_part_starting_with_colon_character_is_in_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_ending_with_digits_from_0_to_9_is_valid">validate_local_part_ending_with_digits_from_0_to_9_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_starting_with_comments_is_valid">validate_local_part_starting_with_comments_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_ending_with_underscore_is_valid">validate_local_part_ending_with_underscore_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_local_part_starting_with_underscore_is_valid">validate_local_part_starting_with_underscore_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_starting_from_0_to_9_is_valid">validate_local_part_starting_from_0_to_9_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_single_dot_at_the_beginning_of_local_part_is_invalid">validate_single_dot_at_the_beginning_of_local_part_is_invalid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_starting_with_and_ending_with_empty_comments_is_valid">validate_local_part_starting_with_and_ending_with_empty_comments_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_single_dot_at_the_end_of_local_part_is_invalid">validate_single_dot_at_the_end_of_local_part_is_invalid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_starting_with_at_the_rate_character_is_in_valid">validate_local_part_starting_with_at_the_rate_character_is_in_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_single_dot_in_between_the_local_part_is_valid">validate_single_dot_in_between_the_local_part_is_valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_starting_with_colon_character_is_in_valid">validate_local_part_starting_with_colon_character_is_in_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_two_consecutive_dots_in_local_part_is_invalid">validate_two_consecutive_dots_in_local_part_is_invalid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_starting_with_comments_is_valid">validate_local_part_starting_with_comments_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-str.frmt.validators.EmailValidatorTest" title="str.frmt.validators.EmailValidatorTest" hash-for-method="validate_two_single_dots_at_the_beginning_of_local_part_is_invalid">validate_two_single_dots_at_the_beginning_of_local_part_is_invalid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_local_part_starting_with_underscore_is_valid">validate_local_part_starting_with_underscore_is_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-str.frmt.validators.EmailValidatorTest -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_single_dot_at_the_beginning_of_local_part_is_invalid">validate_single_dot_at_the_beginning_of_local_part_is_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_single_dot_at_the_end_of_local_part_is_invalid">validate_single_dot_at_the_end_of_local_part_is_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_single_dot_in_between_the_local_part_is_valid">validate_single_dot_in_between_the_local_part_is_valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_two_consecutive_dots_in_local_part_is_invalid">validate_two_consecutive_dots_in_local_part_is_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="validate_two_single_dots_at_the_beginning_of_local_part_is_invalid">validate_two_single_dots_at_the_beginning_of_local_part_is_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -250,11 +289,73 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-str.frmt.validators.EmailValidatorTest" class="panel str.frmt.validators.EmailValidatorTest">
-          <div class="suite-str.frmt.validators.EmailValidatorTest-class-passed">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">str.frmt.validators.EmailValidator_DomainName_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="domain_names_can_not_contain_two_consecutive_dot_characters">
+                  </a> <!-- domain_names_can_not_contain_two_consecutive_dot_characters -->
+                  <span class="method-name">domain_names_can_not_contain_two_consecutive_dot_characters</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at str.frmt.validators.EmailValidator_DomainName_Test.domain_names_can_not_contain_two_consecutive_dot_characters(EmailValidator_DomainName_Test.java:76)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">str.frmt.validators.EmailValidatorTest</span>
+              <span class="class-name">str.frmt.validators.EmailValidator_DomainName_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="domain_names_can_contain_A_TO_Z_characters">
+                  </a> <!-- domain_names_can_contain_A_TO_Z_characters -->
+                  <span class="method-name">domain_names_can_contain_A_TO_Z_characters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="domain_names_can_contain_a_to_z_characters">
+                  </a> <!-- domain_names_can_contain_a_to_z_characters -->
+                  <span class="method-name">domain_names_can_contain_a_to_z_characters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="domain_names_can_contain_valid_ip_addresses_within_square_brackets1">
+                  </a> <!-- domain_names_can_contain_valid_ip_addresses_within_square_brackets1 -->
+                  <span class="method-name">domain_names_can_contain_valid_ip_addresses_within_square_brackets1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="domain_names_can_contain_valid_ip_addresses_within_square_brackets2">
+                  </a> <!-- domain_names_can_contain_valid_ip_addresses_within_square_brackets2 -->
+                  <span class="method-name">domain_names_can_contain_valid_ip_addresses_within_square_brackets2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="domain_names_can_not_contain_more_than_64_characters">
+                  </a> <!-- domain_names_can_not_contain_more_than_64_characters -->
+                  <span class="method-name">domain_names_can_not_contain_more_than_64_characters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">str.frmt.validators.EmailValidator_LocalPart_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -454,313 +555,368 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-str.frmt.validators.EmailValidatorTest-class-passed -->
-        </div> <!-- panel str.frmt.validators.EmailValidatorTest -->
-        <div panel-name="test-xml-str.frmt.validators.EmailValidatorTest" class="panel">
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;str.frmt.validators.EmailValidatorTest&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;str.frmt.validators.EmailValidatorTest&quot;/&gt;
+      &lt;class name=&quot;str.frmt.validators.EmailValidator_LocalPart_Test&quot;/&gt;
+      &lt;class name=&quot;str.frmt.validators.EmailValidator_DomainName_Test&quot;/&gt;
+      &lt;class name=&quot;str.frmt.validators.AbstractEmailValidatorTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- str.frmt.validators.EmailValidatorTest --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-str.frmt.validators.EmailValidatorTest" class="panel">
+        <div panel-name="testlist-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for str.frmt.validators.EmailValidatorTest</span>
+            <span class="header-content">Tests for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (1 class)</span>
+                <span class="test-name">Command line test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-str.frmt.validators.EmailValidatorTest" class="panel">
+        <div panel-name="group-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for str.frmt.validators.EmailValidatorTest</span>
+            <span class="header-content">Groups for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-str.frmt.validators.EmailValidatorTest" class="panel">
+        <div panel-name="times-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for str.frmt.validators.EmailValidatorTest</span>
+            <span class="header-content">Times for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_str.frmt.validators.EmailValidatorTest');
-function tableData_str.frmt.validators.EmailValidatorTest() {
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(28);
+data.addRows(34);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'must_return_regex_as_string')
-data.setCell(0, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(0, 3, 12);
+data.setCell(0, 1, 'domain_names_can_contain_A_TO_Z_characters')
+data.setCell(0, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
+data.setCell(0, 3, 38);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validate_single_dot_at_the_beginning_of_local_part_is_invalid')
-data.setCell(1, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(1, 3, 9);
+data.setCell(1, 1, 'domain_names_can_contain_valid_ip_addresses_within_square_brackets2')
+data.setCell(1, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
+data.setCell(1, 3, 10);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validate_single_dot_in_between_the_local_part_is_valid')
-data.setCell(2, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(2, 3, 8);
+data.setCell(2, 1, 'validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part')
+data.setCell(2, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(2, 3, 5);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'plain_email_test')
-data.setCell(3, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(3, 3, 4);
+data.setCell(3, 1, 'validate_local_part_starting_from_0_to_9_is_valid')
+data.setCell(3, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validate_local_part_containing_digits_from_0_to_9_is_valid')
-data.setCell(4, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(4, 3, 1);
+data.setCell(4, 1, 'validate_local_part_starting_with_at_the_rate_character_is_in_valid')
+data.setCell(4, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(4, 3, 3);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid')
-data.setCell(5, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(5, 3, 1);
+data.setCell(5, 1, 'validate_two_single_dots_at_the_beginning_of_local_part_is_invalid')
+data.setCell(5, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(5, 3, 2);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validate_local_part_ending_with_at_the_rate_character_is_in_valid')
-data.setCell(6, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(6, 3, 1);
+data.setCell(6, 1, 'domain_names_can_contain_a_to_z_characters')
+data.setCell(6, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
+data.setCell(6, 3, 2);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'must_throw_illegal_args_exception_when_email_is_null')
-data.setCell(7, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(7, 3, 1);
+data.setCell(7, 1, 'validate_two_consecutive_dots_in_local_part_is_invalid')
+data.setCell(7, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(7, 3, 2);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validate_local_part_containing_underscore_is_valid')
-data.setCell(8, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(8, 3, 1);
+data.setCell(8, 1, 'validate_local_part_ending_with_comments_is_valid')
+data.setCell(8, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(8, 3, 2);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'validate_single_dot_at_the_end_of_local_part_is_invalid')
-data.setCell(9, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(9, 3, 1);
+data.setCell(9, 1, 'must_throw_illegal_args_exception_when_email_is_null')
+data.setCell(9, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(9, 3, 2);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'validate_local_part_ending_with_underscore_is_valid')
-data.setCell(10, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(10, 1, 'validate_single_dot_at_the_beginning_of_local_part_is_invalid')
+data.setCell(10, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'validate_local_part_starting_with_colon_character_is_in_valid')
-data.setCell(11, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(11, 1, 'validate_local_part_starting_with_and_ending_with_empty_comments_is_valid')
+data.setCell(11, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(11, 3, 1);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'validate_local_part_starting_with_and_ending_with_empty_comments_is_valid')
-data.setCell(12, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(12, 1, 'validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid')
+data.setCell(12, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(12, 3, 1);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validate_local_part_ending_with_comments_is_valid')
-data.setCell(13, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(13, 1, 'validate_local_part_starting_with_underscore_is_valid')
+data.setCell(13, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(13, 3, 1);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'validate_local_part_starting_with_underscore_is_valid')
-data.setCell(14, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(14, 1, 'validate_single_dot_in_between_the_local_part_is_valid')
+data.setCell(14, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(14, 3, 1);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'validate_local_part_ending_with_digits_from_0_to_9_is_valid')
-data.setCell(15, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(15, 3, 0);
+data.setCell(15, 1, 'validate_local_part_ending_with_underscore_is_valid')
+data.setCell(15, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(15, 3, 1);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part')
-data.setCell(16, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'domain_names_can_contain_valid_ip_addresses_within_square_brackets1')
+data.setCell(16, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
+data.setCell(16, 3, 1);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'validate_local_part_containing_comments_is_in_valid')
-data.setCell(17, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(17, 3, 0);
+data.setCell(17, 1, 'validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part')
+data.setCell(17, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(17, 3, 1);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part')
-data.setCell(18, 2, 'str.frmt.validators.EmailValidatorTest')
-data.setCell(18, 3, 0);
+data.setCell(18, 1, 'domain_names_can_not_contain_two_consecutive_dot_characters')
+data.setCell(18, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
+data.setCell(18, 3, 1);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'validate_local_part_containing_at_the_rate_character_is_in_valid')
-data.setCell(19, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(19, 1, 'validate_local_part_starting_with_comments_is_valid')
+data.setCell(19, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(19, 3, 0);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'validate_two_consecutive_dots_in_local_part_is_invalid')
-data.setCell(20, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(20, 1, 'validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part')
+data.setCell(20, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(20, 3, 0);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'validate_local_part_starting_with_comments_is_valid')
-data.setCell(21, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(21, 1, 'validate_single_dot_at_the_end_of_local_part_is_invalid')
+data.setCell(21, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(21, 3, 0);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'validate_local_part_containing_colon_character_is_in_valid')
-data.setCell(22, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(22, 1, 'domain_names_can_not_contain_more_than_64_characters')
+data.setCell(22, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
 data.setCell(22, 3, 0);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'validate_local_part_ending_with_colon_character_is_in_valid')
-data.setCell(23, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(23, 1, 'validate_local_part_containing_colon_character_is_in_valid')
+data.setCell(23, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(23, 3, 0);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'validate_local_part_starting_from_0_to_9_is_valid')
-data.setCell(24, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(24, 1, 'validate_local_part_containing_at_the_rate_character_is_in_valid')
+data.setCell(24, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(24, 3, 0);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'validate_local_part_starting_with_at_the_rate_character_is_in_valid')
-data.setCell(25, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(25, 1, 'validate_local_part_ending_with_colon_character_is_in_valid')
+data.setCell(25, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(25, 3, 0);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'validate_two_single_dots_at_the_beginning_of_local_part_is_invalid')
-data.setCell(26, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(26, 1, 'validate_local_part_containing_underscore_is_valid')
+data.setCell(26, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(26, 3, 0);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part')
-data.setCell(27, 2, 'str.frmt.validators.EmailValidatorTest')
+data.setCell(27, 1, 'plain_email_test')
+data.setCell(27, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(27, 3, 0);
-window.suiteTableData['str.frmt.validators.EmailValidatorTest']= { tableData: data, tableDiv: 'times-div-str.frmt.validators.EmailValidatorTest'}
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validate_local_part_ending_with_at_the_rate_character_is_in_valid')
+data.setCell(28, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'validate_local_part_containing_comments_is_in_valid')
+data.setCell(29, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'must_return_regex_as_string')
+data.setCell(30, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'validate_local_part_ending_with_digits_from_0_to_9_is_valid')
+data.setCell(31, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'validate_local_part_starting_with_colon_character_is_in_valid')
+data.setCell(32, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validate_local_part_containing_digits_from_0_to_9_is_valid')
+data.setCell(33, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(33, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 ms</span>
-              <div id="times-div-str.frmt.validators.EmailValidatorTest">
-              </div> <!-- times-div-str.frmt.validators.EmailValidatorTest -->
+              <span class="suite-total-time">Total running time: 78 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-str.frmt.validators.EmailValidatorTest" class="panel">
+        <div panel-name="reporter-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for str.frmt.validators.EmailValidatorTest</span>
+            <span class="header-content">Reporter output for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-str.frmt.validators.EmailValidatorTest" class="panel">
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-str.frmt.validators.EmailValidatorTest" class="panel">
+        <div panel-name="chronological-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">str.frmt.validators.EmailValidatorTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">str.frmt.validators.EmailValidator_DomainName_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">must_return_regex_as_string</span>
+                <span class="method-name">domain_names_can_contain_A_TO_Z_characters</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">domain_names_can_contain_a_to_z_characters</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">domain_names_can_contain_valid_ip_addresses_within_square_brackets1</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">domain_names_can_contain_valid_ip_addresses_within_square_brackets2</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">domain_names_can_not_contain_more_than_64_characters</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">domain_names_can_not_contain_two_consecutive_dot_characters</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">str.frmt.validators.EmailValidator_LocalPart_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">must_return_regex_as_string</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">must_throw_illegal_args_exception_when_email_is_null</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">84 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">plain_email_test</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">87 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">87 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-start">88 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-start">89 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_containing_at_the_rate_character_is_in_valid</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">96 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_containing_colon_character_is_in_valid</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-start">97 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_containing_comments_is_in_valid</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-start">97 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_containing_digits_from_0_to_9_is_valid</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">98 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_containing_underscore_is_valid</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">98 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_ending_with_at_the_rate_character_is_in_valid</span>
-                <span class="method-start">53 ms</span>
+                <span class="method-start">99 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_ending_with_colon_character_is_in_valid</span>
-                <span class="method-start">54 ms</span>
+                <span class="method-start">99 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_ending_with_comments_is_valid</span>
-                <span class="method-start">54 ms</span>
+                <span class="method-start">100 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_ending_with_digits_from_0_to_9_is_valid</span>
-                <span class="method-start">55 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_ending_with_underscore_is_valid</span>
-                <span class="method-start">55 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_starting_from_0_to_9_is_valid</span>
-                <span class="method-start">56 ms</span>
+                <span class="method-start">107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_starting_with_and_ending_with_empty_comments_is_valid</span>
-                <span class="method-start">56 ms</span>
+                <span class="method-start">110 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_starting_with_at_the_rate_character_is_in_valid</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">111 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_starting_with_colon_character_is_in_valid</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">115 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_starting_with_comments_is_valid</span>
-                <span class="method-start">58 ms</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_starting_with_underscore_is_valid</span>
-                <span class="method-start">58 ms</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_single_dot_at_the_beginning_of_local_part_is_invalid</span>
-                <span class="method-start">59 ms</span>
+                <span class="method-start">117 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_single_dot_at_the_end_of_local_part_is_invalid</span>
-                <span class="method-start">68 ms</span>
+                <span class="method-start">118 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_single_dot_in_between_the_local_part_is_valid</span>
-                <span class="method-start">69 ms</span>
+                <span class="method-start">118 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_two_consecutive_dots_in_local_part_is_invalid</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_two_single_dots_at_the_beginning_of_local_part_is_invalid</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">128 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
