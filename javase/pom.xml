@@ -31,5 +31,6 @@
         <module>jaas</module>
         <module>string-format-validators</module>
         <module>regex-pattern-tester</module>
+    <module>rcyber-portal-web-automation</module>
   </modules>
 </project>

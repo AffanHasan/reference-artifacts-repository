@@ -5,82 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede6b090-fea2-40cb-8d74-2d05bb4f1639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/DefaultPatternMatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/Factories.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/PatternMatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/regex-pattern-tester.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/string-format-validators.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/bullet_point.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/collapseall.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/emailable-report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/failed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/navigator-bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/Command line test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-alphabetical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-not-run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/reporter-output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/testng.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/toc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/passed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/skipped.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/str.frmt.validators.EmailValidatorTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng-reports.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng-reports.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng-results.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/target/surefire-reports/testng.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidatorTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/Command line test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-alphabetical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods-not-run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/methods.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/reporter-output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/testng.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/str.frmt.validators.EmailValidatorTest/toc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest/Command line test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/str.frmt.validators.EmailValidatorTest/testng-failed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/EmailValidatorTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidatorTest.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/EmailValidator_LocalPart_Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultEmailValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultEmailValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultEmailValidator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_5_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_3_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_platform_3_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_websocket_8_1_15_v20140411.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_45_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webbitserver_webbit_0_4_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/pom.xml" afterPath="$PROJECT_DIR$/javase/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-failed.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-failed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-results.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reference-artifacts-repository.iws" />
@@ -104,6 +70,7 @@
     <ignored path="$PROJECT_DIR$/javase/localization/target/" />
     <ignored path="$PROJECT_DIR$/javase/string-format-validators/target/" />
     <ignored path="$PROJECT_DIR$/javase/regex-pattern-tester/target/" />
+    <ignored path="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +95,79 @@
     <favorites_list name="reference-artifacts-repository" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#162#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCreationTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/usercreation/UserCreationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44295302" vertical-offset="0" max-vertical-offset="745">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+              <folding>
+                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AramarkEnvs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/AramarkEnvs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AramarkFactories.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/AramarkFactories.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AramarkUserCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/AramarkUserCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultUserCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,6 +202,17 @@
         <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/DefaultPatternMatcher.java" />
         <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/gui/Runner.java" />
         <option value="$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/gui/App.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/web/automation/AppTest.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/specs/rc/portal/qaautomation/usercreation/UserCreation.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/specs/rc/portal/qaautomation/usercreation/UserCreationTest.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/App.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/usercreation/UserCreationTest.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/UserCreator.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/AramarkUserCreator.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/AramarkFactories.java" />
+        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/usercreation/UserCreationTest.java" />
       </list>
     </option>
   </component>
@@ -258,7 +308,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="regex-pattern-tester" />
+              <option name="myItemId" value="rcyber-portal-web-automation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,7 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="regex-pattern-tester" />
+              <option name="myItemId" value="rcyber-portal-web-automation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -292,7 +342,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="regexpatterntester" />
+              <option name="myItemId" value="rc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,7 +360,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="regex-pattern-tester" />
+              <option name="myItemId" value="rcyber-portal-web-automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcyber-portal-web-automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usercreation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcyber-portal-web-automation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -326,7 +456,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="regexpatterntester" />
+              <option name="myItemId" value="rc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcyber-portal-web-automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rcyber-portal-web-automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aramark" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,6 +646,11 @@
     <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="rc.qaportal.web.automation.aramark" />
+    </key>
   </component>
   <component name="RunManager" selected="TestNG.&lt;default&gt;">
     <configuration default="false" name="&lt;default&gt;" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
@@ -690,7 +905,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -704,6 +919,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23978567" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -713,7 +929,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -762,7 +977,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -963,22 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/test/java/regexpatterntester/PatternMatcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1140">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/main/java/regexpatterntester/PatternMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1007,6 +1206,99 @@
             <element signature="e#971#972#0" expanded="true" />
             <element signature="e#1199#1200#0" expanded="true" />
             <element signature="e#1239#1240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/target/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.079155676" vertical-offset="0" max-vertical-offset="758">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/regex-pattern-tester/src/test/java/regexpatterntester/PatternMatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6134565" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34228188" vertical-offset="0" max-vertical-offset="745">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/AramarkUserCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/AramarkFactories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/AramarkEnvs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/usercreation/UserCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44295302" vertical-offset="0" max-vertical-offset="745">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
           </folding>
         </state>
       </provider>

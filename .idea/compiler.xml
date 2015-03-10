@@ -32,6 +32,7 @@
         <module name="jdk-http-rest-server" />
         <module name="language-tags-their-filtering-and-lookup" />
         <module name="number-formatting" />
+        <module name="rcyber-portal-web-automation" />
         <module name="regex-pattern-tester" />
         <module name="resource-bundle" />
         <module name="string-format-validators" />
@@ -52,6 +53,7 @@
       <module name="language-tags-their-filtering-and-lookup" target="1.8" />
       <module name="localization" target="1.8" />
       <module name="number-formatting" target="1.8" />
+      <module name="rcyber-portal-web-automation" target="1.8" />
       <module name="reference-artifacts-repository" target="1.8" />
       <module name="regex-pattern-tester" target="1.8" />
       <module name="resource-bundle" target="1.8" />
