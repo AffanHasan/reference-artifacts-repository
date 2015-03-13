@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [office-desktop]">
+  <test name="Utilities Package Test(failed)">
+    <classes>
+      <class name="rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest">
+        <methods>
+          <include name="login_DEV_2_GESPRA"/>
+        </methods>
+      </class> <!-- rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest -->
+    </classes>
+  </test> <!-- Utilities Package Test(failed) -->
+</suite> <!-- Failed suite [office-desktop] -->

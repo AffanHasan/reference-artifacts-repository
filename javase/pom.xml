@@ -31,6 +31,7 @@
         <module>jaas</module>
         <module>string-format-validators</module>
         <module>regex-pattern-tester</module>
-    <module>rcyber-portal-web-automation</module>
+        <module>rcyber-portal-web-automation</module>
+    <module>selenium-commons</module>
   </modules>
 </project>

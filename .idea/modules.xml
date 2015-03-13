@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/reference-artifacts-repository.iml" filepath="$PROJECT_DIR$/reference-artifacts-repository.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/regex-pattern-tester/regex-pattern-tester.iml" filepath="$PROJECT_DIR$/javase/regex-pattern-tester/regex-pattern-tester.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/localization/resource-bundle/resource-bundle.iml" filepath="$PROJECT_DIR$/javase/localization/resource-bundle/resource-bundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/selenium-commons/selenium-commons.iml" filepath="$PROJECT_DIR$/javase/selenium-commons/selenium-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" filepath="$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/web-services/web-services.iml" filepath="$PROJECT_DIR$/javaee/web-services/web-services.iml" />
     </modules>

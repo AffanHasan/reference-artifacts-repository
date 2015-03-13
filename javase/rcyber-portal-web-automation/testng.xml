@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="office-desktop">
+
+    <!--see examples at http://testng.org/doc/documentation-main.html#testng-xml-->
+    <!--<suite-files>-->
+        <!--<suite-file path="./junit-suite.xml" />-->
+    <!--</suite-files>-->
+
+    <!--<test name="Utilities Package">-->
+        <!--<classes>-->
+            <!--<class name="test.java.rc.qaportal.web.automation.aramark.utilities.*" />-->
+            <!--&lt;!&ndash;<class name="test.timeout.TimeOutFromXmlTest"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="test.timeout.TimeOutThreadLocalSampleTest"/>&ndash;&gt;-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="Utilities Package Test">
+        <!--<packages>-->
+            <!--<package name="rc.qaportal.web.automation.aramark.utilities"/>-->
+        <!--</packages>-->
+        <classes>
+            <class name="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility"></class>
+        </classes>
+    </test>
+
+</suite>
