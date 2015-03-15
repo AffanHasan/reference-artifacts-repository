@@ -36,7 +36,7 @@ public class LoginModuleTest {
         Subject subject = new  Subject();
         LoginContext lc = null;
         try {
-            lc = new LoginContext("LM", subject, new GUICallBackHandler());
+//            lc = new LoginContext("LM", subject, new GUICallBackHandler());
             lc.login();
             
 //          Verify that the user is logged in

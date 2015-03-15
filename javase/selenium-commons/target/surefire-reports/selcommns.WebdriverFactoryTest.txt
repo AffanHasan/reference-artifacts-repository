@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: selcommns.WebdriverFactoryTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.788 sec
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.39 sec <<< FAILURE!
+a_web_driver_needs_to_be_auto_closeable(selcommns.WebdriverFactoryTest)  Time elapsed: 0.686 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at selcommns.WebdriverFactoryTest.a_web_driver_needs_to_be_auto_closeable(WebdriverFactoryTest.java:10)
+

@@ -20,7 +20,7 @@
             <!--<package name="rc.qaportal.web.automation.aramark.utilities"/>-->
         <!--</packages>-->
         <classes>
-            <class name="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility"></class>
+            <class name="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest"></class>
         </classes>
     </test>
 

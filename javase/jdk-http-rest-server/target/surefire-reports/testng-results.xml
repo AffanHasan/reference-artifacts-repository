@@ -2,26 +2,40 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="4786" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:45Z">
+  <suite name="jdkhttprestserver.RestTestingServerTest" duration-ms="10976" started-at="2015-03-15T03:55:38Z" finished-at="2015-03-15T03:55:49Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="4786" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:45Z">
+    <test name="Command line test" duration-ms="10976" started-at="2015-03-15T03:55:38Z" finished-at="2015-03-15T03:55:49Z">
       <class name="jdkhttprestserver.RestTestingServerTest">
-        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="9" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:40Z">
-        </test-method>
-        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="2606" started-at="2015-02-06T21:13:40Z" finished-at="2015-02-06T21:13:43Z">
-        </test-method>
-        <test-method status="PASS" signature="server_should_be_autocloseable()" name="server_should_be_autocloseable" duration-ms="427" started-at="2015-02-06T21:13:43Z" finished-at="2015-02-06T21:13:43Z">
-        </test-method>
-        <test-method status="PASS" signature="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation()" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" duration-ms="526" started-at="2015-02-06T21:13:43Z" finished-at="2015-02-06T21:13:43Z">
-        </test-method>
-        <test-method status="PASS" signature="server_should_return_int_as_port_number_on_which_it_is_listening_To()" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" duration-ms="409" started-at="2015-02-06T21:13:43Z" finished-at="2015-02-06T21:13:44Z">
-        </test-method>
-        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="394" started-at="2015-02-06T21:13:44Z" finished-at="2015-02-06T21:13:44Z">
-        </test-method>
-        <test-method status="PASS" signature="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server()" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" duration-ms="388" started-at="2015-02-06T21:13:44Z" finished-at="2015-02-06T21:13:45Z">
-        </test-method>
-      </class>
-    </test>
-  </suite>
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:jdkhttprestserver.RestTestingServerTest@1be98f5]" name="beforeTest" is-config="true" duration-ms="30" started-at="2015-03-15T08:55:38Z" finished-at="2015-03-15T08:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="if_port_8080_is_unavailable_then_search_for_8081_or_onwards()[pri:0, instance:jdkhttprestserver.RestTestingServerTest@1be98f5]" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" duration-ms="5523" started-at="2015-03-15T08:55:38Z" finished-at="2015-03-15T08:55:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- if_port_8080_is_unavailable_then_search_for_8081_or_onwards -->
+        <test-method status="PASS" signature="server_should_be_autocloseable()[pri:0, instance:jdkhttprestserver.RestTestingServerTest@1be98f5]" name="server_should_be_autocloseable" duration-ms="2206" started-at="2015-03-15T08:55:43Z" finished-at="2015-03-15T08:55:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server_should_be_autocloseable -->
+        <test-method status="PASS" signature="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation()[pri:0, instance:jdkhttprestserver.RestTestingServerTest@1be98f5]" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" duration-ms="526" started-at="2015-03-15T08:55:46Z" finished-at="2015-03-15T08:55:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation -->
+        <test-method status="PASS" signature="server_should_return_int_as_port_number_on_which_it_is_listening_To()[pri:0, instance:jdkhttprestserver.RestTestingServerTest@1be98f5]" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" duration-ms="1163" started-at="2015-03-15T08:55:46Z" finished-at="2015-03-15T08:55:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server_should_return_int_as_port_number_on_which_it_is_listening_To -->
+        <test-method status="PASS" signature="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it()[pri:0, instance:jdkhttprestserver.RestTestingServerTest@1be98f5]" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" duration-ms="1140" started-at="2015-03-15T08:55:47Z" finished-at="2015-03-15T08:55:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it -->
+        <test-method status="PASS" signature="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server()[pri:0, instance:jdkhttprestserver.RestTestingServerTest@1be98f5]" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" duration-ms="349" started-at="2015-03-15T08:55:48Z" finished-at="2015-03-15T08:55:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server -->
+      </class> <!-- jdkhttprestserver.RestTestingServerTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- jdkhttprestserver.RestTestingServerTest -->
 </testng-results>

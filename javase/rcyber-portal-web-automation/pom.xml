@@ -29,8 +29,8 @@
   </dependencies>
 
     <build>
-        <!--Configuring maven for testng.xml file-->
         <plugins>
+            <!--Configuring maven for testng.xml file-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>

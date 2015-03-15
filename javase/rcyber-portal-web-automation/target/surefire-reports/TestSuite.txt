@@ -1,38 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 102.156 sec <<< FAILURE! - in TestSuite
-login_DEV_2_GESPRA(rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest)  Time elapsed: 24.733 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"sizing_logout"}
-Command duration or timeout: 111 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cce8f1b3-1049-413d-a161-4a022b20456f
-*** Element info: {Using=id, value=sizing_logout}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at rc.qaportal.web.automation.aramark.utilities.CommonUtilities.isUserLoggedInToAramarkPortal(CommonUtilities.java:12)
-	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest.login_DEV_2_GESPRA(UserLoginUtilityTest.java:26)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"sizing_logout"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.015 sec <<< FAILURE! - in TestSuite
+login_super_dev2(rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest)  Time elapsed: 0.929 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:16)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:18)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_dev2(SuperUserLoginUtilityTest.java:22)
 

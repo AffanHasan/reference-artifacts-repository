@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 15 08:56:21 PKT 2015</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (132 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_DomainName_Test.domain_names_can_contain_A_TO_Z_characters()'><b>domain_names_can_contain_A_TO_Z_characters</b><br>Test class: str.frmt.validators.EmailValidator_DomainName_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_DomainName_Test@18ceff1</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_DomainName_Test.domain_names_can_contain_a_to_z_characters()'><b>domain_names_can_contain_a_to_z_characters</b><br>Test class: str.frmt.validators.EmailValidator_DomainName_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_DomainName_Test@18ceff1</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_DomainName_Test.domain_names_can_contain_valid_ip_addresses_within_square_brackets1()'><b>domain_names_can_contain_valid_ip_addresses_within_square_brackets1</b><br>Test class: str.frmt.validators.EmailValidator_DomainName_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_DomainName_Test@18ceff1</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_DomainName_Test.domain_names_can_contain_valid_ip_addresses_within_square_brackets2()'><b>domain_names_can_contain_valid_ip_addresses_within_square_brackets2</b><br>Test class: str.frmt.validators.EmailValidator_DomainName_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_DomainName_Test@18ceff1</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_DomainName_Test.domain_names_can_not_contain_more_than_64_characters()'><b>domain_names_can_not_contain_more_than_64_characters</b><br>Test class: str.frmt.validators.EmailValidator_DomainName_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_DomainName_Test@18ceff1</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.must_return_regex_as_string()'><b>must_return_regex_as_string</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.must_throw_illegal_args_exception_when_email_is_null()'><b>must_throw_illegal_args_exception_when_email_is_null</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.plain_email_test()'><b>plain_email_test</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid()'><b>validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part()'><b>validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part()'><b>validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part()'><b>validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_containing_at_the_rate_character_is_in_valid()'><b>validate_local_part_containing_at_the_rate_character_is_in_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_containing_colon_character_is_in_valid()'><b>validate_local_part_containing_colon_character_is_in_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_containing_comments_is_in_valid()'><b>validate_local_part_containing_comments_is_in_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_containing_digits_from_0_to_9_is_valid()'><b>validate_local_part_containing_digits_from_0_to_9_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_containing_underscore_is_valid()'><b>validate_local_part_containing_underscore_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_ending_with_at_the_rate_character_is_in_valid()'><b>validate_local_part_ending_with_at_the_rate_character_is_in_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_ending_with_colon_character_is_in_valid()'><b>validate_local_part_ending_with_colon_character_is_in_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_ending_with_comments_is_valid()'><b>validate_local_part_ending_with_comments_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_ending_with_digits_from_0_to_9_is_valid()'><b>validate_local_part_ending_with_digits_from_0_to_9_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_ending_with_underscore_is_valid()'><b>validate_local_part_ending_with_underscore_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_starting_from_0_to_9_is_valid()'><b>validate_local_part_starting_from_0_to_9_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_starting_with_and_ending_with_empty_comments_is_valid()'><b>validate_local_part_starting_with_and_ending_with_empty_comments_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_starting_with_at_the_rate_character_is_in_valid()'><b>validate_local_part_starting_with_at_the_rate_character_is_in_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_starting_with_colon_character_is_in_valid()'><b>validate_local_part_starting_with_colon_character_is_in_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_starting_with_comments_is_valid()'><b>validate_local_part_starting_with_comments_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_local_part_starting_with_underscore_is_valid()'><b>validate_local_part_starting_with_underscore_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_single_dot_at_the_beginning_of_local_part_is_invalid()'><b>validate_single_dot_at_the_beginning_of_local_part_is_invalid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_single_dot_at_the_end_of_local_part_is_invalid()'><b>validate_single_dot_at_the_end_of_local_part_is_invalid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_single_dot_in_between_the_local_part_is_valid()'><b>validate_single_dot_in_between_the_local_part_is_valid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_two_consecutive_dots_in_local_part_is_invalid()'><b>validate_two_consecutive_dots_in_local_part_is_invalid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+<tr>
+<td title='str.frmt.validators.EmailValidator_LocalPart_Test.validate_two_single_dots_at_the_beginning_of_local_part_is_invalid()'><b>validate_two_single_dots_at_the_beginning_of_local_part_is_invalid</b><br>Test class: str.frmt.validators.EmailValidator_LocalPart_Test</td>
+<td></td>
+<td>0</td>
+<td>str.frmt.validators.EmailValidator_LocalPart_Test@39699c</td></tr>
+</table><p>
+</body>
+</html>

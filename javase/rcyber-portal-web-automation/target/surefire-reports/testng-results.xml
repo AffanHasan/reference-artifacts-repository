@@ -1,62 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="office-desktop" duration-ms="101151" started-at="2015-03-13T17:09:50Z" finished-at="2015-03-13T17:11:31Z">
+  <suite name="office-desktop" duration-ms="1067" started-at="2015-03-15T07:25:49Z" finished-at="2015-03-15T07:25:50Z">
     <groups>
     </groups>
-    <test name="Utilities Package Test" duration-ms="101151" started-at="2015-03-13T17:09:50Z" finished-at="2015-03-13T17:11:31Z">
+    <test name="Utilities Package Test" duration-ms="1067" started-at="2015-03-15T07:25:49Z" finished-at="2015-03-15T07:25:50Z">
       <class name="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest">
-        <test-method status="PASS" signature="dev2_super_user_credentials()[pri:0, instance:rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest@2133c8f8]" name="dev2_super_user_credentials" duration-ms="1" started-at="2015-03-13T22:10:55Z" finished-at="2015-03-13T22:10:55Z">
+        <test-method status="PASS" signature="dev2_super_user_credentials()[pri:0, instance:rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest@1bbe5e8]" name="dev2_super_user_credentials" duration-ms="80" started-at="2015-03-15T12:25:49Z" finished-at="2015-03-15T12:25:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dev2_super_user_credentials -->
-        <test-method status="PASS" signature="login_super_dev2()[pri:0, instance:rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest@2133c8f8]" name="login_super_dev2" duration-ms="36412" started-at="2015-03-13T22:10:55Z" finished-at="2015-03-13T22:11:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_super_dev2 -->
-      </class> <!-- rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest -->
-      <class name="rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest">
-        <test-method status="PASS" signature="login_DEV_2_CPS()[pri:0, instance:rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest@19dfb72a]" name="login_DEV_2_CPS" duration-ms="39963" started-at="2015-03-13T22:09:50Z" finished-at="2015-03-13T22:10:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_DEV_2_CPS -->
-        <test-method status="FAIL" signature="login_DEV_2_GESPRA()[pri:0, instance:rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest@19dfb72a]" name="login_DEV_2_GESPRA" duration-ms="24691" started-at="2015-03-13T22:10:30Z" finished-at="2015-03-13T22:10:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"sizing_logout"}
-Command duration or timeout: 111 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cce8f1b3-1049-413d-a161-4a022b20456f
-*** Element info: {Using=id, value=sizing_logout}]]>
-            </message>
+        <test-method status="FAIL" signature="login_super_dev2()[pri:0, instance:rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest@1bbe5e8]" name="login_super_dev2" duration-ms="908" started-at="2015-03-15T12:25:50Z" finished-at="2015-03-15T12:25:50Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"sizing_logout"}
-Command duration or timeout: 111 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cce8f1b3-1049-413d-a161-4a022b20456f
-*** Element info: {Using=id, value=sizing_logout}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at rc.qaportal.web.automation.aramark.utilities.CommonUtilities.isUserLoggedInToAramarkPortal(CommonUtilities.java:12)
-	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest.login_DEV_2_GESPRA(UserLoginUtilityTest.java:26)
+              <![CDATA[java.lang.NullPointerException
+	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:16)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:18)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_dev2(SuperUserLoginUtilityTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,23 +45,13 @@ Session ID: cce8f1b3-1049-413d-a161-4a022b20456f
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"sizing_logout"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous6608489727992866174webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_DEV_2_GESPRA -->
-      </class> <!-- rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest -->
+        </test-method> <!-- login_super_dev2 -->
+      </class> <!-- rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest -->
     </test> <!-- Utilities Package Test -->
   </suite> <!-- office-desktop -->
 </testng-results>

@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="4.745" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="10.91" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
-    <property name="java.vm.version" value="25.11-b03"/>
+    <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.8.0_20\jre\bin"/>
+    <property name="java.vm.version" value="25.20-b23"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/jdk-http-rest-server"/>
-    <property name="java.runtime.version" value="1.8.0_11-b12"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="user.dir" value="f:\reference-artifacts-repository"/>
+    <property name="java.runtime.version" value="1.8.0_20-b26"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="c:\Program Files\Java\jdk1.8.0_20\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\furqan\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/usr/local/apache-maven-3.2.5/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="f:/apache-maven-3.2.5-bin/apache-maven-3.2.5/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="c:\Program Files\Java\jdk1.8.0_20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\furqan\bin;.;F:\Git\local\bin;F:\Git\mingw\bin;F:\Git\bin;c:\Program Files\Java\jdk1.8.0_20\bin;f:\apache-maven-3.2.5-bin\apache-maven-3.2.5\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="3.13.0-32-generic"/>
-    <property name="user.home" value="/root"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\furqan"/>
     <property name="user.timezone" value="Asia/Karachi"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="user.name" value="root"/>
-    <property name="java.class.path" value="/usr/local/apache-maven-3.2.5/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="furqan"/>
+    <property name="java.class.path" value="f:/apache-maven-3.2.5-bin/apache-maven-3.2.5/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="c:\Program Files\Java\jdk1.8.0_20\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_11"/>
-    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
-    <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.8.0_20"/>
+    <property name="java.ext.dirs" value="c:\Program Files\Java\jdk1.8.0_20\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="c:\Program Files\Java\jdk1.8.0_20\jre\lib\resources.jar;c:\Program Files\Java\jdk1.8.0_20\jre\lib\rt.jar;c:\Program Files\Java\jdk1.8.0_20\jre\lib\sunrsasign.jar;c:\Program Files\Java\jdk1.8.0_20\jre\lib\jsse.jar;c:\Program Files\Java\jdk1.8.0_20\jre\lib\jce.jar;c:\Program Files\Java\jdk1.8.0_20\jre\lib\charsets.jar;c:\Program Files\Java\jdk1.8.0_20\jre\lib\jfr.jar;c:\Program Files\Java\jdk1.8.0_20\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/usr/local/apache-maven-3.2.5"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="f:\apache-maven-3.2.5-bin\apache-maven-3.2.5"/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="2.61"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_be_autocloseable" time="0.415"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" time="0.529"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" time="0.409"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="0.394"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" time="0.388"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="5.529"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_be_autocloseable" time="2.2"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" time="0.528"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" time="1.163"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="1.14"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" time="0.35"/>
 </testsuite>

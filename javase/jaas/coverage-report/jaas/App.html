@@ -10,27 +10,166 @@
 </head>
 <body onload='prettyPrint()'>
   <table cellpadding='0' cellspacing='1'>
-    <caption>jaas/src/main/java/jaas/App.java</caption>
+    <caption>jaas\src\main\java\jaas\App.java</caption>
     <tr>
       <td class='line'>1</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>package jaas;</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>3</td><td>&nbsp;</td>
-      <td><pre class='prettyprint'>public class App {</pre></td>
-    </tr>
-    <tr>
-      <td class='line'>4</td><td>&nbsp;</td>
-      <td><pre class='prettyprint'>    public static void main( String[] args ){</pre></td>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.io.Console;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+</div><span>import ...</span></pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>6</td><td>&nbsp;</td>
+      <td class='line'>7</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class App {</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>9</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private static String _regexMessage = "%n Enter regex: ";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>10</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private static String _stringMessage = "%n Enter string: ";</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>11</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private static String _message = _regexMessage;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private static Console _console = System.console();</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>14</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public static void main( String... args ){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>15</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        boolean continueLoop = true;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>16</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        String input;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        Pattern pattern = null;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>18</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        Matcher matcher;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>20</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        while(continueLoop)</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>            switch (input = _console.readLine(_message)) {</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>23</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                default :</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>25</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                    if(_message.equals(_regexMessage)){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>26</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                        _toggleMessage();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>27</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                        pattern = Pattern.compile(input);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                    }else{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                        _toggleMessage();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>30</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                        matcher = pattern.matcher(input);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                        while(matcher.find()){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>32</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                            _console.printf("%n Pattern found starting from index: %d to index : %d value : %s"</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>33</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                                    , matcher.start(), matcher.end(), matcher.group());</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>34</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>35</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                        _console.printf("%n search ended...");</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>36</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>38</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                    break;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>40</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                case "EXIT" : case "exit":</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                    continueLoop = false;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>42</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>                    break;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>43</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>            }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>44</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>46</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private static void _toggleMessage(){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>47</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        _message = _message.equals(_regexMessage) ? _stringMessage : _regexMessage;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>48</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    }</pre></td>
     </tr>
     <tr>
-      <td class='line'>7</td><td>&nbsp;</td>
+      <td class='line'>49</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>}</pre></td>
     </tr>
   </table>

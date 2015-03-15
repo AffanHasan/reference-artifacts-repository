@@ -1,9 +1,334 @@
+<!DOCTYPE html>
+
 <html>
-<head><title>Test results</title><link href="./testng.css" rel="stylesheet" type="text/css" />
-<link href="./my-testng.css" rel="stylesheet" type="text/css" />
-</head><body>
-<h2><p align='center'>Test results</p></h2>
-<table border='1' width='100%' class='main-page'><tr><th>Suite</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>testng.xml</th></tr>
-<tr align='center' class='invocation-passed'><td><em>Total</em></td><td><em>6</em></td><td><em>0</em></td><td><em>0</em></td><td>&nbsp;</td></tr>
-<tr align='center' class='invocation-passed'><td><a href='jdkhttprestserver.RestTestingServerTest/index.html'>jdkhttprestserver.RestTestingServerTest</a></td>
-<td>6</td><td>0</td><td>0</td><td><a href='jdkhttprestserver.RestTestingServerTest/testng.xml.html'>Link</a></td></tr></table></body></html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-jdkhttprestserver.RestTestingServerTest">
+              <span class="suite-name border-passed">jdkhttprestserver.RestTestingServerTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-jdkhttprestserver.RestTestingServerTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-jdkhttprestserver.RestTestingServerTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-jdkhttprestserver.RestTestingServerTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-jdkhttprestserver.RestTestingServerTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-jdkhttprestserver.RestTestingServerTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-jdkhttprestserver.RestTestingServerTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-jdkhttprestserver.RestTestingServerTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-jdkhttprestserver.RestTestingServerTest" class="hide-methods passed suite-jdkhttprestserver.RestTestingServerTest"> (hide)</a> <!-- hide-methods passed suite-jdkhttprestserver.RestTestingServerTest -->
+                      <a href="#" panel-name="suite-jdkhttprestserver.RestTestingServerTest" class="show-methods passed suite-jdkhttprestserver.RestTestingServerTest"> (show)</a> <!-- show-methods passed suite-jdkhttprestserver.RestTestingServerTest -->
+                    </span>
+                    <div class="method-list-content passed suite-jdkhttprestserver.RestTestingServerTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-jdkhttprestserver.RestTestingServerTest" title="jdkhttprestserver.RestTestingServerTest" hash-for-method="if_port_8080_is_unavailable_then_search_for_8081_or_onwards">if_port_8080_is_unavailable_then_search_for_8081_or_onwards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-jdkhttprestserver.RestTestingServerTest" title="jdkhttprestserver.RestTestingServerTest" hash-for-method="server_should_be_autocloseable">server_should_be_autocloseable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-jdkhttprestserver.RestTestingServerTest" title="jdkhttprestserver.RestTestingServerTest" hash-for-method="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation">server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-jdkhttprestserver.RestTestingServerTest" title="jdkhttprestserver.RestTestingServerTest" hash-for-method="server_should_return_int_as_port_number_on_which_it_is_listening_To">server_should_return_int_as_port_number_on_which_it_is_listening_To</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-jdkhttprestserver.RestTestingServerTest" title="jdkhttprestserver.RestTestingServerTest" hash-for-method="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it">server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-jdkhttprestserver.RestTestingServerTest" title="jdkhttprestserver.RestTestingServerTest" hash-for-method="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server">should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-jdkhttprestserver.RestTestingServerTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-jdkhttprestserver.RestTestingServerTest" class="panel jdkhttprestserver.RestTestingServerTest">
+          <div class="suite-jdkhttprestserver.RestTestingServerTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">jdkhttprestserver.RestTestingServerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards">
+                  </a> <!-- if_port_8080_is_unavailable_then_search_for_8081_or_onwards -->
+                  <span class="method-name">if_port_8080_is_unavailable_then_search_for_8081_or_onwards</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="server_should_be_autocloseable">
+                  </a> <!-- server_should_be_autocloseable -->
+                  <span class="method-name">server_should_be_autocloseable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation">
+                  </a> <!-- server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation -->
+                  <span class="method-name">server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="server_should_return_int_as_port_number_on_which_it_is_listening_To">
+                  </a> <!-- server_should_return_int_as_port_number_on_which_it_is_listening_To -->
+                  <span class="method-name">server_should_return_int_as_port_number_on_which_it_is_listening_To</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it">
+                  </a> <!-- server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it -->
+                  <span class="method-name">server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server">
+                  </a> <!-- should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server -->
+                  <span class="method-name">should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-jdkhttprestserver.RestTestingServerTest-class-passed -->
+        </div> <!-- panel jdkhttprestserver.RestTestingServerTest -->
+        <div panel-name="test-xml-jdkhttprestserver.RestTestingServerTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;jdkhttprestserver.RestTestingServerTest&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;jdkhttprestserver.RestTestingServerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- jdkhttprestserver.RestTestingServerTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-jdkhttprestserver.RestTestingServerTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for jdkhttprestserver.RestTestingServerTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-jdkhttprestserver.RestTestingServerTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for jdkhttprestserver.RestTestingServerTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-jdkhttprestserver.RestTestingServerTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for jdkhttprestserver.RestTestingServerTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_jdkhttprestserver.RestTestingServerTest');
+function tableData_jdkhttprestserver.RestTestingServerTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'if_port_8080_is_unavailable_then_search_for_8081_or_onwards')
+data.setCell(0, 2, 'jdkhttprestserver.RestTestingServerTest')
+data.setCell(0, 3, 5523);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'server_should_be_autocloseable')
+data.setCell(1, 2, 'jdkhttprestserver.RestTestingServerTest')
+data.setCell(1, 3, 2206);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'server_should_return_int_as_port_number_on_which_it_is_listening_To')
+data.setCell(2, 2, 'jdkhttprestserver.RestTestingServerTest')
+data.setCell(2, 3, 1163);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it')
+data.setCell(3, 2, 'jdkhttprestserver.RestTestingServerTest')
+data.setCell(3, 3, 1140);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation')
+data.setCell(4, 2, 'jdkhttprestserver.RestTestingServerTest')
+data.setCell(4, 3, 526);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server')
+data.setCell(5, 2, 'jdkhttprestserver.RestTestingServerTest')
+data.setCell(5, 3, 349);
+window.suiteTableData['jdkhttprestserver.RestTestingServerTest']= { tableData: data, tableDiv: 'times-div-jdkhttprestserver.RestTestingServerTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-jdkhttprestserver.RestTestingServerTest">
+              </div> <!-- times-div-jdkhttprestserver.RestTestingServerTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-jdkhttprestserver.RestTestingServerTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for jdkhttprestserver.RestTestingServerTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-jdkhttprestserver.RestTestingServerTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-jdkhttprestserver.RestTestingServerTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">jdkhttprestserver.RestTestingServerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">if_port_8080_is_unavailable_then_search_for_8081_or_onwards</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">server_should_be_autocloseable</span>
+                <span class="method-start">5579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation</span>
+                <span class="method-start">7786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">server_should_return_int_as_port_number_on_which_it_is_listening_To</span>
+                <span class="method-start">8314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it</span>
+                <span class="method-start">9478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server</span>
+                <span class="method-start">10619 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

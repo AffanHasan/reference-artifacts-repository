@@ -3,11 +3,11 @@
 <suite verbose="0" name="Failed suite [office-desktop]">
   <test name="Utilities Package Test(failed)">
     <classes>
-      <class name="rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest">
+      <class name="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest">
         <methods>
-          <include name="login_DEV_2_GESPRA"/>
+          <include name="login_super_dev2"/>
         </methods>
-      </class> <!-- rc.qaportal.web.automation.aramark.utilities.UserLoginUtilityTest -->
+      </class> <!-- rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest -->
     </classes>
   </test> <!-- Utilities Package Test(failed) -->
 </suite> <!-- Failed suite [office-desktop] -->

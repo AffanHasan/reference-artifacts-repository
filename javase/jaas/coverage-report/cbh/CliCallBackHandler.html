@@ -10,7 +10,7 @@
 </head>
 <body onload='prettyPrint()'>
   <table cellpadding='0' cellspacing='1'>
-    <caption>jaas/src/main/java/cbh/CliCallBackHandler.java</caption>
+    <caption>jaas\src\main\java\cbh\CliCallBackHandler.java</caption>
     <tr>
       <td class='line'></td><td>&nbsp;</td>
       <td class='comment' onclick='showHideLines(this)'><div>/*
@@ -55,25 +55,25 @@ import javax.security.auth.callback.UnsupportedCallbackException;
       <td><pre class='prettyprint'>    public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {</pre></td>
     </tr>
     <tr>
-      <td class='line'>22</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l22s0'>        UserEmailCallBack uecb = (UserEmailCallBack)callbacks[0];</pre></td>
+      <td class='line'>22</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l22s0'>        UserEmailCallBack uecb = (UserEmailCallBack)callbacks[0];</pre></td>
     </tr>
     <tr>
-      <td class='line'>23</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l23s0'>        UserPasswordCallBack upcb = (UserPasswordCallBack)callbacks[1];</pre></td>
+      <td class='line'>23</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l23s0'>        UserPasswordCallBack upcb = (UserPasswordCallBack)callbacks[1];</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>25</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l25s0'>        uecb.setEmail(System.console().readLine(Factories.LocalizedTextFactory.getInstance().getString("provideEmail")));</pre></td>
+      <td class='line'>25</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l25s0'>        uecb.setEmail(System.console().readLine(Factories.LocalizedTextFactory.getInstance().getString("provideEmail")));</pre></td>
     </tr>
     <tr>
-      <td class='line'>26</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l26s0'>        upcb.setPassword(new String(System.console().readPassword(Factories.LocalizedTextFactory.getInstance().getString("providePassword"))));</pre></td>
+      <td class='line'>26</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l26s0'>        upcb.setPassword(new String(System.console().readPassword(Factories.LocalizedTextFactory.getInstance().getString("providePassword"))));</pre></td>
     </tr>
     <tr>
-      <td class='line'>27</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l27s0'>    }</pre></td>
+      <td class='line'>27</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l27s0'>    }</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>

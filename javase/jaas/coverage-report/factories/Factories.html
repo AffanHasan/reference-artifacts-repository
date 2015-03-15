@@ -10,7 +10,7 @@
 </head>
 <body onload='prettyPrint()'>
   <table cellpadding='0' cellspacing='1'>
-    <caption>jaas/src/main/java/factories/Factories.java</caption>
+    <caption>jaas\src\main\java\factories\Factories.java</caption>
     <tr>
       <td class='line'>1</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>package factories;</pre></td>
@@ -55,8 +55,8 @@ import user.UserPasswordCredential;
       <td><pre class='prettyprint'>        public static UserEmailPrincipal getUserEmailPrincipal(String email){</pre></td>
     </tr>
     <tr>
-      <td class='line'>25</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l25s0'>            return new DefaultUserEmailPrincipal(email);</pre></td>
+      <td class='line'>25</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l25s0'>            return new DefaultUserEmailPrincipal(email);</pre></td>
     </tr>
     <tr>
       <td class='line'>26</td><td>&nbsp;</td>
@@ -68,8 +68,8 @@ import user.UserPasswordCredential;
       <td><pre class='prettyprint'>        public static UserPasswordCredential getUserPasswordCredential(String password){</pre></td>
     </tr>
     <tr>
-      <td class='line'>29</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l29s0'>            return new DefaultUserPasswordCredential(password);</pre></td>
+      <td class='line'>29</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l29s0'>            return new DefaultUserPasswordCredential(password);</pre></td>
     </tr>
     <tr>
       <td class='line'>30</td><td>&nbsp;</td>
@@ -98,28 +98,28 @@ import user.UserPasswordCredential;
       <td><pre class='prettyprint'>            try {</pre></td>
     </tr>
     <tr>
-      <td class='line'>38</td><td>&nbsp;</td>
-      <td><pre class='prettyprint'>                Configuration cnf;</pre></td>
+      <td class='line'>38</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l38s0'>                Configuration.getConfiguration();</pre></td>
     </tr>
     <tr>
       <td class='line'>39</td><td class='count'>1</td>
       <td><pre class='prettyprint covered' id='l39s0'>                return new LoginContext(lm, cbh);</pre></td>
     </tr>
     <tr>
-      <td class='line'>40</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l40s0'>            } catch (LoginException ex) {</pre></td>
+      <td class='line'>40</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l40s0'>            } catch (LoginException ex) {</pre></td>
     </tr>
     <tr>
-      <td class='line'>41</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l41s0'>                System.out.println("Inside exception");</pre></td>
+      <td class='line'>41</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l41s0'>                System.out.println("Inside exception");</pre></td>
     </tr>
     <tr>
-      <td class='line'>42</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l42s0'>                Logger.getLogger(Factories.class.getName()).log(Level.SEVERE, null, ex);</pre></td>
+      <td class='line'>42</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l42s0'>                Logger.getLogger(Factories.class.getName()).log(Level.SEVERE, null, ex);</pre></td>
     </tr>
     <tr>
-      <td class='line'>43</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l43s0'>                return null;</pre></td>
+      <td class='line'>43</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l43s0'>                return null;</pre></td>
     </tr>
     <tr>
       <td class='line'>44</td><td>&nbsp;</td>
@@ -135,17 +135,17 @@ import user.UserPasswordCredential;
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>48</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l48s0'>    public static class CBHFactory{</pre></td>
+      <td class='line'>48</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public interface Flyer{</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
       <td class='line'>50</td><td>&nbsp;</td>
-      <td><pre class='prettyprint'>        public static CliCallBackHandler getCliLoginCallBackHandler(){</pre></td>
+      <td><pre class='prettyprint'>        public static String identifyMySelf(){</pre></td>
     </tr>
     <tr>
-      <td class='line'>51</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l51s0'>            return new CliCallBackHandler();</pre></td>
+      <td class='line'>51</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l51s0'>            return "";</pre></td>
     </tr>
     <tr>
       <td class='line'>52</td><td>&nbsp;</td>
@@ -158,32 +158,54 @@ import user.UserPasswordCredential;
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
       <td class='line'>55</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l55s0'>    public static class LocalizedTextFactory{</pre></td>
+      <td><pre class='prettyprint uncovered' id='l55s0'>    public static class CBHFactory implements Flyer{</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
       <td class='line'>57</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        public static CliCallBackHandler getCliLoginCallBackHandler(){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>58</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l58s0'>            return new CliCallBackHandler();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>59</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>60</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>62</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l62s0'>    public static class LocalizedTextFactory{</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>64</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>        private static final String _bundleName = "jaas";</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>59</td><td>&nbsp;</td>
+      <td class='line'>66</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>        public static ResourceBundle getInstance(){</pre></td>
     </tr>
     <tr>
-      <td class='line'>60</td><td class='count'>4</td>
-      <td><pre class='prettyprint covered' id='l60s0'>            return ResourceBundle.getBundle(_bundleName);</pre></td>
+      <td class='line'>67</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered' id='l67s0'>            return ResourceBundle.getBundle(_bundleName);</pre></td>
     </tr>
     <tr>
-      <td class='line'>61</td><td>&nbsp;</td>
+      <td class='line'>68</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>        }</pre></td>
     </tr>
     <tr>
-      <td class='line'>62</td><td>&nbsp;</td>
+      <td class='line'>69</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    }</pre></td>
     </tr>
     <tr>
-      <td class='line'>63</td><td>&nbsp;</td>
+      <td class='line'>70</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>}</pre></td>
     </tr>
   </table>
