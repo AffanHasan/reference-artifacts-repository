@@ -33,5 +33,6 @@
         <module>regex-pattern-tester</module>
         <module>rcyber-portal-web-automation</module>
     <module>selenium-commons</module>
+    <module>wefunit</module>
   </modules>
 </project>

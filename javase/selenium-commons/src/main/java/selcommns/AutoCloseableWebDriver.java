@@ -10,11 +10,15 @@ import java.util.Set;
 /**
  * Created by Affan Hasan on 3/15/2015.
  */
-class AutoClosableWebDriver implements WebDriver, AutoCloseable {
+class AutoCloseableWebDriver implements WebDriver, AutoCloseable {
+
+    public String getBrowserType(){
+        return this._wd.getClass().getName();
+    }
 
     private final WebDriver _wd;
 
-    AutoClosableWebDriver( WebDriver wd ){
+    AutoCloseableWebDriver(WebDriver wd){
         this._wd = wd;
     }
 
