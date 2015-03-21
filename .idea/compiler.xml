@@ -38,6 +38,7 @@
         <module name="selemium-commons" />
         <module name="selenium-commons" />
         <module name="string-format-validators" />
+        <module name="wefunit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -63,6 +64,7 @@
       <module name="selenium-commons" target="1.8" />
       <module name="string-format-validators" target="1.8" />
       <module name="web-services" target="1.8" />
+      <module name="wefunit" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

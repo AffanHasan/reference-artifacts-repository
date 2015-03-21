@@ -51,41 +51,7 @@ public class WebDriverFactoryTest {
     }
 
     @Test(enabled = true)
-    public void by_default_should_return_instance_of_FireFoxDriver(@Mocked FirefoxDriver fd){
-
-        new Expectations(){
-            {
-                new FirefoxDriver(); result = new FireFoxNotFoundException();
-            }
-        };
-
-        try( AutoCloseableWebDriver wd = Factories.WebDriverFactory.getInstance() ){
-            Assert.fail();
-        } catch (FireFoxNotFoundException e) {
-            return;
-        }
-        Assert.fail();
-    }
-
-    @Test(enabled = true)
-    public void by_default_should_return_instance_of_FireFoxDriver_(@Mocked FirefoxDriver fd){
-
-        new Expectations(){
-            {
-                new FirefoxDriver(); result = new FireFoxNotFoundException();
-            }
-        };
-
-        try( AutoCloseableWebDriver wd = Factories.WebDriverFactory.getInstance() ){
-            Assert.fail();
-        } catch (FireFoxNotFoundException e) {
-            return;
-        }
-        Assert.fail();
-    }
-
-    @Test(enabled = true)
-    public void if_firefox_is_not_found_then_ask_for_the_firefox_installed_path(){
+    public void by_default_should_return_FireFoxDriver(){
 
         try( AutoCloseableWebDriver wd = Factories.WebDriverFactory.getInstance() ){
             Assert.assertEquals( wd.getBrowserType(), FirefoxDriver.class.getName() );
@@ -94,42 +60,19 @@ public class WebDriverFactoryTest {
         }
     }
 
-    @Test(enabled = false)
-    public void if_no_FF_and_no_chrome_is_installed_then_ask_for_at_least_one_of_the_browser_paths
-            (@Mocked FirefoxDriver fd, @Mocked ChromeDriver cd){
-//
-//        new Expectations(){
-//            {
-//                new FirefoxDriver(); result = new WebDriverException();
-//                new ChromeDriver(); result = new WebDriverException();
-//            }
-//        };
-    }
+    @Test()
+    public void if_no_FF_is_installed_then_ask_for_the_browser_path(@Mocked FirefoxDriver ffd){
 
-    @Test(enabled = false)
-    public void by_default_should_return_instance_of_FireFoxDriver_IF_firefox_is_not_available_then_return_instance_of_ChromeDriver(@Mocked FirefoxDriver fd){
+       new Expectations(){
+           {
+               new FirefoxDriver(); result = new WebDriverException();
+           }
+       };
 
-        new Expectations(){//Making firefox unavailable
-            {
-                new FirefoxDriver(); result = new WebDriverException();
-            }
-        };
-
-        try( AutoCloseableWebDriver wd = Factories.WebDriverFactory.getInstance() ){
-            Assert.assertEquals( wd.getBrowserType(), ChromeDriver.class.getName() );
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        try{
-            new InternetExplorerDriver();
-        }catch ( WebDriverException | IllegalStateException e ){
-            if( e instanceof IllegalStateException ){
-                System.out.println(((IllegalStateException) e).getClass().getName());
-            }else if(e instanceof WebDriverException){
-                System.out.println(((IllegalStateException) e).getClass().getName());
-
-            }
+        try(AutoCloseableWebDriver awd = Factories.WebDriverFactory.getInstance()){
+            Assert.fail();
+        }catch(FireFoxNotFoundException e){
+            Assert.assertEquals(e.getMessage(), "FireFox not found please provide FireFox exe file path");
         }
     }
 }

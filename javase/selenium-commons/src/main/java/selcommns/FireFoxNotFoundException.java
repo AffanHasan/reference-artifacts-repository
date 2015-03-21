@@ -5,5 +5,7 @@ package selcommns;
  */
 public class FireFoxNotFoundException extends Exception {
 
-
+    public FireFoxNotFoundException(String message) {
+        super(message);
+    }
 }

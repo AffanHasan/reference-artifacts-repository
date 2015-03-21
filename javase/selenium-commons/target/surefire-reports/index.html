@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,7 +106,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-selcommns.WebDriverFactoryTest" title="selcommns.WebDriverFactoryTest" hash-for-method="by_default_should_return_instance_of_FireFoxDriver">by_default_should_return_instance_of_FireFoxDriver</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-selcommns.WebDriverFactoryTest" title="selcommns.WebDriverFactoryTest" hash-for-method="by_default_should_return_FireFoxDriver">by_default_should_return_FireFoxDriver</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-selcommns.WebDriverFactoryTest" title="selcommns.WebDriverFactoryTest" hash-for-method="if_no_FF_is_installed_then_ask_for_the_browser_path">if_no_FF_is_installed_then_ask_for_the_browser_path</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-selcommns.WebDriverFactoryTest -->
@@ -136,9 +141,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="by_default_should_return_instance_of_FireFoxDriver">
-                  </a> <!-- by_default_should_return_instance_of_FireFoxDriver -->
-                  <span class="method-name">by_default_should_return_instance_of_FireFoxDriver</span>
+                  <a name="by_default_should_return_FireFoxDriver">
+                  </a> <!-- by_default_should_return_FireFoxDriver -->
+                  <span class="method-name">by_default_should_return_FireFoxDriver</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="if_no_FF_is_installed_then_ask_for_the_browser_path">
+                  </a> <!-- if_no_FF_is_installed_then_ask_for_the_browser_path -->
+                  <span class="method-name">if_no_FF_is_installed_then_ask_for_the_browser_path</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,20 +206,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'a_web_driver_needs_to_be_auto_closeable')
+data.setCell(0, 1, 'by_default_should_return_FireFoxDriver')
 data.setCell(0, 2, 'selcommns.WebDriverFactoryTest')
-data.setCell(0, 3, 7035);
+data.setCell(0, 3, 2724);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'by_default_should_return_instance_of_FireFoxDriver')
+data.setCell(1, 1, 'a_web_driver_needs_to_be_auto_closeable')
 data.setCell(1, 2, 'selcommns.WebDriverFactoryTest')
-data.setCell(1, 3, 3778);
+data.setCell(1, 3, 2476);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'if_no_FF_is_installed_then_ask_for_the_browser_path')
+data.setCell(2, 2, 'selcommns.WebDriverFactoryTest')
+data.setCell(2, 3, 347);
 window.suiteTableData['selcommns.WebDriverFactoryTest']= { tableData: data, tableDiv: 'times-div-selcommns.WebDriverFactoryTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-selcommns.WebDriverFactoryTest">
               </div> <!-- times-div-selcommns.WebDriverFactoryTest -->
             </div> <!-- times-div -->
@@ -222,18 +238,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-selcommns.WebDriverFactoryTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">selcommns.WebDriverFactoryTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">by_default_should_return_instance_of_FireFoxDriver_IF_firefox_is_not_available_then_return_instance_of_ChromeDriver</span>
-                <br/>
-                <span class="ignored-method-name">if_no_FF_and_no_chrome_is_installed_then_ask_for_at_least_one_of_the_browser_paths</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-selcommns.WebDriverFactoryTest" class="panel">
@@ -249,11 +256,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">a_web_driver_needs_to_be_auto_closeable</span>
-                <span class="method-start">6676 ms</span>
+                <span class="method-start">3497 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">by_default_should_return_instance_of_FireFoxDriver</span>
-                <span class="method-start">13715 ms</span>
+                <span class="method-name">by_default_should_return_FireFoxDriver</span>
+                <span class="method-start">5977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">if_no_FF_is_installed_then_ask_for_the_browser_path</span>
+                <span class="method-start">8712 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

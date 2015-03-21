@@ -15,5 +15,6 @@
     <file url="file://$PROJECT_DIR$/javase/regex-pattern-tester" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javase/selenium-commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javase/string-format-validators" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javase/wefunit" charset="UTF-8" />
   </component>
 </project>

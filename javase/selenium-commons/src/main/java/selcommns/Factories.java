@@ -29,7 +29,7 @@ public class Factories {
             try{
                 return getDriver(new FirefoxDriver());
             }catch(IllegalStateException | org.openqa.selenium.WebDriverException e){
-                throw new FireFoxNotFoundException();
+                throw new FireFoxNotFoundException("FireFox not found please provide FireFox exe file path");
             }
 
 //            try{

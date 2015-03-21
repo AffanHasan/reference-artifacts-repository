@@ -10,7 +10,7 @@
 	<packaging>pom</packaging>
 
 	<dependencies>
-		<!-- TestNG -->
+		<!-- TestNG Support -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
