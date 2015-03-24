@@ -20,7 +20,70 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+    <build>
+        <plugins>
+            <!--This plugin is added to add compiled classes to "target/test-classes/test" directory
+            from "resources.WEB-INF" directory-->
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>build-helper-maven-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<phase>generate-sources</phase>-->
+                        <!--<goals><goal>add-test-source</goal></goals>-->
+                        <!--<configuration>-->
+                            <!--<sources>-->
+                                <!--<source>resources/WEB-INF/work/source</source>-->
+                                <!--<targetPath>${basedir}/target/abc/</targetPath>-->
+                            <!--</sources>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>build-helper-maven-plugin</artifactId>-->
+                <!--<version>1.9.1</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>add-resource</id>-->
+                        <!--<phase>generate-test-resources</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>add-test-resource</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<resources>-->
+                                <!--<resource>-->
+                                    <!--<directory>resources</directory>-->
+                                    <!--<targetPath>resources</targetPath>-->
+                                    <!--<excludes>-->
+                                        <!--<exclude>**/junk/**</exclude>-->
+                                    <!--</excludes>-->
+                                <!--</resource>-->
+                            <!--</resources>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+
   <dependencies>
 
+      <dependency>
+          <!--This is the web experience factory factory.jar file-->
+        <!--https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html-->
+          <groupId>web-experience-factory-libs</groupId>
+          <artifactId>wef-factory-jar</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <!-- JMockit -->
+      <dependency>
+          <groupId>org.jmockit</groupId>
+          <artifactId>jmockit</artifactId>
+          <version>1.14</version>
+          <scope>test</scope>
+      </dependency>
   </dependencies>
 </project>
