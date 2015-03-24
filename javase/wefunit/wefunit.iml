@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/WEB-INF" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/resources/WEB-INF/work/source" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/samplewefproject/WebContent/WEB-INF/work/source" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/target" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
       <excludeFolder url="file://$MODULE_DIR$/target/surefire-reports" />

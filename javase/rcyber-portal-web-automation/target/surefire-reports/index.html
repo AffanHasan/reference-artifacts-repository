@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -99,6 +99,16 @@
                       <a href="#" panel-name="suite-office-desktop" class="show-methods failed suite-office-desktop"> (show)</a> <!-- show-methods failed suite-office-desktop -->
                     </span>
                     <div class="method-list-content failed suite-office-desktop">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-office-desktop" title="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest" hash-for-method="login_super_dev2_cps">login_super_dev2_cps</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-office-desktop" title="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest" hash-for-method="login_super_dev2_gespra">login_super_dev2_gespra</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-office-desktop" title="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest" hash-for-method="login_super_preqa_cps">login_super_preqa_cps</a> <!-- method navigator-link -->
@@ -126,16 +136,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-office-desktop" title="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest" hash-for-method="dev2_super_user_credentials_for_gespra">dev2_super_user_credentials_for_gespra</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-office-desktop" title="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest" hash-for-method="login_super_dev2_cps">login_super_dev2_cps</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-office-desktop" title="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest" hash-for-method="login_super_dev2_gespra">login_super_dev2_gespra</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,38 +168,40 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="login_super_dev2_cps">
+                  </a> <!-- login_super_dev2_cps -->
+                  <span class="method-name">login_super_dev2_cps</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
+	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_dev2_cps(SuperUserLoginUtilityTest.java:44)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_super_dev2_gespra">
+                  </a> <!-- login_super_dev2_gespra -->
+                  <span class="method-name">login_super_dev2_gespra</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
+	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_dev2_gespra(SuperUserLoginUtilityTest.java:51)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="login_super_preqa_cps">
                   </a> <!-- login_super_preqa_cps -->
                   <span class="method-name">login_super_preqa_cps</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;sizing_logout&quot;}
-Command duration or timeout: 81 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 45116d27-dc9a-4e08-b2c2-a14d105816e0
-*** Element info: {Using=id, value=sizing_logout}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at rc.qaportal.web.automation.aramark.utilities.CommonUtilities.isUserLoggedInToAramarkPortal(CommonUtilities.java:12)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_preqa_cps(SuperUserLoginUtilityTest.java:59)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;sizing_logout&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous8320754422909867139webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous8320754422909867139webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous8320754422909867139webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous8320754422909867139webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous8320754422909867139webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
-... Removed 31 stack frames
+                  <div class="stack-trace">java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
+	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_preqa_cps(SuperUserLoginUtilityTest.java:58)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -208,35 +210,11 @@ Driver info: driver.version: unknown
                   <a name="login_super_preqa_gespra">
                   </a> <!-- login_super_preqa_gespra -->
                   <span class="method-name">login_super_preqa_gespra</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;sizing_logout&quot;}
-Command duration or timeout: 73 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8aa65cba-0d70-4ea9-8251-5224fd96dc13
-*** Element info: {Using=id, value=sizing_logout}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at rc.qaportal.web.automation.aramark.utilities.CommonUtilities.isUserLoggedInToAramarkPortal(CommonUtilities.java:12)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_preqa_gespra(SuperUserLoginUtilityTest.java:66)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;sizing_logout&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6102129220537035523webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6102129220537035523webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6102129220537035523webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6102129220537035523webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous6102129220537035523webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
-... Removed 31 stack frames
+                  <div class="stack-trace">java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
+	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
+	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_preqa_gespra(SuperUserLoginUtilityTest.java:65)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -260,20 +238,6 @@ Driver info: driver.version: unknown
                   <a name="dev2_super_user_credentials_for_gespra">
                   </a> <!-- dev2_super_user_credentials_for_gespra -->
                   <span class="method-name">dev2_super_user_credentials_for_gespra</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login_super_dev2_cps">
-                  </a> <!-- login_super_dev2_cps -->
-                  <span class="method-name">login_super_dev2_cps</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login_super_dev2_gespra">
-                  </a> <!-- login_super_dev2_gespra -->
-                  <span class="method-name">login_super_dev2_gespra</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -348,40 +312,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login_super_dev2_cps')
 data.setCell(0, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
-data.setCell(0, 3, 51561);
+data.setCell(0, 3, 47);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login_super_dev2_gespra')
+data.setCell(1, 1, 'dev2_super_user_credentials_for_cps')
 data.setCell(1, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
-data.setCell(1, 3, 48987);
+data.setCell(1, 3, 22);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login_super_preqa_cps')
+data.setCell(2, 1, 'dev2_super_user_credentials_for_gespra')
 data.setCell(2, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
-data.setCell(2, 3, 34997);
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login_super_preqa_gespra')
+data.setCell(3, 1, 'login_super_preqa_cps')
 data.setCell(3, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
-data.setCell(3, 3, 31928);
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'dev2_super_user_credentials_for_cps')
+data.setCell(4, 1, 'preqa_super_user_credentials_for_cps')
 data.setCell(4, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
-data.setCell(4, 3, 22);
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'dev2_super_user_credentials_for_gespra')
+data.setCell(5, 1, 'preqa_super_user_credentials_for_gespra')
 data.setCell(5, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
-data.setCell(5, 3, 1);
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'preqa_super_user_credentials_for_gespra')
+data.setCell(6, 1, 'login_super_preqa_gespra')
 data.setCell(6, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'preqa_super_user_credentials_for_cps')
+data.setCell(7, 1, 'login_super_dev2_gespra')
 data.setCell(7, 2, 'rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest')
 data.setCell(7, 3, 0);
 window.suiteTableData['office-desktop']= { tableData: data, tableDiv: 'times-div-office-desktop'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 71 ms</span>
               <div id="times-div-office-desktop">
               </div> <!-- times-div-office-desktop -->
             </div> <!-- times-div -->
@@ -414,35 +378,39 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dev2_super_user_credentials_for_gespra</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login_super_dev2_cps</span>
                 <span class="method-start">26 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">login_super_dev2_cps</span>
-                <span class="method-start">27 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">login_super_dev2_gespra</span>
-                <span class="method-start">51590 ms</span>
+                <span class="method-start">100 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login_super_preqa_cps</span>
-                <span class="method-start">100578 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login_super_preqa_gespra</span>
-                <span class="method-start">135602 ms</span>
+                <span class="method-start">105 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">preqa_super_user_credentials_for_cps</span>
-                <span class="method-start">167537 ms</span>
+                <span class="method-start">106 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">preqa_super_user_credentials_for_gespra</span>
-                <span class="method-start">167539 ms</span>
+                <span class="method-start">106 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

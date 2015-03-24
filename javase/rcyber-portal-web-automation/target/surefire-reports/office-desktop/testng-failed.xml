@@ -6,6 +6,8 @@
       <class name="rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest">
         <methods>
           <include name="login_super_preqa_gespra"/>
+          <include name="login_super_dev2_cps"/>
+          <include name="login_super_dev2_gespra"/>
           <include name="login_super_preqa_cps"/>
         </methods>
       </class> <!-- rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest -->
