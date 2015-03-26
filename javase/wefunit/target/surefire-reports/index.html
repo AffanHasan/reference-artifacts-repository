@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.rc.wefunit.probes.AssertTest" hash-for-method="notNull">notNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.rc.wefunit.RunnerTest" hash-for-method="scan_for_test_classes">scan_for_test_classes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.rc.wefunit.RunnerTest" hash-for-method="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project">scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,6 +137,20 @@
               <span class="class-name">com.rc.wefunit.RunnerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="scan_for_test_classes">
+                  </a> <!-- scan_for_test_classes -->
+                  <span class="method-name">scan_for_test_classes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project">
+                  </a> <!-- scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project -->
+                  <span class="method-name">scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="web_INF_directory_path_web_inf_as_last_directory">
@@ -204,20 +228,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'web_INF_directory_path_web_inf_as_last_directory')
+data.setCell(0, 1, 'scan_for_test_classes')
 data.setCell(0, 2, 'com.rc.wefunit.RunnerTest')
-data.setCell(0, 3, 56);
+data.setCell(0, 3, 111);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'notNull')
-data.setCell(1, 2, 'com.rc.wefunit.probes.AssertTest')
-data.setCell(1, 3, 25);
+data.setCell(1, 1, 'scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project')
+data.setCell(1, 2, 'com.rc.wefunit.RunnerTest')
+data.setCell(1, 3, 34);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'web_INF_directory_path_web_inf_as_last_directory')
+data.setCell(2, 2, 'com.rc.wefunit.RunnerTest')
+data.setCell(2, 3, 23);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'notNull')
+data.setCell(3, 2, 'com.rc.wefunit.probes.AssertTest')
+data.setCell(3, 3, 6);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 81 ms</span>
+              <span class="suite-total-time">Total running time: 174 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -243,17 +275,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.rc.wefunit.RunnerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.probes.AssertTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">notNull</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.RunnerTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">scan_for_test_classes</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project</span>
+                <span class="method-start">178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">web_INF_directory_path_web_inf_as_last_directory</span>
-                <span class="method-start">42 ms</span>
+                <span class="method-start">224 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -12,10 +12,31 @@ public class Factories {
         }
     }
 
-    public static class JavaSrcFileNameValidatorFactory implements FactoryInterface{
+    public static class JavaTestSrcFileNameValidatorFactory implements FactoryInterface{
 
         public static JavaTestSrcFileNameValidator getInstance(){
             return new DefaultJavaTestSrcFileNameValidator();
+        }
+    }
+
+    public static class JavaTestClasscFileNameValidatorFactory implements FactoryInterface{
+
+        public static JavaTestClassFileNameValidator getInstance(){
+            return new DefaultJavaTestClassFileNameValidator();
+        }
+    }
+
+    public static class JavaSrcFileNameValidatorFactory implements FactoryInterface{
+
+        public static JavaSrcFileNameValidator getInstance(){
+            return new DefaultJavaSrcFileNameValidator();
+        }
+    }
+
+    public static class JavaClassFileNameValidatorFactory implements FactoryInterface{
+
+        public static JavaClassFileNameValidator getInstance(){
+            return new DefaultJavaClassFileNameValidator();
         }
     }
 }

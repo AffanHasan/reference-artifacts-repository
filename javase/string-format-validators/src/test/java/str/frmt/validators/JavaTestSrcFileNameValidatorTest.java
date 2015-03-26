@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  */
 public class JavaTestSrcFileNameValidatorTest {
 
-    private final JavaTestSrcFileNameValidator _javaTestSrcFileNameValidator = Factories.JavaSrcFileNameValidatorFactory.getInstance();
+    private final JavaTestSrcFileNameValidator _javaTestSrcFileNameValidator = Factories.JavaTestSrcFileNameValidatorFactory.getInstance();
 
     @Test
     public void regex(){

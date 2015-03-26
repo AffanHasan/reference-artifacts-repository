@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="127" started-at="2015-03-26T01:33:47Z" finished-at="2015-03-26T01:33:47Z">
+  <suite name="Command line suite" duration-ms="259" started-at="2015-03-26T06:29:12Z" finished-at="2015-03-26T06:29:13Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="127" started-at="2015-03-26T01:33:47Z" finished-at="2015-03-26T01:33:47Z">
+    <test name="Command line test" duration-ms="259" started-at="2015-03-26T06:29:12Z" finished-at="2015-03-26T06:29:13Z">
       <class name="com.rc.wefunit.probes.AssertTest">
-        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@1d057a39]" name="notNull" duration-ms="25" started-at="2015-03-26T06:33:47Z" finished-at="2015-03-26T06:33:47Z">
+        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@28d25987]" name="notNull" duration-ms="6" started-at="2015-03-26T11:29:12Z" finished-at="2015-03-26T11:29:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notNull -->
       </class> <!-- com.rc.wefunit.probes.AssertTest -->
       <class name="com.rc.wefunit.RunnerTest">
-        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@482f8f11]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="56" started-at="2015-03-26T06:33:47Z" finished-at="2015-03-26T06:33:47Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.rc.wefunit.RunnerTest@457e2f02]" name="beforeTest" is-config="true" duration-ms="26" started-at="2015-03-26T11:29:12Z" finished-at="2015-03-26T11:29:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="scan_for_test_classes(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@457e2f02]" name="scan_for_test_classes" duration-ms="111" started-at="2015-03-26T11:29:12Z" finished-at="2015-03-26T11:29:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scan_for_test_classes -->
+        <test-method status="PASS" signature="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@457e2f02]" name="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" duration-ms="34" started-at="2015-03-26T11:29:13Z" finished-at="2015-03-26T11:29:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project -->
+        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@457e2f02]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="23" started-at="2015-03-26T11:29:13Z" finished-at="2015-03-26T11:29:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_INF_directory_path_web_inf_as_last_directory -->

@@ -24,7 +24,6 @@ import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -54,7 +53,8 @@ public class MyMojo extends AbstractMojo{
             JavaCompiler jc = ToolProvider.getSystemJavaCompiler();
             StandardJavaFileManager sjfm = jc.getStandardFileManager(null, null, null);
             Iterable fileObjects = sjfm.getJavaFileObjects(filesArray);
-            String [] options = new String[]{ "-d", "samplewefproject/WebContent/WEB-INF/work/classes" };
+            String [] options = new String[]{ "-d", "samplewefproject/WebContent/WEB-INF/work/classes", "-cp", "src/main/java/" };
+            File classesDirectory = new File("samplewefproject/WebContent/WEB-INF/work/classes");
             jc.getTask(null, null, null, Arrays.asList(options), null, fileObjects).call();
             sjfm.close();
         } catch (IOException e) {
@@ -75,7 +75,7 @@ public class MyMojo extends AbstractMojo{
         public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
 
             if(Factories.JavaSrcFileNameValidatorFactory.getInstance().
-                    isJavaTestSrcFileNameValid(file.getFileName().toString())){
+                    isJavaSrcFileNameValid(file.getFileName().toString())){
                 _fileNames.add(file.toString());
             }
             return FileVisitResult.CONTINUE;
