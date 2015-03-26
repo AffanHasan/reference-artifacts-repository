@@ -39,7 +39,7 @@ import java.util.*;
  */
 public class MyMojo extends AbstractMojo{
 
-    private Set<String> _fileNames = new LinkedHashSet<>();
+    private Set<String> _fileNames = new LinkedHashSet<String>();
 
     public void execute() throws MojoExecutionException {
         try {
