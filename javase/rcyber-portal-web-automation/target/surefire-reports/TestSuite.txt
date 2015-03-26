@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.882 sec <<< FAILURE! - in TestSuite
-login_super_dev2_cps(rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest)  Time elapsed: 0.066 sec  <<< FAILURE!
-java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
-	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_dev2_cps(SuperUserLoginUtilityTest.java:44)
-
-login_super_dev2_gespra(rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
-	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_dev2_gespra(SuperUserLoginUtilityTest.java:51)
-
-login_super_preqa_cps(rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
-	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_preqa_cps(SuperUserLoginUtilityTest.java:58)
-
-login_super_preqa_gespra(rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.NoSuchMethodError: selcommns.Factories$WebDriverFactory.getInstance()Lorg/openqa/selenium/WebDriver;
-	at rc.qaportal.web.automation.aramark.utilities.UserLoginUtility.loginToAramarkPortal(UserLoginUtility.java:15)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtility.loginAsSuperUser(SuperUserLoginUtility.java:32)
-	at rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.login_super_preqa_gespra(SuperUserLoginUtilityTest.java:65)
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.674 sec - in TestSuite

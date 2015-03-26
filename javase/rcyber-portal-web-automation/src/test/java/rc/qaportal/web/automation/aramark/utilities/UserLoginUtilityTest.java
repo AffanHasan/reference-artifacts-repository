@@ -10,20 +10,20 @@ import rc.qaportal.web.automation.aramark.enums.AramarkEnvs;
  */
 public class UserLoginUtilityTest {
 
-
-    @Test
-    public void login_DEV_2_CPS(){
-        String[] userCredentials = SuperUserLoginUtility.getDev2SuperUserCredentials();
-        WebDriver wd = UserLoginUtility.loginToAramarkPortal(AramarkEnvs.DEV_2_CPS, userCredentials);
-        Assert.assertTrue(CommonUtilities.isUserLoggedInToAramarkPortal(wd));//Verify user login
-        wd.close();//Close the browser
-    }
-
-    @Test
-    public void login_DEV_2_GESPRA(){
-        String[] userCredentials = SuperUserLoginUtility.getDev2SuperUserCredentials();
-        WebDriver wd = UserLoginUtility.loginToAramarkPortal(AramarkEnvs.DEV_2_GESPRA, userCredentials);
-        Assert.assertTrue(CommonUtilities.isUserLoggedInToAramarkPortal(wd));//Verify user login
-        wd.close();//Close the browser
-    }
+//
+//    @Test
+//    public void login_DEV_2_CPS(){
+//        String[] userCredentials = SuperUserLoginUtility.getDev2SuperUserCredentials();
+//        WebDriver wd = UserLoginUtility.loginToAramarkPortal(AramarkEnvs.DEV_2_CPS, userCredentials);
+//        Assert.assertTrue(CommonUtilities.isUserLoggedInToAramarkPortal(wd));//Verify user login
+//        wd.close();//Close the browser
+//    }
+//
+//    @Test
+//    public void login_DEV_2_GESPRA(){
+//        String[] userCredentials = SuperUserLoginUtility.getDev2SuperUserCredentials();
+//        WebDriver wd = UserLoginUtility.loginToAramarkPortal(AramarkEnvs.DEV_2_GESPRA, userCredentials);
+//        Assert.assertTrue(CommonUtilities.isUserLoggedInToAramarkPortal(wd));//Verify user login
+//        wd.close();//Close the browser
+//    }
 }

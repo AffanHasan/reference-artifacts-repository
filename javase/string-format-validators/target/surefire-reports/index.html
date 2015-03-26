@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">33 methods,   33 passed</span>
+                    <span class="method-stats">35 methods,   35 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,6 +126,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.JavaTestSrcFileNameValidatorTest" hash-for-method="isJavaSrcFileNameValid_Method">isJavaSrcFileNameValid_Method</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="must_return_regex_as_string">must_return_regex_as_string</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -137,6 +142,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.EmailValidator_LocalPart_Test" hash-for-method="plain_email_test">plain_email_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="str.frmt.validators.JavaTestSrcFileNameValidatorTest" hash-for-method="regex">regex</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -523,6 +533,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">str.frmt.validators.JavaTestSrcFileNameValidatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="isJavaSrcFileNameValid_Method">
+                  </a> <!-- isJavaSrcFileNameValid_Method -->
+                  <span class="method-name">isJavaSrcFileNameValid_Method</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="regex">
+                  </a> <!-- regex -->
+                  <span class="method-name">regex</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -534,6 +566,7 @@
 &lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;str.frmt.validators.JavaTestSrcFileNameValidatorTest&quot;/&gt;
       &lt;class name=&quot;str.frmt.validators.EmailValidator_LocalPart_Test&quot;/&gt;
       &lt;class name=&quot;str.frmt.validators.EmailValidator_DomainName_Test&quot;/&gt;
       &lt;class name=&quot;str.frmt.validators.AbstractEmailValidatorTest&quot;/&gt;
@@ -550,7 +583,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (3 classes)</span>
+                <span class="test-name">Command line test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -576,61 +609,61 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(33);
+data.addRows(35);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'domain_names_can_contain_A_TO_Z_characters')
 data.setCell(0, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
-data.setCell(0, 3, 38);
+data.setCell(0, 3, 42);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'domain_names_can_contain_valid_ip_addresses_within_square_brackets2')
 data.setCell(1, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
-data.setCell(1, 3, 14);
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'domain_names_can_contain_a_to_z_characters')
-data.setCell(2, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
-data.setCell(2, 3, 8);
+data.setCell(2, 1, 'validate_two_single_dots_at_the_beginning_of_local_part_is_invalid')
+data.setCell(2, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(2, 3, 5);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validate_local_part_starting_from_0_to_9_is_valid')
-data.setCell(3, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(3, 1, 'domain_names_can_contain_a_to_z_characters')
+data.setCell(3, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
 data.setCell(3, 3, 4);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'must_return_regex_as_string')
-data.setCell(4, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(4, 1, 'domain_names_can_not_contain_more_than_64_characters')
+data.setCell(4, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
 data.setCell(4, 3, 4);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part')
-data.setCell(5, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(5, 1, 'isJavaSrcFileNameValid_Method')
+data.setCell(5, 2, 'str.frmt.validators.JavaTestSrcFileNameValidatorTest')
 data.setCell(5, 3, 4);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validate_local_part_containing_at_the_rate_character_is_in_valid')
-data.setCell(6, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(6, 1, 'domain_names_can_contain_valid_ip_addresses_within_square_brackets1')
+data.setCell(6, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
 data.setCell(6, 3, 3);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'domain_names_can_not_contain_more_than_64_characters')
-data.setCell(7, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
+data.setCell(7, 1, 'validate_local_part_ending_with_at_the_rate_character_is_in_valid')
+data.setCell(7, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(7, 3, 3);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validate_local_part_ending_with_digits_from_0_to_9_is_valid')
+data.setCell(8, 1, 'validate_single_dot_at_the_end_of_local_part_is_invalid')
 data.setCell(8, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(8, 3, 2);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part')
-data.setCell(9, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(9, 3, 2);
+data.setCell(9, 1, 'regex')
+data.setCell(9, 2, 'str.frmt.validators.JavaTestSrcFileNameValidatorTest')
+data.setCell(9, 3, 1);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'validate_single_dot_at_the_end_of_local_part_is_invalid')
+data.setCell(10, 1, 'must_return_regex_as_string')
 data.setCell(10, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'validate_single_dot_at_the_beginning_of_local_part_is_invalid')
+data.setCell(11, 1, 'validate_two_consecutive_dots_in_local_part_is_invalid')
 data.setCell(11, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(11, 3, 1);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'validate_local_part_containing_comments_is_in_valid')
+data.setCell(12, 1, 'validate_single_dot_in_between_the_local_part_is_valid')
 data.setCell(12, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(12, 3, 1);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validate_two_consecutive_dots_in_local_part_is_invalid')
+data.setCell(13, 1, 'validate_local_part_ending_with_underscore_is_valid')
 data.setCell(13, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(13, 3, 1);
 data.setCell(14, 0, 14)
@@ -638,77 +671,85 @@ data.setCell(14, 1, 'validate_local_part_containing_underscore_is_valid')
 data.setCell(14, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(14, 3, 1);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'validate_local_part_containing_digits_from_0_to_9_is_valid')
+data.setCell(15, 1, 'validate_local_part_ending_with_digits_from_0_to_9_is_valid')
 data.setCell(15, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(15, 3, 1);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'domain_names_can_contain_valid_ip_addresses_within_square_brackets1')
-data.setCell(16, 2, 'str.frmt.validators.EmailValidator_DomainName_Test')
+data.setCell(16, 1, 'validate_local_part_starting_with_underscore_is_valid')
+data.setCell(16, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(16, 3, 1);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'plain_email_test')
+data.setCell(17, 1, 'validate_local_part_starting_with_at_the_rate_character_is_in_valid')
 data.setCell(17, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(17, 3, 0);
+data.setCell(17, 3, 1);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'must_throw_illegal_args_exception_when_email_is_null')
+data.setCell(18, 1, 'validate_local_part_containing_comments_is_in_valid')
 data.setCell(18, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(18, 3, 0);
+data.setCell(18, 3, 1);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'validate_two_single_dots_at_the_beginning_of_local_part_is_invalid')
+data.setCell(19, 1, 'validate_local_part_containing_digits_from_0_to_9_is_valid')
 data.setCell(19, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(19, 3, 0);
+data.setCell(19, 3, 1);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'validate_local_part_starting_with_and_ending_with_empty_comments_is_valid')
+data.setCell(20, 1, 'validate_local_part_starting_with_colon_character_is_in_valid')
 data.setCell(20, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(20, 3, 0);
+data.setCell(20, 3, 1);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'validate_local_part_ending_with_colon_character_is_in_valid')
+data.setCell(21, 1, 'validate_local_part_starting_from_0_to_9_is_valid')
 data.setCell(21, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(21, 3, 0);
+data.setCell(21, 3, 1);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid')
+data.setCell(22, 1, 'validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part')
 data.setCell(22, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(22, 3, 0);
+data.setCell(22, 3, 1);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'validate_local_part_ending_with_underscore_is_valid')
+data.setCell(23, 1, 'validate_local_part_starting_with_and_ending_with_empty_comments_is_valid')
 data.setCell(23, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
-data.setCell(23, 3, 0);
+data.setCell(23, 3, 1);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'validate_local_part_starting_with_comments_is_valid')
+data.setCell(24, 1, 'validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part')
 data.setCell(24, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(24, 3, 0);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'validate_local_part_containing_colon_character_is_in_valid')
+data.setCell(25, 1, 'validate_local_part_ending_with_colon_character_is_in_valid')
 data.setCell(25, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(25, 3, 0);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'validate_local_part_ending_with_at_the_rate_character_is_in_valid')
+data.setCell(26, 1, 'plain_email_test')
 data.setCell(26, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(26, 3, 0);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'validate_local_part_starting_with_underscore_is_valid')
+data.setCell(27, 1, 'validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid')
 data.setCell(27, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(27, 3, 0);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'validate_local_part_starting_with_at_the_rate_character_is_in_valid')
+data.setCell(28, 1, 'must_throw_illegal_args_exception_when_email_is_null')
 data.setCell(28, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(28, 3, 0);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'validate_single_dot_in_between_the_local_part_is_valid')
+data.setCell(29, 1, 'validate_local_part_starting_with_comments_is_valid')
 data.setCell(29, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(29, 3, 0);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part')
+data.setCell(30, 1, 'validate_local_part_containing_at_the_rate_character_is_in_valid')
 data.setCell(30, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(30, 3, 0);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'validate_local_part_starting_with_colon_character_is_in_valid')
+data.setCell(31, 1, 'validate_local_part_ending_with_comments_is_valid')
 data.setCell(31, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(31, 3, 0);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'validate_local_part_ending_with_comments_is_valid')
+data.setCell(32, 1, 'validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part')
 data.setCell(32, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
 data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validate_local_part_containing_colon_character_is_in_valid')
+data.setCell(33, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validate_single_dot_at_the_beginning_of_local_part_is_invalid')
+data.setCell(34, 2, 'str.frmt.validators.EmailValidator_LocalPart_Test')
+data.setCell(34, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
@@ -753,134 +794,145 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">domain_names_can_contain_a_to_z_characters</span>
-                <span class="method-start">43 ms</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">domain_names_can_contain_valid_ip_addresses_within_square_brackets1</span>
-                <span class="method-start">51 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">domain_names_can_contain_valid_ip_addresses_within_square_brackets2</span>
                 <span class="method-start">52 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">domain_names_can_contain_valid_ip_addresses_within_square_brackets2</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">domain_names_can_not_contain_more_than_64_characters</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">71 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">str.frmt.validators.EmailValidator_LocalPart_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">must_return_regex_as_string</span>
-                <span class="method-start">70 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">must_throw_illegal_args_exception_when_email_is_null</span>
-                <span class="method-start">74 ms</span>
+                <span class="method-start">79 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">plain_email_test</span>
-                <span class="method-start">75 ms</span>
+                <span class="method-start">80 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid</span>
-                <span class="method-start">75 ms</span>
+                <span class="method-start">80 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part</span>
-                <span class="method-start">75 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part</span>
-                <span class="method-start">77 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part</span>
                 <span class="method-start">81 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part</span>
+                <span class="method-start">84 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part</span>
+                <span class="method-start">85 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">validate_local_part_containing_at_the_rate_character_is_in_valid</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-start">86 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_containing_colon_character_is_in_valid</span>
-                <span class="method-start">86 ms</span>
+                <span class="method-start">87 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_local_part_containing_comments_is_in_valid</span>
-                <span class="method-start">86 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_local_part_containing_digits_from_0_to_9_is_valid</span>
                 <span class="method-start">88 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validate_local_part_containing_underscore_is_valid</span>
-                <span class="method-start">89 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_local_part_ending_with_at_the_rate_character_is_in_valid</span>
-                <span class="method-start">90 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_local_part_ending_with_colon_character_is_in_valid</span>
-                <span class="method-start">91 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_local_part_ending_with_comments_is_valid</span>
-                <span class="method-start">91 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_local_part_ending_with_digits_from_0_to_9_is_valid</span>
+                <span class="method-name">validate_local_part_containing_digits_from_0_to_9_is_valid</span>
                 <span class="method-start">94 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validate_local_part_ending_with_underscore_is_valid</span>
+                <span class="method-name">validate_local_part_containing_underscore_is_valid</span>
                 <span class="method-start">96 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validate_local_part_starting_from_0_to_9_is_valid</span>
-                <span class="method-start">96 ms</span>
+                <span class="method-name">validate_local_part_ending_with_at_the_rate_character_is_in_valid</span>
+                <span class="method-start">97 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validate_local_part_starting_with_and_ending_with_empty_comments_is_valid</span>
+                <span class="method-name">validate_local_part_ending_with_colon_character_is_in_valid</span>
                 <span class="method-start">101 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validate_local_part_starting_with_at_the_rate_character_is_in_valid</span>
-                <span class="method-start">105 ms</span>
+                <span class="method-name">validate_local_part_ending_with_comments_is_valid</span>
+                <span class="method-start">102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validate_local_part_starting_with_colon_character_is_in_valid</span>
+                <span class="method-name">validate_local_part_ending_with_digits_from_0_to_9_is_valid</span>
+                <span class="method-start">102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_local_part_ending_with_underscore_is_valid</span>
                 <span class="method-start">106 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validate_local_part_starting_with_comments_is_valid</span>
+                <span class="method-name">validate_local_part_starting_from_0_to_9_is_valid</span>
                 <span class="method-start">107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">validate_local_part_starting_with_and_ending_with_empty_comments_is_valid</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_local_part_starting_with_at_the_rate_character_is_in_valid</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_local_part_starting_with_colon_character_is_in_valid</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_local_part_starting_with_comments_is_valid</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">validate_local_part_starting_with_underscore_is_valid</span>
-                <span class="method-start">110 ms</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_single_dot_at_the_beginning_of_local_part_is_invalid</span>
-                <span class="method-start">110 ms</span>
+                <span class="method-start">118 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_single_dot_at_the_end_of_local_part_is_invalid</span>
-                <span class="method-start">111 ms</span>
+                <span class="method-start">120 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_single_dot_in_between_the_local_part_is_valid</span>
-                <span class="method-start">113 ms</span>
+                <span class="method-start">122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_two_consecutive_dots_in_local_part_is_invalid</span>
-                <span class="method-start">113 ms</span>
+                <span class="method-start">124 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_two_single_dots_at_the_beginning_of_local_part_is_invalid</span>
-                <span class="method-start">118 ms</span>
+                <span class="method-start">126 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">str.frmt.validators.JavaTestSrcFileNameValidatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isJavaSrcFileNameValid_Method</span>
+                <span class="method-start">135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">regex</span>
+                <span class="method-start">141 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

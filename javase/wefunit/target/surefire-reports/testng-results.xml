@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="256" started-at="2015-03-24T17:11:55Z" finished-at="2015-03-24T17:11:55Z">
+  <suite name="Command line suite" duration-ms="225" started-at="2015-03-26T00:38:20Z" finished-at="2015-03-26T00:38:20Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="256" started-at="2015-03-24T17:11:55Z" finished-at="2015-03-24T17:11:55Z">
-      <class name="com.rc.wefunit.RunnerTest">
-        <test-method status="PASS" signature="web_INF_directory_path_not_null(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@482f8f11]" name="web_INF_directory_path_not_null" duration-ms="92" started-at="2015-03-24T22:11:55Z" finished-at="2015-03-24T22:11:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- web_INF_directory_path_not_null -->
-        <test-method status="PASS" signature="web_INF_directory_path_verify_that_this_is_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@482f8f11]" name="web_INF_directory_path_verify_that_this_is_a_wef_project" duration-ms="21" started-at="2015-03-24T22:11:55Z" finished-at="2015-03-24T22:11:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- web_INF_directory_path_verify_that_this_is_a_wef_project -->
-        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@482f8f11]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="21" started-at="2015-03-24T22:11:55Z" finished-at="2015-03-24T22:11:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- web_INF_directory_path_web_inf_as_last_directory -->
-      </class> <!-- com.rc.wefunit.RunnerTest -->
+    <test name="Command line test" duration-ms="225" started-at="2015-03-26T00:38:20Z" finished-at="2015-03-26T00:38:20Z">
       <class name="com.rc.wefunit.probes.AssertTest">
-        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@1d057a39]" name="notNull" duration-ms="31" started-at="2015-03-24T22:11:55Z" finished-at="2015-03-24T22:11:55Z">
+        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@1d057a39]" name="notNull" duration-ms="29" started-at="2015-03-26T05:38:20Z" finished-at="2015-03-26T05:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notNull -->
       </class> <!-- com.rc.wefunit.probes.AssertTest -->
+      <class name="com.rc.wefunit.RunnerTest">
+        <test-method status="PASS" signature="web_INF_directory_path_verify_that_this_is_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@482f8f11]" name="web_INF_directory_path_verify_that_this_is_a_wef_project" duration-ms="103" started-at="2015-03-26T05:38:20Z" finished-at="2015-03-26T05:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_INF_directory_path_verify_that_this_is_a_wef_project -->
+        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@482f8f11]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="20" started-at="2015-03-26T05:38:20Z" finished-at="2015-03-26T05:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_INF_directory_path_web_inf_as_last_directory -->
+      </class> <!-- com.rc.wefunit.RunnerTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

@@ -32,7 +32,8 @@
         <module>string-format-validators</module>
         <module>regex-pattern-tester</module>
         <module>rcyber-portal-web-automation</module>
-    <module>selenium-commons</module>
-    <module>wefunit</module>
+        <module>selenium-commons</module>
+        <module>wefunit</module>
+        <module>maven-plugins</module>
   </modules>
 </project>

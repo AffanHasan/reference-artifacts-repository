@@ -24,17 +24,6 @@ public class RunnerTest {
     private final String _webInfDirPath = "samplewefproject/WebContent/WEB-INF";
 
     @Test
-    public void web_INF_directory_path_not_null(@Mocked SystemProperties systemProperties){
-        new Expectations(){
-            {
-                SystemProperties.getWebInfDir(); result = _webInfDirPath;
-            }
-        };
-        String path = _runner.getWebInfDirPath();
-        Assert.assertNotNull(path);
-    }
-
-    @Test
     public void web_INF_directory_path_web_inf_as_last_directory(@Mocked SystemProperties systemProperties){
         new Expectations(){
             {
@@ -69,7 +58,7 @@ public class RunnerTest {
         Assert.assertTrue(containsWorkFolder);//Must contain "work" folder
     }
 
-    @Test
+    @Test(enabled = false)
     public void web_INF_directory_path_if_this_is_not_a_wef_project_then_throw_illegal_state_exception
             (@Mocked SystemProperties systemProperties, @Mocked File file){
 

@@ -39,6 +39,8 @@
         <module name="selenium-commons" />
         <module name="string-format-validators" />
         <module name="wefunit" />
+        <module name="wefunit-fixture-maker" />
+        <module name="wefunit-sample-project-maker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -55,6 +57,7 @@
       <module name="jdk-http-rest-server" target="1.8" />
       <module name="language-tags-their-filtering-and-lookup" target="1.8" />
       <module name="localization" target="1.8" />
+      <module name="maven-plugins" target="1.8" />
       <module name="number-formatting" target="1.8" />
       <module name="rcyber-portal-web-automation" target="1.8" />
       <module name="reference-artifacts-repository" target="1.8" />
@@ -65,6 +68,8 @@
       <module name="string-format-validators" target="1.8" />
       <module name="web-services" target="1.8" />
       <module name="wefunit" target="1.8" />
+      <module name="wefunit-fixture-maker" target="1.8" />
+      <module name="wefunit-sample-project-maker" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

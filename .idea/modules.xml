@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/javase/jdk-http-rest-server/jdk-http-rest-server.iml" filepath="$PROJECT_DIR$/javase/jdk-http-rest-server/jdk-http-rest-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/localization/language-tags-their-filtering-and-lookup/language-tags-their-filtering-and-lookup.iml" filepath="$PROJECT_DIR$/javase/localization/language-tags-their-filtering-and-lookup/language-tags-their-filtering-and-lookup.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/localization/localization.iml" filepath="$PROJECT_DIR$/javase/localization/localization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/maven-plugins/maven-plugins.iml" filepath="$PROJECT_DIR$/javase/maven-plugins/maven-plugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/localization/number-formatting/number-formatting.iml" filepath="$PROJECT_DIR$/javase/localization/number-formatting/number-formatting.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/rcyber-portal-web-automation.iml" filepath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/rcyber-portal-web-automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/reference-artifacts-repository.iml" filepath="$PROJECT_DIR$/reference-artifacts-repository.iml" />
@@ -24,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" filepath="$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/web-services/web-services.iml" filepath="$PROJECT_DIR$/javaee/web-services/web-services.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/wefunit/wefunit.iml" filepath="$PROJECT_DIR$/javase/wefunit/wefunit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/wefunit-fixture-maker.iml" filepath="$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/wefunit-fixture-maker.iml" />
     </modules>
   </component>
 </project>

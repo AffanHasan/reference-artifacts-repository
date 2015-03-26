@@ -1,143 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="33" passed="33">
+<testng-results skipped="0" failed="0" total="35" passed="35">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="154" started-at="2015-03-24T17:04:47Z" finished-at="2015-03-24T17:04:47Z">
+  <suite name="Command line suite" duration-ms="193" started-at="2015-03-25T13:22:22Z" finished-at="2015-03-25T13:22:23Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="154" started-at="2015-03-24T17:04:47Z" finished-at="2015-03-24T17:04:47Z">
+    <test name="Command line test" duration-ms="193" started-at="2015-03-25T13:22:22Z" finished-at="2015-03-25T13:22:23Z">
       <class name="str.frmt.validators.EmailValidator_DomainName_Test">
-        <test-method status="PASS" signature="domain_names_can_contain_A_TO_Z_characters()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@3cb5cdba]" name="domain_names_can_contain_A_TO_Z_characters" duration-ms="38" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="domain_names_can_contain_A_TO_Z_characters()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@56cbfb61]" name="domain_names_can_contain_A_TO_Z_characters" duration-ms="42" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- domain_names_can_contain_A_TO_Z_characters -->
-        <test-method status="PASS" signature="domain_names_can_contain_a_to_z_characters()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@3cb5cdba]" name="domain_names_can_contain_a_to_z_characters" duration-ms="8" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="domain_names_can_contain_a_to_z_characters()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@56cbfb61]" name="domain_names_can_contain_a_to_z_characters" duration-ms="4" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- domain_names_can_contain_a_to_z_characters -->
-        <test-method status="PASS" signature="domain_names_can_contain_valid_ip_addresses_within_square_brackets1()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@3cb5cdba]" name="domain_names_can_contain_valid_ip_addresses_within_square_brackets1" duration-ms="1" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="domain_names_can_contain_valid_ip_addresses_within_square_brackets1()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@56cbfb61]" name="domain_names_can_contain_valid_ip_addresses_within_square_brackets1" duration-ms="3" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- domain_names_can_contain_valid_ip_addresses_within_square_brackets1 -->
-        <test-method status="PASS" signature="domain_names_can_contain_valid_ip_addresses_within_square_brackets2()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@3cb5cdba]" name="domain_names_can_contain_valid_ip_addresses_within_square_brackets2" duration-ms="14" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="domain_names_can_contain_valid_ip_addresses_within_square_brackets2()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@56cbfb61]" name="domain_names_can_contain_valid_ip_addresses_within_square_brackets2" duration-ms="7" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- domain_names_can_contain_valid_ip_addresses_within_square_brackets2 -->
-        <test-method status="PASS" signature="domain_names_can_not_contain_more_than_64_characters()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@3cb5cdba]" name="domain_names_can_not_contain_more_than_64_characters" duration-ms="3" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="domain_names_can_not_contain_more_than_64_characters()[pri:0, instance:str.frmt.validators.EmailValidator_DomainName_Test@56cbfb61]" name="domain_names_can_not_contain_more_than_64_characters" duration-ms="4" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- domain_names_can_not_contain_more_than_64_characters -->
       </class> <!-- str.frmt.validators.EmailValidator_DomainName_Test -->
+      <class name="str.frmt.validators.JavaTestSrcFileNameValidatorTest">
+        <test-method status="PASS" signature="isJavaSrcFileNameValid_Method()[pri:0, instance:str.frmt.validators.JavaTestSrcFileNameValidatorTest@2133c8f8]" name="isJavaSrcFileNameValid_Method" duration-ms="4" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isJavaSrcFileNameValid_Method -->
+        <test-method status="PASS" signature="regex()[pri:0, instance:str.frmt.validators.JavaTestSrcFileNameValidatorTest@2133c8f8]" name="regex" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regex -->
+      </class> <!-- str.frmt.validators.JavaTestSrcFileNameValidatorTest -->
       <class name="str.frmt.validators.EmailValidator_LocalPart_Test">
-        <test-method status="PASS" signature="must_return_regex_as_string()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="must_return_regex_as_string" duration-ms="4" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="must_return_regex_as_string()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="must_return_regex_as_string" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_return_regex_as_string -->
-        <test-method status="PASS" signature="must_throw_illegal_args_exception_when_email_is_null()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="must_throw_illegal_args_exception_when_email_is_null" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="must_throw_illegal_args_exception_when_email_is_null()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="must_throw_illegal_args_exception_when_email_is_null" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_throw_illegal_args_exception_when_email_is_null -->
-        <test-method status="PASS" signature="plain_email_test()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="plain_email_test" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="plain_email_test()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="plain_email_test" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- plain_email_test -->
-        <test-method status="PASS" signature="validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part" duration-ms="2" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part -->
-        <test-method status="PASS" signature="validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_2_consecutive_dots_at_the_end_of_local_part_is_invalid -->
-        <test-method status="PASS" signature="validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part" duration-ms="4" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_UPPER_CASE_LETTERS_A_TO_Z_are_valid_in_local_part -->
+        <test-method status="PASS" signature="validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_UPPER_CASE_letters_a_to_z_are_valid_at_the_start_of_local_part -->
-        <test-method status="PASS" signature="validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_UPPER_CASE_plus_lower_case_letters_a_to_z_are_valid_in_local_part -->
-        <test-method status="PASS" signature="validate_local_part_containing_at_the_rate_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_containing_at_the_rate_character_is_in_valid" duration-ms="3" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_containing_at_the_rate_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_containing_at_the_rate_character_is_in_valid" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_containing_at_the_rate_character_is_in_valid -->
-        <test-method status="PASS" signature="validate_local_part_containing_comments_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_containing_comments_is_in_valid" duration-ms="1" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_local_part_containing_comments_is_in_valid -->
-        <test-method status="PASS" signature="validate_local_part_containing_colon_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_containing_colon_character_is_in_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_containing_colon_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_containing_colon_character_is_in_valid" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_containing_colon_character_is_in_valid -->
-        <test-method status="PASS" signature="validate_local_part_containing_digits_from_0_to_9_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_containing_digits_from_0_to_9_is_valid" duration-ms="1" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_containing_comments_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_containing_comments_is_in_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_local_part_containing_comments_is_in_valid -->
+        <test-method status="PASS" signature="validate_local_part_containing_digits_from_0_to_9_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_containing_digits_from_0_to_9_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_containing_digits_from_0_to_9_is_valid -->
-        <test-method status="PASS" signature="validate_local_part_containing_underscore_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_containing_underscore_is_valid" duration-ms="1" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_containing_underscore_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_containing_underscore_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_containing_underscore_is_valid -->
-        <test-method status="PASS" signature="validate_local_part_ending_with_at_the_rate_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_ending_with_at_the_rate_character_is_in_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_ending_with_at_the_rate_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_ending_with_at_the_rate_character_is_in_valid" duration-ms="3" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_ending_with_at_the_rate_character_is_in_valid -->
-        <test-method status="PASS" signature="validate_local_part_ending_with_colon_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_ending_with_colon_character_is_in_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_ending_with_colon_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_ending_with_colon_character_is_in_valid" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_ending_with_colon_character_is_in_valid -->
-        <test-method status="PASS" signature="validate_local_part_ending_with_comments_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_ending_with_comments_is_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_local_part_ending_with_comments_is_valid -->
-        <test-method status="PASS" signature="validate_local_part_ending_with_digits_from_0_to_9_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_ending_with_digits_from_0_to_9_is_valid" duration-ms="2" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_ending_with_digits_from_0_to_9_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_ending_with_digits_from_0_to_9_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_ending_with_digits_from_0_to_9_is_valid -->
-        <test-method status="PASS" signature="validate_local_part_starting_from_0_to_9_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_starting_from_0_to_9_is_valid" duration-ms="4" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_ending_with_comments_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_ending_with_comments_is_valid" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_local_part_starting_from_0_to_9_is_valid -->
-        <test-method status="PASS" signature="validate_local_part_ending_with_underscore_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_ending_with_underscore_is_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        </test-method> <!-- validate_local_part_ending_with_comments_is_valid -->
+        <test-method status="PASS" signature="validate_local_part_ending_with_underscore_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_ending_with_underscore_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_ending_with_underscore_is_valid -->
-        <test-method status="PASS" signature="validate_local_part_starting_with_and_ending_with_empty_comments_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_starting_with_and_ending_with_empty_comments_is_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_starting_from_0_to_9_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_starting_from_0_to_9_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_local_part_starting_from_0_to_9_is_valid -->
+        <test-method status="PASS" signature="validate_local_part_starting_with_and_ending_with_empty_comments_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_starting_with_and_ending_with_empty_comments_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_starting_with_and_ending_with_empty_comments_is_valid -->
-        <test-method status="PASS" signature="validate_local_part_starting_with_at_the_rate_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_starting_with_at_the_rate_character_is_in_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_starting_with_at_the_rate_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_starting_with_at_the_rate_character_is_in_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_starting_with_at_the_rate_character_is_in_valid -->
-        <test-method status="PASS" signature="validate_local_part_starting_with_colon_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_starting_with_colon_character_is_in_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_starting_with_colon_character_is_in_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_starting_with_colon_character_is_in_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_starting_with_colon_character_is_in_valid -->
-        <test-method status="PASS" signature="validate_local_part_starting_with_comments_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_starting_with_comments_is_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_starting_with_comments_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_starting_with_comments_is_valid" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_starting_with_comments_is_valid -->
-        <test-method status="PASS" signature="validate_single_dot_at_the_beginning_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_single_dot_at_the_beginning_of_local_part_is_invalid" duration-ms="1" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_single_dot_at_the_beginning_of_local_part_is_invalid -->
-        <test-method status="PASS" signature="validate_local_part_starting_with_underscore_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_local_part_starting_with_underscore_is_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_local_part_starting_with_underscore_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_local_part_starting_with_underscore_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_local_part_starting_with_underscore_is_valid -->
-        <test-method status="PASS" signature="validate_single_dot_at_the_end_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_single_dot_at_the_end_of_local_part_is_invalid" duration-ms="1" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_single_dot_at_the_beginning_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_single_dot_at_the_beginning_of_local_part_is_invalid" duration-ms="0" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_single_dot_at_the_beginning_of_local_part_is_invalid -->
+        <test-method status="PASS" signature="validate_single_dot_at_the_end_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_single_dot_at_the_end_of_local_part_is_invalid" duration-ms="2" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_single_dot_at_the_end_of_local_part_is_invalid -->
-        <test-method status="PASS" signature="validate_two_consecutive_dots_in_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_two_consecutive_dots_in_local_part_is_invalid" duration-ms="1" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_two_consecutive_dots_in_local_part_is_invalid -->
-        <test-method status="PASS" signature="validate_single_dot_in_between_the_local_part_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_single_dot_in_between_the_local_part_is_valid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_single_dot_in_between_the_local_part_is_valid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_single_dot_in_between_the_local_part_is_valid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_single_dot_in_between_the_local_part_is_valid -->
-        <test-method status="PASS" signature="validate_two_single_dots_at_the_beginning_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@7c30a502]" name="validate_two_single_dots_at_the_beginning_of_local_part_is_invalid" duration-ms="0" started-at="2015-03-24T22:04:47Z" finished-at="2015-03-24T22:04:47Z">
+        <test-method status="PASS" signature="validate_two_consecutive_dots_in_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_two_consecutive_dots_in_local_part_is_invalid" duration-ms="1" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_two_consecutive_dots_in_local_part_is_invalid -->
+        <test-method status="PASS" signature="validate_two_single_dots_at_the_beginning_of_local_part_is_invalid()[pri:0, instance:str.frmt.validators.EmailValidator_LocalPart_Test@49e4cb85]" name="validate_two_single_dots_at_the_beginning_of_local_part_is_invalid" duration-ms="5" started-at="2015-03-25T18:22:23Z" finished-at="2015-03-25T18:22:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_two_single_dots_at_the_beginning_of_local_part_is_invalid -->

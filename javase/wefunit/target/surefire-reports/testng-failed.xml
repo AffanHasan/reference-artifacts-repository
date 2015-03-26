@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.rc.wefunit.RunnerTest">
+        <methods>
+          <include name="web_INF_directory_path_if_this_is_not_a_wef_project_then_throw_illegal_state_exception" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.rc.wefunit.RunnerTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

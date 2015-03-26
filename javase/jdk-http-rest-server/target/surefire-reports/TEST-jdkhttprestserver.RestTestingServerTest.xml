@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="5.355" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="jdkhttprestserver.RestTestingServerTest" time="6.226" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -58,10 +58,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="3.178"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_be_autocloseable" time="0.425"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" time="0.56"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" time="0.432"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="0.34"/>
-  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" time="0.42"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="if_port_8080_is_unavailable_then_search_for_8081_or_onwards" time="2.553"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_be_autocloseable" time="1.219"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_deploy_the_application_to_the_same_app_context_which_is_defined_in_applicationpath_annnotation" time="0.495"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_return_int_as_port_number_on_which_it_is_listening_To" time="0.415"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="server_should_start_on_localhost_8080_when_rest_Application_is_passed_to_it" time="1.172"/>
+  <testcase classname="jdkhttprestserver.RestTestingServerTest" name="should_be_able_to_pass_the_app_context_name_as_parameter_when_starting_the_server" time="0.372"/>
 </testsuite>

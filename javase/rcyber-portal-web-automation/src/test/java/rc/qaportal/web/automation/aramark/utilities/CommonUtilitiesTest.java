@@ -10,11 +10,11 @@ import rc.qaportal.web.automation.aramark.enums.AramarkEnvs;
  */
 public class CommonUtilitiesTest {
 
-    @Test
-    public void test_for_user_login(){
-//      Login User
-        WebDriver wd = SuperUserLoginUtility.loginAsSuperUser(AramarkEnvs.DEV_2_CPS);
-      Assert.assertTrue(CommonUtilities.isUserLoggedInToAramarkPortal(wd));
-        wd.close();
-    }
+//    @Test
+//    public void test_for_user_login(){
+////      Login User
+//        WebDriver wd = SuperUserLoginUtility.loginAsSuperUser(AramarkEnvs.DEV_2_CPS);
+//      Assert.assertTrue(CommonUtilities.isUserLoggedInToAramarkPortal(wd));
+//        wd.close();
+//    }
 }

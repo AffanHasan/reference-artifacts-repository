@@ -66,6 +66,19 @@
                     <!--</execution>-->
                 <!--</executions>-->
             <!--</plugin>-->
+            <plugin>
+                <groupId>reference-artifacts-repository</groupId>
+                <artifactId>wefunit-fixture-maker</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>compileClasses</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 

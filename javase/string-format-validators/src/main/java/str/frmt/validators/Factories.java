@@ -11,4 +11,11 @@ public class Factories {
             return new DefaultEmailValidator();
         }
     }
+
+    public static class JavaSrcFileNameValidatorFactory implements FactoryInterface{
+
+        public static JavaTestSrcFileNameValidator getInstance(){
+            return new DefaultJavaTestSrcFileNameValidator();
+        }
+    }
 }
