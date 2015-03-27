@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede6b090-fea2-40cb-8d74-2d05bb4f1639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaTestSrcFileNameValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestSrcFileNameValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/maven-plugins/maven-plugins.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/wefunit-fixture-maker.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__reference_artifacts_repository_string_format_validators_1_0_SNAPSHOT.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/selemium-commons/selemium-commons.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/classes/selcommns/WebDriverAutoClosableDecorator.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/TEST-selcommns.WebdriverFactoryTest.xml" afterPath="" />
@@ -29,109 +26,82 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebdriverFactoryTest/Command line test.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebdriverFactoryTest/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/test-classes/selcommns/WebdriverFactoryTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/FactoryInterface.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaClasscFileNameValidatorFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/FactoryInterface.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/Command line suite/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-failed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$1FileScanner.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Inject.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/testng-failed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/Annotations.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/test-classes/rc/qaportal/web/automation/aramark/utilities/CommonUtilitiesTest.class" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/test-classes/rc/qaportal/web/automation/aramark/utilities/CommonUtilitiesTest.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/AbstractEmailValidatorTest.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/AbstractEmailValidatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/App.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/App.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultEmailValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultEmailValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaClassFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaClassFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaSrcFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaSrcFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaTestClassFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaTestClassFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaTestSrcFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/DefaultJavaTestSrcFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/EmailValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/EmailValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/EmailValidator_DomainName_Test.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/EmailValidator_DomainName_Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/EmailValidator_LocalPart_Test.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/EmailValidator_LocalPart_Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$EmailValidatorFactory.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$EmailValidatorFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaClassFileNameValidatorFactory.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaClassFileNameValidatorFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaSrcFileNameValidatorFactory.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaSrcFileNameValidatorFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaTestClasscFileNameValidatorFactory.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaTestClasscFileNameValidatorFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaTestSrcFileNameValidatorFactory.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories$JavaTestSrcFileNameValidatorFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/Factories.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$1.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$2.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaClassFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaClassFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaClassFileNameValidatorTest.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaClassFileNameValidatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaSrcFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaSrcFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaSrcFileNameValidatorTest.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaSrcFileNameValidatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaTestClassFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaTestClassFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaTestClassFileNameValidatorTest.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaTestClassFileNameValidatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaTestSrcFileNameValidator.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/JavaTestSrcFileNameValidator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaTestSrcFileNameValidatorTest.class" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/test-classes/str/frmt/validators/JavaTestSrcFileNameValidatorTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$3.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/test-classes/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtilityTest.class" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/test-classes/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtilityTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/test-classes/rc/qaportal/web/automation/aramark/utilities/UserLoginUtilityTest.class" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/test-classes/rc/qaportal/web/automation/aramark/utilities/UserLoginUtilityTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/rcyber-portal-web-automation-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/rcyber-portal-web-automation-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/string-format-validators-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/string-format-validators-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/jdkhttprestserver.RestTestingServerTest/Command line test.html" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/jdkhttprestserver.RestTestingServerTest/Command line test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/regexpatterntester.PatternMatcherTest/Command line test.html" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/regexpatterntester.PatternMatcherTest/Command line test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebDriverFactoryTest/Command line test.html" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebDriverFactoryTest/Command line test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/Command line suite/Command line test.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/Command line suite/Command line test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/jdkhttprestserver.RestTestingServerTest/Command line test.xml" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/jdkhttprestserver.RestTestingServerTest/Command line test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/regexpatterntester.PatternMatcherTest/Command line test.xml" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/regexpatterntester.PatternMatcherTest/Command line test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebDriverFactoryTest/Command line test.xml" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebDriverFactoryTest/Command line test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/Command line suite/Command line test.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/Command line suite/Command line test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/CommonUtilitiesTest.java" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/CommonUtilitiesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java" afterPath="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtilityTest.java" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtilityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/TEST-TestSuite.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/TEST-TestSuite.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.RunnerTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.RunnerTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/TEST-jdkhttprestserver.RestTestingServerTest.xml" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/TEST-jdkhttprestserver.RestTestingServerTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/junitreports/TEST-jdkhttprestserver.RestTestingServerTest.xml" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/junitreports/TEST-jdkhttprestserver.RestTestingServerTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/junitreports/TEST-rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.xml" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/junitreports/TEST-rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/TEST-regexpatterntester.PatternMatcherTest.xml" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/TEST-regexpatterntester.PatternMatcherTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/junitreports/TEST-regexpatterntester.PatternMatcherTest.xml" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/junitreports/TEST-regexpatterntester.PatternMatcherTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/TEST-selcommns.WebDriverFactoryTest.xml" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/TEST-selcommns.WebDriverFactoryTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/junitreports/TEST-selcommns.WebDriverFactoryTest.xml" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/junitreports/TEST-selcommns.WebDriverFactoryTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidator_DomainName_Test.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidator_DomainName_Test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidator_LocalPart_Test.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.EmailValidator_LocalPart_Test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/TestSuite.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaClassFileNameValidatorTest.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaClassFileNameValidatorTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaSrcFileNameValidatorTest.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaSrcFileNameValidatorTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaTestClassFileNameValidatorTest.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaTestClassFileNameValidatorTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaTestSrcFileNameValidatorTest.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/junitreports/TEST-str.frmt.validators.JavaTestSrcFileNameValidatorTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/TestSuite.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/UserLoginUtilityTest.java" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/UserLoginUtilityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/office-desktop/Utilities Package Test.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/office-desktop/Utilities Package Test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/office-desktop/Utilities Package Test.xml" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/office-desktop/Utilities Package Test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/classes.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/classes.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/classes.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/classes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/jdkhttprestserver.RestTestingServerTest.txt" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/jdkhttprestserver.RestTestingServerTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/old/jdkhttprestserver.RestTestingServerTest/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/old/jdkhttprestserver.RestTestingServerTest/methods-alphabetical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/methods-alphabetical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/old/regexpatterntester.PatternMatcherTest/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/old/regexpatterntester.PatternMatcherTest/methods-alphabetical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/old/selcommns.WebDriverFactoryTest/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/old/selcommns.WebDriverFactoryTest/methods-alphabetical.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/methods-alphabetical.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/methods-alphabetical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/methods-not-run.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/methods-not-run.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/methods-not-run.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/methods-not-run.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/old/jdkhttprestserver.RestTestingServerTest/methods.html" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/old/jdkhttprestserver.RestTestingServerTest/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/methods.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/old/regexpatterntester.PatternMatcherTest/methods.html" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/old/regexpatterntester.PatternMatcherTest/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/old/selcommns.WebDriverFactoryTest/methods.html" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/old/selcommns.WebDriverFactoryTest/methods.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/methods.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/methods.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/methods.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/pom.xml" afterPath="$PROJECT_DIR$/javase/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/javase/wefunit/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/pom.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/pom.xml" afterPath="$PROJECT_DIR$/javase/wefunit/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/regexpatterntester.PatternMatcherTest.txt" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/regexpatterntester.PatternMatcherTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebDriverFactoryTest.txt" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/selcommns.WebDriverFactoryTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/surefire-reports/testng-results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/testng-results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/regex-pattern-tester/target/surefire-reports/testng-results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/selenium-commons/target/surefire-reports/testng-results.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" afterPath="$PROJECT_DIR$/javase/string-format-validators/string-format-validators.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-results.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng.css" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/testng.xml.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/testng.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/toc.html" afterPath="$PROJECT_DIR$/javase/rcyber-portal-web-automation/target/surefire-reports/old/office-desktop/toc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/toc.html" afterPath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/old/Command line suite/toc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/toc.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/toc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/wefunit.iml" afterPath="$PROJECT_DIR$/javase/wefunit/wefunit.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -188,14 +158,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyMojo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java">
+      <file leaf-file-name="RunnerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75989443" vertical-offset="294" max-vertical-offset="1485">
-              <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="1200">
+              <caret line="64" column="108" selection-start-line="64" selection-start-column="108" selection-end-line="64" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="method#web_INF_directory_path_web_inf_as_last_directory#0;class#RunnerTest#0" expanded="false" />
+                <element signature="e#1418#1426#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultRunner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35302013" vertical-offset="697" max-vertical-offset="1755">
+              <caret line="66" column="69" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#1319#1327#0" expanded="true" />
+                <element signature="e#2937#2938#0" expanded="true" />
+                <element signature="e#2993#2994#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factories.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -208,24 +219,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javase/selenium-commons/src/main/java/selcommns/App.java" />
-        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/utilities/UserLoginUtility.java" />
-        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java" />
-        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/usercreation/UserCreationTest.java" />
-        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/pom.xml" />
-        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/testng.xml" />
-        <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtility.java" />
-        <option value="$PROJECT_DIR$/javase/selenium-commons/src/test/java/selcommns/WebdriverFactoryTest.java" />
-        <option value="$PROJECT_DIR$/javase/selenium-commons/src/main/java/selcommns/AutoCloseableWebDriver.java" />
-        <option value="$PROJECT_DIR$/javase/selenium-commons/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/AppTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Test.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Inject.java" />
         <option value="$PROJECT_DIR$/javase/selenium-commons/src/test/java/selcommns/WebDriverFactoryTest.java" />
         <option value="$PROJECT_DIR$/javase/selenium-commons/src/main/java/selcommns/FireFoxNotFoundException.java" />
         <option value="$PROJECT_DIR$/javase/selenium-commons/src/main/java/selcommns/Factories.java" />
-        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/Annotations.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/GenericServiceOperationTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/probes/ProbesTest.java" />
@@ -238,27 +234,42 @@
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/annotations/Annotations.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/Runner.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
         <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/src/main/java/reference-artifacts-repository/MyMojo.java" />
         <option value="$PROJECT_DIR$/javase/maven-plugins/pom.xml" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/pom.xml" />
         <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/UserLoginUtilityTest.java" />
         <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/CommonUtilitiesTest.java" />
         <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtilityTest.java" />
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaClassFileNameValidator.java" />
-        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java" />
-        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaSrcFileNameValidator.java" />
-        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaSrcFileNameValidator.java" />
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaSourceFileNameValidatorTest.java" />
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaTestSrcFileNameValidator.java" />
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaTestSourceFileNameValidatorTest.java" />
-        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaTestSrcFileNameValidatorTest.java" />
         <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestSrcFileNameValidator.java" />
         <option value="$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SoOneTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOTwoTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/Test.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOFour_Test.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOOneTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestClassFileNameValidator.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaTestClassFileName.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaTestClassFileNameValidator.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaTestClassFileNameValidatorTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaSrcFileNameValidator.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaSrcFileNameValidator.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaTestSrcFileNameValidatorTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaSrcFileNameValidatorTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaClassFileNameValidatorTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaClassFileNameValidator.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaClassFileNameValidator.java" />
         <option value="$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java" />
+        <option value="$PROJECT_DIR$/javase/string-format-validators/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
       </list>
     </option>
   </component>
@@ -372,175 +383,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samplewefproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Service1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samplewefproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Service1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samplewefproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="string-format-validators" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -622,7 +465,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="testng.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/testng.xml&#10; login_super_dev2 &#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest#login_super_dev2&#10;defa&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java&#10; preqa_CPS_url_correctness&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.usercreation.UserCreationTest#preqa_CPS_url_correctness&#10;test.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/localization/currency-converter/testng.xml" />
+    <property name="SearchEverywhereHistoryKey" value="mymo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;DefaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Javas&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestSrcFileNameValidator.java&#10;Mym&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;MyMo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;testng.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/testng.xml&#10; login_super_dev2 &#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest#login_super_dev2&#10;defa&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java&#10; preqa_CPS_url_correctness&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.usercreation.UserCreationTest#preqa_CPS_url_correctness&#10;test.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/localization/currency-converter/testng.xml" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="117" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
@@ -659,8 +502,13 @@
       <recent name="$PROJECT_DIR$/javase/wefunit/src/test/java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="str.frmt.validators" />
       <recent name="com.rc.wefunit" />
       <recent name="rc.qaportal.web.automation.aramark" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="str.frmt.validators" />
+      <recent name="test.models.test.services.Service1" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -940,7 +788,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -953,7 +801,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27595446" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27595446" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -968,6 +816,33 @@
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5003349" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.4996651" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27595446" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.50063694" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -996,105 +871,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javase/office-desktop/office-desktop-task-tracker/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/AramarkUserCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25725594" vertical-offset="0" max-vertical-offset="758">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/AramarkFactories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17810026" vertical-offset="0" max-vertical-offset="758">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4353562" vertical-offset="0" max-vertical-offset="758">
-          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/enums/AramarkEnvs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/utilities/CommonUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/utilities/UserLoginUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37598944" vertical-offset="0" max-vertical-offset="758">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/cli-portal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49472296" vertical-offset="0" max-vertical-offset="780">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/selenium-commons/src/main/java/selcommns/AutoCloseableWebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="915">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jmockit/jmockit/1.14/jmockit-1.14.jar!/mockit/Expectations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18417463" vertical-offset="0" max-vertical-offset="733">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/selenium-commons/src/test/java/selcommns/WebDriverFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8218997" vertical-offset="307" max-vertical-offset="1065">
-          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/selenium-commons/src/main/java/selcommns/Factories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23746702" vertical-offset="0" max-vertical-offset="758">
@@ -1106,13 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1159,24 +928,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="758">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/probes/AssertTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23746702" vertical-offset="0" max-vertical-offset="758">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/selenium-commons/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62416106" vertical-offset="0" max-vertical-offset="745">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="37" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,6 +940,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37598944" vertical-offset="0" max-vertical-offset="758">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,42 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1395">
           <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/OneSOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41556728" vertical-offset="0" max-vertical-offset="758">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1289,14 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8218997" vertical-offset="322" max-vertical-offset="1275">
-          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/AbstractEmailValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
@@ -1321,71 +1034,280 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaTestSrcFileNameValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45514512" vertical-offset="0" max-vertical-offset="758">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5637584" vertical-offset="0" max-vertical-offset="745">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="840">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/pom.xml">
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6348993" vertical-offset="637" max-vertical-offset="1605">
-          <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#179#180#0" expanded="false" />
+            <element signature="e#229#230#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/probes/AssertTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaTestSrcFileNameValidator.java">
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39577836" vertical-offset="0" max-vertical-offset="758">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="758">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java">
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOTwoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3364116" vertical-offset="0" max-vertical-offset="758">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-          <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOFour_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestSrcFileNameValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17810026" vertical-offset="0" max-vertical-offset="758">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <caret line="9" column="66" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaSrcFileNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4353562" vertical-offset="0" max-vertical-offset="758">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#511#512#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaSrcFileNameValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4353562" vertical-offset="0" max-vertical-offset="758">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaSrcFileNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaClassFileNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17810026" vertical-offset="0" max-vertical-offset="758">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaClassFileNameValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27704486" vertical-offset="0" max-vertical-offset="758">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOOneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="0" column="42" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaClassFileNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29683378" vertical-offset="0" max-vertical-offset="758">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#552#553#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/nio/file/SimpleFileVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3364116" vertical-offset="0" max-vertical-offset="1395">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="1200">
+          <caret line="64" column="108" selection-start-line="64" selection-start-column="108" selection-end-line="64" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="method#web_INF_directory_path_web_inf_as_last_directory#0;class#RunnerTest#0" expanded="false" />
+            <element signature="e#1418#1426#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75989443" vertical-offset="294" max-vertical-offset="1485">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.5844327" vertical-offset="547" max-vertical-offset="1320">
+          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+          <folding>
+            <element signature="e#1249#1257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47651008" vertical-offset="1040" max-vertical-offset="2190">
+          <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="113" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1427454651625" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaTestSrcFileNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaTestSrcFileNameValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45514512" vertical-offset="0" max-vertical-offset="758">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestClassFileNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/DefaultJavaTestClassFileNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3166227" vertical-offset="0" max-vertical-offset="758">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49472296" vertical-offset="0" max-vertical-offset="758">
+          <caret line="25" column="26" selection-start-line="23" selection-start-column="0" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6442953" vertical-offset="0" max-vertical-offset="745">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/test/java/str/frmt/validators/JavaTestClassFileNameValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/string-format-validators/src/main/java/str/frmt/validators/Factories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35302013" vertical-offset="697" max-vertical-offset="1755">
+          <caret line="66" column="69" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#1319#1327#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2993#2994#0" expanded="true" />
           </folding>
         </state>
       </provider>

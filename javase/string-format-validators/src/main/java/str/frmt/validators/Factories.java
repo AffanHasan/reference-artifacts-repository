@@ -5,35 +5,35 @@ package str.frmt.validators;
  */
 public class Factories {
 
-    public static class EmailValidatorFactory implements FactoryInterface{
+    public static class EmailValidatorFactory {
 
         public static EmailValidator getInstance(){
             return new DefaultEmailValidator();
         }
     }
 
-    public static class JavaTestSrcFileNameValidatorFactory implements FactoryInterface{
+    public static class JavaTestSrcFileNameValidatorFactory {
 
         public static JavaTestSrcFileNameValidator getInstance(){
             return new DefaultJavaTestSrcFileNameValidator();
         }
     }
 
-    public static class JavaTestClasscFileNameValidatorFactory implements FactoryInterface{
+    public static class JavaTestClasscFileNameValidatorFactory {
 
         public static JavaTestClassFileNameValidator getInstance(){
             return new DefaultJavaTestClassFileNameValidator();
         }
     }
 
-    public static class JavaSrcFileNameValidatorFactory implements FactoryInterface{
+    public static class JavaSrcFileNameValidatorFactory {
 
         public static JavaSrcFileNameValidator getInstance(){
             return new DefaultJavaSrcFileNameValidator();
         }
     }
 
-    public static class JavaClassFileNameValidatorFactory implements FactoryInterface{
+    public static class JavaClassFileNameValidatorFactory {
 
         public static JavaClassFileNameValidator getInstance(){
             return new DefaultJavaClassFileNameValidator();

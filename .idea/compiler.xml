@@ -65,10 +65,10 @@
       <module name="resource-bundle" target="1.8" />
       <module name="selemium-commons" target="1.8" />
       <module name="selenium-commons" target="1.8" />
-      <module name="string-format-validators" target="1.8" />
+      <module name="string-format-validators" target="1.6" />
       <module name="web-services" target="1.8" />
-      <module name="wefunit" target="1.8" />
-      <module name="wefunit-fixture-maker" target="1.8" />
+      <module name="wefunit" target="1.6" />
+      <module name="wefunit-fixture-maker" target="1.6" />
       <module name="wefunit-sample-project-maker" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -1,15 +1,14 @@
 package com.rc.wefunit;
 
 import com.bowstreet.util.SystemProperties;
-import str.frmt.validators.*;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.regex.Pattern;
 
 /**
  * Created by Affan Hasan on 3/24/15.
@@ -43,38 +42,73 @@ public class DefaultRunner implements Runner {
         return false;
     }
 
+    private final Set<String> _qualifiedFileNames = new LinkedHashSet<String>();
+
     @Override
     public Set<String> scanTestClasses() {
-        if(!this.isValidWefWebInfDirectory())
+
+        if(!this.isValidWefWebInfDirectory()) {
             throw new IllegalStateException("Scan for test classes failed; no valid Web Experience Factory WEB-INF path found");
+        }
 
-        final Set<String> qualifiedFileNames = new LinkedHashSet<String>();
+        _qualifiedFileNames.clear();
 
-        class FileScanner extends SimpleFileVisitor<Path> {
+        new FileTreeWalker().walkFileTree(
+                new File( getWebInfDirPath() + ( isWindows() ? "\\work\\classes\\test" : "/work/classes/test" )),
+                new TestClassFileVisitor());
 
-            private String parseClassQualifiedNameFromPath(String path){
-                String absolutePath = path.split((isWindows() ? "work\\classes\\" : "work/classes/"))[1];
-                absolutePath = absolutePath.replace((isWindows() ? '\\' : '/'), '.');
-                return absolutePath;
+        return _qualifiedFileNames;
+    }
+
+    private class TestClassFileVisitor{
+
+        private String parseClassQualifiedNameFromPath(String path){
+//            System.out.println("Inside parseClassQualifiedNameFromPath" + path + "is wondows " + isWindows());
+            String absolutePath = path.split((isWindows() ? "work\\\\classes" : "work/classes"))[1];
+            absolutePath = absolutePath.replace((isWindows() ? '\\' : '/'), '.');
+            absolutePath = absolutePath.replaceFirst("\\Q.\\E", "").trim();
+            return absolutePath;
+        }
+
+        public void visitFile(File file, BasicFileAttributes attrs) throws IOException {
+
+            if(str.frmt.validators.Factories.JavaTestClasscFileNameValidatorFactory.getInstance().
+                    isJavaTestClassFileNameValid(file.getName())){
+                _qualifiedFileNames.add(parseClassQualifiedNameFromPath(file.getPath()));
             }
+        }
+    }
+
+    private class FileTreeWalker{
+
+        class DirectoryFilter implements FilenameFilter{
 
             @Override
-            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                if(str.frmt.validators.Factories.JavaTestClasscFileNameValidatorFactory.getInstance().
-                        isJavaTestClassFileNameValid(file.getFileName().toString())){
-                    qualifiedFileNames.add(parseClassQualifiedNameFromPath(file.toString()));
-                }
-                return FileVisitResult.CONTINUE;
+            public boolean accept(File dir, String name) {
+                return dir.isDirectory();
             }
+        }
 
+        public void walkFileTree(File rootDir, TestClassFileVisitor testClassFileVisitor){
+
+            File file = rootDir;
+
+            if(file.isDirectory()){
+
+                for( File item : file.listFiles() ){
+                    try {
+                        testClassFileVisitor.visitFile(item, null);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                File[] directories = file.listFiles(new DirectoryFilter());
+                for( File dir : directories ){
+                    this.walkFileTree(dir, testClassFileVisitor);//Recursion
+                }
+            }
         }
-        try {
-            Files.walkFileTree(Paths.get( getWebInfDirPath() + ( isWindows() ? "\\work\\classes\\test" : "/work/classes/test" ) ),
-                    new FileScanner());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return qualifiedFileNames;
     }
 
 }
