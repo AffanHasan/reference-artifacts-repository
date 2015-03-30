@@ -1,17 +1,12 @@
 package com.rc.wefunit;
 
 import com.bowstreet.util.SystemProperties;
-import com.bowstreet.webapp.WebAppAccess;
 import mockit.Expectations;
 import mockit.Mocked;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.lang.reflect.Method;
-import java.nio.file.FileSystem;
-import java.nio.file.Paths;
 import java.util.*;
 
 /**
@@ -22,6 +17,17 @@ public class RunnerTest {
     private Runner _runner;
 
     private final String _webInfDirPath = "samplewefproject/WebContent/WEB-INF";
+
+    private final String _packageName = "test.models.test.services.Service1.";
+
+    private final Set<String> _fileNames;
+
+    RunnerTest(){
+        _fileNames = new LinkedHashSet<String>();
+        _fileNames.add(_packageName + "SOOneTest.class");
+        _fileNames.add(_packageName + "SOFour_Test.class");
+        _fileNames.add(_packageName + "SOTwoTest.class");
+    }
 
     @BeforeTest
     public void beforeTest(){
@@ -48,14 +54,8 @@ public class RunnerTest {
             }
         };
 
-        String packageName = "test.models.test.services.Service1.";
-        Set<String> fileNames = new LinkedHashSet<String>();
-        fileNames.add(packageName + "SOOneTest.class");
-        fileNames.add(packageName + "SOFour_Test.class");
-        fileNames.add(packageName + "SOTwoTest.class");
-
         Set<String> qualifiedFileNames = _runner.scanTestClasses();
-        for( String name : fileNames ) {
+        for( String name : _fileNames) {
             Assert.assertTrue(qualifiedFileNames.contains(name));
         }
         Class c;
@@ -71,7 +71,6 @@ public class RunnerTest {
             }
         };
 
-
         try{
             _runner.scanTestClasses();
             Assert.fail("IllegalStateException not thrown");
@@ -79,5 +78,31 @@ public class RunnerTest {
             Assert.assertEquals(e.getMessage(),
                     "Scan for test classes failed; no valid Web Experience Factory WEB-INF path found");
         }
+    }
+
+    @Test(enabled = false)
+    public void getTestClassesSet(@Mocked SystemProperties systemProperties){
+        new Expectations(){
+            {
+                SystemProperties.getWebInfDir(); result = _webInfDirPath;
+            }
+        };
+
+        Set<Class> set= null;
+        try {
+            set = _runner.getTestClassesSet(this.getClass().getClassLoader());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+
+        for( Class item : set){
+            Assert.assertTrue(_fileNames.contains(item.getName()));
+        }
+    }
+
+    @Test(enabled = true)
+    public void prioritizeTestClassesForExecution(){
+//        PriorityQueue<Class> pq = _runner.prioritizeTestClassesForExecution();
     }
 }

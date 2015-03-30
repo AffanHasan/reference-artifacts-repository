@@ -63,14 +63,13 @@ public class DefaultRunner implements Runner {
     private class TestClassFileVisitor{
 
         private String parseClassQualifiedNameFromPath(String path){
-//            System.out.println("Inside parseClassQualifiedNameFromPath" + path + "is wondows " + isWindows());
             String absolutePath = path.split((isWindows() ? "work\\\\classes" : "work/classes"))[1];
             absolutePath = absolutePath.replace((isWindows() ? '\\' : '/'), '.');
             absolutePath = absolutePath.replaceFirst("\\Q.\\E", "").trim();
             return absolutePath;
         }
 
-        public void visitFile(File file, BasicFileAttributes attrs) throws IOException {
+        public void visitFile(File file) throws IOException {
 
             if(str.frmt.validators.Factories.JavaTestClasscFileNameValidatorFactory.getInstance().
                     isJavaTestClassFileNameValid(file.getName())){
@@ -97,7 +96,7 @@ public class DefaultRunner implements Runner {
 
                 for( File item : file.listFiles() ){
                     try {
-                        testClassFileVisitor.visitFile(item, null);
+                        testClassFileVisitor.visitFile(item);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -111,4 +110,15 @@ public class DefaultRunner implements Runner {
         }
     }
 
+    @Override
+    public Set<Class> getTestClassesSet(ClassLoader cl) throws ClassNotFoundException {
+        Set<Class> classesSet = new LinkedHashSet<Class>();
+        for( String className : this.scanTestClasses()){
+            classesSet.add(
+                    Class.forName(className.replace(".class", ""),
+                    true,
+                    cl));
+        }
+        return classesSet;
+    }
 }

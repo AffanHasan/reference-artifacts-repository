@@ -1,5 +1,7 @@
 package com.rc.wefunit;
 
+import com.bowstreet.builders.webapp.ServiceConsumerBuilder;
+import com.bowstreet.builders.webapp.api.ServiceConsumer2;
 import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.Test;
@@ -19,6 +21,6 @@ public abstract class GenericServiceOperationTest {
 
     @Test
     public void is_service_operation_exists(){
-//        Assert.notNull(webAppAccess.getWebApp().getMethod(serviceOperationName));
+//        webAppAccess.getmo
     }
 }

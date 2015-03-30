@@ -10,4 +10,6 @@ public interface Runner {
     public String getWebInfDirPath();
 
     public Set<String> scanTestClasses();
+
+    public Set<Class> getTestClassesSet( ClassLoader cl) throws ClassNotFoundException;
 }
