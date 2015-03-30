@@ -31,7 +31,6 @@ public class SuperUserLoginUtilityTest {
         Assert.assertEquals(arr[1], "passw0rd");//User Password
     }
 
-
     @Test(enabled = false)
     public void preqa_super_user_credentials_for_gespra(){
         String arr[] = SuperUserLoginUtility.getPreQaSuperUserCredentialsGESPRA();

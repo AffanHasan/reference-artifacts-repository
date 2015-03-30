@@ -113,10 +113,7 @@ public class DefaultRunner implements Runner {
     public Set<Class> getTestClassesSet(ClassLoader cl) throws ClassNotFoundException {
         Set<Class> classesSet = new LinkedHashSet<Class>();
         for( String className : this.scanTestClasses()){
-            classesSet.add(
-                    Class.forName(className.replace(".class", ""),
-                    true,
-                    cl));
+            classesSet.add( Class.forName(className, true, cl));
         }
         return classesSet;
     }

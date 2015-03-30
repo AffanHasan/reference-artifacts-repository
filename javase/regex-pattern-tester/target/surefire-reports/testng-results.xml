@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="regexpatterntester.PatternMatcherTest" duration-ms="39" started-at="2015-03-25T12:10:55Z" finished-at="2015-03-25T12:10:55Z">
+  <suite name="regexpatterntester.PatternMatcherTest" duration-ms="41" started-at="2015-03-30T14:30:25Z" finished-at="2015-03-30T14:30:25Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="39" started-at="2015-03-25T12:10:55Z" finished-at="2015-03-25T12:10:55Z">
+    <test name="Command line test" duration-ms="41" started-at="2015-03-30T14:30:25Z" finished-at="2015-03-30T14:30:25Z">
       <class name="regexpatterntester.PatternMatcherTest">
-        <test-method status="PASS" signature="must_accept_a_regex_pattern_as_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_accept_a_regex_pattern_as_string" duration-ms="18" started-at="2015-03-25T17:10:55Z" finished-at="2015-03-25T17:10:55Z">
+        <test-method status="PASS" signature="must_accept_a_regex_pattern_as_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_accept_a_regex_pattern_as_string" duration-ms="17" started-at="2015-03-30T19:30:25Z" finished-at="2015-03-30T19:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_accept_a_regex_pattern_as_string -->
-        <test-method status="PASS" signature="must_accept_an_input_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_accept_an_input_string" duration-ms="1" started-at="2015-03-25T17:10:55Z" finished-at="2015-03-25T17:10:55Z">
+        <test-method status="PASS" signature="must_accept_an_input_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_accept_an_input_string" duration-ms="1" started-at="2015-03-30T19:30:25Z" finished-at="2015-03-30T19:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_accept_an_input_string -->
-        <test-method status="PASS" signature="must_make_a_pattern_match_for_the_given_input_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_make_a_pattern_match_for_the_given_input_string" duration-ms="0" started-at="2015-03-25T17:10:55Z" finished-at="2015-03-25T17:10:55Z">
+        <test-method status="PASS" signature="must_make_a_pattern_match_for_the_given_input_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_make_a_pattern_match_for_the_given_input_string" duration-ms="0" started-at="2015-03-30T19:30:25Z" finished-at="2015-03-30T19:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_make_a_pattern_match_for_the_given_input_string -->
-        <test-method status="PASS" signature="must_return_a_regex_pattern_as_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_return_a_regex_pattern_as_string" duration-ms="5" started-at="2015-03-25T17:10:55Z" finished-at="2015-03-25T17:10:55Z">
+        <test-method status="PASS" signature="must_return_a_regex_pattern_as_string()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_return_a_regex_pattern_as_string" duration-ms="4" started-at="2015-03-30T19:30:25Z" finished-at="2015-03-30T19:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_return_a_regex_pattern_as_string -->
-        <test-method status="PASS" signature="must_throw_illegal_state_exception_when_no_input_string_is_provided_prior()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_throw_illegal_state_exception_when_no_input_string_is_provided_prior" duration-ms="1" started-at="2015-03-25T17:10:55Z" finished-at="2015-03-25T17:10:55Z">
+        <test-method status="PASS" signature="must_throw_illegal_state_exception_when_no_input_string_is_provided_prior()[pri:0, instance:regexpatterntester.PatternMatcherTest@2c8d66b2]" name="must_throw_illegal_state_exception_when_no_input_string_is_provided_prior" duration-ms="0" started-at="2015-03-30T19:30:25Z" finished-at="2015-03-30T19:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_throw_illegal_state_exception_when_no_input_string_is_provided_prior -->

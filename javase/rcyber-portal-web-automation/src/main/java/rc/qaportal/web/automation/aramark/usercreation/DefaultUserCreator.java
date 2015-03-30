@@ -17,18 +17,18 @@ public class DefaultUserCreator implements AramarkUserCreator {
 
     @Override
     public void createUser(AramarkEnvs env, Object[] credentials) {
-        switch (env){
-            case DEV_2_CPS:
-                WebDriver wd = Factories.WebDriverFactory.getInstance();
-                wd.get(getURL(env));
-
-//                TODO Write user login utility
-                WebElement e = wd.findElement(By.id("sizing_myprofile"));
-                if(!e.getText().isEmpty()){
-
-                }
-                break;
-        }
+//        switch (env){
+//            case DEV_2_CPS:
+//                WebDriver wd = Factories.WebDriverFactory.getInstance();
+//                wd.get(getURL(env));
+//
+////                TODO Write user login utility
+//                WebElement e = wd.findElement(By.id("sizing_myprofile"));
+//                if(!e.getText().isEmpty()){
+//
+//                }
+//                break;
+//        }
     }
 
     @Override

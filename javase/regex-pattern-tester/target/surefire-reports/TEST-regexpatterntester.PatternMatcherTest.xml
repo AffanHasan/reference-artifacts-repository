@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="regexpatterntester.PatternMatcherTest" time="0.019" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="regexpatterntester.PatternMatcherTest" time="0.02" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -58,9 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="regexpatterntester.PatternMatcherTest" name="must_accept_a_regex_pattern_as_string" time="0.016"/>
+  <testcase classname="regexpatterntester.PatternMatcherTest" name="must_accept_a_regex_pattern_as_string" time="0.015"/>
   <testcase classname="regexpatterntester.PatternMatcherTest" name="must_accept_an_input_string" time="0"/>
   <testcase classname="regexpatterntester.PatternMatcherTest" name="must_make_a_pattern_match_for_the_given_input_string" time="0.001"/>
-  <testcase classname="regexpatterntester.PatternMatcherTest" name="must_return_a_regex_pattern_as_string" time="0.002"/>
-  <testcase classname="regexpatterntester.PatternMatcherTest" name="must_throw_illegal_state_exception_when_no_input_string_is_provided_prior" time="0"/>
+  <testcase classname="regexpatterntester.PatternMatcherTest" name="must_return_a_regex_pattern_as_string" time="0.001"/>
+  <testcase classname="regexpatterntester.PatternMatcherTest" name="must_throw_illegal_state_exception_when_no_input_string_is_provided_prior" time="0.003"/>
 </testsuite>

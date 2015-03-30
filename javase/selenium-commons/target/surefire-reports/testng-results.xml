@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="selcommns.WebDriverFactoryTest" duration-ms="10796" started-at="2015-03-25T12:10:57Z" finished-at="2015-03-25T12:11:07Z">
+  <suite name="selcommns.WebDriverFactoryTest" duration-ms="9645" started-at="2015-03-30T14:30:27Z" finished-at="2015-03-30T14:30:37Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="10796" started-at="2015-03-25T12:10:57Z" finished-at="2015-03-25T12:11:07Z">
+    <test name="Command line test" duration-ms="9645" started-at="2015-03-30T14:30:27Z" finished-at="2015-03-30T14:30:37Z">
       <class name="selcommns.WebDriverFactoryTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="init" is-config="true" duration-ms="3744" started-at="2015-03-25T17:10:57Z" finished-at="2015-03-25T17:11:00Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="init" is-config="true" duration-ms="3808" started-at="2015-03-30T19:30:27Z" finished-at="2015-03-30T19:30:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="a_web_driver_needs_to_be_auto_closeable()[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="a_web_driver_needs_to_be_auto_closeable" duration-ms="3901" started-at="2015-03-25T17:11:00Z" finished-at="2015-03-25T17:11:04Z">
+        <test-method status="PASS" signature="a_web_driver_needs_to_be_auto_closeable()[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="a_web_driver_needs_to_be_auto_closeable" duration-ms="2667" started-at="2015-03-30T19:30:31Z" finished-at="2015-03-30T19:30:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_web_driver_needs_to_be_auto_closeable -->
-        <test-method status="PASS" signature="by_default_should_return_FireFoxDriver()[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="by_default_should_return_FireFoxDriver" duration-ms="2809" started-at="2015-03-25T17:11:04Z" finished-at="2015-03-25T17:11:07Z">
+        <test-method status="PASS" signature="by_default_should_return_FireFoxDriver()[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="by_default_should_return_FireFoxDriver" duration-ms="2767" started-at="2015-03-30T19:30:34Z" finished-at="2015-03-30T19:30:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- by_default_should_return_FireFoxDriver -->
-        <test-method status="PASS" signature="if_no_FF_is_installed_then_ask_for_the_browser_path(org.openqa.selenium.firefox.FirefoxDriver)[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="if_no_FF_is_installed_then_ask_for_the_browser_path" duration-ms="296" started-at="2015-03-25T17:11:07Z" finished-at="2015-03-25T17:11:07Z">
+        <test-method status="PASS" signature="if_no_FF_is_installed_then_ask_for_the_browser_path(org.openqa.selenium.firefox.FirefoxDriver)[pri:0, instance:selcommns.WebDriverFactoryTest@4566e5bd]" name="if_no_FF_is_installed_then_ask_for_the_browser_path" duration-ms="347" started-at="2015-03-30T19:30:36Z" finished-at="2015-03-30T19:30:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- if_no_FF_is_installed_then_ask_for_the_browser_path -->

@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="office-desktop" duration-ms="7" started-at="2015-03-25T12:11:09Z" finished-at="2015-03-25T12:11:09Z">
+  <suite name="office-desktop" duration-ms="6" started-at="2015-03-30T14:30:38Z" finished-at="2015-03-30T14:30:38Z">
     <groups>
     </groups>
-    <test name="Utilities Package Test" duration-ms="7" started-at="2015-03-25T12:11:09Z" finished-at="2015-03-25T12:11:09Z">
+    <test name="Utilities Package Test" duration-ms="6" started-at="2015-03-30T14:30:38Z" finished-at="2015-03-30T14:30:38Z">
     </test> <!-- Utilities Package Test -->
   </suite> <!-- office-desktop -->
 </testng-results>
