@@ -1,5 +1,6 @@
 package com.rc.wefunit;
 
+import mockit.Expectations;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -27,10 +28,8 @@ public class GenericServiceOperationTestTest {
         try {
             Method method = GenericServiceOperationTest.class.getMethod("is_service_operation_exists");
             Assert.assertTrue(method.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
-
         } catch (NoSuchMethodException e) {
             Assert.fail("Method \"is_service_operation_exists\" not found");
         }
     }
-
 }

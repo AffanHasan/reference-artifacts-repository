@@ -101,6 +101,39 @@ public class RunnerTest {
     }
 
     @Test
+    public void instantiateTestClass(@Mocked SystemProperties systemProperties){
+        new Expectations(){
+            {
+                SystemProperties.getWebInfDir(); result = _webInfDirPath;
+            }
+        };
+
+        try {
+            Class soOneClass = Class.forName("test.models.test.services.Service1");
+            Object soOneInstance = soOneClass.newInstance();
+            _runner.instantiateTestClass();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+        _runner.instantiateTestClasses();
+
+    }
+
+    @Test
+    public void instantiateTestClass_is_private(){
+        try {
+            _runner.getClass().getMethod("instantiateTestClass").
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(enabled = false)
     public void get_test_classes_priority_queue(){
 //        PriorityQueue<Class> pq = _runner.getTestClassesPriorityQueue();
     }
