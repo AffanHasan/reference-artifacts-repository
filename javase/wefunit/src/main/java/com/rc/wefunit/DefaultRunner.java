@@ -50,9 +50,7 @@ public class DefaultRunner implements Runner {
         if(!this.isValidWefWebInfDirectory()) {
             throw new IllegalStateException("Scan for test classes failed; no valid Web Experience Factory WEB-INF path found");
         }
-
         _qualifiedFileNames.clear();
-
         new FileTreeWalker().walkFileTree(
                 new File( getWebInfDirPath() + ( isWindows() ? "\\work\\classes\\test" : "/work/classes/test" )),
                 new TestClassFileVisitor());
@@ -66,6 +64,7 @@ public class DefaultRunner implements Runner {
             String absolutePath = path.split((isWindows() ? "work\\\\classes" : "work/classes"))[1];
             absolutePath = absolutePath.replace((isWindows() ? '\\' : '/'), '.');
             absolutePath = absolutePath.replaceFirst("\\Q.\\E", "").trim();
+            absolutePath = absolutePath.split("\\Q.\\Eclass")[0];
             return absolutePath;
         }
 

@@ -24,9 +24,9 @@ public class RunnerTest {
 
     RunnerTest(){
         _fileNames = new LinkedHashSet<String>();
-        _fileNames.add(_packageName + "SOOneTest.class");
-        _fileNames.add(_packageName + "SOFour_Test.class");
-        _fileNames.add(_packageName + "SOTwoTest.class");
+        _fileNames.add(_packageName + "SOOneTest");
+        _fileNames.add(_packageName + "SOFour_Test");
+        _fileNames.add(_packageName + "SOTwoTest");
     }
 
     @BeforeTest
@@ -58,7 +58,6 @@ public class RunnerTest {
         for( String name : _fileNames) {
             Assert.assertTrue(qualifiedFileNames.contains(name));
         }
-        Class c;
     }
 
     @Test
@@ -80,7 +79,7 @@ public class RunnerTest {
         }
     }
 
-    @Test(enabled = false)
+    @Test
     public void getTestClassesSet(@Mocked SystemProperties systemProperties){
         new Expectations(){
             {
@@ -90,7 +89,7 @@ public class RunnerTest {
 
         Set<Class> set= null;
         try {
-            set = _runner.getTestClassesSet(this.getClass().getClassLoader());
+            set = _runner.getTestClassesSet(ClassLoader.getSystemClassLoader());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             Assert.fail(e.getMessage());
@@ -101,8 +100,8 @@ public class RunnerTest {
         }
     }
 
-    @Test(enabled = true)
-    public void prioritizeTestClassesForExecution(){
-//        PriorityQueue<Class> pq = _runner.prioritizeTestClassesForExecution();
+    @Test
+    public void get_test_classes_priority_queue(){
+//        PriorityQueue<Class> pq = _runner.getTestClassesPriorityQueue();
     }
 }

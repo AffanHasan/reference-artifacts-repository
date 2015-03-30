@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="226" started-at="2015-03-30T10:18:58Z" finished-at="2015-03-30T10:18:58Z">
+  <suite name="Surefire suite" duration-ms="238" started-at="2015-03-30T13:46:32Z" finished-at="2015-03-30T13:46:33Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="226" started-at="2015-03-30T10:18:58Z" finished-at="2015-03-30T10:18:58Z">
-      <class name="com.rc.wefunit.RunnerTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.rc.wefunit.RunnerTest@39aeed2f]" name="beforeTest" is-config="true" duration-ms="22" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="prioritizeTestClassesForExecution()[pri:0, instance:com.rc.wefunit.RunnerTest@39aeed2f]" name="prioritizeTestClassesForExecution" duration-ms="6" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prioritizeTestClassesForExecution -->
-        <test-method status="PASS" signature="scan_for_test_classes(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@39aeed2f]" name="scan_for_test_classes" duration-ms="84" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scan_for_test_classes -->
-        <test-method status="PASS" signature="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@39aeed2f]" name="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" duration-ms="7" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project -->
-        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@39aeed2f]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="13" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- web_INF_directory_path_web_inf_as_last_directory -->
-      </class> <!-- com.rc.wefunit.RunnerTest -->
+    <test name="Surefire test" duration-ms="238" started-at="2015-03-30T13:46:32Z" finished-at="2015-03-30T13:46:33Z">
       <class name="com.rc.wefunit.probes.AssertTest">
-        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@28d25987]" name="notNull" duration-ms="6" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
+        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@4590c9c3]" name="notNull" duration-ms="4" started-at="2015-03-30T18:46:32Z" finished-at="2015-03-30T18:46:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notNull -->
       </class> <!-- com.rc.wefunit.probes.AssertTest -->
+      <class name="com.rc.wefunit.RunnerTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.rc.wefunit.RunnerTest@32e6e9c3]" name="beforeTest" is-config="true" duration-ms="9" started-at="2015-03-30T18:46:32Z" finished-at="2015-03-30T18:46:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="getTestClassesSet(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@32e6e9c3]" name="getTestClassesSet" duration-ms="78" started-at="2015-03-30T18:46:32Z" finished-at="2015-03-30T18:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestClassesSet -->
+        <test-method status="PASS" signature="get_test_classes_priority_queue()[pri:0, instance:com.rc.wefunit.RunnerTest@32e6e9c3]" name="get_test_classes_priority_queue" duration-ms="5" started-at="2015-03-30T18:46:33Z" finished-at="2015-03-30T18:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_test_classes_priority_queue -->
+        <test-method status="PASS" signature="scan_for_test_classes(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@32e6e9c3]" name="scan_for_test_classes" duration-ms="29" started-at="2015-03-30T18:46:33Z" finished-at="2015-03-30T18:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scan_for_test_classes -->
+        <test-method status="PASS" signature="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@32e6e9c3]" name="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" duration-ms="10" started-at="2015-03-30T18:46:33Z" finished-at="2015-03-30T18:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project -->
+        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@32e6e9c3]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="8" started-at="2015-03-30T18:46:33Z" finished-at="2015-03-30T18:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_INF_directory_path_web_inf_as_last_directory -->
+      </class> <!-- com.rc.wefunit.RunnerTest -->
       <class name="com.rc.wefunit.GenericServiceOperationTestTest">
-        <test-method status="PASS" signature="is_service_operation_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@4501b7af]" name="is_service_operation_exists" duration-ms="4" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
+        <test-method status="PASS" signature="is_service_operation_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@12843fce]" name="is_service_operation_exists" duration-ms="6" started-at="2015-03-30T18:46:33Z" finished-at="2015-03-30T18:46:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_service_operation_exists -->
-        <test-method status="PASS" signature="is_service_operation_exists_method_should_have_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@4501b7af]" name="is_service_operation_exists_method_should_have_Test_annotation" duration-ms="2" started-at="2015-03-30T15:18:58Z" finished-at="2015-03-30T15:18:58Z">
+        <test-method status="PASS" signature="is_service_operation_exists_method_should_have_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@12843fce]" name="is_service_operation_exists_method_should_have_Test_annotation" duration-ms="2" started-at="2015-03-30T18:46:33Z" finished-at="2015-03-30T18:46:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_service_operation_exists_method_should_have_Test_annotation -->
       </class> <!-- com.rc.wefunit.GenericServiceOperationTestTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
