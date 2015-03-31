@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede6b090-fea2-40cb-8d74-2d05bb4f1639" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javaee/target/MANIFEST.MF" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javaee/web-services/jax-rs/target/MANIFEST.MF" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javaee/web-services/target/MANIFEST.MF" afterPath="" />
@@ -72,6 +73,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/testng-failed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Surefire suite/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/Command line test.properties" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/classes.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/groups.html" afterPath="" />
@@ -83,13 +85,35 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/reporter-output.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/testng.xml.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Command line suite/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/Annotations.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/MANIFEST.MF" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/GenericServiceOperationTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/GenericServiceOperationTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/GenericServiceOperationTestTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/GenericServiceOperationTestTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/annotations/Inject.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/annotations/Inject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Surefire suite/Surefire test.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Surefire suite/Surefire test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Surefire suite/Surefire test.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Surefire suite/Surefire test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.GenericServiceOperationTestTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.GenericServiceOperationTestTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.RunnerTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.RunnerTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/classes.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/methods-not-run.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/methods-not-run.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/methods.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/testng.xml.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/testng.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/toc.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/toc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reference-artifacts-repository.iws" />
@@ -145,17 +169,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RunnerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunnerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7823219" vertical-offset="607" max-vertical-offset="1410">
-              <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+              <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
               <folding>
                 <element signature="method#RunnerTest#0;class#RunnerTest#0" expanded="false" />
                 <element signature="method#web_INF_directory_path_web_inf_as_last_directory#0;class#RunnerTest#0" expanded="false" />
                 <element signature="method#scan_for_test_classes#0;class#RunnerTest#0" expanded="false" />
                 <element signature="method#scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#getTestClassesSet#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#instantiateTestClass#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#instantiateTestClass_is_private#0;class#RunnerTest#0" expanded="false" />
                 <element signature="method#get_test_classes_priority_queue#0;class#RunnerTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestClassInstantiationUtilityTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericServiceOperationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SOOneTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOOneTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericServiceOperationTestTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4353562" vertical-offset="0" max-vertical-offset="758">
+              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+              <folding>
+                <element signature="method#is_service_operation_exists#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_service_operation_exists_method_should_have_Test_annotation#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_webAppAccess_field_with_service_consumer_fixtures_annotation_available#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_serviceOperationName_string_field_present#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_serviceOperationName_string_field_is_protected#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_serviceOperationName_string_field_contains_Inject_annotation#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_dataServiceName_string_field_is_present#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+                <element signature="method#is_dataServiceName_string_field_contains_Inject_annotation#0;class#GenericServiceOperationTestTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -169,9 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/Annotations.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/GenericServiceOperationTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/probes/ProbesTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/probes/AssertTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/fixture-resources/WEB-INF/work/source/test/models/test/services/Service1/Get1SOTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/resources/WEB-INF/work/source/test/models/test/services/Service1/OneSOTest.java" />
@@ -217,9 +291,12 @@
         <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java" />
         <option value="$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/utilities/UserLoginUtility.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/ServiceConsumerFixtures.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
       </list>
     </option>
   </component>
@@ -269,72 +346,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="string-format-validators">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="javase/string-format-validators">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/test/java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="str/frmt/validators">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="string-format-validators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="string-format-validators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="str.frmt.validators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -441,7 +452,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -450,10 +461,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,111 +497,75 @@
               <option name="myItemId" value="wefunit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="annotations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samplewefproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Service1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="string-format-validators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="string-format-validators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samplewefproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="str.frmt.validators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference-artifacts-repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="string-format-validators">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wefunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="javase/string-format-validators">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samplewefproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="src/test/java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="str/frmt/validators">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -609,7 +580,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="UserLogin&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.utilities.UserLoginUtility&#10;UserLo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtilityTest.java&#10;DefaultUser&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.usercreation.DefaultUserCreator&#10;Runn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java&#10;DEfaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Def&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;mym&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;sfo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOFour_Test.java&#10;mymo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;DefaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Javas&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestSrcFileNameValidator.java&#10;Mym&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;MyMo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;testng.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/testng.xml&#10; login_super_dev2 &#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest#login_super_dev2&#10;defa&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java&#10; preqa_CPS_url_correctness&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.usercreation.UserCreationTest#preqa_CPS_url_correctness&#10;test.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/localization/currency-converter/testng.xml" />
+    <property name="SearchEverywhereHistoryKey" value="Generic&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java&#10;Test&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Test.java&#10;Inject&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java&#10;Gene&#9;PSI&#9;JAVA://com.rc.wefunit.GenericServiceOperationTestTest&#10;GenericServ&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;UserLogin&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.utilities.UserLoginUtility&#10;UserLo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/src/test/java/rc/qaportal/web/automation/aramark/utilities/SuperUserLoginUtilityTest.java&#10;DefaultUser&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.usercreation.DefaultUserCreator&#10;Runn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java&#10;DEfaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Def&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;mym&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;sfo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOFour_Test.java&#10;mymo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;DefaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Javas&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/string-format-validators/src/main/java/str/frmt/validators/JavaTestSrcFileNameValidator.java&#10;Mym&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;MyMo&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/maven-plugins/wefunit-fixture-maker/src/main/java/wefunitfixturemaker/MyMojo.java&#10;testng.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/testng.xml&#10; login_super_dev2 &#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.utilities.SuperUserLoginUtilityTest#login_super_dev2&#10;defa&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/usercreation/DefaultUserCreator.java&#10; preqa_CPS_url_correctness&#9;PSI&#9;JAVA://rc.qaportal.web.automation.aramark.usercreation.UserCreationTest#preqa_CPS_url_correctness&#10;test.xml&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/localization/currency-converter/testng.xml" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="117" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
@@ -935,7 +906,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -948,7 +919,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27595446" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27595446" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -963,33 +934,6 @@
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5003349" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.4996651" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27595446" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.50063694" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1009,7 +953,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1018,34 +962,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3328859" vertical-offset="3337" max-vertical-offset="32850">
-          <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/annotations/Annotations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6833773" vertical-offset="67" max-vertical-offset="840">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/selenium-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62416106" vertical-offset="0" max-vertical-offset="745">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="37" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/localization/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37598944" vertical-offset="0" max-vertical-offset="758">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1395">
           <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18120806" vertical-offset="0" max-vertical-offset="745">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="840">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,13 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="758">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1179,14 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27704486" vertical-offset="0" max-vertical-offset="758">
           <caret line="15" column="61" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOOneTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="0" column="42" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,7 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6442953" vertical-offset="0" max-vertical-offset="745">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,15 +1167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25725594" vertical-offset="0" max-vertical-offset="758">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1320,7 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41556728" vertical-offset="0" max-vertical-offset="1050">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45514512" vertical-offset="0" max-vertical-offset="758">
           <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,7 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29683378" vertical-offset="0" max-vertical-offset="758">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,43 +1268,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25725594" vertical-offset="0" max-vertical-offset="758">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="method#is_service_operation_exists#0;class#GenericServiceOperationTestTest#0" expanded="false" />
-            <element signature="method#is_service_operation_exists_method_should_have_Test_annotation#0;class#GenericServiceOperationTestTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37598944" vertical-offset="0" max-vertical-offset="758">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOFour_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33245382" vertical-offset="23763" max-vertical-offset="51540">
+          <caret line="1684" column="17" selection-start-line="1684" selection-start-column="17" selection-end-line="1684" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15831135" vertical-offset="0" max-vertical-offset="758">
+          <caret line="11" column="27" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/ServiceConsumerFixtures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7823219" vertical-offset="607" max-vertical-offset="1410">
-          <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
           <folding>
             <element signature="method#RunnerTest#0;class#RunnerTest#0" expanded="false" />
             <element signature="method#web_INF_directory_path_web_inf_as_last_directory#0;class#RunnerTest#0" expanded="false" />
             <element signature="method#scan_for_test_classes#0;class#RunnerTest#0" expanded="false" />
             <element signature="method#scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#getTestClassesSet#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#instantiateTestClass#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#instantiateTestClass_is_private#0;class#RunnerTest#0" expanded="false" />
             <element signature="method#get_test_classes_priority_queue#0;class#RunnerTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOOneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4353562" vertical-offset="0" max-vertical-offset="758">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="method#is_service_operation_exists#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_service_operation_exists_method_should_have_Test_annotation#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_webAppAccess_field_with_service_consumer_fixtures_annotation_available#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_serviceOperationName_string_field_present#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_serviceOperationName_string_field_is_protected#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_serviceOperationName_string_field_contains_Inject_annotation#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_dataServiceName_string_field_is_present#0;class#GenericServiceOperationTestTest#0" expanded="false" />
+            <element signature="method#is_dataServiceName_string_field_contains_Inject_annotation#0;class#GenericServiceOperationTestTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

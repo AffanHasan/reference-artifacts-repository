@@ -6,9 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by Affan Hasan on 3/20/15.
+ * Created by root on 3/31/15.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface Inject {
+public @interface ServiceConsumerFixtures {
 }
