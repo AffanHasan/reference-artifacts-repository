@@ -15,5 +15,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface GenericSODependency {
 
-    public GenericSOInjectables dependency();
+    public GenericSOInjectables value();
 }

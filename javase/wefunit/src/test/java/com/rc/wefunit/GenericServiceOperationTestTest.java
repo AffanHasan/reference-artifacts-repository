@@ -1,9 +1,12 @@
 package com.rc.wefunit;
 
 import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.ServiceConsumerFixtures;
+import com.rc.wefunit.enums.GenericSOInjectables;
 import mockit.Expectations;
+import org.omg.PortableServer.SERVANT_RETENTION_POLICY_ID;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -38,12 +41,35 @@ public class GenericServiceOperationTestTest {
             Assert.fail("Method \"is_service_operation_exists\" not found");
         }
     }
+
     @Test
-    public void is_webAppAccess_field_with_service_consumer_fixtures_annotation_available(){
+    public void is_webAppAccess_field_with_GenericSODependency_annotation_present(){
+        try {
+            Field field = GenericServiceOperationTest.class.getDeclaredField("webAppAccess");
+            Assert.assertTrue(field.isAnnotationPresent(GenericSODependency.class));
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail();
+        }
+    }
+
+    @Test
+    public void is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present(){
+        try {
+            Field field = GenericServiceOperationTest.class.getDeclaredField("webAppAccess");
+            System.out.println("---GenericSODependency Value : " + field.getAnnotation(GenericSODependency.class).value());
+            Assert.assertTrue(field.getAnnotation(GenericSODependency.class).value() == GenericSOInjectables.SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail();
+        }
+    }
+
+    @Test
+    public void is_webAppAccess_field_with_Inject_annotation_present(){
         try {
             Field field = GenericServiceOperationTest.class.getDeclaredField("webAppAccess");
             Assert.assertTrue(field.isAnnotationPresent(Inject.class));
-            Assert.assertTrue(field.isAnnotationPresent(ServiceConsumerFixtures.class));
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
             Assert.fail();
@@ -124,6 +150,28 @@ public class GenericServiceOperationTestTest {
     }
 
     @Test
+    public void serviceOperationName_field_is_GenericSODependency_annotation_present(){
+        try {
+            Field field = GenericServiceOperationTest.class.getDeclaredField("serviceOperationName");
+            Assert.assertTrue(field.isAnnotationPresent(GenericSODependency.class));
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail("Field serviceOperationName not found");
+        }
+    }
+
+    @Test
+    public void serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present(){
+        try {
+            Field field = GenericServiceOperationTest.class.getDeclaredField("serviceOperationName");
+            Assert.assertTrue(field.getAnnotation(GenericSODependency.class).value() == GenericSOInjectables.SERVICE_OPERATION_NAME);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail("Field serviceOperationName not found");
+        }
+    }
+
+    @Test
     public void getter_for_dataServiceName(){
         try {
             Method method = GenericServiceOperationTest.class.getMethod("getDataServiceName");
@@ -131,6 +179,30 @@ public class GenericServiceOperationTestTest {
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
             Assert.fail("Method getDataServiceName() not found");
+        }
+    }
+
+    @Test
+    public void is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation(){
+
+        try {
+            Field field = GenericServiceOperationTest.class.getDeclaredField("dataServiceName");
+            Assert.assertTrue(field.isAnnotationPresent(GenericSODependency.class));
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail("Field dataServiceName not found");
+        }
+    }
+
+    @Test
+    public void is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present(){
+
+        try {
+            Field field = GenericServiceOperationTest.class.getDeclaredField("dataServiceName");
+            Assert.assertTrue(field.getAnnotation(GenericSODependency.class).value() == GenericSOInjectables.DATA_SERVICE_NAME);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail("Field dataServiceName not found");
         }
     }
 

@@ -1,10 +1,8 @@
 package com.rc.wefunit;
 
 import com.bowstreet.webapp.WebAppAccess;
-import com.rc.wefunit.annotations.BeforeClass;
-import com.rc.wefunit.annotations.Inject;
-import com.rc.wefunit.annotations.ServiceConsumerFixtures;
-import com.rc.wefunit.annotations.Test;
+import com.rc.wefunit.annotations.*;
+import com.rc.wefunit.enums.GenericSOInjectables;
 
 /**
  * Created by Affan Hasan on 3/23/15.
@@ -12,13 +10,15 @@ import com.rc.wefunit.annotations.Test;
 public abstract class GenericServiceOperationTest {
 
     @Inject
-    @ServiceConsumerFixtures
+    @GenericSODependency(GenericSOInjectables.SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL)
     protected WebAppAccess webAppAccess;
 
     @Inject
+    @GenericSODependency(GenericSOInjectables.SERVICE_OPERATION_NAME)
     protected String serviceOperationName;
 
     @Inject
+    @GenericSODependency(GenericSOInjectables.DATA_SERVICE_NAME)
     protected String dataServiceName;
 
     public String getServiceOperationName(){

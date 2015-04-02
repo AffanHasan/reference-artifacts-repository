@@ -1,5 +1,6 @@
 package com.rc.wefunit;
 
+import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Inject;
 
 import java.lang.reflect.Field;
@@ -17,13 +18,13 @@ public class DefaultTestClassInstantiationUtility implements TestClassInstantiat
         class InjectableFieldsFilter {
 
             public Field[] getInjectableFields(Field[] fields){
-                Field[] injectableFields = null;;
+                Field[] injectableFields = new Field[fields.length];
                 for( int c = 0; c < fields.length ; c++){
                     if(fields[c].isAnnotationPresent(Inject.class))
                         injectableFields[c] = fields[c];
 
                 }
-                return  fields;
+                return  injectableFields;
             }
         }
 
@@ -35,24 +36,28 @@ public class DefaultTestClassInstantiationUtility implements TestClassInstantiat
             if(_instance instanceof GenericServiceOperationTest){
                 try {
 //                    Get those fields which are annotated @Inject
-                    Field[] injectableFields = new InjectableFieldsFilter().getInjectableFields(testClass.getFields());
+                    Field[] injectableFields = new InjectableFieldsFilter().getInjectableFields(testClass.getSuperclass().getDeclaredFields());
                     for( Field item : injectableFields ){
-                        //Injecting 'serviceOperationName'
+                        switch (item.getAnnotation(GenericSODependency.class).value()){
+                            case DATA_SERVICE_NAME:
+                                String packageNameArray[] = testClass.getPackage().getName().split("\\Q.\\E");
+                                String dsName = packageNameArray[packageNameArray.length - 1];
+                                dsName = dsName.split("Test")[0];
+                                dsName = dsName + "SC";
+                                Field dataServiceName = testClass.getSuperclass().getDeclaredField("dataServiceName");
+                                dataServiceName.set(_instance, dsName);
+                                break;
+                            case SERVICE_OPERATION_NAME:
+                                String classSimpleName = testClass.getSimpleName();
+                                String soName =  classSimpleName.split("Test")[0];
+                                soName = soName.replaceFirst(soName.substring(0, 1), (soName.substring(0, 1).toLowerCase()));
+                                Field serviceOperationName = testClass.getSuperclass().getDeclaredField("serviceOperationName");
+                                serviceOperationName.set(_instance, soName);
+                                break;
+                            case SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL:
+                                break;
+                        }
                     }
-                    String classSimpleName = testClass.getSimpleName();
-                    String soName =  classSimpleName.split("Test")[0];
-                    soName = soName.replaceFirst(soName.substring(0, 1), (soName.substring(0, 1).toLowerCase()));
-                    Field serviceOperationName = testClass.getSuperclass().getDeclaredField("serviceOperationName");
-                    serviceOperationName.set(_instance, soName);
-                    //Injecting 'serviceOperationName' ends
-                    //Injecting 'dataServiceName' starts
-                    String packageNameArray[] = testClass.getPackage().getName().split("\\Q.\\E");
-                    String dsName = packageNameArray[packageNameArray.length - 1];
-                    dsName = dsName.split("Test")[0];
-                    dsName = dsName + "SC";
-                    Field dataServiceName = testClass.getSuperclass().getDeclaredField("dataServiceName");
-                    dataServiceName.set(_instance, dsName);
-                    //Injecting 'dataServiceName' ends
                 } catch (NoSuchFieldException e) {
                     e.printStackTrace();
                 }

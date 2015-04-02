@@ -6,6 +6,7 @@ package com.rc.wefunit.enums;
 public enum GenericSOInjectables {
 
     SERVICE_OPERATION_NAME,
-    DATA_SERVICE_NAME;
+    DATA_SERVICE_NAME,
+    SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL;
 
 }

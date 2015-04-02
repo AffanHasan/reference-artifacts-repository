@@ -29,11 +29,11 @@ public class GenericSODependencyTest {
     }
 
     @org.testng.annotations.Test
-    public void is_dependency_method_present(){
+    public void is_value_method_present(){
         try {
             Class genericSODependency = Class.forName("com.rc.wefunit.annotations.GenericSODependency");
-            Method methodDependency = genericSODependency.getMethod("dependency");
-            Assert.assertTrue(methodDependency.getReturnType().equals(GenericSOInjectables.class));
+            Method methodValue = genericSODependency.getMethod("value");
+            Assert.assertTrue(methodValue.getReturnType().equals(GenericSOInjectables.class));
         } catch (ClassNotFoundException e) {
 
         } catch (NoSuchMethodException e) {
