@@ -34,18 +34,4 @@ public class Annotations {
             Assert.fail("Method not present");
         }
     }
-
-    @org.testng.annotations.Test
-    public void test_enabled_true(){
-        System.out.println("Is directory" + (new File("test-classes")).isDirectory());
-    }
-
-    @org.testng.annotations.Test
-    public void test_enabled_false(){
-
-    }
-
-//    @Inject
-//    private final Object _default = null;
-
 }
