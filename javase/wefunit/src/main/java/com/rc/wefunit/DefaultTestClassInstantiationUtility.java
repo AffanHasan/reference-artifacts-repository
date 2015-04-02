@@ -1,5 +1,7 @@
 package com.rc.wefunit;
 
+import com.rc.wefunit.annotations.Inject;
+
 import java.lang.reflect.Field;
 
 /**
@@ -11,14 +13,32 @@ public class DefaultTestClassInstantiationUtility implements TestClassInstantiat
 
     @Override
     public Object instantiateTestClass(Class testClass) {
+
+        class InjectableFieldsFilter {
+
+            public Field[] getInjectableFields(Field[] fields){
+                Field[] injectableFields = null;;
+                for( int c = 0; c < fields.length ; c++){
+                    if(fields[c].isAnnotationPresent(Inject.class))
+                        injectableFields[c] = fields[c];
+
+                }
+                return  fields;
+            }
+        }
+
         try {
 //            Instantiate object
             _instance = testClass.newInstance();
 
-//            Now inject dependencies
+//            Now inject dependencies For class "GenericServiceOperationTest"
             if(_instance instanceof GenericServiceOperationTest){
                 try {
-                    //Injecting 'serviceOperationName' starts
+//                    Get those fields which are annotated @Inject
+                    Field[] injectableFields = new InjectableFieldsFilter().getInjectableFields(testClass.getFields());
+                    for( Field item : injectableFields ){
+                        //Injecting 'serviceOperationName'
+                    }
                     String classSimpleName = testClass.getSimpleName();
                     String soName =  classSimpleName.split("Test")[0];
                     soName = soName.replaceFirst(soName.substring(0, 1), (soName.substring(0, 1).toLowerCase()));
