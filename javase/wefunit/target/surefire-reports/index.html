@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods,   17 passed</span>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.rc.wefunit.TestClassInstantiationUtilityTest" hash-for-method="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1">instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,17 +120,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.rc.wefunit.RunnerTest" hash-for-method="instantiateTestClass">instantiateTestClass</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.rc.wefunit.GenericServiceOperationTestTest" hash-for-method="getter_for_dataServiceName">getter_for_dataServiceName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.rc.wefunit.RunnerTest" hash-for-method="instantiateTestClass_is_private">instantiateTestClass_is_private</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.rc.wefunit.GenericServiceOperationTestTest" hash-for-method="getter_for_serviceOperationName">getter_for_serviceOperationName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.rc.wefunit.TestClassInstantiationUtilityTest" hash-for-method="instantiate_a_test_class">instantiate_a_test_class</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.rc.wefunit.GenericServiceOperationTestTest" hash-for-method="getter_for_webAppAccess">getter_for_webAppAccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -196,6 +210,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rc.wefunit.TestClassInstantiationUtilityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1">
+                  </a> <!-- instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1 -->
+                  <span class="method-name">instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.rc.wefunit.DefaultTestClassInstantiationUtility.instantiateTestClass(DefaultTestClassInstantiationUtility.java:22)
+	at com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1(TestClassInstantiationUtilityTest.java:18)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -207,20 +241,6 @@
                   <a name="getTestClassesSet">
                   </a> <!-- getTestClassesSet -->
                   <span class="method-name">getTestClassesSet</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="instantiateTestClass">
-                  </a> <!-- instantiateTestClass -->
-                  <span class="method-name">instantiateTestClass</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="instantiateTestClass_is_private">
-                  </a> <!-- instantiateTestClass_is_private -->
-                  <span class="method-name">instantiateTestClass_is_private</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -249,24 +269,30 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.rc.wefunit.TestClassInstantiationUtilityTest</span>
+              <span class="class-name">com.rc.wefunit.GenericServiceOperationTestTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="instantiate_a_test_class">
-                  </a> <!-- instantiate_a_test_class -->
-                  <span class="method-name">instantiate_a_test_class</span>
+                  <a name="getter_for_dataServiceName">
+                  </a> <!-- getter_for_dataServiceName -->
+                  <span class="method-name">getter_for_dataServiceName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.rc.wefunit.GenericServiceOperationTestTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getter_for_serviceOperationName">
+                  </a> <!-- getter_for_serviceOperationName -->
+                  <span class="method-name">getter_for_serviceOperationName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getter_for_webAppAccess">
+                  </a> <!-- getter_for_webAppAccess -->
+                  <span class="method-name">getter_for_webAppAccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="is_dataServiceName_string_field_contains_Inject_annotation">
@@ -401,80 +427,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(17);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getTestClassesSet')
 data.setCell(0, 2, 'com.rc.wefunit.RunnerTest')
-data.setCell(0, 3, 74);
+data.setCell(0, 3, 66);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project')
 data.setCell(1, 2, 'com.rc.wefunit.RunnerTest')
-data.setCell(1, 3, 14);
+data.setCell(1, 3, 12);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'scan_for_test_classes')
 data.setCell(2, 2, 'com.rc.wefunit.RunnerTest')
-data.setCell(2, 3, 14);
+data.setCell(2, 3, 12);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'is_dataServiceName_string_field_contains_Inject_annotation')
-data.setCell(3, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
-data.setCell(3, 3, 12);
+data.setCell(3, 1, 'instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1')
+data.setCell(3, 2, 'com.rc.wefunit.TestClassInstantiationUtilityTest')
+data.setCell(3, 3, 11);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'web_INF_directory_path_web_inf_as_last_directory')
 data.setCell(4, 2, 'com.rc.wefunit.RunnerTest')
 data.setCell(4, 3, 7);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'instantiate_a_test_class')
-data.setCell(5, 2, 'com.rc.wefunit.TestClassInstantiationUtilityTest')
-data.setCell(5, 3, 5);
+data.setCell(5, 1, 'is_dataServiceName_string_field_contains_Inject_annotation')
+data.setCell(5, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
+data.setCell(5, 3, 4);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'is_service_operation_exists')
+data.setCell(6, 1, 'is_service_operation_exists_method_should_have_Test_annotation')
 data.setCell(6, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
-data.setCell(6, 3, 5);
+data.setCell(6, 3, 4);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'is_webAppAccess_field_with_service_consumer_fixtures_annotation_available')
 data.setCell(7, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
-data.setCell(7, 3, 5);
+data.setCell(7, 3, 3);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'is_service_operation_exists_method_should_have_Test_annotation')
+data.setCell(8, 1, 'getter_for_dataServiceName')
 data.setCell(8, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(8, 3, 3);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'notNull')
 data.setCell(9, 2, 'com.rc.wefunit.probes.AssertTest')
-data.setCell(9, 3, 3);
+data.setCell(9, 3, 1);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected')
+data.setCell(10, 1, 'is_serviceOperationName_string_field_is_protected')
 data.setCell(10, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'instantiateTestClass')
-data.setCell(11, 2, 'com.rc.wefunit.RunnerTest')
+data.setCell(11, 1, 'is_serviceOperationName_string_field_contains_Inject_annotation')
+data.setCell(11, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(11, 3, 1);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'is_serviceOperationName_string_field_contains_Inject_annotation')
+data.setCell(12, 1, 'getter_for_webAppAccess')
 data.setCell(12, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'is_serviceOperationName_string_field_present')
+data.setCell(13, 1, 'is_dataServiceName_string_field_is_present')
 data.setCell(13, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'instantiateTestClass_is_private')
-data.setCell(14, 2, 'com.rc.wefunit.RunnerTest')
+data.setCell(14, 1, 'getter_for_serviceOperationName')
+data.setCell(14, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'is_serviceOperationName_string_field_is_protected')
+data.setCell(15, 1, 'is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected')
 data.setCell(15, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(15, 3, 0);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'is_dataServiceName_string_field_is_present')
+data.setCell(16, 1, 'is_serviceOperationName_string_field_present')
 data.setCell(16, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
 data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'is_service_operation_exists')
+data.setCell(17, 2, 'com.rc.wefunit.GenericServiceOperationTestTest')
+data.setCell(17, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 144 ms</span>
+              <span class="suite-total-time">Total running time: 125 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -523,81 +553,87 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.TestClassInstantiationUtilityTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">instantiate_a_test_class</span>
-                <span class="method-start">28 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.probes.AssertTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">notNull</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-start">66 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.RunnerTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getTestClassesSet</span>
-                <span class="method-start">49 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">instantiateTestClass</span>
-                <span class="method-start">132 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">instantiateTestClass_is_private</span>
-                <span class="method-start">133 ms</span>
+                <span class="method-start">74 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">scan_for_test_classes</span>
-                <span class="method-start">134 ms</span>
+                <span class="method-start">148 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project</span>
-                <span class="method-start">154 ms</span>
+                <span class="method-start">175 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">web_INF_directory_path_web_inf_as_last_directory</span>
-                <span class="method-start">174 ms</span>
+                <span class="method-start">192 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.GenericServiceOperationTestTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">is_dataServiceName_string_field_contains_Inject_annotation</span>
-                <span class="method-start">185 ms</span>
+                <span class="method-name">getter_for_dataServiceName</span>
+                <span class="method-start">203 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">is_dataServiceName_string_field_is_present</span>
-                <span class="method-start">200 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">is_serviceOperationName_string_field_contains_Inject_annotation</span>
-                <span class="method-start">206 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">is_serviceOperationName_string_field_is_protected</span>
+                <span class="method-name">getter_for_serviceOperationName</span>
                 <span class="method-start">207 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">is_serviceOperationName_string_field_present</span>
-                <span class="method-start">207 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">is_service_operation_exists</span>
+                <span class="method-name">getter_for_webAppAccess</span>
                 <span class="method-start">208 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">is_dataServiceName_string_field_contains_Inject_annotation</span>
+                <span class="method-start">209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">is_dataServiceName_string_field_is_present</span>
+                <span class="method-start">214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">is_serviceOperationName_string_field_contains_Inject_annotation</span>
+                <span class="method-start">214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">is_serviceOperationName_string_field_is_protected</span>
+                <span class="method-start">215 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">is_serviceOperationName_string_field_present</span>
+                <span class="method-start">222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">is_service_operation_exists</span>
+                <span class="method-start">223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">is_service_operation_exists_method_should_have_Test_annotation</span>
-                <span class="method-start">213 ms</span>
+                <span class="method-start">224 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">is_webAppAccess_field_with_service_consumer_fixtures_annotation_available</span>
-                <span class="method-start">216 ms</span>
+                <span class="method-start">231 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected</span>
-                <span class="method-start">223 ms</span>
+                <span class="method-start">236 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

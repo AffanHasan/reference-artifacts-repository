@@ -1,5 +1,6 @@
 package com.rc.wefunit;
 
+import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.ServiceConsumerFixtures;
 import mockit.Expectations;
@@ -108,6 +109,39 @@ public class GenericServiceOperationTestTest {
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
             Assert.fail();
+        }
+    }
+
+    @Test
+    public void getter_for_serviceOperationName(){
+        try {
+            Method method = GenericServiceOperationTest.class.getMethod("getServiceOperationName");
+            Assert.assertTrue(method.getReturnType().equals(String.class));//Return string
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail("Method getServiceOperationName() not found");
+        }
+    }
+
+    @Test
+    public void getter_for_dataServiceName(){
+        try {
+            Method method = GenericServiceOperationTest.class.getMethod("getDataServiceName");
+            Assert.assertTrue(method.getReturnType().equals(String.class));//Return string
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail("Method getDataServiceName() not found");
+        }
+    }
+
+    @Test
+    public void getter_for_webAppAccess(){
+        try {
+            Method method = GenericServiceOperationTest.class.getMethod("getWebAppAccessSC");
+            Assert.assertTrue(method.getReturnType().equals(WebAppAccess.class));//Return WebAppAccess
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail("Method getWebAppAccessSC() not found");
         }
     }
 

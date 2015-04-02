@@ -10,4 +10,10 @@ public class Factories {
             return new DefaultRunner();
         }
     }
+
+    public static class TestClassInstantiationUtilityFactory {
+        public static TestClassInstantiationUtility getInstance(){
+            return new DefaultTestClassInstantiationUtility();
+        }
+    }
 }

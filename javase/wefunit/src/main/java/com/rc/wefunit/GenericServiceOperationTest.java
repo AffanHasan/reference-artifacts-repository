@@ -20,6 +20,18 @@ public abstract class GenericServiceOperationTest {
     @Inject
     protected String dataServiceName;
 
+    public String getServiceOperationName(){
+        return this.serviceOperationName;
+    }
+
+    public String getDataServiceName(){
+        return this.dataServiceName;
+    }
+
+    public WebAppAccess getWebAppAccessSC(){
+        return this.webAppAccess;
+    }
+
     @Test
     public void is_service_operation_exists(){
 //        webAppAccess.getWebApp().getDataService("Service1").getOperation("SOOneTest");

@@ -100,33 +100,6 @@ public class RunnerTest {
         }
     }
 
-    @Test
-    public void instantiateTestClass(){
-
-//        try {
-//            Class soOneClass = Class.forName("test.models.test.services.Service1.SOOneTest");
-//            Object obj = _runner.instantiateTestClass(soOneClass);
-//
-//            Assert.assertTrue(obj instanceof GenericServiceOperationTest);
-//            soOneClass.getDeclaredField("");
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (InstantiationException e) {
-//            e.printStackTrace();
-//        } catch (IllegalAccessException e) {
-//            e.printStackTrace();
-//        }
-    }
-
-    @Test
-    public void instantiateTestClass_is_private(){
-//        try {
-////            _runner.getClass().getMethod("instantiateTestClass").
-//        } catch (NoSuchMethodException e) {
-//            e.printStackTrace();
-//        }
-    }
-
     @Test(enabled = false)
     public void get_test_classes_priority_queue(){
 //        PriorityQueue<Class> pq = _runner.getTestClassesPriorityQueue();

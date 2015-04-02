@@ -40,9 +40,34 @@ public class MyMojo extends AbstractMojo{
 
     private Set<String> _fileNames = new LinkedHashSet<String>();
 
+//    public void execute() throws MojoExecutionException {
+//        try {
+//            Files.walkFileTree(Paths.get("samplewefproject/WebContent/WEB-INF/work/source"), new FileScanner());
+//            System.out.println(_fileNames.toString());
+//            File[] filesArray = new File[_fileNames.size()];
+//            int size = _fileNames.size();
+//
+//            for(int i = 0; i < size; i++){
+//                filesArray[i] = new File(_fileNames.toArray()[i].toString());
+//            }
+//            JavaCompiler jc = ToolProvider.getSystemJavaCompiler();
+//            StandardJavaFileManager sjfm = jc.getStandardFileManager(null, null, null);
+//            Iterable fileObjects = sjfm.getJavaFileObjects(filesArray);
+//            String [] options = new String[]{ "-d", "samplewefproject/WebContent/WEB-INF/work/classes",
+//                    "-cp", "src/main/java target/classes" };
+////            ;samplewefproject/WebContent/WEB-INF/lib
+//            File classesDirectory = new File("samplewefproject/WebContent/WEB-INF/work/classes");
+//            jc.getTask(null, null, null, Arrays.asList(options), null, fileObjects).call();
+//            sjfm.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
     public void execute() throws MojoExecutionException {
         try {
             Files.walkFileTree(Paths.get("samplewefproject/WebContent/WEB-INF/work/source"), new FileScanner());
+            Files.walkFileTree(Paths.get("src/main/java"), new FileScanner());
             System.out.println(_fileNames.toString());
             File[] filesArray = new File[_fileNames.size()];
             int size = _fileNames.size();
@@ -53,7 +78,8 @@ public class MyMojo extends AbstractMojo{
             JavaCompiler jc = ToolProvider.getSystemJavaCompiler();
             StandardJavaFileManager sjfm = jc.getStandardFileManager(null, null, null);
             Iterable fileObjects = sjfm.getJavaFileObjects(filesArray);
-            String [] options = new String[]{ "-d", "samplewefproject/WebContent/WEB-INF/work/classes", "-cp", "src/main/java/" };
+            String [] options = new String[]{ "-d", "samplewefproject/WebContent/WEB-INF/work/classes",
+                    "-cp", "samplewefproject/WebContent/WEB-INF/lib/wef-factory-jar-1.0-SNAPSHOT.jar:samplewefproject/WebContent/WEB-INF/lib/string-format-validators-1.0-SNAPSHOT.jar" };
             File classesDirectory = new File("samplewefproject/WebContent/WEB-INF/work/classes");
             jc.getTask(null, null, null, Arrays.asList(options), null, fileObjects).call();
             sjfm.close();
@@ -63,8 +89,6 @@ public class MyMojo extends AbstractMojo{
     }
 
     class FileScanner extends SimpleFileVisitor<Path>{
-
-//        private String currentDirectory;
 
         @Override
         public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {

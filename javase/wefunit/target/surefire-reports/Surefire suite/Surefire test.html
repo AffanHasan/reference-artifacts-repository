@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 31 20:11:31 PKT 2015</td>
+<td>Started on:</td><td>Thu Apr 02 15:55:53 PKT 2015</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (225 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (238 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,35 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1()'><b>instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1</b><br>Test class: com.rc.wefunit.TestClassInstantiationUtilityTest</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.rc.wefunit.DefaultTestClassInstantiationUtility.instantiateTestClass(DefaultTestClassInstantiationUtility.java:22)
+	at com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1(TestClassInstantiationUtilityTest.java:18)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181199958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1181199958'><pre>java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.rc.wefunit.DefaultTestClassInstantiationUtility.instantiateTestClass(DefaultTestClassInstantiationUtility.java:22)
+	at com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1(TestClassInstantiationUtilityTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:205)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:108)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>com.rc.wefunit.TestClassInstantiationUtilityTest@6ea12c19</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,87 +107,87 @@ function toggleAllBoxes() {
 <td title='com.rc.wefunit.RunnerTest.getTestClassesSet()'><b>getTestClassesSet</b><br>Test class: com.rc.wefunit.RunnerTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.RunnerTest@26f67b76</td></tr>
+<td>com.rc.wefunit.RunnerTest@153f5a29</td></tr>
 <tr>
-<td title='com.rc.wefunit.RunnerTest.instantiateTestClass()'><b>instantiateTestClass</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.getter_for_dataServiceName()'><b>getter_for_dataServiceName</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.RunnerTest@26f67b76</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
-<td title='com.rc.wefunit.RunnerTest.instantiateTestClass_is_private()'><b>instantiateTestClass_is_private</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.getter_for_serviceOperationName()'><b>getter_for_serviceOperationName</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.RunnerTest@26f67b76</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
-<td title='com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_a_test_class()'><b>instantiate_a_test_class</b><br>Test class: com.rc.wefunit.TestClassInstantiationUtilityTest</td>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.getter_for_webAppAccess()'><b>getter_for_webAppAccess</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.TestClassInstantiationUtilityTest@5afa04c</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_dataServiceName_string_field_contains_Inject_annotation()'><b>is_dataServiceName_string_field_contains_Inject_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_dataServiceName_string_field_is_present()'><b>is_dataServiceName_string_field_is_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_serviceOperationName_string_field_contains_Inject_annotation()'><b>is_serviceOperationName_string_field_contains_Inject_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_serviceOperationName_string_field_is_protected()'><b>is_serviceOperationName_string_field_is_protected</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_serviceOperationName_string_field_present()'><b>is_serviceOperationName_string_field_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_service_operation_exists()'><b>is_service_operation_exists</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_service_operation_exists_method_should_have_Test_annotation()'><b>is_service_operation_exists_method_should_have_Test_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_webAppAccess_field_with_service_consumer_fixtures_annotation_available()'><b>is_webAppAccess_field_with_service_consumer_fixtures_annotation_available</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.GenericServiceOperationTestTest.is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected()'><b>is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.GenericServiceOperationTestTest@6ea12c19</td></tr>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@6a024a67</td></tr>
 <tr>
 <td title='com.rc.wefunit.probes.AssertTest.notNull()'><b>notNull</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.probes.AssertTest@6a024a67</td></tr>
+<td>com.rc.wefunit.probes.AssertTest@7921b0a2</td></tr>
 <tr>
 <td title='com.rc.wefunit.RunnerTest.scan_for_test_classes()'><b>scan_for_test_classes</b><br>Test class: com.rc.wefunit.RunnerTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.RunnerTest@26f67b76</td></tr>
+<td>com.rc.wefunit.RunnerTest@153f5a29</td></tr>
 <tr>
 <td title='com.rc.wefunit.RunnerTest.scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project()'><b>scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project</b><br>Test class: com.rc.wefunit.RunnerTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.RunnerTest@26f67b76</td></tr>
+<td>com.rc.wefunit.RunnerTest@153f5a29</td></tr>
 <tr>
 <td title='com.rc.wefunit.RunnerTest.web_INF_directory_path_web_inf_as_last_directory()'><b>web_INF_directory_path_web_inf_as_last_directory</b><br>Test class: com.rc.wefunit.RunnerTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.RunnerTest@26f67b76</td></tr>
+<td>com.rc.wefunit.RunnerTest@153f5a29</td></tr>
 </table><p>
 </body>
 </html>

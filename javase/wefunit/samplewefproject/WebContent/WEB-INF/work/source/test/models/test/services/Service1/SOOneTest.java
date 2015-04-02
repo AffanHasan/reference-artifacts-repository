@@ -1,12 +1,13 @@
 package test.models.test.services.Service1;
 
 
+import com.rc.wefunit.GenericServiceOperationTest;
 import com.rc.wefunit.annotations.Test;
 
 /**
  * Created by Affan Hasan on 3/24/15.
  */
-public class SOOneTest {
+public class SOOneTest extends GenericServiceOperationTest {
 
     @Test
     public void test1(){
