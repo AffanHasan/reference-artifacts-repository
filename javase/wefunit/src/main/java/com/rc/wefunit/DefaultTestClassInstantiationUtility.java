@@ -1,28 +1,38 @@
 package com.rc.wefunit;
 
 import java.lang.reflect.Field;
-import java.util.regex.Pattern;
 
 /**
  * Created by Affan Hasan on 4/1/15.
  */
 public class DefaultTestClassInstantiationUtility implements TestClassInstantiationUtility {
 
+    private Object _instance = null;
+
     @Override
     public Object instantiateTestClass(Class testClass) {
-        Object instance = null;
         try {
 //            Instantiate object
-            instance = testClass.newInstance();
+            _instance = testClass.newInstance();
 
 //            Now inject dependencies
-            if(instance instanceof GenericServiceOperationTest){
-                try {//Injecting 'serviceOperationName'
+            if(_instance instanceof GenericServiceOperationTest){
+                try {
+                    //Injecting 'serviceOperationName' starts
                     String classSimpleName = testClass.getSimpleName();
                     String soName =  classSimpleName.split("Test")[0];
                     soName = soName.replaceFirst(soName.substring(0, 1), (soName.substring(0, 1).toLowerCase()));
-                    Field field = testClass.getSuperclass().getDeclaredField("serviceOperationName");
-                    field.set(instance, soName);
+                    Field serviceOperationName = testClass.getSuperclass().getDeclaredField("serviceOperationName");
+                    serviceOperationName.set(_instance, soName);
+                    //Injecting 'serviceOperationName' ends
+                    //Injecting 'dataServiceName' starts
+                    String packageNameArray[] = testClass.getPackage().getName().split("\\Q.\\E");
+                    String dsName = packageNameArray[packageNameArray.length - 1];
+                    dsName = dsName.split("Test")[0];
+                    dsName = dsName + "SC";
+                    Field dataServiceName = testClass.getSuperclass().getDeclaredField("dataServiceName");
+                    dataServiceName.set(_instance, dsName);
+                    //Injecting 'dataServiceName' ends
                 } catch (NoSuchFieldException e) {
                     e.printStackTrace();
                 }
@@ -33,6 +43,6 @@ public class DefaultTestClassInstantiationUtility implements TestClassInstantiat
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        return instance;
+        return _instance;
     }
 }

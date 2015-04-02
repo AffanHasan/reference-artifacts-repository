@@ -5,6 +5,7 @@ import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.ServiceConsumerFixtures;
 import mockit.Expectations;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.annotation.Annotation;
@@ -19,7 +20,7 @@ import java.util.Arrays;
 public class GenericServiceOperationTestTest {
 
     @Test
-    public void is_service_operation_exists(){
+    public void is_service_operation_exists_Method_exists(){
         try {
             Method method = GenericServiceOperationTest.class.getMethod("is_service_operation_exists", null);
             Assert.assertNotNull(method);
@@ -37,7 +38,6 @@ public class GenericServiceOperationTestTest {
             Assert.fail("Method \"is_service_operation_exists\" not found");
         }
     }
-
     @Test
     public void is_webAppAccess_field_with_service_consumer_fixtures_annotation_available(){
         try {
@@ -145,7 +145,23 @@ public class GenericServiceOperationTestTest {
         }
     }
 
-    @Test(enabled = false)
-    public void is_so_name_is_according_to_convention(){
+    @Test
+    public void is_service_operation_name_is_in_correct_format_Method_exists(){
+        try {
+            Method method = GenericServiceOperationTest.class.getMethod("is_service_operation_name_is_in_correct_format", null);
+            Assert.assertNotNull(method);
+        } catch (NoSuchMethodException e) {
+            Assert.fail("Method \"is_service_operation_name_is_in_correct_format\" not found");
+        }
+    }
+
+    @Test
+    public void is_service_operation_name_is_in_correct_format_Method_contains_BeforeClass_annotation(){
+        try {
+            Method method = GenericServiceOperationTest.class.getMethod("is_service_operation_name_is_in_correct_format", null);
+            Assert.assertTrue(method.isAnnotationPresent(com.rc.wefunit.annotations.BeforeClass.class));
+        } catch (NoSuchMethodException e) {
+            Assert.fail("Method \"is_service_operation_name_is_in_correct_format\" not found");
+        }
     }
 }

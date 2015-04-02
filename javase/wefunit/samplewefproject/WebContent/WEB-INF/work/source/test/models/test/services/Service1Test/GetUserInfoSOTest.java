@@ -1,4 +1,4 @@
-package test.models.test.services.Service1;
+package test.models.test.services.Service1Test;
 
 
 import com.rc.wefunit.GenericServiceOperationTest;
@@ -7,7 +7,7 @@ import com.rc.wefunit.annotations.Test;
 /**
  * Created by Affan Hasan on 3/24/15.
  */
-public class SOOneTest extends GenericServiceOperationTest {
+public class GetUserInfoSOTest extends GenericServiceOperationTest {
 
     @Test
     public void test1(){

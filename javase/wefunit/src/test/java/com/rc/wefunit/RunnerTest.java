@@ -18,15 +18,18 @@ public class RunnerTest {
 
     private final String _webInfDirPath = "samplewefproject/WebContent/WEB-INF";
 
-    private final String _packageName = "test.models.test.services.Service1.";
+    private final String _package1 = "test.models.test.services.Service1Test.";
+    private final String _package2 = "test.models.test.services.Service2Test.";
 
     private final Set<String> _fileNames;
 
     RunnerTest(){
         _fileNames = new LinkedHashSet<String>();
-        _fileNames.add(_packageName + "SOOneTest");
-        _fileNames.add(_packageName + "SOFour_Test");
-        _fileNames.add(_packageName + "SOTwoTest");
+        _fileNames.add(_package1 + "GetUserInfoSOTest");
+        _fileNames.add(_package1 + "GetTransactionReportsSO_Test");
+        _fileNames.add(_package1 + "GetAccountsDetailSOTest");
+
+        _fileNames.add(_package2 + "Service2FirstSOTest");
     }
 
     @BeforeTest

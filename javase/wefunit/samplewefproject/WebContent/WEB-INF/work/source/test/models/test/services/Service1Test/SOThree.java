@@ -1,4 +1,4 @@
-package test.models.test.services.Service1;
+package test.models.test.services.Service1Test;
 
 /**
  * Created by root on 3/26/15.
