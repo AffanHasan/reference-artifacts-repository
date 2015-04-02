@@ -1,114 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="18" passed="17">
+<testng-results skipped="0" failed="0" total="19" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="238" started-at="2015-04-02T10:55:53Z" finished-at="2015-04-02T10:55:53Z">
+  <suite name="Surefire suite" duration-ms="227" started-at="2015-04-02T11:13:37Z" finished-at="2015-04-02T11:13:37Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="238" started-at="2015-04-02T10:55:53Z" finished-at="2015-04-02T10:55:53Z">
+    <test name="Surefire test" duration-ms="227" started-at="2015-04-02T11:13:37Z" finished-at="2015-04-02T11:13:37Z">
       <class name="com.rc.wefunit.RunnerTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="beforeTest" is-config="true" duration-ms="19" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="beforeTest" is-config="true" duration-ms="12" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="getTestClassesSet(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="getTestClassesSet" duration-ms="66" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="getTestClassesSet(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="getTestClassesSet" duration-ms="67" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestClassesSet -->
-        <test-method status="PASS" signature="scan_for_test_classes(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="scan_for_test_classes" duration-ms="12" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="scan_for_test_classes(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="scan_for_test_classes" duration-ms="12" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scan_for_test_classes -->
-        <test-method status="PASS" signature="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" duration-ms="12" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" duration-ms="9" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project -->
-        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="7" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@153f5a29]" name="web_INF_directory_path_web_inf_as_last_directory" duration-ms="13" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_INF_directory_path_web_inf_as_last_directory -->
       </class> <!-- com.rc.wefunit.RunnerTest -->
       <class name="com.rc.wefunit.probes.AssertTest">
-        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@7921b0a2]" name="notNull" duration-ms="1" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="notNull()[pri:0, instance:com.rc.wefunit.probes.AssertTest@7921b0a2]" name="notNull" duration-ms="0" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notNull -->
       </class> <!-- com.rc.wefunit.probes.AssertTest -->
       <class name="com.rc.wefunit.GenericServiceOperationTestTest">
-        <test-method status="PASS" signature="getter_for_dataServiceName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="getter_for_dataServiceName" duration-ms="3" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="getter_for_dataServiceName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="getter_for_dataServiceName" duration-ms="1" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getter_for_dataServiceName -->
-        <test-method status="PASS" signature="getter_for_serviceOperationName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="getter_for_serviceOperationName" duration-ms="0" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="getter_for_serviceOperationName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="getter_for_serviceOperationName" duration-ms="3" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getter_for_serviceOperationName -->
-        <test-method status="PASS" signature="getter_for_webAppAccess()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="getter_for_webAppAccess" duration-ms="0" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="getter_for_webAppAccess()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="getter_for_webAppAccess" duration-ms="1" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getter_for_webAppAccess -->
-        <test-method status="PASS" signature="is_dataServiceName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_dataServiceName_string_field_contains_Inject_annotation" duration-ms="4" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_dataServiceName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_dataServiceName_string_field_contains_Inject_annotation" duration-ms="11" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_dataServiceName_string_field_contains_Inject_annotation -->
-        <test-method status="PASS" signature="is_dataServiceName_string_field_is_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_dataServiceName_string_field_is_present" duration-ms="0" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_dataServiceName_string_field_is_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_dataServiceName_string_field_is_present" duration-ms="1" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_dataServiceName_string_field_is_present -->
-        <test-method status="PASS" signature="is_serviceOperationName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_serviceOperationName_string_field_contains_Inject_annotation" duration-ms="1" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_serviceOperationName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_serviceOperationName_string_field_contains_Inject_annotation" duration-ms="0" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_serviceOperationName_string_field_contains_Inject_annotation -->
-        <test-method status="PASS" signature="is_serviceOperationName_string_field_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_serviceOperationName_string_field_is_protected" duration-ms="1" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_serviceOperationName_string_field_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_serviceOperationName_string_field_is_protected" duration-ms="0" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_serviceOperationName_string_field_is_protected -->
-        <test-method status="PASS" signature="is_serviceOperationName_string_field_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_serviceOperationName_string_field_present" duration-ms="0" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- is_serviceOperationName_string_field_present -->
-        <test-method status="PASS" signature="is_service_operation_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_service_operation_exists" duration-ms="0" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_service_operation_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_service_operation_exists" duration-ms="1" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_service_operation_exists -->
-        <test-method status="PASS" signature="is_service_operation_exists_method_should_have_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_service_operation_exists_method_should_have_Test_annotation" duration-ms="4" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_serviceOperationName_string_field_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_serviceOperationName_string_field_present" duration-ms="0" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- is_serviceOperationName_string_field_present -->
+        <test-method status="PASS" signature="is_service_operation_exists_method_should_have_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_service_operation_exists_method_should_have_Test_annotation" duration-ms="4" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_service_operation_exists_method_should_have_Test_annotation -->
-        <test-method status="PASS" signature="is_webAppAccess_field_with_service_consumer_fixtures_annotation_available()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_available" duration-ms="3" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_webAppAccess_field_with_service_consumer_fixtures_annotation_available()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_available" duration-ms="3" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_webAppAccess_field_with_service_consumer_fixtures_annotation_available -->
-        <test-method status="PASS" signature="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected" duration-ms="0" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
+        <test-method status="PASS" signature="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6a024a67]" name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected" duration-ms="0" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected -->
       </class> <!-- com.rc.wefunit.GenericServiceOperationTestTest -->
       <class name="com.rc.wefunit.TestClassInstantiationUtilityTest">
-        <test-method status="FAIL" signature="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1()[pri:0, instance:com.rc.wefunit.TestClassInstantiationUtilityTest@6ea12c19]" name="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1" duration-ms="11" started-at="2015-04-02T15:55:53Z" finished-at="2015-04-02T15:55:53Z">
-          <exception class="java.lang.ArrayIndexOutOfBoundsException">
-            <message>
-              <![CDATA[1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.rc.wefunit.DefaultTestClassInstantiationUtility.instantiateTestClass(DefaultTestClassInstantiationUtility.java:22)
-	at com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1(TestClassInstantiationUtilityTest.java:18)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:205)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:108)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+        <test-method status="PASS" signature="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1()[pri:0, instance:com.rc.wefunit.TestClassInstantiationUtilityTest@6ea12c19]" name="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1" duration-ms="15" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1 -->
+        <test-method status="PASS" signature="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_2()[pri:0, instance:com.rc.wefunit.TestClassInstantiationUtilityTest@6ea12c19]" name="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_2" duration-ms="2" started-at="2015-04-02T16:13:37Z" finished-at="2015-04-02T16:13:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_2 -->
       </class> <!-- com.rc.wefunit.TestClassInstantiationUtilityTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

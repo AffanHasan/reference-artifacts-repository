@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.567 sec <<< FAILURE! - in TestSuite
-instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1(com.rc.wefunit.TestClassInstantiationUtilityTest)  Time elapsed: 0.025 sec  <<< FAILURE!
-java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.rc.wefunit.DefaultTestClassInstantiationUtility.instantiateTestClass(DefaultTestClassInstantiationUtility.java:22)
-	at com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1(TestClassInstantiationUtilityTest.java:18)
-
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.656 sec - in TestSuite

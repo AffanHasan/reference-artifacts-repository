@@ -11,17 +11,47 @@ public class TestClassInstantiationUtilityTest {
     private final TestClassInstantiationUtility _tciu = Factories.TestClassInstantiationUtilityFactory.getInstance();
 
     @Test
-    public void instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1(){
+    public void instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_1(){
         try {
             final Class soOneTestClass = Class.forName("test.models.test.services.Service1.SOOneTest");
             GenericServiceOperationTest soOneTestInstance = (GenericServiceOperationTest)
                     _tciu.instantiateTestClass(soOneTestClass);
-
             Assert.assertEquals(soOneTestInstance.getServiceOperationName(), "sOOne");
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             Assert.fail("Class not found : test.models.test.services.Service1.SOOneTest");
+        } catch (ClassCastException e){
+            e.printStackTrace();
+            Assert.fail();
+        }
+    }
+
+    @Test
+    public void instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_2(){
+        try {
+            final Class soOneTestClass = Class.forName("test.models.test.services.Service1.SOTwoTest");
+            GenericServiceOperationTest soOneTestInstance = (GenericServiceOperationTest)
+                    _tciu.instantiateTestClass(soOneTestClass);
+            Assert.assertEquals(soOneTestInstance.getServiceOperationName(), "sOTwo");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail("Class not found : test.models.test.services.Service1.SOTwoTest");
+        } catch (ClassCastException e){
+            e.printStackTrace();
+            Assert.fail();
+        }
+    }
+
+    @Test
+    public void instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName(){
+        try {
+            final Class soOneTestClass = Class.forName("test.models.test.services.Service1.SOTwoTest");
+            GenericServiceOperationTest soOneTestInstance = (GenericServiceOperationTest)
+                    _tciu.instantiateTestClass(soOneTestClass);
+            Assert.assertEquals(soOneTestInstance.getServiceOperationName(), "sOTwo");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail("Class not found : test.models.test.services.Service1.SOTwoTest");
         } catch (ClassCastException e){
             e.printStackTrace();
             Assert.fail();

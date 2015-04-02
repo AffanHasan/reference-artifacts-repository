@@ -19,9 +19,9 @@ public class DefaultTestClassInstantiationUtility implements TestClassInstantiat
             if(instance instanceof GenericServiceOperationTest){
                 try {//Injecting 'serviceOperationName'
                     String classSimpleName = testClass.getSimpleName();
-                    String soName =  classSimpleName.split("Test")[1];
+                    String soName =  classSimpleName.split("Test")[0];
                     soName = soName.replaceFirst(soName.substring(0, 1), (soName.substring(0, 1).toLowerCase()));
-                    Field field = testClass.getField("serviceOperationName");
+                    Field field = testClass.getSuperclass().getDeclaredField("serviceOperationName");
                     field.set(instance, soName);
                 } catch (NoSuchFieldException e) {
                     e.printStackTrace();
