@@ -13,6 +13,11 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- com.rc.wefunit.RunnerTest -->
+      <class name="com.rc.wefunit.FixtureDependencyInjectorUtilityTest">
+        <methods>
+          <include name="inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_webAppAccessSC_field_injection_Test_1"/>
+        </methods>
+      </class> <!-- com.rc.wefunit.FixtureDependencyInjectorUtilityTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

@@ -12,9 +12,10 @@ public class DefaultFixtureDependencyInjectorUtility implements FixtureDependenc
 
     @Override
     public void inject(Field field, Object instance) {
+        if(!field.isAnnotationPresent(Inject.class))//If field is not an injectable one
+            throw new IllegalStateException("Provided field is not Injectable");
 
         final Class testClass = instance.getClass();
-
         if(instance instanceof GenericServiceOperationTest){//If this is a Service Operation Test
             try {
                 switch (field.getAnnotation(GenericSODependency.class).value()){
