@@ -209,11 +209,11 @@ public class GenericServiceOperationTestTest {
     @Test
     public void getter_for_webAppAccess(){
         try {
-            Method method = GenericServiceOperationTest.class.getMethod("getWebAppAccessSC");
+            Method method = GenericServiceOperationTest.class.getMethod("getWebAppAccessSCBuildersFixtureModel");
             Assert.assertTrue(method.getReturnType().equals(WebAppAccess.class));//Return WebAppAccess
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
-            Assert.fail("Method getWebAppAccessSC() not found");
+            Assert.fail("Method getWebAppAccessSCBuildersFixtureModel() not found");
         }
     }
 

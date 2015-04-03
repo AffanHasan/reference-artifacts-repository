@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.226 sec - in TestSuite
+Tests run: 48, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.105 sec <<< FAILURE! - in TestSuite
+instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection(com.rc.wefunit.TestClassInstantiationUtilityTest)  Time elapsed: 0.02 sec  <<< FAILURE!
+java.lang.AssertionError: expected object to not be null
+	at com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection(TestClassInstantiationUtilityTest.java:101)
+

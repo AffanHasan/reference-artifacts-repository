@@ -3,16 +3,16 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test name="Surefire test(failed)">
     <classes>
+      <class name="com.rc.wefunit.TestClassInstantiationUtilityTest">
+        <methods>
+          <include name="instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection"/>
+        </methods>
+      </class> <!-- com.rc.wefunit.TestClassInstantiationUtilityTest -->
       <class name="com.rc.wefunit.RunnerTest">
         <methods>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- com.rc.wefunit.RunnerTest -->
-      <class name="com.rc.wefunit.TestClassInstantiationUtilityTest">
-        <methods>
-          <include name="instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_1"/>
-        </methods>
-      </class> <!-- com.rc.wefunit.TestClassInstantiationUtilityTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

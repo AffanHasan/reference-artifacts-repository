@@ -29,7 +29,7 @@ public abstract class GenericServiceOperationTest {
         return this.dataServiceName;
     }
 
-    public WebAppAccess getWebAppAccessSC(){
+    public WebAppAccess getWebAppAccessSCBuildersFixtureModel(){
         return this.webAppAccess;
     }
 

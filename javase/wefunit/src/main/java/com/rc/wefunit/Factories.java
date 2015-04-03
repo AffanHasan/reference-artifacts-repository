@@ -16,4 +16,10 @@ public class Factories {
             return new DefaultTestClassInstantiationUtility();
         }
     }
+
+    public static class FixtureDependencyInjectorUtilityFactory {
+        public static FixtureDependencyInjectorUtility getInstance(){
+            return new DefaultFixtureDependencyInjectorUtility();
+        }
+    }
 }
