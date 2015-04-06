@@ -22,4 +22,10 @@ public class Factories {
             return new DefaultFixtureDependencyInjectorUtility();
         }
     }
+
+    public static class DependencyScannerFactory {
+        public static DependencyScanner getInstance(){
+            return new DefaultDependencyScanner();
+        }
+    }
 }

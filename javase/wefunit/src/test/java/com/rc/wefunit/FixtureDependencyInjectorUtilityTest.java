@@ -3,6 +3,7 @@ package com.rc.wefunit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 

@@ -1,5 +1,6 @@
 package com.rc.wefunit.producers;
 
+import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Produces;
 import com.rc.wefunit.enums.GenericSOInjectables;
@@ -15,5 +16,11 @@ public class FactoryProducers {
     @GenericSODependency(GenericSOInjectables.SERVICE_OPERATION_NAME)
     public String getGSOTServiceOperationName(){
         return "";
+    }
+
+    @Produces
+    @GenericSODependency(GenericSOInjectables.SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL)
+    public WebAppAccess getSCBuildersFixturesModel(){
+        return null;
     }
 }
