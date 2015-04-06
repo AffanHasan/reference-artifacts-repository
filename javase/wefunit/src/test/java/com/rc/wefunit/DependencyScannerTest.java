@@ -36,10 +36,10 @@ public class DependencyScannerTest {
     }
 
     @Test
-    public void method_getDependencies_signatures(){
+    public void method_getDependenciesSignatures(){
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencyScanner");
-            Assert.assertNotNull(classObj.getMethod("scanDependencies"));
+            Assert.assertNotNull(classObj.getMethod("getDependenciesSignatures"));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             Assert.fail(e.getMessage());

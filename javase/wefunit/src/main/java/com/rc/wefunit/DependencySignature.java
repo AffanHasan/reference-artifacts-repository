@@ -3,6 +3,7 @@ package com.rc.wefunit;
 import com.rc.wefunit.annotations.Qualifier;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Enumeration;
 
@@ -15,7 +16,9 @@ public class DependencySignature {
 
     private final Annotation[] _qualifiers;
 
-    public DependencySignature(Class returnedObjectType, Annotation... qualifier){
+    private final Method _method;
+
+    public DependencySignature(Method method, Class returnedObjectType, Annotation... qualifier){
 
         for( int c = 0; c <  qualifier.length ; c++){
             if(!qualifier[c].getClass().isAnnotationPresent(Qualifier.class))
@@ -23,6 +26,7 @@ public class DependencySignature {
         }
         this._returnedObjectType = returnedObjectType;
         this._qualifiers = qualifier;
+        this._method = method;
     }
 
     @Override
