@@ -1,18 +1,29 @@
 package com.rc.wefunit.producers;
 
 import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.DependencyScanner;
+import com.rc.wefunit.DependencySignature;
+import com.rc.wefunit.Factories;
+import com.rc.wefunit.GenericServiceOperationTest;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Produces;
+import com.rc.wefunit.annotations.Qualifier;
 import com.rc.wefunit.enums.GenericSOInjectables;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Affan Hasan on 4/3/15.
  */
 public class FactoryProducersTest {
+
+    private final DependencyScanner _dependencyScanner = Factories.DependencyScannerFactory.getInstance();
 
     private final FactoryProducers _fp = new FactoryProducers();
 
@@ -34,9 +45,30 @@ public class FactoryProducersTest {
             Assert.assertTrue(method.isAnnotationPresent(Produces.class));
             Assert.assertTrue(method.isAnnotationPresent(GenericSODependency.class));
             Assert.assertTrue(method.getAnnotation(GenericSODependency.class).value() == GenericSOInjectables.SERVICE_OPERATION_NAME);
+
+            class ABC extends GenericServiceOperationTest {
+
+            }
+            ABC abc = new ABC();
+            Field f = Class.forName("com.rc.wefunit.GenericServiceOperationTest").getField("serviceOperationName");
+            Class type = f.getType();
+            List<Annotation> list = new ArrayList<Annotation>();
+            for( Annotation ann : f.getDeclaredAnnotations() ){
+                if(ann.getClass().isAnnotationPresent(Qualifier.class))
+                    list.add(ann);
+            }
+//            new DependencySignature(type, list.toArray());
+//            _dependencyScanner.getDependency();
+
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
-            Assert.fail();
+            Assert.fail(e.getMessage());
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
         }
     }
 

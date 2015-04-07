@@ -18,7 +18,7 @@ public class TestClassInstantiationUtilityTest {
             GenericServiceOperationTest soOneTestInstance = (GenericServiceOperationTest)
                     _tciu.instantiateTestClass(soOneTestClass);
             Assert.assertEquals(soOneTestInstance.getServiceOperationName(), "getUserInfoSO");
-        } catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException e){
             e.printStackTrace();
             Assert.fail("Class not found : test.models.test.services.Service1Test.GetUserInfoSOTest");
         } catch (ClassCastException e){

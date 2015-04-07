@@ -5,6 +5,7 @@ import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Produces;
 import com.rc.wefunit.enums.GenericSOInjectables;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
@@ -14,7 +15,7 @@ public class FactoryProducers {
 
     @Produces
     @GenericSODependency(GenericSOInjectables.SERVICE_OPERATION_NAME)
-    public String getGSOTServiceOperationName(){
+    public String getGSOTServiceOperationName(Field f, Object i){
         return "";
     }
 
