@@ -7,9 +7,5 @@ import java.util.SortedSet;
  */
 public interface DependencyScanner {
 
-    public void scanDependencies();
-
-    public SortedSet getDependenciesSignatures();
-
     public Object getDependency(DependencySignature ds);
 }

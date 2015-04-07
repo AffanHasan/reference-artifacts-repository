@@ -9,12 +9,13 @@ import java.lang.reflect.Method;
 public class FixtureDependency {
 
     private final DependencySignature _dependencySignature;
-
     private final Method _producerMethod;
+    private final Object containingObj;
 
-    public FixtureDependency(DependencySignature ds, Method producerMethod){
+    public FixtureDependency(DependencySignature ds, Method producerMethod, Object obj){
         this._dependencySignature = ds;
         this._producerMethod = producerMethod;
+        this.containingObj = obj;
     }
 
     public DependencySignature getSignature(){
@@ -22,6 +23,7 @@ public class FixtureDependency {
     }
 
     public Object getDependency(){
+//        return _producerMethod.invoke();
         return null;
     }
 }

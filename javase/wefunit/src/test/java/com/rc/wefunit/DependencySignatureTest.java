@@ -150,51 +150,6 @@ public class DependencySignatureTest {
     }
 
     @Test
-    public void field_method_existence(){
-        try {
-            Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
-            Field field = classObj.getDeclaredField("_method");
-            Assert.assertNotNull(field);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        }
-    }
-
-    @Test
-    public void field_method_is_private(){
-        try {
-            Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
-            Field field = classObj.getDeclaredField("_method");
-            Assert.assertTrue(Modifier.isPrivate(field.getModifiers()));
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        }
-    }
-
-    @Test
-    public void field_method_is_final(){
-        try {
-            Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
-            Field field = classObj.getDeclaredField("_method");
-            Assert.assertTrue(Modifier.isFinal(field.getModifiers()));
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        }
-    }
-
-    @Test
     public void there_is_only_one_constructor(){
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
@@ -217,11 +172,11 @@ public class DependencySignatureTest {
     }
 
     @Test
-    public void constructor_must_have_Method_as_the_first_parameter_data_type(){
+    public void constructor_must_have_Class_as_the_first_parameter_data_type(){
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
             Constructor constructor = classObj.getConstructors()[0];
-            Assert.assertEquals(constructor.getParameterTypes()[0], Method.class);
+            Assert.assertEquals(constructor.getParameterTypes()[0], Class.class);
         } catch (ClassNotFoundException e){
             e.printStackTrace();
             Assert.fail(e.getMessage());
@@ -229,24 +184,12 @@ public class DependencySignatureTest {
     }
 
     @Test
-    public void constructor_must_have_Class_as_the_second_parameter_data_type(){
+    public void constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type(){
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
             Constructor constructor = classObj.getConstructors()[0];
-            Assert.assertEquals(constructor.getParameterTypes()[1], Class.class);
-        } catch (ClassNotFoundException e){
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        }
-    }
-
-    @Test
-    public void constructor_must_have_an_Annotation_array_as_the_third_parameter_data_type(){
-        try {
-            Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
-            Constructor constructor = classObj.getConstructors()[0];
-            Assert.assertTrue(constructor.getParameterTypes()[2].isArray());
-            Assert.assertEquals(constructor.getParameterTypes()[2].getComponentType(), Annotation.class);
+            Assert.assertTrue(constructor.getParameterTypes()[1].isArray());
+            Assert.assertEquals(constructor.getParameterTypes()[1].getComponentType(), Annotation.class);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             Assert.fail(e.getMessage());
@@ -270,7 +213,7 @@ public class DependencySignatureTest {
         Class abcClass = abc.getClass();
         try {
             Field field = abcClass.getField("aField");
-            DependencySignature ds = new DependencySignature(null, String.class,
+            DependencySignature ds = new DependencySignature(String.class,
                     field.getAnnotation(NonQualifierAnnotation.class));
         } catch (NoSuchFieldException e) {
             e.printStackTrace();

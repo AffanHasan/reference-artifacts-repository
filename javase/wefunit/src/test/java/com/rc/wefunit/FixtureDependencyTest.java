@@ -16,6 +16,7 @@ public class FixtureDependencyTest {
     private final String _producerMethodFieldName = "_producerMethod";
     private final String _getSignatureMethodName = "getSignature";
     private final String _getDependencyMethodName = "getDependency";
+    private final String _containingObjFieldName = "containingObj";
 
     private final Class getClassObject(){
         try{
@@ -53,6 +54,7 @@ public class FixtureDependencyTest {
         Assert.assertTrue(getClassObject().getConstructors()[0].getParameterCount() == 2);
         Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[0].getType().equals(DependencySignature.class));
         Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[1].getType().equals(Method.class));
+        Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[2].getType().equals(Object.class));
     }
 
     @Test
@@ -97,6 +99,26 @@ public class FixtureDependencyTest {
 
     @Test
     public void producerMethod_field_is_private_is_of_type_Method(){
+        Assert.assertEquals(getFieldObject(_producerMethodFieldName).getType(), Method.class);
+    }
+
+    @Test
+    public void containingObj_field(){
+        Assert.assertNotNull(getFieldObject(_containingObjFieldName));
+    }
+
+    @Test
+    public void containingObj_field_is_private(){
+        Assert.assertTrue(Modifier.isPrivate(getFieldObject(_containingObjFieldName).getModifiers()));
+    }
+
+    @Test
+    public void containingObj_field_is_private_final(){
+        Assert.assertTrue(Modifier.isFinal(getFieldObject(_containingObjFieldName).getModifiers()));
+    }
+
+    @Test
+    public void containingObj_field_is_private_is_of_type_Object(){
         Assert.assertEquals(getFieldObject(_producerMethodFieldName).getType(), Method.class);
     }
 
