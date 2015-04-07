@@ -13,8 +13,9 @@ import java.lang.reflect.Modifier;
 public class FixtureDependencyTest {
 
     private final String _dependencySignatureFieldName = "_dependencySignature";
-
     private final String _producerMethodFieldName = "_producerMethod";
+    private final String _getSignatureMethodName = "getSignature";
+    private final String _getDependencyMethodName = "getDependency";
 
     private final Class getClassObject(){
         try{
@@ -34,6 +35,24 @@ public class FixtureDependencyTest {
             Assert.fail("Field \""+ fieldName +"\" do not exists");
         }
         return null;
+    }
+
+    private final Method getMethodObject(String methodName){
+        try{
+            return  getClassObject().getMethod(methodName);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail("Field \""+ methodName +"\" do not exists");
+        }
+        return null;
+    }
+
+    @Test
+    public void constructorTest(){
+        Assert.assertTrue(getClassObject().getConstructors().length == 1);
+        Assert.assertTrue(getClassObject().getConstructors()[0].getParameterCount() == 2);
+        Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[0].getType().equals(DependencySignature.class));
+        Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[1].getType().equals(Method.class));
     }
 
     @Test
@@ -82,7 +101,32 @@ public class FixtureDependencyTest {
     }
 
     @Test
-    public void constructorTest(){
-        Assert.fail("Not implemented");
+    public void getSignature(){
+        Assert.assertNotNull(getMethodObject(_getSignatureMethodName));
+    }
+
+    @Test
+    public void getSignature_method_is_public(){
+        Assert.assertTrue(Modifier.isPublic(getMethodObject(_getSignatureMethodName).getModifiers()));
+    }
+
+    @Test
+    public void getSignature_method_return_type_is_DependencySignature(){
+        Assert.assertTrue(getMethodObject(_getSignatureMethodName).getReturnType().equals(DependencySignature.class));
+    }
+
+    @Test
+    public void getDependency(){
+        Assert.assertNotNull(getMethodObject(_getDependencyMethodName));
+    }
+
+    @Test
+    public void getDependency_method_is_public(){
+        Assert.assertTrue(Modifier.isPublic(getMethodObject(_getDependencyMethodName).getModifiers()));
+    }
+
+    @Test
+    public void getDependencyMethodName_method_return_type_is_Object(){
+        Assert.assertTrue(getMethodObject(_getDependencyMethodName).getReturnType().equals(Object.class));
     }
 }

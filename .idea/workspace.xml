@@ -144,27 +144,25 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/Annotations.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultDependencyScanner.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultDependencyScanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultDependencyScanner.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultDependencyScanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DependencyScanner.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DependencyScanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DependencyScanner.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DependencyScanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/DependencyScannerTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/DependencyScannerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/producers/FactoryProducers.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/producers/FactoryProducers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/producers/FactoryProducers.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/producers/FactoryProducers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/producers/FactoryProducersTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/producers/FactoryProducersTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DependencyScanner.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DependencyScanner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/FixtureDependency.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/FixtureDependency.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/FixtureDependency.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/FixtureDependency.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/FixtureDependencyTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/FixtureDependencyTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/T1.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/T1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/T1.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/T1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/classes.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/classes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/pom.xml" afterPath="$PROJECT_DIR$/javase/wefunit/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/testng.xml" afterPath="$PROJECT_DIR$/javase/wefunit/testng.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/toc.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/toc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reference-artifacts-repository.iws" />
@@ -267,19 +265,23 @@
       <file leaf-file-name="FixtureDependencyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86147755" vertical-offset="52" max-vertical-offset="810">
-              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.8812665" vertical-offset="337" max-vertical-offset="1095">
+              <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
               <folding>
                 <element signature="method#getClassObject#0;class#FixtureDependencyTest#0" expanded="false" />
                 <element signature="method#getFieldObject#0;class#FixtureDependencyTest#0" expanded="false" />
+                <element signature="method#getMethodObject#0;class#FixtureDependencyTest#0" expanded="false" />
+                <element signature="method#constructorTest#0;class#FixtureDependencyTest#0" expanded="false" />
                 <element signature="method#dependencySignature_field_is_private#0;class#FixtureDependencyTest#0" expanded="false" />
                 <element signature="method#dependencySignature_field_is_private_final#0;class#FixtureDependencyTest#0" expanded="false" />
                 <element signature="method#dependencySignature_field_is_private_is_of_type_DependencySignature#0;class#FixtureDependencyTest#0" expanded="false" />
                 <element signature="method#producerMethod_field_is_private#0;class#FixtureDependencyTest#0" expanded="false" />
                 <element signature="method#producerMethod_field_is_private_final#0;class#FixtureDependencyTest#0" expanded="false" />
                 <element signature="method#producerMethod_field_is_private_is_of_type_Method#0;class#FixtureDependencyTest#0" expanded="false" />
-                <element signature="e#2595#2596#0" expanded="true" />
-                <element signature="e#2641#2642#0" expanded="true" />
+                <element signature="method#getSignature_method_is_public#0;class#FixtureDependencyTest#0" expanded="false" />
+                <element signature="method#getSignature_method_return_type_is_DependencySignature#0;class#FixtureDependencyTest#0" expanded="false" />
+                <element signature="method#getDependency_method_is_public#0;class#FixtureDependencyTest#0" expanded="false" />
+                <element signature="method#getDependencyMethodName_method_return_type_is_Object#0;class#FixtureDependencyTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -288,11 +290,10 @@
       <file leaf-file-name="FixtureDependency.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
+                <element signature="method#FixtureDependency#0;class#FixtureDependency#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -351,12 +352,12 @@
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DependencySignature.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FixtureDependency.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java" />
         <option value="$PROJECT_DIR$/javase/target/testng.xml" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/testng.xml" />
         <option value="$PROJECT_DIR$/javase/wefunit/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/wefunit/testng.xml" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java" />
       </list>
     </option>
   </component>
@@ -935,7 +936,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="64" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1392,29 +1393,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57387865" vertical-offset="0" max-vertical-offset="758">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1427,21 +1409,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="method#FixtureDependency#0;class#FixtureDependency#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86147755" vertical-offset="52" max-vertical-offset="810">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.8812665" vertical-offset="337" max-vertical-offset="1095">
+          <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
           <folding>
             <element signature="method#getClassObject#0;class#FixtureDependencyTest#0" expanded="false" />
             <element signature="method#getFieldObject#0;class#FixtureDependencyTest#0" expanded="false" />
+            <element signature="method#getMethodObject#0;class#FixtureDependencyTest#0" expanded="false" />
+            <element signature="method#constructorTest#0;class#FixtureDependencyTest#0" expanded="false" />
             <element signature="method#dependencySignature_field_is_private#0;class#FixtureDependencyTest#0" expanded="false" />
             <element signature="method#dependencySignature_field_is_private_final#0;class#FixtureDependencyTest#0" expanded="false" />
             <element signature="method#dependencySignature_field_is_private_is_of_type_DependencySignature#0;class#FixtureDependencyTest#0" expanded="false" />
             <element signature="method#producerMethod_field_is_private#0;class#FixtureDependencyTest#0" expanded="false" />
             <element signature="method#producerMethod_field_is_private_final#0;class#FixtureDependencyTest#0" expanded="false" />
             <element signature="method#producerMethod_field_is_private_is_of_type_Method#0;class#FixtureDependencyTest#0" expanded="false" />
-            <element signature="e#2595#2596#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
+            <element signature="method#getSignature_method_is_public#0;class#FixtureDependencyTest#0" expanded="false" />
+            <element signature="method#getSignature_method_return_type_is_DependencySignature#0;class#FixtureDependencyTest#0" expanded="false" />
+            <element signature="method#getDependency_method_is_public#0;class#FixtureDependencyTest#0" expanded="false" />
+            <element signature="method#getDependencyMethodName_method_return_type_is_Object#0;class#FixtureDependencyTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

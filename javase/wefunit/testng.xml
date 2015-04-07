@@ -9,7 +9,7 @@
 
     <test name="T1">
         <classes>
-            <class name="com.rc.wefunit.FixtureDependency"/>
+            <class name="com.rc.wefunit.FixtureDependencyTest"/>
             <!--<class name="test.sample.ParameterTest"/>-->
         </classes>
     </test>

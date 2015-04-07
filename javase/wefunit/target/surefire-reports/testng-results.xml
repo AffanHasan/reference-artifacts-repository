@@ -1,11 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="9" started-at="2015-04-07T13:25:13Z" finished-at="2015-04-07T13:25:13Z">
+  <suite name="Suite1" duration-ms="85" started-at="2015-04-07T13:47:02Z" finished-at="2015-04-07T13:47:02Z">
     <groups>
     </groups>
-    <test name="T1" duration-ms="9" started-at="2015-04-07T13:25:13Z" finished-at="2015-04-07T13:25:13Z">
+    <test name="T1" duration-ms="85" started-at="2015-04-07T13:47:02Z" finished-at="2015-04-07T13:47:02Z">
+      <class name="com.rc.wefunit.FixtureDependencyTest">
+        <test-method status="PASS" signature="constructorTest()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="constructorTest" duration-ms="35" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- constructorTest -->
+        <test-method status="PASS" signature="dependencySignature_field()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="dependencySignature_field" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependencySignature_field -->
+        <test-method status="PASS" signature="dependencySignature_field_is_private()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="dependencySignature_field_is_private" duration-ms="1" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependencySignature_field_is_private -->
+        <test-method status="PASS" signature="dependencySignature_field_is_private_final()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="dependencySignature_field_is_private_final" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependencySignature_field_is_private_final -->
+        <test-method status="PASS" signature="dependencySignature_field_is_private_is_of_type_DependencySignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="dependencySignature_field_is_private_is_of_type_DependencySignature" duration-ms="1" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependencySignature_field_is_private_is_of_type_DependencySignature -->
+        <test-method status="PASS" signature="existence_of_class()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="existence_of_class" duration-ms="1" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existence_of_class -->
+        <test-method status="PASS" signature="getDependency()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="getDependency" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDependency -->
+        <test-method status="PASS" signature="getDependencyMethodName_method_return_type_is_Object()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="getDependencyMethodName_method_return_type_is_Object" duration-ms="1" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDependencyMethodName_method_return_type_is_Object -->
+        <test-method status="PASS" signature="getDependency_method_is_public()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="getDependency_method_is_public" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDependency_method_is_public -->
+        <test-method status="PASS" signature="getSignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="getSignature" duration-ms="1" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSignature -->
+        <test-method status="PASS" signature="getSignature_method_is_public()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="getSignature_method_is_public" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSignature_method_is_public -->
+        <test-method status="PASS" signature="getSignature_method_return_type_is_DependencySignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="getSignature_method_return_type_is_DependencySignature" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSignature_method_return_type_is_DependencySignature -->
+        <test-method status="PASS" signature="producerMethod_field()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="producerMethod_field" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- producerMethod_field -->
+        <test-method status="PASS" signature="producerMethod_field_is_private()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="producerMethod_field_is_private" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- producerMethod_field_is_private -->
+        <test-method status="PASS" signature="producerMethod_field_is_private_final()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="producerMethod_field_is_private_final" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- producerMethod_field_is_private_final -->
+        <test-method status="PASS" signature="producerMethod_field_is_private_is_of_type_Method()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@12843fce]" name="producerMethod_field_is_private_is_of_type_Method" duration-ms="0" started-at="2015-04-07T18:47:02Z" finished-at="2015-04-07T18:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- producerMethod_field_is_private_is_of_type_Method -->
+      </class> <!-- com.rc.wefunit.FixtureDependencyTest -->
     </test> <!-- T1 -->
   </suite> <!-- Suite1 -->
 </testng-results>
