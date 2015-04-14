@@ -10,10 +10,12 @@ import java.lang.reflect.Field;
  */
 public class DefaultFixtureDependencyInjectorUtility implements FixtureDependencyInjectorUtility {
 
+        private final DependencyScanner _ds = Factories.DependencyScannerFactory.getInstance();
+
     private Class _testClass;
 
     @Override
-    public void inject(Field field, Object instance) {
+    public void inject(Field field, Object instance){
         if(!field.isAnnotationPresent(Inject.class))//If field is not an injectable one
             throw new IllegalStateException("Provided field is not Injectable");
 

@@ -37,7 +37,7 @@ public class TestClassInstantiationUtilityTest {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             Assert.fail("Class not found : test.models.test.services.Service1Test.GetAccountsDetailSOTest");
-        } catch (ClassCastException e){
+       } catch (ClassCastException e){
             e.printStackTrace();
             Assert.fail();
         }

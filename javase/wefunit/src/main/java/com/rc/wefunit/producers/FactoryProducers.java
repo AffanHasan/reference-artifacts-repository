@@ -14,14 +14,8 @@ import java.lang.reflect.Method;
 public class FactoryProducers {
 
     @Produces
-    @GenericSODependency(GenericSOInjectables.SERVICE_OPERATION_NAME)
-    public String getGSOTServiceOperationName(Field f, Object i){
-        return "";
-    }
-
-    @Produces
     @GenericSODependency(GenericSOInjectables.SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL)
-    public WebAppAccess getSCBuildersFixturesModel(){
-        return null;
+    public WebAppAccess getSCBuildersFixturesModel(WebAppAccess webAppAccess){
+        return webAppAccess.getModelInstance("test/SCBuildersFixture", null, true);
     }
 }

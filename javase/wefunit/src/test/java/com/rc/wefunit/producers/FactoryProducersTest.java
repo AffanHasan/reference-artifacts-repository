@@ -37,7 +37,7 @@ public class FactoryProducersTest {
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void getGSOTServiceOperationName(){
         try {
             Method method = _fpClass.getMethod("getGSOTServiceOperationName");
@@ -72,7 +72,7 @@ public class FactoryProducersTest {
         }
     }
 
-    @Test
+    @Test(enabled = true)
     public void getSCBuildersFixturesModel(){
         try {
             Method method = _fpClass.getMethod("getSCBuildersFixturesModel");

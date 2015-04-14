@@ -1,5 +1,8 @@
 package com.rc.wefunit;
 
+import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.annotations.GenericSODependency;
+import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.Qualifier;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -7,9 +10,9 @@ import org.testng.annotations.Test;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.SortedSet;
 
 /**
  * Created by Affan Hasan on 4/6/15.
@@ -30,7 +33,7 @@ public class DependencyScannerTest {
     }
 
     @Test
-    public void getDependency_exists(){
+    public void method_getDependency_exists(){
 
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencyScanner");
@@ -43,9 +46,9 @@ public class DependencyScannerTest {
             Assert.fail(e.getMessage());
         }
     }
-
+    
     @Test
-    public void getDependency_DependencySignature_Object_as_return_type(){
+    public void method_getDependency_DependencySignature_Object_as_return_type(){
 
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencyScanner");
@@ -59,9 +62,9 @@ public class DependencyScannerTest {
             Assert.fail(e.getMessage());
         }
     }
-
+    
     @Test
-    public void getDependency_DependencySignature_as_first_parameter(){
+    public void method_getDependency_DependencySignature_as_first_parameter(){
 
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencyScanner");
@@ -77,30 +80,19 @@ public class DependencyScannerTest {
     }
 
     @Test
-    public void getDependency_functional_test_1(){
-        String result = "myOwnSO";
-        class MyOwnSO extends GenericServiceOperationTest{
-
-        }
-        MyOwnSO myOwnSO = new MyOwnSO();
-
-        Class sc = myOwnSO.getClass().getSuperclass();
+    public void method_getDependency_sc_builders_fixtures_model_webAppAccess(){
+        class ABCSOTest extends GenericServiceOperationTest {}
+        ABCSOTest abcsoTest = new ABCSOTest();
         try {
-            Field field = sc.getDeclaredField("serviceOperationName");
-            Class dataType = field.getType();
-            List<Annotation> list = new LinkedList<Annotation>();
-            for(Annotation ann : field.getDeclaredAnnotations()){
-                if(ann.getClass().isAnnotationPresent(Qualifier.class))
-                    list.add(ann);
-            }
-            Annotation[] arr = new Annotation[list.size()];
-            for( int i = 0 ; i < list.size() ; i++ ){
-                arr[i] = list.get(i);
-            }
-            DependencySignature ds = new DependencySignature(dataType, arr);
-            String str = (String) _dependencyScanner.getDependency(ds);
-            Assert.assertEquals(str , result);
+            Field webAppAccess = abcsoTest.getClass().getSuperclass().getDeclaredField("webAppAccess");
+            Annotation[] ann = new Annotation[]{webAppAccess.getAnnotation(GenericSODependency.class), };
+            DependencySignature ds = new DependencySignature(WebAppAccess.class, webAppAccess.getDeclaredAnnotationsByType(GenericSODependency.class));
+            WebAppAccess webAppAccess1 = (WebAppAccess) _dependencyScanner.getDependency(ds);
+            Assert.assertNotNull(webAppAccess1);//Assert Not Null
         } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }catch (ClassCastException e){
             e.printStackTrace();
             Assert.fail(e.getMessage());
         }

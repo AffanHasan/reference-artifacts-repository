@@ -1,6 +1,7 @@
 package com.rc.wefunit;
 
 import com.rc.wefunit.annotations.GenericSODependency;
+import com.rc.wefunit.annotations.Qualifier;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,6 +18,40 @@ import java.util.Enumeration;
 public class DependencySignatureTest {
 
     @Test
+    public void implements_java_lang_Comparator(){
+        try{
+            Class holder = null;
+            for( Class i : Class.forName("com.rc.wefunit.DependencySignature").getInterfaces() ){
+                if( i.equals(Comparable.class) )
+                    holder = i;
+            }
+            Assert.assertNotNull(holder);
+        }catch (ClassNotFoundException e){
+            Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void compareTo_test_1(){
+
+        class AbcSO extends GenericServiceOperationTest{
+        }
+        AbcSO abcSO = new AbcSO();
+        try {
+            Field f = abcSO.getClass().getSuperclass().getDeclaredField("serviceOperationName");
+            DependencySignature ds = new DependencySignature(f.getType(), f.getDeclaredAnnotations()[1]);
+            ds.compareTo(new Integer(2));//Test point
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (IllegalArgumentException e){
+            Assert.assertEquals(e.getMessage(), "Provided object is not of type DependencySignature");
+            return;
+        }
+        Assert.fail();
+    }
+
+    @Test
     public void class_existence(){
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
@@ -25,6 +60,7 @@ public class DependencySignatureTest {
             e.printStackTrace();
             Assert.fail(e.getMessage());
         }
+
     }
 
     @Test
@@ -226,6 +262,22 @@ public class DependencySignatureTest {
     }
 
     @Test
+    public void method_getReturnedObjectType(){
+        try {
+            Class ds = Class.forName("com.rc.wefunit.DependencySignature");
+            Method m = ds.getMethod("getReturnedObjectType");
+            Assert.assertEquals(m.getReturnType(), Class.class);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+
+    }
+
+    @Test
     public void presence_of_equals_and_hashcode_methods(){
         try {
             Class classObj = Class.forName("com.rc.wefunit.DependencySignature");
@@ -240,4 +292,5 @@ public class DependencySignatureTest {
             e.printStackTrace();
         }
     }
+
 }

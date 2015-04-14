@@ -1,8 +1,13 @@
 package com.rc.wefunit;
 
+import com.rc.wefunit.annotations.GenericSODependency;
+import com.rc.wefunit.annotations.Inject;
+import com.rc.wefunit.annotations.Qualifier;
+import com.rc.wefunit.producers.FactoryProducers;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -49,12 +54,70 @@ public class FixtureDependencyTest {
     }
 
     @Test
+    public void implements_java_lang_comparable(){
+        Class holder = null;
+        for( Class i : getClassObject().getInterfaces() ){
+            if( i.equals(Comparable.class) )
+                holder = i;
+        }
+        Assert.assertNotNull(holder);
+    }
+
+    @Test
+    public void method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency(){
+        class ABCSOTest extends GenericServiceOperationTest{
+
+        }
+        ABCSOTest so = new ABCSOTest();
+        try {
+            Field f = so.getClass().getSuperclass().getDeclaredField("serviceOperationName");
+            DependencySignature ds = new DependencySignature(f.getType(), f.getDeclaredAnnotation(GenericSODependency.class));
+            Class fpClass = FactoryProducers.class;
+            Method m =fpClass.getMethod("getGSOTServiceOperationName", Field.class, Object.class);
+            new FixtureDependency(ds ,m).compareTo(new Integer(2));
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (IllegalArgumentException e){
+            Assert.assertEquals(e.getMessage(), "Provided object is not of type com.rc.wefunit.FixtureDependency");
+            return;
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+        Assert.fail();
+    }
+
+//    @Test
+//    public void method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency(){
+//        class ABCSOTest extends GenericServiceOperationTest{
+//
+//        }
+//        ABCSOTest so = new ABCSOTest();
+//        try {
+//            Field f = so.getClass().getSuperclass().getDeclaredField("serviceOperationName");
+//            DependencySignature ds = new DependencySignature(f.getType(), f.getDeclaredAnnotation(GenericSODependency.class));
+//            Class fpClass = FactoryProducers.class;
+//            Method m =fpClass.getMethod("getGSOTServiceOperationName", Field.class, Object.class);
+//            new FixtureDependency(ds ,m).compareTo(new Integer(2));
+//        } catch (NoSuchFieldException e) {
+//            e.printStackTrace();
+//            Assert.fail(e.getMessage());
+//        } catch (IllegalArgumentException e){
+//            Assert.assertEquals(e.getMessage(), "Provided object is not of type com.rc.wefunit.FixtureDependency");
+//            return;
+//        } catch (NoSuchMethodException e) {
+//            e.printStackTrace();
+//        }
+//        Assert.fail();
+//    }
+
+    @Test
     public void constructorTest(){
         Assert.assertTrue(getClassObject().getConstructors().length == 1);
         Assert.assertTrue(getClassObject().getConstructors()[0].getParameterCount() == 2);
         Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[0].getType().equals(DependencySignature.class));
         Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[1].getType().equals(Method.class));
-        Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[2].getType().equals(Object.class));
+//        Assert.assertTrue(getClassObject().getConstructors()[0].getParameters()[2].getType().equals(Object.class));
     }
 
     @Test
@@ -99,26 +162,6 @@ public class FixtureDependencyTest {
 
     @Test
     public void producerMethod_field_is_private_is_of_type_Method(){
-        Assert.assertEquals(getFieldObject(_producerMethodFieldName).getType(), Method.class);
-    }
-
-    @Test
-    public void containingObj_field(){
-        Assert.assertNotNull(getFieldObject(_containingObjFieldName));
-    }
-
-    @Test
-    public void containingObj_field_is_private(){
-        Assert.assertTrue(Modifier.isPrivate(getFieldObject(_containingObjFieldName).getModifiers()));
-    }
-
-    @Test
-    public void containingObj_field_is_private_final(){
-        Assert.assertTrue(Modifier.isFinal(getFieldObject(_containingObjFieldName).getModifiers()));
-    }
-
-    @Test
-    public void containingObj_field_is_private_is_of_type_Object(){
         Assert.assertEquals(getFieldObject(_producerMethodFieldName).getType(), Method.class);
     }
 
