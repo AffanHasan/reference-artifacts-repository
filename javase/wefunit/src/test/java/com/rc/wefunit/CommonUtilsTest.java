@@ -42,7 +42,7 @@ public class CommonUtilsTest {
         AbcSOTest abcSOTest = new AbcSOTest();
         try {
             Field soNameField = abcSOTest.getClass().getSuperclass().getDeclaredField("serviceOperationName");
-            CommonUtils cu = new CommonUtils();
+            CommonUtils cu = Factories.CommonUtilsFactory.getInstance();
             Annotation[] arr = cu.filterQualifierAnnotations(soNameField.getAnnotations());
             Assert.assertTrue(arr.length == 1);
             Assert.assertTrue(arr[0].annotationType().equals(GenericSODependency.class));
@@ -50,5 +50,12 @@ public class CommonUtilsTest {
             e.printStackTrace();
             Assert.fail(e.getMessage());
         }
+    }
+
+    @Test
+    public void test_CommonUtils_is_singleton_when_get_from_factory(){
+        CommonUtils _cu1 = Factories.CommonUtilsFactory.getInstance();
+        CommonUtils _cu2 = Factories.CommonUtilsFactory.getInstance();
+        Assert.assertTrue(_cu1.equals(_cu2));
     }
 }

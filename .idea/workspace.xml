@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede6b090-fea2-40cb-8d74-2d05bb4f1639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/classes/jdkhttprestserver/DefaultRestTestingServer$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/classes/jdkhttprestserver/DefaultRestTestingServer$DefaultHttpHandler.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/classes/jdkhttprestserver/DefaultRestTestingServer.class" afterPath="" />
@@ -134,26 +133,23 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/reporter-output.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/testng.xml.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Surefire suite/toc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/Annotations.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultDependencyScanner.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultDependencyScanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultDependencyScanner.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultDependencyScanner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$1.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$2.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$3.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$4.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Factories.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Factories.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/TestClassInstantiationUtilityTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/TestClassInstantiationUtilityTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.CommonUtilsTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.CommonUtilsTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencyScannerTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencyScannerTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencySignatureTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencySignatureTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.FixtureDependencyInjectorUtilityTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.FixtureDependencyInjectorUtilityTest.xml" />
@@ -167,6 +163,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.enums.GenericSOInjectablesTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.enums.GenericSOInjectablesTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.producers.FactoryProducersTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.producers.FactoryProducersTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/classes.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/classes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" />
@@ -175,6 +172,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-not-run.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-not-run.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-failed.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-failed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/toc.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/toc.html" />
@@ -233,18 +231,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestClassInstantiationUtilityTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestClassInstantiationUtilityTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.5145119" vertical-offset="0" max-vertical-offset="765">
+              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
               <folding>
                 <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
                 <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
                 <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
                 <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
                 <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-                <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -271,50 +268,9 @@
         <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
               <folding>
                 <element signature="class#489:927" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultDependencyScanner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding>
-                <element signature="e#473#492#0" expanded="true" />
-                <element signature="method#DefaultDependencyScanner#0;class#DefaultDependencyScanner#0" expanded="false" />
-                <element signature="method#getDependency#0;class#DefaultDependencyScanner#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonUtilsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-              <folding>
-                <element signature="method#filterQualifierAnnotations#0;class#CommonUtilsTest#0" expanded="false" />
-                <element signature="method#filterQualifierAnnotations_functional_test#0;class#CommonUtilsTest#0" expanded="false" />
-                <element signature="class#1257:1320" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenericServiceOperationTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6332454" vertical-offset="0" max-vertical-offset="758">
-              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-              <folding>
-                <element signature="method#is_service_operation_name_is_in_correct_format#0;class#GenericServiceOperationTest#0" expanded="false" />
-                <element signature="method#is_service_operation_exists#0;class#GenericServiceOperationTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -323,8 +279,8 @@
       <file leaf-file-name="DefaultFixtureDependencyInjectorUtility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="810">
+              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -362,7 +318,6 @@
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Produces.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependencyInjectorUtility.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/annotations/GenericSODependencyTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DepencyScannerTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DependencySignature.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FixtureDependency.java" />
@@ -377,18 +332,19 @@
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
       </list>
     </option>
   </component>
@@ -1072,7 +1028,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1087,7 +1043,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24380443" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24380443" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80509555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1101,6 +1057,34 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5003349" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.4996651" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="603" y="341" width="444" height="555" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24380443" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80509555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.50063694" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1128,7 +1112,7 @@
           <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="98" />
+      <option name="time" value="99" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1394,19 +1378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23746702" vertical-offset="0" max-vertical-offset="758">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="class#TestClassInstantiationUtilityFactory#0;class#Factories#0" expanded="false" />
-            <element signature="class#FixtureDependencyInjectorUtilityFactory#0;class#Factories#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
@@ -1523,44 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
-          <folding>
-            <element signature="method#must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
-            <element signature="method#inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
-            <element signature="method#inject_method_with_2_parameters_Field_and_Object2_GenericServiceOperationTest_serviceOperationName_field_2#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
-            <element signature="method#inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
-            <element signature="method#inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
-            <element signature="method#inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_webAppAccessSC_field_injection_Test_1#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/GenericSODependency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
@@ -1588,20 +1521,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java">
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.29683378" vertical-offset="0" max-vertical-offset="758">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
-            <element signature="class#489:927" expanded="false" />
+            <element signature="class#RunnerFactory#0;class#Factories#0" expanded="false" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="class#TestClassInstantiationUtilityFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#FixtureDependencyInjectorUtilityFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#DependencyScannerFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#CommonUtilsFactory#0;class#Factories#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3166227" vertical-offset="0" max-vertical-offset="758">
+          <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
+          <folding>
+            <element signature="method#filterQualifierAnnotations#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#filterQualifierAnnotations_functional_test#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#test_CommonUtils_is_singleton_when_get_from_factory#0;class#CommonUtilsTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+          <folding>
+            <element signature="method#must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
+            <element signature="method#inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
+            <element signature="method#inject_method_with_2_parameters_Field_and_Object2_GenericServiceOperationTest_serviceOperationName_field_2#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
+            <element signature="method#inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
+            <element signature="method#inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
+            <element signature="method#inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_webAppAccessSC_field_injection_Test_1#0;class#FixtureDependencyInjectorUtilityTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.3364116" vertical-offset="0" max-vertical-offset="758">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="e#473#492#0" expanded="true" />
             <element signature="method#DefaultDependencyScanner#0;class#DefaultDependencyScanner#0" expanded="false" />
@@ -1610,25 +1576,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding>
-            <element signature="method#filterQualifierAnnotations#0;class#CommonUtilsTest#0" expanded="false" />
-            <element signature="method#filterQualifierAnnotations_functional_test#0;class#CommonUtilsTest#0" expanded="false" />
-            <element signature="class#1257:1320" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="810">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6332454" vertical-offset="0" max-vertical-offset="758">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.49472296" vertical-offset="0" max-vertical-offset="758">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="method#is_service_operation_name_is_in_correct_format#0;class#GenericServiceOperationTest#0" expanded="false" />
             <element signature="method#is_service_operation_exists#0;class#GenericServiceOperationTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="class#489:927" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5145119" vertical-offset="0" max-vertical-offset="765">
+          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+          <folding>
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -3,6 +3,7 @@ package com.rc.wefunit;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Inject;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 
 /**
@@ -10,9 +11,11 @@ import java.lang.reflect.Field;
  */
 public class DefaultFixtureDependencyInjectorUtility implements FixtureDependencyInjectorUtility {
 
-        private final DependencyScanner _ds = Factories.DependencyScannerFactory.getInstance();
+    private final DependencyScanner _dependencyScanner = Factories.DependencyScannerFactory.getInstance();
 
     private Class _testClass;
+
+    private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
 
     @Override
     public void inject(Field field, Object instance){
@@ -36,8 +39,10 @@ public class DefaultFixtureDependencyInjectorUtility implements FixtureDependenc
                         soName = soName.replaceFirst(soName.substring(0, 1), (soName.substring(0, 1).toLowerCase()));
                         field.set(instance, soName);
                         break;
-                    default:
-                        field.getAnnotations();
+                    default://Other Fields
+                        Annotation[] annArr = this._commonUtils.filterQualifierAnnotations(field.getAnnotations());
+                        DependencySignature ds = new DependencySignature(field.getType(), annArr);
+                        field.set(instance, _dependencyScanner.getDependency(ds));
                         break;
                 }
             } catch (IllegalAccessException e) {

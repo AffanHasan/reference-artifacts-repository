@@ -1,6 +1,9 @@
 package com.rc.wefunit;
 
 import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.producers.FactoryProducers;
+import mockit.Expectations;
+import mockit.Mocked;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -91,14 +94,17 @@ public class TestClassInstantiationUtilityTest {
         }
     }
 
-    @Test(enabled = false)
-    public void instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection(){
+    @Test(enabled = true)
+    public void instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection(@Mocked WebAppAccess webAppAccess, @Mocked final FactoryProducers factoryProducers){
+        new Expectations(){{
+            factoryProducers.getSCBuildersFixturesModel(); result = new Object();
+        }};
         try {
             final Class GetAccountsDetailSOTest = Class.forName("test.models.test.services.Service2Test.Service2FirstSOTest");
             GenericServiceOperationTest soOneTestInstance = (GenericServiceOperationTest)
                     _tciu.instantiateTestClass(GetAccountsDetailSOTest);
-            WebAppAccess webAppAccess = soOneTestInstance.getWebAppAccessSCBuildersFixtureModel();
-            Assert.assertNotNull(webAppAccess);
+            WebAppAccess obj = soOneTestInstance.getWebAppAccessSCBuildersFixtureModel();
+            Assert.assertNotNull(obj);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             Assert.fail("Class not found : test.models.test.services.Service2Test.Service2FirstSOTest");

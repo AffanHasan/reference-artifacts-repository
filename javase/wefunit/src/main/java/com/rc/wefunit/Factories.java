@@ -31,4 +31,13 @@ public class Factories {
             return new DefaultDependencyScanner();
         }
     }
+
+    public static class CommonUtilsFactory {
+
+        private final static CommonUtils _cu = new CommonUtils();
+
+        public static CommonUtils getInstance(){
+            return _cu;
+        }
+    }
 }
