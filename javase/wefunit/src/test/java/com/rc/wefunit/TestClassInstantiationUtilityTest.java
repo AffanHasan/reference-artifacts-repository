@@ -91,7 +91,7 @@ public class TestClassInstantiationUtilityTest {
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection(){
         try {
             final Class GetAccountsDetailSOTest = Class.forName("test.models.test.services.Service2Test.Service2FirstSOTest");

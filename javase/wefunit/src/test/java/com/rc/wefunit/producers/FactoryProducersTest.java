@@ -73,7 +73,7 @@ public class FactoryProducersTest {
     }
 
     @Test(enabled = true)
-    public void getSCBuildersFixturesModel(){
+    public void method_getSCBuildersFixturesModel(){
         try {
             Method method = _fpClass.getMethod("getSCBuildersFixturesModel");
             Assert.assertTrue(method.getReturnType().equals(WebAppAccess.class));//Check Return Type
@@ -84,5 +84,16 @@ public class FactoryProducersTest {
             e.printStackTrace();
             Assert.fail();
         }
+    }
+
+    @Test
+    public void method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found(){
+        try{
+            _fp.getSCBuildersFixturesModel();
+        }catch(IllegalStateException e){
+            Assert.assertEquals(e.getMessage(), "Model named \"SCBuildersFixture\" not found in WEB-INF/models/test directory");
+            return;
+        }
+        Assert.fail();
     }
 }

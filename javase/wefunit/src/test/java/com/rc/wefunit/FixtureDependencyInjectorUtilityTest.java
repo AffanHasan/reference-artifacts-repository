@@ -124,7 +124,7 @@ public class FixtureDependencyInjectorUtilityTest {
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_webAppAccessSC_field_injection_Test_1(){
         try {
             final Class service2FirstSOTest =

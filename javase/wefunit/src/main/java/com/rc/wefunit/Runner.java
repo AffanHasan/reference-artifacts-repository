@@ -1,5 +1,7 @@
 package com.rc.wefunit;
 
+import com.bowstreet.webapp.WebAppAccess;
+
 import java.util.Set;
 
 /**
@@ -12,4 +14,8 @@ public interface Runner {
     public Set<String> scanTestClasses();
 
     public Set<Class> getTestClassesSet( ClassLoader cl) throws ClassNotFoundException;
+
+    public void run(WebAppAccess webAppAccess);
+
+    public WebAppAccess getWebAppAccess();
 }

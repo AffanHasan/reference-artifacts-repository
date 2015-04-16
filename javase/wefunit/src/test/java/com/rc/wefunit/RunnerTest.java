@@ -1,12 +1,14 @@
 package com.rc.wefunit;
 
 import com.bowstreet.util.SystemProperties;
+import com.bowstreet.webapp.WebAppAccess;
 import mockit.Expectations;
 import mockit.Mocked;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
 import java.util.*;
 
 /**
@@ -38,7 +40,14 @@ public class RunnerTest {
     }
 
     @Test
-    public void web_INF_directory_path_web_inf_as_last_directory(@Mocked SystemProperties systemProperties){
+    public void Runner_instance_must_be_singleton(){
+        Runner r1 = Factories.RunnerFactory.getInstance();
+        Runner r2 = Factories.RunnerFactory.getInstance();
+        Assert.assertTrue(r1.equals(r2));
+    }
+
+    @Test
+    public void method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory(@Mocked SystemProperties systemProperties){
         new Expectations(){
             {
                 SystemProperties.getWebInfDir(); result = _webInfDirPath;
@@ -49,7 +58,7 @@ public class RunnerTest {
     }
 
     @Test
-    public void scan_for_test_classes(@Mocked SystemProperties systemProperties){
+    public void method_scanTestClasses_scan_for_test_classes(@Mocked SystemProperties systemProperties){
 
         new Expectations(){
             {
@@ -64,7 +73,7 @@ public class RunnerTest {
     }
 
     @Test
-    public void scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project
+    public void method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project
             (@Mocked SystemProperties sysProps){
 
         new Expectations(){
@@ -83,7 +92,7 @@ public class RunnerTest {
     }
 
     @Test
-    public void getTestClassesSet(@Mocked SystemProperties systemProperties){
+    public void method_getTestClassesSet(@Mocked SystemProperties systemProperties){
         new Expectations(){
             {
                 SystemProperties.getWebInfDir(); result = _webInfDirPath;
@@ -101,6 +110,63 @@ public class RunnerTest {
         for( Class item : set){
             Assert.assertTrue(_fileNames.contains(item.getName()));
         }
+    }
+
+    @Test
+    public void method_run_with_parameter_WebAppAccess_existence(){
+        try {
+            Class runner = Class.forName("com.rc.wefunit.Runner");
+            Method m = runner.getMethod("run", WebAppAccess.class);
+            Assert.assertNotNull(m);//Not Null
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void method_run(){
+        try {
+            Class runner = Class.forName("com.rc.wefunit.Runner");
+            Method m = runner.getMethod("run", WebAppAccess.class);
+            Assert.assertNotNull(m);//Not Null
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void method_getWebAppAccess_existence(){
+        try {
+            Class runner = Class.forName("com.rc.wefunit.Runner");
+            Method m = runner.getMethod("getWebAppAccess");
+            Assert.assertNotNull(m);//Not Null
+            Assert.assertNotNull(m.getReturnType().equals(WebAppAccess.class));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method(){
+        try {
+            _runner.getWebAppAccess();
+        } catch (IllegalStateException e) {
+            Assert.assertEquals(e.getMessage(), "Method \"getWebAppAccess\" is called before calling the \"run\" method");
+            return;
+        }
+        Assert.fail();
     }
 
     @Test(enabled = false)

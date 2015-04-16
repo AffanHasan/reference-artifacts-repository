@@ -1,6 +1,7 @@
 package com.rc.wefunit.producers;
 
 import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.Factories;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Produces;
 import com.rc.wefunit.enums.GenericSOInjectables;
@@ -15,7 +16,11 @@ public class FactoryProducers {
 
     @Produces
     @GenericSODependency(GenericSOInjectables.SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL)
-    public WebAppAccess getSCBuildersFixturesModel(WebAppAccess webAppAccess){
-        return webAppAccess.getModelInstance("test/SCBuildersFixture", null, true);
+    public WebAppAccess getSCBuildersFixturesModel(){
+        try{
+            return Factories.RunnerFactory.getInstance().getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true);
+        }catch (Exception e){
+            throw new IllegalStateException("Model named \"SCBuildersFixture\" not found in WEB-INF/models/test directory");
+        }
     }
 }

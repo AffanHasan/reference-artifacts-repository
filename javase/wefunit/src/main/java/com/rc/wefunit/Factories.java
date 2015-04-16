@@ -6,8 +6,11 @@ package com.rc.wefunit;
 public class Factories {
 
     public static class RunnerFactory {
+
+        private static final Runner _runner = new DefaultRunner();
+
         public static Runner getInstance(){
-            return new DefaultRunner();
+            return _runner;
         }
     }
 

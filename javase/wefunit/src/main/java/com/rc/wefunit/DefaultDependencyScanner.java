@@ -23,7 +23,8 @@ public class DefaultDependencyScanner implements DependencyScanner {
             if(item.getClass().isAnnotationPresent(Qualifier.class))
                 list.add(item);
         }
-        return ( Annotation[] )list.toArray();
+        Annotation[] arr = new Annotation[list.size()];
+        return list.toArray(arr);
     }
 
     public DefaultDependencyScanner(){

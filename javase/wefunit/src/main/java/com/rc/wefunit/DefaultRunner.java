@@ -1,6 +1,7 @@
 package com.rc.wefunit;
 
 import com.bowstreet.util.SystemProperties;
+import com.bowstreet.webapp.WebAppAccess;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -14,6 +15,8 @@ import java.util.Set;
  * Created by Affan Hasan on 3/24/15.
  */
 public class DefaultRunner implements Runner {
+
+    private WebAppAccess _webAppAccess;
 
     private boolean isWindows(){
         return System.getProperty("os.name").contains("Windows");
@@ -116,5 +119,17 @@ public class DefaultRunner implements Runner {
             classesSet.add( Class.forName(className, true, cl));
         }
         return classesSet;
+    }
+
+    @Override
+    public void run(WebAppAccess webAppAccess) {
+        this._webAppAccess = webAppAccess;
+    }
+
+    @Override
+    public WebAppAccess getWebAppAccess() {
+        if(this._webAppAccess == null)
+            throw new IllegalStateException("Method \"getWebAppAccess\" is called before calling the \"run\" method");
+        return null;
     }
 }

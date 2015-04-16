@@ -1,5 +1,6 @@
 package com.rc.wefunit;
 
+import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.Qualifier;
@@ -73,7 +74,7 @@ public class FixtureDependencyTest {
             Field f = so.getClass().getSuperclass().getDeclaredField("serviceOperationName");
             DependencySignature ds = new DependencySignature(f.getType(), f.getDeclaredAnnotation(GenericSODependency.class));
             Class fpClass = FactoryProducers.class;
-            Method m =fpClass.getMethod("getGSOTServiceOperationName", Field.class, Object.class);
+            Method m =fpClass.getMethod("getSCBuildersFixturesModel");
             new FixtureDependency(ds ,m).compareTo(new Integer(2));
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
