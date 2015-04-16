@@ -40,6 +40,36 @@ public class RunnerTest {
     }
 
     @Test
+    public void method_run_with_parameter_WebAppAccess_existence(){
+        try {
+            Class runner = Class.forName("com.rc.wefunit.Runner");
+            Method m = runner.getMethod("run", WebAppAccess.class);
+            Assert.assertNotNull(m);//Not Null
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void method_run(){
+        try {
+            Class runner = Class.forName("com.rc.wefunit.Runner");
+            Method m = runner.getMethod("run", WebAppAccess.class);
+            Assert.assertNotNull(m);//Not Null
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
     public void Runner_instance_must_be_singleton(){
         Runner r1 = Factories.RunnerFactory.getInstance();
         Runner r2 = Factories.RunnerFactory.getInstance();
@@ -109,36 +139,6 @@ public class RunnerTest {
 
         for( Class item : set){
             Assert.assertTrue(_fileNames.contains(item.getName()));
-        }
-    }
-
-    @Test
-    public void method_run_with_parameter_WebAppAccess_existence(){
-        try {
-            Class runner = Class.forName("com.rc.wefunit.Runner");
-            Method m = runner.getMethod("run", WebAppAccess.class);
-            Assert.assertNotNull(m);//Not Null
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        }
-    }
-
-    @Test
-    public void method_run(){
-        try {
-            Class runner = Class.forName("com.rc.wefunit.Runner");
-            Method m = runner.getMethod("run", WebAppAccess.class);
-            Assert.assertNotNull(m);//Not Null
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
         }
     }
 

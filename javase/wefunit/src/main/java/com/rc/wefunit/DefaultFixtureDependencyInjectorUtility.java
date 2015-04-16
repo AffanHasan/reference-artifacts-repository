@@ -36,7 +36,8 @@ public class DefaultFixtureDependencyInjectorUtility implements FixtureDependenc
                         soName = soName.replaceFirst(soName.substring(0, 1), (soName.substring(0, 1).toLowerCase()));
                         field.set(instance, soName);
                         break;
-                    case SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL:
+                    default:
+                        field.getAnnotations();
                         break;
                 }
             } catch (IllegalAccessException e) {

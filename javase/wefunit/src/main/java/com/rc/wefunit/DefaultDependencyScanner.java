@@ -17,15 +17,7 @@ public class DefaultDependencyScanner implements DependencyScanner {
 
     private final SortedSet<FixtureDependency> _fd = new TreeSet<FixtureDependency>();
 
-    private final Annotation[] filterQualifierAnnotations(Annotation[] annotations){
-        List<Annotation> list = new ArrayList<Annotation>();
-        for(Annotation item : annotations){
-            if(item.getClass().isAnnotationPresent(Qualifier.class))
-                list.add(item);
-        }
-        Annotation[] arr = new Annotation[list.size()];
-        return list.toArray(arr);
-    }
+    private final CommonUtils _cu = new CommonUtils();
 
     public DefaultDependencyScanner(){
         Class returnType = null;
@@ -39,7 +31,7 @@ public class DefaultDependencyScanner implements DependencyScanner {
                 if(m.isAnnotationPresent(Produces.class)){
 //                    Create signature
                     returnType = m.getReturnType();
-                    DependencySignature ds = new DependencySignature(returnType, filterQualifierAnnotations(m.getDeclaredAnnotationsByType(Qualifier.class)));
+                    DependencySignature ds = new DependencySignature(returnType, this._cu.filterQualifierAnnotations(m.getDeclaredAnnotationsByType(Qualifier.class)));
                     _fd.add(new FixtureDependency(ds, m));
                 }
             }
