@@ -10,7 +10,7 @@
     <!--<test name="T1">-->
         <!--<classes>-->
             <!--<class name="com.rc.wefunit.FixtureDependencyTest"/>-->
-            <!--<class name="com.rc.wefunit.DependencySignatureTest"/>-->
+            <!--&lt;!&ndash;<class name="com.rc.wefunit.DependencySignatureTest"/>&ndash;&gt;-->
         <!--</classes>-->
     <!--</test>-->
 </suite>

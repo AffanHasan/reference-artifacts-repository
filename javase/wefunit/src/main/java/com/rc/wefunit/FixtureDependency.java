@@ -1,17 +1,16 @@
 package com.rc.wefunit;
 
-import com.rc.wefunit.DependencySignature;
 import com.rc.wefunit.producers.FactoryProducers;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 
 /**
  * Created by Affan Hasan on 4/7/15.
  */
 public class FixtureDependency implements Comparable {
+
+    private final FactoryProducers _fp = new FactoryProducers();
 
     @Override
     public int compareTo(Object o) {
@@ -23,8 +22,8 @@ public class FixtureDependency implements Comparable {
         }
         return this.getSignature().compareTo(fd.getSignature());
     }
-
     private final DependencySignature _dependencySignature;
+
     private final Method _producerMethod;
 
     public FixtureDependency(DependencySignature ds, Method producerMethod){
@@ -35,16 +34,9 @@ public class FixtureDependency implements Comparable {
     public DependencySignature getSignature(){
         return this._dependencySignature;
     }
-
     public Object getDependency(){
-        FactoryProducers fp = new FactoryProducers();
         try {
-            if(this._producerMethod.getParameters().length > 0){
-                Object [] params = new Object[]{  };
-                return this._producerMethod.invoke(fp, this._producerMethod);
-            }else{
-                return this._producerMethod.invoke(fp, this._producerMethod);
-            }
+            return this._producerMethod.invoke(_fp);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {

@@ -72,7 +72,7 @@ public class FactoryProducersTest {
         }
     }
 
-    @Test(enabled = true)
+    @Test
     public void method_getSCBuildersFixturesModel(){
         try {
             Method method = _fpClass.getMethod("getSCBuildersFixturesModel");

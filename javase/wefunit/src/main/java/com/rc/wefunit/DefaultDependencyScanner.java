@@ -31,7 +31,7 @@ public class DefaultDependencyScanner implements DependencyScanner {
                 if(m.isAnnotationPresent(Produces.class)){
 //                    Create signature
                     returnType = m.getReturnType();
-                    DependencySignature ds = new DependencySignature(returnType, this._cu.filterQualifierAnnotations(m.getDeclaredAnnotationsByType(Qualifier.class)));
+                    DependencySignature ds = new DependencySignature(returnType, this._cu.filterQualifierAnnotations(m.getDeclaredAnnotations()));
                     _fd.add(new FixtureDependency(ds, m));
                 }
             }

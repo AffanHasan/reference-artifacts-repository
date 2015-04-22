@@ -4,7 +4,11 @@ import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.Qualifier;
+import com.rc.wefunit.enums.GenericSOInjectables;
 import com.rc.wefunit.producers.FactoryProducers;
+import mockit.Expectations;
+import mockit.Injectable;
+import mockit.Mocked;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -88,30 +92,6 @@ public class FixtureDependencyTest {
         Assert.fail();
     }
 
-//    @Test
-//    public void method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency(){
-//        class ABCSOTest extends GenericServiceOperationTest{
-//
-//        }
-//        ABCSOTest so = new ABCSOTest();
-//        try {
-//            Field f = so.getClass().getSuperclass().getDeclaredField("serviceOperationName");
-//            DependencySignature ds = new DependencySignature(f.getType(), f.getDeclaredAnnotation(GenericSODependency.class));
-//            Class fpClass = FactoryProducers.class;
-//            Method m =fpClass.getMethod("getGSOTServiceOperationName", Field.class, Object.class);
-//            new FixtureDependency(ds ,m).compareTo(new Integer(2));
-//        } catch (NoSuchFieldException e) {
-//            e.printStackTrace();
-//            Assert.fail(e.getMessage());
-//        } catch (IllegalArgumentException e){
-//            Assert.assertEquals(e.getMessage(), "Provided object is not of type com.rc.wefunit.FixtureDependency");
-//            return;
-//        } catch (NoSuchMethodException e) {
-//            e.printStackTrace();
-//        }
-//        Assert.fail();
-//    }
-
     @Test
     public void constructorTest(){
         Assert.assertTrue(getClassObject().getConstructors().length == 1);
@@ -135,7 +115,7 @@ public class FixtureDependencyTest {
     public void dependencySignature_field_is_private(){
         Assert.assertTrue(Modifier.isPrivate(getFieldObject(_dependencySignatureFieldName).getModifiers()));
     }
-
+    ;
     @Test
     public void dependencySignature_field_is_private_final(){
         Assert.assertTrue(Modifier.isFinal(getFieldObject(_dependencySignatureFieldName).getModifiers()));
@@ -182,17 +162,48 @@ public class FixtureDependencyTest {
     }
 
     @Test
-    public void getDependency(){
+    public void method_getDependency(){
         Assert.assertNotNull(getMethodObject(_getDependencyMethodName));
     }
 
     @Test
-    public void getDependency_method_is_public(){
+    public void method_getDependency_method_is_public(){
         Assert.assertTrue(Modifier.isPublic(getMethodObject(_getDependencyMethodName).getModifiers()));
     }
 
     @Test
-    public void getDependencyMethodName_method_return_type_is_Object(){
+    public void method_getDependencyMethodName_return_type_is_Object(){
         Assert.assertTrue(getMethodObject(_getDependencyMethodName).getReturnType().equals(Object.class));
+    }
+
+    @Test
+    public void method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model(@Mocked final FactoryProducers fp, @Injectable final WebAppAccess webAppAccess){
+//        Fixtures starts
+        class AbcSO extends GenericServiceOperationTest{}; AbcSO abcSO = new AbcSO();
+        Annotation[] qualifiers = null;
+        try {
+            qualifiers = Factories.CommonUtilsFactory.getInstance().filterQualifierAnnotations(abcSO.getClass().getSuperclass().getDeclaredField("webAppAccess").getAnnotations());
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+
+        DependencySignature ds = new DependencySignature(WebAppAccess.class, qualifiers);
+        Method m = null;
+        try {
+            m = FactoryProducers.class.getDeclaredMethod("getSCBuildersFixturesModel");
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+//        Fixtures ends
+
+        new Expectations(){{
+//            runner.getWebAppAccess(); result = webAppAccess;
+            fp.getSCBuildersFixturesModel(); result = webAppAccess;
+        }};
+        FixtureDependency fd = new FixtureDependency(ds, m);
+        WebAppAccess webAppAccessObj = (WebAppAccess) fd.getDependency();
+        Assert.assertNotNull(webAppAccessObj);//Not Null
     }
 }

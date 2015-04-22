@@ -40,14 +40,25 @@ public class DefaultFixtureDependencyInjectorUtility implements FixtureDependenc
                         field.set(instance, soName);
                         break;
                     default://Other Fields
-                        Annotation[] annArr = this._commonUtils.filterQualifierAnnotations(field.getAnnotations());
-                        DependencySignature ds = new DependencySignature(field.getType(), annArr);
-                        field.set(instance, _dependencyScanner.getDependency(ds));
+//                        Annotation[] annArr = this._commonUtils.filterQualifierAnnotations(field.getAnnotations());
+//                        DependencySignature ds = new DependencySignature(field.getType(), annArr);
+//                        field.set(instance, _dependencyScanner.getDependency(ds));
+                        _injectDependencyToField(field, instance);
                         break;
                 }
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private final void _injectDependencyToField(Field field, Object object){
+        Annotation[] annArr = this._commonUtils.filterQualifierAnnotations(field.getAnnotations());
+        DependencySignature ds = new DependencySignature(field.getType(), annArr);
+        try {
+            field.set(object, _dependencyScanner.getDependency(ds));
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
         }
     }
 }

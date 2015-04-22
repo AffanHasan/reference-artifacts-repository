@@ -18,6 +18,7 @@ public class FactoryProducers {
     @GenericSODependency(GenericSOInjectables.SERVICE_CONSUMER_BUILDERS_FIXTURE_MODEL)
     public WebAppAccess getSCBuildersFixturesModel(){
         try{
+//            System.out.println("From Factory Prod Method : " + Factories.RunnerFactory.getInstance().getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true));
             return Factories.RunnerFactory.getInstance().getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true);
         }catch (Exception e){
             throw new IllegalStateException("Model named \"SCBuildersFixture\" not found in WEB-INF/models/test directory");

@@ -4,7 +4,9 @@ import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.Qualifier;
+import com.rc.wefunit.producers.FactoryProducers;
 import mockit.Expectations;
+import mockit.Injectable;
 import mockit.Mocked;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,6 +17,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.SortedSet;
 
 /**
  * Created by Affan Hasan on 4/6/15.
@@ -22,6 +25,7 @@ import java.util.List;
 public class DependencyScannerTest {
 
     private final DependencyScanner _dependencyScanner = Factories.DependencyScannerFactory.getInstance();
+    private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
 
     @Test
     public void interface_DependencyScanner_existence(){
@@ -81,28 +85,26 @@ public class DependencyScannerTest {
         }
     }
 
-    @Test(enabled = false)
-    public void method_getDependency_sc_builders_fixtures_model_webAppAccess(@Mocked final WebAppAccess webAppAccess){
-        class ABCSOTest extends GenericServiceOperationTest {}
-        ABCSOTest abcsoTest = new ABCSOTest();
+    @Test
+    public void method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model(@Mocked final FactoryProducers fp, @Injectable final WebAppAccess webAppAccess){
+//        Fixtures starts
+        class ABbcSO extends GenericServiceOperationTest{
+
+        } ABbcSO aBbcSO = new ABbcSO();
+        Annotation[] annArr = null;
         try {
-            Field webAppAccess0 = abcsoTest.getClass().getSuperclass().getDeclaredField("webAppAccess");
-            Annotation[] ann = new Annotation[]{webAppAccess0.getAnnotation(GenericSODependency.class), };
-            DependencySignature ds = new DependencySignature(WebAppAccess.class, webAppAccess0.getDeclaredAnnotationsByType(GenericSODependency.class));
-            Factories.RunnerFactory.getInstance().run(webAppAccess);
-            new Expectations(){{
-//                webAppAccess.getModelName(); result = "Name";
-                Factories.RunnerFactory.getInstance().getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true);
-                result = new Object();
-            }};
-            WebAppAccess webAppAccess1 = (WebAppAccess) _dependencyScanner.getDependency(ds);
-            Assert.assertNotNull(webAppAccess1);//Assert Not Null
+            annArr = _commonUtils.filterQualifierAnnotations(aBbcSO.getClass().getSuperclass().getDeclaredField("webAppAccess").getAnnotations());
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
             Assert.fail(e.getMessage());
-        }catch (ClassCastException e){
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
         }
+        DependencySignature ds = new DependencySignature(WebAppAccess.class, annArr);
+//        Fixtures Ends
+
+        new Expectations(){{
+            fp.getSCBuildersFixturesModel(); result = webAppAccess;
+        }};
+        WebAppAccess webAppAccessObj = (WebAppAccess)_dependencyScanner.getDependency(ds);
+        Assert.assertNotNull(webAppAccessObj);//Not Null
     }
 }

@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 100, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.767 sec <<< FAILURE! - in TestSuite
-instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection(com.rc.wefunit.TestClassInstantiationUtilityTest)  Time elapsed: 0.118 sec  <<< FAILURE!
-java.lang.IllegalArgumentException: Value of type Object incompatible with return type com.bowstreet.webapp.WebAppAccess of com.rc.wefunit.producers.FactoryProducers#getSCBuildersFixturesModel()
-	at com.rc.wefunit.TestClassInstantiationUtilityTest$1.<init>(TestClassInstantiationUtilityTest.java:100)
-	at com.rc.wefunit.TestClassInstantiationUtilityTest.instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection(TestClassInstantiationUtilityTest.java:99)
-
+Tests run: 98, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.736 sec - in TestSuite
