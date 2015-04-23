@@ -22,6 +22,7 @@ public class RunnerTest {
 
     private final String _package1 = "test.models.test.services.Service1Test.";
     private final String _package2 = "test.models.test.services.Service2Test.";
+    private final String _package3 = "test.package1.";
 
     private final Set<String> _fileNames;
 
@@ -32,6 +33,10 @@ public class RunnerTest {
         _fileNames.add(_package1 + "GetAccountsDetailSOTest");
 
         _fileNames.add(_package2 + "Service2FirstSOTest");
+
+        _fileNames.add(_package3 + "MyLogicTest");
+        _fileNames.add(_package3 + "MyLogic1Test");
+        _fileNames.add(_package3 + "MyLogic2Test");
     }
 
     @BeforeTest
@@ -169,8 +174,56 @@ public class RunnerTest {
         Assert.fail();
     }
 
-    @Test(enabled = false)
-    public void get_test_classes_priority_queue(){
-//        PriorityQueue<Class> pq = _runner.getTestClassesPriorityQueue();
+    @Test
+    public void method_getTestClassesExecutionPriorityQueue(@Mocked SystemProperties systemProperties){
+
+        new Expectations(){
+            {
+                SystemProperties.getWebInfDir(); result = _webInfDirPath;
+            }
+        };
+        PriorityQueue<Class> pq = _runner.getTestClassesExecutionPriorityQueue();
+
+        final class TestClassStats{
+
+            private final Set<Class> _testClassesSet;
+
+            TestClassStats(Set<Class> testClassesSet){
+                this._testClassesSet = testClassesSet;
+            }
+
+            public int getSOTestClassesCount(){
+                int count = 0;
+                for(Class classItem : this._testClassesSet){
+                    if(classItem.getSuperclass().equals(GenericServiceOperationTest.class))
+                        count++;
+                }
+                return count;
+            }
+
+            public int getNonSOTestClassesCount(){
+                int count = 0;
+                for(Class classItem : this._testClassesSet){
+                    if(!classItem.getSuperclass().equals(GenericServiceOperationTest.class))
+                        count++;
+                }
+                return count;
+            }
+        }
+
+        try {
+            Set<Class> testClassesSet = _runner.getTestClassesSet(ClassLoader.getSystemClassLoader());
+            TestClassStats testClassStats = new TestClassStats(testClassesSet);
+
+            for(int c = 0; c < testClassStats.getSOTestClassesCount() ; c++){
+                Assert.assertEquals(pq.poll().getSuperclass(), GenericServiceOperationTest.class);//Polling "GenericServiceOperationTest" classes first
+            }
+            for(int c = 0; c < testClassStats.getNonSOTestClassesCount() ; c++){
+                Assert.assertNotEquals(pq.poll().getSuperclass(), GenericServiceOperationTest.class);//Polling "GenericServiceOperationTest" classes afterwards
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
     }
 }

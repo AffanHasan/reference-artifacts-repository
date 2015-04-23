@@ -8,7 +8,9 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.Comparator;
 import java.util.LinkedHashSet;
+import java.util.PriorityQueue;
 import java.util.Set;
 
 /**
@@ -131,5 +133,39 @@ public class DefaultRunner implements Runner {
         if(this._webAppAccess == null)
             throw new IllegalStateException("Method \"getWebAppAccess\" is called before calling the \"run\" method");
         return this._webAppAccess;
+    }
+
+    @Override
+    public PriorityQueue<Class> getTestClassesExecutionPriorityQueue(){
+//        This comparator gives class objects of GenericServiceOperationTest the least priority so that they can be executed first
+        final class TestClassesComparator implements Comparator<Class>{
+
+            @Override
+            public int compare(Class o1, Class o2) {
+                int flag = 0;
+//                Check For Equality
+                if(o1.getSuperclass().equals(GenericServiceOperationTest.class) && o2.getSuperclass().equals(GenericServiceOperationTest.class)){
+                    flag = 0;
+                }
+//                Check If o1 is Smaller
+                else if(o1.getSuperclass().equals(GenericServiceOperationTest.class) && !o2.getSuperclass().equals(GenericServiceOperationTest.class)){
+                    flag = -1;
+                }
+//                Check If o1 is Greater
+                else if(!o1.getSuperclass().equals(GenericServiceOperationTest.class) && o2.getSuperclass().equals(GenericServiceOperationTest.class)){
+                    flag = 1;
+                }
+                return flag;
+            }
+        }
+        PriorityQueue<Class> pq = new PriorityQueue<Class>(11, new TestClassesComparator());
+        try {
+            for(Class classItem : this.getTestClassesSet(ClassLoader.getSystemClassLoader())){
+                    pq.add(classItem);
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return pq;
     }
 }

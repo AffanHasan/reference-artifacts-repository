@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede6b090-fea2-40cb-8d74-2d05bb4f1639" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic2Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogicTest.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/classes/jdkhttprestserver/DefaultRestTestingServer$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/classes/jdkhttprestserver/DefaultRestTestingServer$DefaultHttpHandler.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/jdk-http-rest-server/target/classes/jdkhttprestserver/DefaultRestTestingServer.class" afterPath="" />
@@ -96,12 +98,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/classes/str/frmt/validators/FactoryInterface.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/Command line suite/testng-failed.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/string-format-validators/target/surefire-reports/testng-failed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/WebAppAccessMock.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1InjectableFieldsFilter.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$1FileScanner.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultTestClassInstantiationUtility$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Inject.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/maven-archiver/pom.properties" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/Command line test.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Command line suite/testng-failed.xml" afterPath="" />
@@ -138,17 +140,27 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/Annotations.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/DependencyScannerTest$1ABCSOTest.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/WebAppAccessMock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$TestClassFileVisitor.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$TestClassFileVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$TestClassFileVisitor.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner$TestClassFileVisitor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/DefaultRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/producers/FactoryProducers.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/producers/FactoryProducers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/producers/FactoryProducers.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/producers/FactoryProducers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/TestClassInstantiationUtilityTest$1.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/TestClassInstantiationUtilityTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/TestClassInstantiationUtilityTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/TestClassInstantiationUtilityTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/javase/wefunit/target/wefunit-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Runner.class" afterPath="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Runner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Runner.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/classes/com/rc/wefunit/Runner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$1.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$2.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$3.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$4.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" afterPath="$PROJECT_DIR$/javase/wefunit/target/test-classes/com/rc/wefunit/RunnerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/Suite1/Nopackage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TEST-TestSuite.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.CommonUtilsTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.CommonUtilsTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencyScannerTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencyScannerTest.xml" />
@@ -164,20 +176,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.enums.GenericSOInjectablesTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.enums.GenericSOInjectablesTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.producers.FactoryProducersTest.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.producers.FactoryProducersTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" afterPath="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/TestSuite.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/classes.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/javase/wefunit/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-not-run.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods-not-run.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/javase/wefunit/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/pom.xml" afterPath="$PROJECT_DIR$/javase/wefunit/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/testng-results.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/wefunit.iml" afterPath="$PROJECT_DIR$/javase/wefunit/wefunit.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/toc.html" afterPath="$PROJECT_DIR$/javase/wefunit/target/surefire-reports/old/Suite1/toc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reference-artifacts-repository.iws" />
@@ -235,43 +247,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestClassInstantiationUtilityTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+      <file leaf-file-name="RunnerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-              <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.8812665" vertical-offset="112" max-vertical-offset="870">
+              <caret line="228" column="1" selection-start-line="228" selection-start-column="1" selection-end-line="228" selection-end-column="1" />
               <folding>
-                <element signature="docComment;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-                <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-                <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-                <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-                <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-                <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-                <element signature="initializer##0;class#4900:4995" expanded="false" />
+                <element signature="docComment;class#RunnerTest#0" expanded="false" />
+                <element signature="method#RunnerTest#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#method_run_with_parameter_WebAppAccess_existence#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#method_run#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#Runner_instance_must_be_singleton#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory#0;class#RunnerTest#0" expanded="false" />
+                <element signature="class#2755:2882" expanded="false" />
+                <element signature="initializer##0;class#2755:2882" expanded="false" />
+                <element signature="method#method_scanTestClasses_scan_for_test_classes#0;class#RunnerTest#0" expanded="false" />
+                <element signature="class#3122:3249" expanded="false" />
+                <element signature="initializer##0;class#3122:3249" expanded="false" />
+                <element signature="method#method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project#0;class#RunnerTest#0" expanded="false" />
+                <element signature="class#3648:3770" expanded="false" />
+                <element signature="initializer##0;class#3648:3770" expanded="false" />
+                <element signature="method#method_getTestClassesSet#0;class#RunnerTest#0" expanded="false" />
+                <element signature="class#4204:4331" expanded="false" />
+                <element signature="initializer##0;class#4204:4331" expanded="false" />
+                <element signature="method#method_getWebAppAccess_existence#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method#0;class#RunnerTest#0" expanded="false" />
+                <element signature="method#method_getTestClassesExecutionPriorityQueue#0;class#RunnerTest#0" expanded="false" />
+                <element signature="class#5815:5942" expanded="false" />
+                <element signature="initializer##0;class#5815:5942" expanded="false" />
+                <element signature="class#6035:6912" expanded="false" />
+                <element signature="method#getSOTestClassesCount#0;class#6035:6912" expanded="false" />
+                <element signature="method#getNonSOTestClassesCount#0;class#6035:6912" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FactoryProducers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding>
-                <element signature="docComment;class#FactoryProducers#0" expanded="false" />
-                <element signature="e#408#417#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javase/wefunit/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49472296" vertical-offset="1170" max-vertical-offset="2310">
-              <caret line="103" column="89" selection-start-line="103" selection-start-column="89" selection-end-line="103" selection-end-column="89" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -279,8 +286,8 @@
       <file leaf-file-name="DefaultRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <caret line="170" column="1" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="1" />
               <folding>
                 <element signature="docComment;class#DefaultRunner#0" expanded="false" />
                 <element signature="method#isValidWefWebInfDirectory#0;class#DefaultRunner#0" expanded="false" />
@@ -292,25 +299,10 @@
                 <element signature="class#DirectoryFilter#0;class#FileTreeWalker#0;class#DefaultRunner#0" expanded="false" />
                 <element signature="method#walkFileTree#0;class#FileTreeWalker#0;class#DefaultRunner#0" expanded="false" />
                 <element signature="method#getTestClassesSet#0;class#DefaultRunner#0" expanded="false" />
-                <element signature="e#4087#4088#0" expanded="true" />
-                <element signature="e#4136#4137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factories.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-              <folding>
-                <element signature="docComment;class#Factories#0" expanded="false" />
-                <element signature="class#TestClassInstantiationUtilityFactory#0;class#Factories#0" expanded="false" />
-                <element signature="class#FixtureDependencyInjectorUtilityFactory#0;class#Factories#0" expanded="false" />
-                <element signature="method#getInstance#0;class#FixtureDependencyInjectorUtilityFactory#0;class#Factories#0" expanded="false" />
-                <element signature="class#DependencyScannerFactory#0;class#Factories#0" expanded="false" />
-                <element signature="class#CommonUtilsFactory#0;class#Factories#0" expanded="false" />
+                <element signature="method#getWebAppAccess#0;class#DefaultRunner#0" expanded="false" />
+                <element signature="method#getTestClassesExecutionPriorityQueue#0;class#DefaultRunner#0" expanded="false" />
+                <element signature="class#4683:5619" expanded="false" />
+                <element signature="method#compare#0;class#4683:5619" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -324,7 +316,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/ServiceConsumerFixtures.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1/SOOneTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/TestClassInstantiationUtility.java" />
@@ -342,7 +333,6 @@
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/enums/GenericSOInjectablesTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/enums/GenericSOInjectables.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/annotations/ProducesTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/Produces.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependencyInjectorUtility.java" />
@@ -356,8 +346,6 @@
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DummySOTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DependencySignature.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DependencySignatureTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java" />
@@ -371,10 +359,14 @@
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java" />
-        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
         <option value="$PROJECT_DIR$/javase/wefunit/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogicTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
+        <option value="$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
       </list>
     </option>
   </component>
@@ -656,7 +648,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="package1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -694,7 +690,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference-artifacts-repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wefunit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samplewefproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -740,7 +774,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="wefunit&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;Factories&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java&#10;DefaultRunner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Defaultrunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Factory&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;Wefunit&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;pom&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/jdk-http-rest-server/pom.xml&#10;Pom&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;DefaultTestC&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java&#10;TestCLass&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;FixtureDepe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java&#10;Defa&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;DependencyScanner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java&#10;test&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/testng.xml&#10;testng&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/testng.xml&#10;FixtureDe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java&#10;Generi&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;Fac&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;TestClass&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;DefaultDepe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;FixtureDependencyTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java&#10;po&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;FactoryProdu&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;FixtureDependencyIN&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java&#10;DefaultFixturede&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java&#10;DefaultTestCla&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java&#10;TestClassInstantiationUtilityTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;defaultdep&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;FixtureD&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java&#10;DefaultTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java&#10;GenericS&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;DefaultDe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;TestClassInstanti&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;FixtureDepende&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java&#10;Factor&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java&#10;DefaultDepende&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;DefaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;GenericSer&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;DefaultFi&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java&#10;Runner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;FixtureDependencyInjec&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java&#10;Factoryproducer&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;FixtureDependency&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java&#10;FixtureDep&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java&#10;DependencyScannerTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java&#10;FactoryProducersTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java&#10;FactoryProducers&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;RunnerTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java&#10;Default&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;FactoryProducerT&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java" />
+    <property name="SearchEverywhereHistoryKey" value="DefaultFix&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java&#10;DefaultTestClass&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java&#10;TestClas&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;GenericSer&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;Runner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java&#10;Generic&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;DefaultRunner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;GenericService&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;wefunit&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;Factories&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java&#10;Defaultrunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Factory&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;Wefunit&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;pom&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/jdk-http-rest-server/pom.xml&#10;Pom&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;DefaultTestC&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java&#10;TestCLass&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;FixtureDepe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java&#10;Defa&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;DependencyScanner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java&#10;test&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/testng.xml&#10;testng&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/testng.xml&#10;FixtureDe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java&#10;Generi&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;Fac&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;TestClass&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;DefaultDepe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;FixtureDependencyTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java&#10;po&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/pom.xml&#10;FactoryProdu&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;FixtureDependencyIN&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java&#10;DefaultFixturede&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java&#10;DefaultTestCla&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java&#10;TestClassInstantiationUtilityTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;defaultdep&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;FixtureD&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java&#10;DefaultTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java&#10;GenericS&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java&#10;DefaultDe&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;TestClassInstanti&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java&#10;FixtureDepende&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java&#10;Factor&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java&#10;DefaultDepende&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java&#10;DefaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;DefaultFi&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java&#10;FixtureDependencyInjec&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java&#10;Factoryproducer&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java&#10;FixtureDependency&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java&#10;FixtureDep&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java&#10;DependencyScannerTest&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/reference-artifacts-repository/javase/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="117" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
@@ -1085,11 +1119,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3388535" sideWeight="0.5003349" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="65" y="52" width="1535" height="848" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24380443" sideWeight="0.49936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80509555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495114" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1100,11 +1136,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.4996651" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="65" y="80" width="1535" height="848" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80509555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1162,7 +1196,7 @@
           <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="118" />
+      <option name="time" value="120" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1171,20 +1205,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javase/rcyber-portal-web-automation/src/main/java/rc/qaportal/web/automation/aramark/utilities/UserLoginUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29683378" vertical-offset="0" max-vertical-offset="758">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1Test/GetTransactionReportsSO_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33245382" vertical-offset="23763" max-vertical-offset="51540">
@@ -1325,13 +1345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3364116" vertical-offset="0" max-vertical-offset="758">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/annotations/GenericSODependency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
@@ -1353,17 +1366,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8509235" vertical-offset="0" max-vertical-offset="885">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,21 +1392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5569782" vertical-offset="0" max-vertical-offset="781">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63380283" vertical-offset="90" max-vertical-offset="945">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2112676" vertical-offset="0" max-vertical-offset="781">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1515,16 +1507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="docComment;class#DefaultTestClassInstantiationUtility#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/FixtureDependencyInjectorUtility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
@@ -1562,22 +1544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-          <folding>
-            <element signature="docComment;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
-            <element signature="initializer##0;class#4900:4995" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1591,7 +1557,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Factories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+        <state vertical-scroll-proportion="0.17810026" vertical-offset="0" max-vertical-offset="758">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="docComment;class#Factories#0" expanded="false" />
@@ -1604,10 +1570,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39577836" vertical-offset="1170" max-vertical-offset="2310">
+          <caret line="98" column="59" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="758">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/GenericServiceOperationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35620052" vertical-offset="0" max-vertical-offset="945">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="docComment;class#DefaultFixtureDependencyInjectorUtility#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultTestClassInstantiationUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding>
+            <element signature="docComment;class#DefaultTestClassInstantiationUtility#0" expanded="false" />
+            <element signature="method#getInjectableFields#0;class#489:927" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37598944" vertical-offset="0" max-vertical-offset="758">
+          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49472296" vertical-offset="0" max-vertical-offset="758">
+          <caret line="102" column="164" selection-start-line="102" selection-start-column="164" selection-end-line="102" selection-end-column="164" />
+          <folding>
+            <element signature="docComment;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName_field_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_serviceOperationName#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_1#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#instantiate_subclass_of_GenericServiceOperationTest_dataServiceName_field_injection_Test_2#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="method#method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model#0;class#TestClassInstantiationUtilityTest#0" expanded="false" />
+            <element signature="class#4900:4995" expanded="false" />
+            <element signature="initializer##0;class#4900:4995" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="758">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="758">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javase/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="170" column="1" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="1" />
           <folding>
             <element signature="docComment;class#DefaultRunner#0" expanded="false" />
             <element signature="method#isValidWefWebInfDirectory#0;class#DefaultRunner#0" expanded="false" />
@@ -1619,17 +1672,45 @@
             <element signature="class#DirectoryFilter#0;class#FileTreeWalker#0;class#DefaultRunner#0" expanded="false" />
             <element signature="method#walkFileTree#0;class#FileTreeWalker#0;class#DefaultRunner#0" expanded="false" />
             <element signature="method#getTestClassesSet#0;class#DefaultRunner#0" expanded="false" />
-            <element signature="e#4087#4088#0" expanded="true" />
-            <element signature="e#4136#4137#0" expanded="true" />
+            <element signature="method#getWebAppAccess#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#getTestClassesExecutionPriorityQueue#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="class#4683:5619" expanded="false" />
+            <element signature="method#compare#0;class#4683:5619" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/wefunit/pom.xml">
+    <entry file="file://$PROJECT_DIR$/javase/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49472296" vertical-offset="1170" max-vertical-offset="2310">
-          <caret line="103" column="89" selection-start-line="103" selection-start-column="89" selection-end-line="103" selection-end-column="89" />
-          <folding />
+        <state vertical-scroll-proportion="0.8812665" vertical-offset="112" max-vertical-offset="870">
+          <caret line="228" column="1" selection-start-line="228" selection-start-column="1" selection-end-line="228" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;class#RunnerTest#0" expanded="false" />
+            <element signature="method#RunnerTest#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#method_run_with_parameter_WebAppAccess_existence#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#method_run#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#Runner_instance_must_be_singleton#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory#0;class#RunnerTest#0" expanded="false" />
+            <element signature="class#2755:2882" expanded="false" />
+            <element signature="initializer##0;class#2755:2882" expanded="false" />
+            <element signature="method#method_scanTestClasses_scan_for_test_classes#0;class#RunnerTest#0" expanded="false" />
+            <element signature="class#3122:3249" expanded="false" />
+            <element signature="initializer##0;class#3122:3249" expanded="false" />
+            <element signature="method#method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project#0;class#RunnerTest#0" expanded="false" />
+            <element signature="class#3648:3770" expanded="false" />
+            <element signature="initializer##0;class#3648:3770" expanded="false" />
+            <element signature="method#method_getTestClassesSet#0;class#RunnerTest#0" expanded="false" />
+            <element signature="class#4204:4331" expanded="false" />
+            <element signature="initializer##0;class#4204:4331" expanded="false" />
+            <element signature="method#method_getWebAppAccess_existence#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method#0;class#RunnerTest#0" expanded="false" />
+            <element signature="method#method_getTestClassesExecutionPriorityQueue#0;class#RunnerTest#0" expanded="false" />
+            <element signature="class#5815:5942" expanded="false" />
+            <element signature="initializer##0;class#5815:5942" expanded="false" />
+            <element signature="class#6035:6912" expanded="false" />
+            <element signature="method#getSOTestClassesCount#0;class#6035:6912" expanded="false" />
+            <element signature="method#getNonSOTestClassesCount#0;class#6035:6912" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

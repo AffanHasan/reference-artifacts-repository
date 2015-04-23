@@ -6,6 +6,7 @@ com/rc/wefunit/CommonUtilsTest.class
 com/rc/wefunit/CommonUtilsTest$1AbcSOTest.class
 com/rc/wefunit/RunnerTest$1.class
 com/rc/wefunit/FixtureDependencyTest$1ABCSOTest.class
+com/rc/wefunit/RunnerTest$5.class
 com/rc/wefunit/DependencySignatureTest$1ABC.class
 com/rc/wefunit/DependencyScannerTest$1.class
 com/rc/wefunit/FixtureDependencyTest$1AbcSO.class
@@ -27,6 +28,7 @@ com/rc/wefunit/FixtureDependencyInjectorUtilityTest$1ATest.class
 com/rc/wefunit/FixtureDependencyTest$1.class
 com/rc/wefunit/DependencyScannerTest$1ABbcSO.class
 com/rc/wefunit/FixtureDependencyTest.class
+com/rc/wefunit/RunnerTest$1TestClassStats.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest.class
 com/rc/wefunit/DependencyScannerTest.class
 com/rc/wefunit/RunnerTest$3.class
