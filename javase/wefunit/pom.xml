@@ -67,19 +67,59 @@
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
-                    <includes>
-                        <include>src/main/java/**/*.java</include>
-                        <include>samplewefproject/WebContent/WEB-INF/work/source/**</include>
-                    </includes>
+                    <!--<includes>-->
+                        <!--<include>src/main/java/**/*.java</include>-->
+                        <!--<include>samplewefproject/WebContent/WEB-INF/work/source/**</include>-->
+                    <!--</includes>-->
+                </configuration>
+            </plugin>
+
+            <!--Adding additional classes to source directories classpath-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.9.1</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>samplewefproject/WebContent/WEB-INF/work/source/</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <excludes>
+                        <exclude>samplewefproject/WebContent/WEB-INF/work/classes/test/**</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
 
         </plugins>
-        <sourceDirectory>.</sourceDirectory>
+        <!--Excluding class files to be packaged-->
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>samplewefproject/WebContent/WEB-INF/work</directory>-->
+                <!--<filtering>true</filtering>-->
+                <!--<excludes>-->
+                    <!--<exclude>**/*.*</exclude>-->
+                <!--</excludes>-->
+            <!--</resource>-->
+        <!--</resources>-->
     </build>
 
   <dependencies>
-
       <!--Java EE 7 API-->
       <dependency>
           <groupId>javax</groupId>

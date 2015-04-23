@@ -105,9 +105,10 @@ public class TestClassInstantiationUtilityTest {
         new Expectations(){{
             fp.getSCBuildersFixturesModel(); result = webAppAccess;
         }};
-        GetUserInfoSOTest getUserInfoSOTest = null;
+        GenericServiceOperationTest getUserInfoSOTest = null;
         try{
-            getUserInfoSOTest = (GetUserInfoSOTest) _tciu.instantiateTestClass(GetUserInfoSOTest.class);
+            getUserInfoSOTest = (GenericServiceOperationTest) _tciu.instantiateTestClass(GetUserInfoSOTest.class);
+            org.testng.Assert.assertNotNull(getUserInfoSOTest.getWebAppAccessSCBuildersFixtureModel());
         }catch (ClassCastException e){
             e.printStackTrace();
             Assert.fail(e.getMessage());

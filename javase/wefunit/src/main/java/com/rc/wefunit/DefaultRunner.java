@@ -130,6 +130,6 @@ public class DefaultRunner implements Runner {
     public WebAppAccess getWebAppAccess() {
         if(this._webAppAccess == null)
             throw new IllegalStateException("Method \"getWebAppAccess\" is called before calling the \"run\" method");
-        return null;
+        return this._webAppAccess;
     }
 }
