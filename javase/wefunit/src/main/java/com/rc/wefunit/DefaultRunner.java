@@ -6,6 +6,7 @@ import com.bowstreet.webapp.WebAppAccess;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Comparator;
@@ -19,6 +20,7 @@ import java.util.Set;
 public class DefaultRunner implements Runner {
 
     private WebAppAccess _webAppAccess;
+    private ClassLoader _classLoader;
 
     private boolean isWindows(){
         return System.getProperty("os.name").contains("Windows");
@@ -115,17 +117,18 @@ public class DefaultRunner implements Runner {
     }
 
     @Override
-    public Set<Class> getTestClassesSet(ClassLoader cl) throws ClassNotFoundException {
+    public Set<Class> getTestClassesSet() throws ClassNotFoundException {
         Set<Class> classesSet = new LinkedHashSet<Class>();
         for( String className : this.scanTestClasses()){
-            classesSet.add( Class.forName(className, true, cl));
+            classesSet.add( Class.forName(className, true, this._classLoader));
         }
         return classesSet;
     }
 
     @Override
-    public void run(WebAppAccess webAppAccess) {
+    public void run(WebAppAccess webAppAccess, ClassLoader classLoader) {
         this._webAppAccess = webAppAccess;
+        this._classLoader = classLoader;
     }
 
     @Override
@@ -160,7 +163,7 @@ public class DefaultRunner implements Runner {
         }
         PriorityQueue<Class> pq = new PriorityQueue<Class>(11, new TestClassesComparator());
         try {
-            for(Class classItem : this.getTestClassesSet(ClassLoader.getSystemClassLoader())){
+            for(Class classItem : this.getTestClassesSet()){
                     pq.add(classItem);
             }
         } catch (ClassNotFoundException e) {
@@ -168,4 +171,5 @@ public class DefaultRunner implements Runner {
         }
         return pq;
     }
+
 }

@@ -14,9 +14,9 @@ public interface Runner {
 
     public Set<String> scanTestClasses();
 
-    public Set<Class> getTestClassesSet( ClassLoader cl) throws ClassNotFoundException;
+    public Set<Class> getTestClassesSet() throws ClassNotFoundException;
 
-    public void run(WebAppAccess webAppAccess);
+    public void run(WebAppAccess webAppAccess, ClassLoader classLoader);
 
     public WebAppAccess getWebAppAccess();
 

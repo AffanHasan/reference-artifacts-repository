@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.*;
 
@@ -16,7 +17,7 @@ import java.util.*;
  */
 public class RunnerTest {
 
-    private Runner _runner;
+    private final Runner _runner;
 
     private final String _webInfDirPath = "samplewefproject/WebContent/WEB-INF";
 
@@ -27,6 +28,19 @@ public class RunnerTest {
     private final Set<String> _fileNames;
 
     RunnerTest(){
+        _runner = Factories.RunnerFactory.getInstance();
+//        Setting the Class Loader for runner instance
+        try {
+            Field field = DefaultRunner.class.getDeclaredField("_classLoader");
+            field.setAccessible(true);
+            field.set(this._runner, this.getClass().getClassLoader());
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+//        Preparing sample test classes
         _fileNames = new LinkedHashSet<String>();
         _fileNames.add(_package1 + "GetUserInfoSOTest");
         _fileNames.add(_package1 + "GetTransactionReportsSO_Test");
@@ -37,18 +51,14 @@ public class RunnerTest {
         _fileNames.add(_package3 + "MyLogicTest");
         _fileNames.add(_package3 + "MyLogic1Test");
         _fileNames.add(_package3 + "MyLogic2Test");
-    }
 
-    @BeforeTest
-    public void beforeTest(){
-        _runner = Factories.RunnerFactory.getInstance();
     }
 
     @Test
-    public void method_run_with_parameter_WebAppAccess_existence(){
+    public void method_run_with_parameters_WebAppAccess_And_ClassLoader_existence(){
         try {
             Class runner = Class.forName("com.rc.wefunit.Runner");
-            Method m = runner.getMethod("run", WebAppAccess.class);
+            Method m = runner.getMethod("run", WebAppAccess.class, ClassLoader.class);
             Assert.assertNotNull(m);//Not Null
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -63,7 +73,7 @@ public class RunnerTest {
     public void method_run(){
         try {
             Class runner = Class.forName("com.rc.wefunit.Runner");
-            Method m = runner.getMethod("run", WebAppAccess.class);
+            Method m = runner.getMethod("run", WebAppAccess.class, ClassLoader.class);
             Assert.assertNotNull(m);//Not Null
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -136,7 +146,7 @@ public class RunnerTest {
 
         Set<Class> set= null;
         try {
-            set = _runner.getTestClassesSet(ClassLoader.getSystemClassLoader());
+            set = _runner.getTestClassesSet();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             Assert.fail(e.getMessage());
@@ -212,7 +222,7 @@ public class RunnerTest {
         }
 
         try {
-            Set<Class> testClassesSet = _runner.getTestClassesSet(ClassLoader.getSystemClassLoader());
+            Set<Class> testClassesSet = _runner.getTestClassesSet();
             TestClassStats testClassStats = new TestClassStats(testClassesSet);
 
             for(int c = 0; c < testClassStats.getSOTestClassesCount() ; c++){
