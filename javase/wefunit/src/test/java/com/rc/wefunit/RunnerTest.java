@@ -3,6 +3,8 @@ package com.rc.wefunit;
 import com.bowstreet.util.SystemProperties;
 import com.bowstreet.webapp.WebAppAccess;
 import mockit.Expectations;
+import mockit.Injectable;
+import mockit.Mock;
 import mockit.Mocked;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -24,6 +26,7 @@ public class RunnerTest {
     private final String _package1 = "test.models.test.services.Service1Test.";
     private final String _package2 = "test.models.test.services.Service2Test.";
     private final String _package3 = "test.package1.";
+    private final String _package4 = "test.models.test.services.Service3Test.";
 
     private final Set<String> _fileNames;
 
@@ -51,6 +54,17 @@ public class RunnerTest {
         _fileNames.add(_package3 + "MyLogicTest");
         _fileNames.add(_package3 + "MyLogic1Test");
         _fileNames.add(_package3 + "MyLogic2Test");
+        _fileNames.add(_package3 + "MyLogic3Test");
+        _fileNames.add(_package3 + "MyLogic4Test");
+        _fileNames.add(_package3 + "MyLogic5Test");
+        _fileNames.add(_package3 + "MyLogic6Test");
+        _fileNames.add(_package3 + "MyLogic7Test");
+
+        _fileNames.add(_package4 + "FirstSOTest");
+        _fileNames.add(_package4 + "SecondSOTest");
+        _fileNames.add(_package4 + "ThirdSOTest");
+        _fileNames.add(_package4 + "FourthSOTest");
+        _fileNames.add(_package4 + "FifthSOTest");
 
     }
 
@@ -173,6 +187,33 @@ public class RunnerTest {
         }
     }
 
+    final class TestClassStats{
+
+        private final Set<Class> _testClassesSet;
+
+        TestClassStats(Set<Class> testClassesSet){
+            this._testClassesSet = testClassesSet;
+        }
+
+        public int getSOTestClassesCount(){
+            int count = 0;
+            for(Class classItem : this._testClassesSet){
+                if(classItem.getSuperclass().equals(GenericServiceOperationTest.class))
+                    count++;
+            }
+            return count;
+        }
+
+        public int getNonSOTestClassesCount(){
+            int count = 0;
+            for(Class classItem : this._testClassesSet){
+                if(!classItem.getSuperclass().equals(GenericServiceOperationTest.class))
+                    count++;
+            }
+            return count;
+        }
+    }
+
     @Test
     public void method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method(){
         try {
@@ -192,34 +233,8 @@ public class RunnerTest {
                 SystemProperties.getWebInfDir(); result = _webInfDirPath;
             }
         };
+
         PriorityQueue<Class> pq = _runner.getTestClassesExecutionPriorityQueue();
-
-        final class TestClassStats{
-
-            private final Set<Class> _testClassesSet;
-
-            TestClassStats(Set<Class> testClassesSet){
-                this._testClassesSet = testClassesSet;
-            }
-
-            public int getSOTestClassesCount(){
-                int count = 0;
-                for(Class classItem : this._testClassesSet){
-                    if(classItem.getSuperclass().equals(GenericServiceOperationTest.class))
-                        count++;
-                }
-                return count;
-            }
-
-            public int getNonSOTestClassesCount(){
-                int count = 0;
-                for(Class classItem : this._testClassesSet){
-                    if(!classItem.getSuperclass().equals(GenericServiceOperationTest.class))
-                        count++;
-                }
-                return count;
-            }
-        }
 
         try {
             Set<Class> testClassesSet = _runner.getTestClassesSet();
@@ -230,6 +245,36 @@ public class RunnerTest {
             }
             for(int c = 0; c < testClassStats.getNonSOTestClassesCount() ; c++){
                 Assert.assertNotEquals(pq.poll().getSuperclass(), GenericServiceOperationTest.class);//Polling "GenericServiceOperationTest" classes afterwards
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+
+    }
+
+    @Test
+    public void method_getExecutableTestObjectsQueue(@Mocked SystemProperties systemProperties, @Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){
+
+        new Expectations(){
+            {
+                runnerFactory.getInstance();result = runner;
+                runner.getWebAppAccess();result = webAppAccess;
+                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+                SystemProperties.getWebInfDir(); result = _webInfDirPath;
+            }
+        };
+        Queue<Object> oq = _runner.getExecutableTestObjectsQueue();
+
+        try {
+            Set<Class> testClassesSet = _runner.getTestClassesSet();
+            TestClassStats testClassStats = new TestClassStats(testClassesSet);
+
+            for(int c = 0; c < testClassStats.getSOTestClassesCount() ; c++){
+                Assert.assertTrue(oq.poll() instanceof GenericServiceOperationTest);//Polling "GenericServiceOperationTest" classes first
+            }
+            for(int c = 0; c < testClassStats.getNonSOTestClassesCount() ; c++){
+                Assert.assertFalse(oq.poll() instanceof GenericServiceOperationTest);//Polling "GenericServiceOperationTest" classes afterwards
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

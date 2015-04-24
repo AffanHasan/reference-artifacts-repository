@@ -9,10 +9,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.Comparator;
-import java.util.LinkedHashSet;
-import java.util.PriorityQueue;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Affan Hasan on 3/24/15.
@@ -21,6 +18,7 @@ public class DefaultRunner implements Runner {
 
     private WebAppAccess _webAppAccess;
     private ClassLoader _classLoader;
+    private final TestClassInstantiationUtility _testClassInstantiationUtility = Factories.TestClassInstantiationUtilityFactory.getInstance();
 
     private boolean isWindows(){
         return System.getProperty("os.name").contains("Windows");
@@ -172,4 +170,13 @@ public class DefaultRunner implements Runner {
         return pq;
     }
 
+    @Override
+    public Queue<Object> getExecutableTestObjectsQueue() {
+        Queue<Object> queue = new LinkedList<Object>();
+        PriorityQueue<Class> priorityQueue = this.getTestClassesExecutionPriorityQueue();
+        while( priorityQueue.peek() != null ){
+            queue.add(this._testClassInstantiationUtility.instantiateTestClass(priorityQueue.poll()));
+        }
+        return queue;
+    }
 }

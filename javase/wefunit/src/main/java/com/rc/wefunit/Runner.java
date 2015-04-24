@@ -3,6 +3,7 @@ package com.rc.wefunit;
 import com.bowstreet.webapp.WebAppAccess;
 
 import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Set;
 
 /**
@@ -21,4 +22,6 @@ public interface Runner {
     public WebAppAccess getWebAppAccess();
 
     public PriorityQueue<Class> getTestClassesExecutionPriorityQueue();
+
+    public Queue<Object> getExecutableTestObjectsQueue();
 }

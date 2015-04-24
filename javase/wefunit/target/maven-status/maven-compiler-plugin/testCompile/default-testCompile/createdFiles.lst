@@ -21,14 +21,15 @@ com/rc/wefunit/enums/GenericSOInjectablesTest.class
 com/rc/wefunit/producers/FactoryProducersTest$1ABC.class
 com/rc/wefunit/probes/AssertTest.class
 com/rc/wefunit/TestClassInstantiationUtilityTest.class
+com/rc/wefunit/RunnerTest$TestClassStats.class
 com/rc/wefunit/RunnerTest$2.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest$1ABbcSO.class
 com/rc/wefunit/DependencySignatureTest$1AbcSO.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest$1ATest.class
 com/rc/wefunit/FixtureDependencyTest$1.class
 com/rc/wefunit/DependencyScannerTest$1ABbcSO.class
+com/rc/wefunit/RunnerTest$6.class
 com/rc/wefunit/FixtureDependencyTest.class
-com/rc/wefunit/RunnerTest$1TestClassStats.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest.class
 com/rc/wefunit/DependencyScannerTest.class
 com/rc/wefunit/RunnerTest$3.class
