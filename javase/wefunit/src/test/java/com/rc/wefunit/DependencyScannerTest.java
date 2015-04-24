@@ -86,7 +86,7 @@ public class DependencyScannerTest {
     }
 
     @Test
-    public void method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model(@Mocked final FactoryProducers fp, @Injectable final WebAppAccess webAppAccess){
+    public void method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){
 //        Fixtures starts
         class ABbcSO extends GenericServiceOperationTest{
 
@@ -101,9 +101,14 @@ public class DependencyScannerTest {
         DependencySignature ds = new DependencySignature(WebAppAccess.class, annArr);
 //        Fixtures Ends
 
-        new Expectations(){{
-            fp.getSCBuildersFixturesModel(); result = webAppAccess;
-        }};
+        new Expectations(){
+            {
+                runnerFactory.getInstance();result = runner;
+                runner.getWebAppAccess();result = webAppAccess;
+                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+            }
+        };
+
         WebAppAccess webAppAccessObj = (WebAppAccess)_dependencyScanner.getDependency(ds);
         Assert.assertNotNull(webAppAccessObj);//Not Null
     }

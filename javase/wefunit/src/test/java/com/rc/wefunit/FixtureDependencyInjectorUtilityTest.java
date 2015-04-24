@@ -138,7 +138,7 @@ public class FixtureDependencyInjectorUtilityTest {
     }
 
     @Test
-    public void method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(@Mocked final FactoryProducers fp, @Injectable final WebAppAccess webAppAccess){
+    public void method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){
         //        Fixtures starts
         class ABbcSO extends GenericServiceOperationTest{
 
@@ -155,9 +155,13 @@ public class FixtureDependencyInjectorUtilityTest {
         DependencySignature ds = new DependencySignature(WebAppAccess.class, annArr);
 //        Fixtures Ends
 
-        new Expectations(){{
-            fp.getSCBuildersFixturesModel(); result = webAppAccess;
-        }};
+        new Expectations(){
+            {
+                runnerFactory.getInstance();result = runner;
+                runner.getWebAppAccess();result = webAppAccess;
+                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+            }
+        };
         _fdiu.inject(webAppAccessField, aBbcSO);
         Assert.assertNotNull(aBbcSO.getWebAppAccessSCBuildersFixtureModel());//Not Null
     }

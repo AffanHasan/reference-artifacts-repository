@@ -1,5 +1,6 @@
 package com.rc.wefunit;
 
+import com.bowstreet.util.SystemProperties;
 import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.producers.FactoryProducers;
 import mockit.Expectations;
@@ -100,11 +101,15 @@ public class TestClassInstantiationUtilityTest {
     }
 
     @Test
-    public void method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(@Mocked final FactoryProducers fp, @Injectable final WebAppAccess webAppAccess){
+    public void method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){
 
-        new Expectations(){{
-            fp.getSCBuildersFixturesModel(); result = webAppAccess;
-        }};
+        new Expectations(){
+            {
+                runnerFactory.getInstance();result = runner;
+                runner.getWebAppAccess();result = webAppAccess;
+                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+            }
+        };
         GenericServiceOperationTest getUserInfoSOTest = null;
         try{
             getUserInfoSOTest = (GenericServiceOperationTest) _tciu.instantiateTestClass(GetUserInfoSOTest.class);
