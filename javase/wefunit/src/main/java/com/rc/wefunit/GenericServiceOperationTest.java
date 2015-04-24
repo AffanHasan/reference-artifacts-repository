@@ -33,7 +33,7 @@ public abstract class GenericServiceOperationTest {
         return this.webAppAccess;
     }
 
-    @BeforeClass
+    @Test
     public void is_service_operation_name_is_in_correct_format(){
 
     }

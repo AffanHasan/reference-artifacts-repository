@@ -9,7 +9,7 @@ import java.lang.reflect.Field;
 /**
  * Created by Affan Hasan on 4/3/15.
  */
-public class DefaultFixtureDependencyInjectorUtility implements FixtureDependencyInjectorUtility {
+class DefaultFixtureDependencyInjectorUtility implements FixtureDependencyInjectorUtility {
 
     private final DependencyScanner _dependencyScanner = Factories.DependencyScannerFactory.getInstance();
 

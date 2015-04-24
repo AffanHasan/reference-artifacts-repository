@@ -2,6 +2,7 @@ package com.rc.wefunit;
 
 import com.bowstreet.util.SystemProperties;
 import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.annotations.BeforeClass;
 import mockit.Expectations;
 import mockit.Injectable;
 import mockit.Mock;
@@ -212,6 +213,10 @@ public class RunnerTest {
             }
             return count;
         }
+
+        public int getTotalTestClasses(){
+            return this._testClassesSet.size();
+        }
     }
 
     @Test
@@ -265,13 +270,15 @@ public class RunnerTest {
             }
         };
         Queue<Object> oq = _runner.getExecutableTestObjectsQueue();
-
         try {
             Set<Class> testClassesSet = _runner.getTestClassesSet();
+            Assert.assertEquals(testClassesSet.size(), oq.size());
             TestClassStats testClassStats = new TestClassStats(testClassesSet);
-
+            Object o;
             for(int c = 0; c < testClassStats.getSOTestClassesCount() ; c++){
-                Assert.assertTrue(oq.poll() instanceof GenericServiceOperationTest);//Polling "GenericServiceOperationTest" classes first
+                o = oq.poll();
+                Assert.assertTrue(o instanceof GenericServiceOperationTest);//Polling "GenericServiceOperationTest" classes first
+                Assert.assertNotNull(((GenericServiceOperationTest) o).getWebAppAccessSCBuildersFixtureModel());//WebAppAccess Not null
             }
             for(int c = 0; c < testClassStats.getNonSOTestClassesCount() ; c++){
                 Assert.assertFalse(oq.poll() instanceof GenericServiceOperationTest);//Polling "GenericServiceOperationTest" classes afterwards

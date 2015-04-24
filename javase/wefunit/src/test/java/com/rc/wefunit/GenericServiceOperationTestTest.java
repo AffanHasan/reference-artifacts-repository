@@ -231,7 +231,7 @@ public class GenericServiceOperationTestTest {
     public void is_service_operation_name_is_in_correct_format_Method_contains_BeforeClass_annotation(){
         try {
             Method method = GenericServiceOperationTest.class.getMethod("is_service_operation_name_is_in_correct_format", null);
-            Assert.assertTrue(method.isAnnotationPresent(com.rc.wefunit.annotations.BeforeClass.class));
+            Assert.assertTrue(method.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
         } catch (NoSuchMethodException e) {
             Assert.fail("Method \"is_service_operation_name_is_in_correct_format\" not found");
         }

@@ -13,7 +13,7 @@ import java.util.TreeSet;
 /**
  * Created by Affan Hasan on 4/6/15.
  */
-public class DefaultDependencyScanner implements DependencyScanner {
+class DefaultDependencyScanner implements DependencyScanner {
 
     private final SortedSet<FixtureDependency> _fd = new TreeSet<FixtureDependency>();
 

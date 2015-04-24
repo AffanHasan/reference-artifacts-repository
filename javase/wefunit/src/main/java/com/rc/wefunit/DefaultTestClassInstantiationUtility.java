@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 /**
  * Created by Affan Hasan on 4/1/15.
  */
-public class DefaultTestClassInstantiationUtility implements TestClassInstantiationUtility {
+class DefaultTestClassInstantiationUtility implements TestClassInstantiationUtility {
 
     private Object _instance = null;
 

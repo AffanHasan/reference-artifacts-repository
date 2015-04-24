@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 /**
  * Created by Affan Hasan on 4/7/15.
  */
-public class FixtureDependency implements Comparable {
+class FixtureDependency implements Comparable {
 
     private final FactoryProducers _fp = new FactoryProducers();
 

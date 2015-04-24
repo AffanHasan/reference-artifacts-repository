@@ -1,6 +1,8 @@
 test/package1/MyLogic4Test.class
+com/rc/wefunit/testengine/DefaultTestEngine.class
 com/rc/wefunit/DefaultRunner$1.class
 com/rc/wefunit/DefaultTestClassInstantiationUtility.class
+com/rc/wefunit/testengine/TestEngine.class
 com/rc/wefunit/DefaultRunner.class
 com/rc/wefunit/DefaultDependencyScanner.class
 test/package1/MyLogic1Test.class
@@ -15,6 +17,7 @@ test/package1/MyLogic3Test.class
 com/rc/wefunit/Factories$CommonUtilsFactory.class
 com/rc/wefunit/DependencySignature.class
 test/models/test/services/Service3Test/ThirdSOTest.class
+com/rc/wefunit/Factories$TestEngineFactory.class
 test/package1/MyLogic7Test.class
 test/package1/MyLogicTest.class
 test/models/test/services/Service3Test/FifthSOTest.class
@@ -25,6 +28,7 @@ com/rc/wefunit/GenericServiceOperationTest.class
 test/package1/MyLogic6Test.class
 test/models/test/services/Service1Test/GetUserInfoSOTest.class
 com/rc/wefunit/Factories$TestClassInstantiationUtilityFactory.class
+com/rc/wefunit/probes/Assert.class
 com/rc/wefunit/TestClassInstantiationUtility.class
 test/models/test/services/Service3Test/SecondSOTest.class
 com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1.class

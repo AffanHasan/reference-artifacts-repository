@@ -14,7 +14,7 @@ import java.util.*;
 /**
  * Created by Affan Hasan on 3/24/15.
  */
-public class DefaultRunner implements Runner {
+class DefaultRunner implements Runner {
 
     private WebAppAccess _webAppAccess;
     private ClassLoader _classLoader;

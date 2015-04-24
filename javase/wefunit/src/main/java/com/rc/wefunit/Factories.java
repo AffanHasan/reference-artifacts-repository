@@ -1,5 +1,8 @@
 package com.rc.wefunit;
 
+import com.rc.wefunit.testengine.DefaultTestEngine;
+import com.rc.wefunit.testengine.TestEngine;
+
 /**
  * Created by Affan Hasan on 3/24/15.
  */
@@ -38,6 +41,13 @@ public class Factories {
 
         public static CommonUtils getInstance(){
             return _cu;
+        }
+    }
+
+    public static class TestEngineFactory {
+
+        public static TestEngine getInstance(){
+            return new DefaultTestEngine();
         }
     }
 }
