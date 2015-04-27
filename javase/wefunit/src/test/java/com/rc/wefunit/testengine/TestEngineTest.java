@@ -28,6 +28,31 @@ public class TestEngineTest {
     private final Runner _runner = Factories.RunnerFactory.getInstance();
     private TestClassStats _testClassStats;
 
+    @Mocked SystemProperties systemProperties;
+    @Mocked Factories.RunnerFactory runnerFactory;
+    @Injectable WebAppAccess webAppAccess;
+    @Injectable Runner runner;
+
+    private final void expectations(){
+        new Expectations(){
+            {
+                runnerFactory.getInstance();result = runner;
+                runner.getWebAppAccess();result = webAppAccess;
+                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+                SystemProperties.getWebInfDir(); result = _webInfDirPath;
+            }
+        };
+    }
+
+    private final void setTestClassStats(){
+        try {
+            this._testClassStats = Factories.TestClassStatsFactory.getInstance(this._runner.getTestClassesSet());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
     private Class getClassObject(){
         try {
             return Class.forName("com.rc.wefunit.testengine.TestEngine");
@@ -57,25 +82,14 @@ public class TestEngineTest {
     }
 
     @Test
-    public void method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present(@Mocked SystemProperties systemProperties, @Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){
-        new Expectations(){
-            {
-                runnerFactory.getInstance();result = runner;
-                runner.getWebAppAccess();result = webAppAccess;
-                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
-                SystemProperties.getWebInfDir(); result = _webInfDirPath;
-            }
-        };
+    public void method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present(){
+        this.expectations();
+        this.setTestClassStats();
         Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
-        try {
-            this._testClassStats = Factories.TestClassStatsFactory.getInstance(this._runner.getTestClassesSet());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        }
-        this._testEngine.executeTests(queue);
+        this._testEngine.executeTests(queue);//Execute the tests
+        int totalExecutableTests = this._testClassStats.getTotalExecutableTestsCount();
         JsonObject testScores = this._testEngine.getTestScores();
-        Assert.assertEquals(testScores.getAsJsonObject("score").get("totalExecutedTests").getAsInt(),
-                this._testClassStats.getTotalExecutableTestsCount());
+        int actualTestScore = testScores.getAsJsonObject("score").get("totalExecutedTests").getAsInt();
+        Assert.assertEquals(actualTestScore, totalExecutableTests);
     }
 }

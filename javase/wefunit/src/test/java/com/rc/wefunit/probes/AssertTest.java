@@ -72,26 +72,12 @@ public class AssertTest {
         }
     }
 
-    @Test(enabled = false)
-    public void private_final_static_field__testScores(){
-        try {
-            Field testScores = getClassObject().getDeclaredField("_testScores");
-            Assert.assertNotNull(testScores);
-            Assert.assertTrue(Modifier.isFinal(testScores.getModifiers()));
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
-        }
-    }
-
-    @Test(enabled = false)
-    public void _private_field__testScores_is_of_type_JsonObject(){
-        try {
-            Field testScores = getClassObject().getDeclaredField("_testScores");
-            Assert.assertEquals(testScores.getType(), JsonObject.class);
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail(e.getMessage());
+    @Test
+    public void method_fail(){
+        try{
+            com.rc.wefunit.probes.Assert.fail("Explicit test failure");
+        }catch(AssertionError e){
+            Assert.fail("No Throwable is expected here");
         }
     }
 }

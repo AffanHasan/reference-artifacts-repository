@@ -191,7 +191,6 @@ public class RunnerTest {
         }
     }
 
-
     @Test
     public void method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method(){
         try {
@@ -261,4 +260,5 @@ public class RunnerTest {
             Assert.fail(e.getMessage());
         }
     }
+
 }

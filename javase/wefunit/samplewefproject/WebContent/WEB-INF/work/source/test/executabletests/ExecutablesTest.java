@@ -22,4 +22,18 @@ public class ExecutablesTest {
 
     }
 
+    @Test
+    public void failedTest1(){
+
+    }
+
+    @Test
+    public void failedTest2(){
+
+    }
+
+    @Test
+    public void failedTest3(){
+
+    }
 }

@@ -50,4 +50,17 @@ public final class TestClassStats{
         }
         return count;
     }
+
+//    public int getTotalExecutableTestsCount(){
+//        int count = 0;
+//        for( Class classObj : _testClassesSet ){
+//            for(Method m : classObj.getDeclaredMethods()){
+//                if(m.isAnnotationPresent(Test.class)){
+//                    if(m.getAnnotation(Test.class).enabled())
+//                        count++;
+//                }
+//            }
+//        }
+//        return count;
+//    }
 }

@@ -6,10 +6,12 @@ package com.rc.wefunit.probes;
  */
 public class Assert{
 
-//    private final static JsonObject _testScores = new JsonObject();
-
     public static void assertTrue(Boolean b){
         if(b == false)
             throw new AssertionError("Expected [ true ] but found [ false ]");
+    }
+
+    public static void fail(String message){
+
     }
 }
