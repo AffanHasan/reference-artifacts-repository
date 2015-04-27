@@ -13,7 +13,10 @@ test/models/test/services/Service3Test/FourthSOTest.class
 com/rc/wefunit/enums/GenericSOInjectables.class
 test/models/test/services/Service1Test/SOThree.class
 com/rc/wefunit/DefaultRunner$1TestClassesComparator.class
+com/rc/wefunit/TestClassStats.class
 test/package1/MyLogic3Test.class
+test/executabletests/ExecutablesTest.class
+com/rc/wefunit/Factories$TestClassStatsFactory.class
 com/rc/wefunit/Factories$CommonUtilsFactory.class
 com/rc/wefunit/DependencySignature.class
 test/models/test/services/Service3Test/ThirdSOTest.class

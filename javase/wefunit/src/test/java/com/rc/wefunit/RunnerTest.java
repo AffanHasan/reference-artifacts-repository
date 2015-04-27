@@ -28,6 +28,7 @@ public class RunnerTest {
     private final String _package2 = "test.models.test.services.Service2Test.";
     private final String _package3 = "test.package1.";
     private final String _package4 = "test.models.test.services.Service3Test.";
+    private final String _package5 = "test.executabletests.";
 
     private final Set<String> _fileNames;
 
@@ -66,6 +67,8 @@ public class RunnerTest {
         _fileNames.add(_package4 + "ThirdSOTest");
         _fileNames.add(_package4 + "FourthSOTest");
         _fileNames.add(_package4 + "FifthSOTest");
+
+        _fileNames.add(_package5 + "ExecutablesTest");
 
     }
 
@@ -188,36 +191,6 @@ public class RunnerTest {
         }
     }
 
-    final class TestClassStats{
-
-        private final Set<Class> _testClassesSet;
-
-        TestClassStats(Set<Class> testClassesSet){
-            this._testClassesSet = testClassesSet;
-        }
-
-        public int getSOTestClassesCount(){
-            int count = 0;
-            for(Class classItem : this._testClassesSet){
-                if(classItem.getSuperclass().equals(GenericServiceOperationTest.class))
-                    count++;
-            }
-            return count;
-        }
-
-        public int getNonSOTestClassesCount(){
-            int count = 0;
-            for(Class classItem : this._testClassesSet){
-                if(!classItem.getSuperclass().equals(GenericServiceOperationTest.class))
-                    count++;
-            }
-            return count;
-        }
-
-        public int getTotalTestClasses(){
-            return this._testClassesSet.size();
-        }
-    }
 
     @Test
     public void method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method(){

@@ -1,8 +1,10 @@
 package com.rc.wefunit;
 
 import com.rc.wefunit.annotations.Qualifier;
+import com.rc.wefunit.annotations.Test;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
 import java.util.*;
 
 /**
@@ -29,5 +31,15 @@ public class CommonUtils {
             getSuperClassesHierarchy(classObject.getSuperclass(), theSet);
             return;
         }
+    }
+
+    public final Method[] getTestMethodsArrayFromTestClass(Class classObj){
+        Set<Method> methods = new LinkedHashSet<Method>();
+        for(Method method : classObj.getDeclaredMethods()){
+            if(method.isAnnotationPresent(Test.class))
+                methods.add(method);
+        }
+        Method[] arr = new Method[methods.size()];
+        return methods.toArray(arr);
     }
 }

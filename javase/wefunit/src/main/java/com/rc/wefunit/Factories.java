@@ -3,6 +3,8 @@ package com.rc.wefunit;
 import com.rc.wefunit.testengine.DefaultTestEngine;
 import com.rc.wefunit.testengine.TestEngine;
 
+import java.util.Set;
+
 /**
  * Created by Affan Hasan on 3/24/15.
  */
@@ -48,6 +50,13 @@ public class Factories {
 
         public static TestEngine getInstance(){
             return new DefaultTestEngine();
+        }
+    }
+
+    public static class TestClassStatsFactory {
+
+        public static TestClassStats getInstance(Set<Class> set){
+            return new TestClassStats(set);
         }
     }
 }

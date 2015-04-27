@@ -7,18 +7,4 @@ import com.rc.wefunit.annotations.Test;
  */
 public class GetTransactionReportsSO_Test {
 
-    @Test
-    public void test1(){
-
-    }
-
-    @Test
-    public void test2(){
-
-    }
-
-    @Test
-    public void test3(){
-
-    }
 }

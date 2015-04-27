@@ -83,4 +83,30 @@ public class CommonUtilsTest {
         Assert.assertTrue(superClassesHierarchySet.contains(GenericServiceOperationTest.class));
     }
 
+    @Test
+    public void method_getTestMethodsArray(){
+        class AbcTest{
+
+            @com.rc.wefunit.annotations.Test
+            public void test1(){
+
+            }
+
+            @com.rc.wefunit.annotations.Test
+            public void test2(){
+
+            }
+
+            @com.rc.wefunit.annotations.Test
+            public void test3(){
+
+            }
+        }
+        Method[] testMethods = this._commonUtils.getTestMethodsArrayFromTestClass(AbcTest.class);
+        Assert.assertEquals(testMethods.length, 3);
+        for(Method m : testMethods){
+            Assert.assertTrue(m.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
+        }
+    }
+
 }
