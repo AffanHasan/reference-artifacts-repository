@@ -11,7 +11,11 @@ public class Assert{
             throw new AssertionError("Expected [ true ] but found [ false ]");
     }
 
-    public static void fail(String message){
+    public static void fail(){
+        throw new AssertionError();
+    }
 
+    public static void fail(String message){
+        throw new AssertionError(message);
     }
 }

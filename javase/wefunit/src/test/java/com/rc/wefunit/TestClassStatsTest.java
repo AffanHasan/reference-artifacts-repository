@@ -35,5 +35,4 @@ public class TestClassStatsTest {
             Assert.fail(e.getMessage());
         }
     }
-
 }

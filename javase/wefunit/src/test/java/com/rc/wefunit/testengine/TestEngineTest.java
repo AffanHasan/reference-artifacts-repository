@@ -89,7 +89,19 @@ public class TestEngineTest {
         this._testEngine.executeTests(queue);//Execute the tests
         int totalExecutableTests = this._testClassStats.getTotalExecutableTestsCount();
         JsonObject testScores = this._testEngine.getTestScores();
-        int actualTestScore = testScores.getAsJsonObject("score").get("totalExecutedTests").getAsInt();
-        Assert.assertEquals(actualTestScore, totalExecutableTests);
+        int actualExecutedTestsCount = testScores.getAsJsonObject("score").get("totalExecutedTests").getAsInt();
+        Assert.assertEquals(actualExecutedTestsCount, totalExecutableTests);
+    }
+
+    @Test
+    public void method_executeTests_total_test_for_explicitly_failed_tests(){
+        this.expectations();
+        this.setTestClassStats();
+        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+        this._testEngine.executeTests(queue);//Execute the tests
+        JsonObject testScores = this._testEngine.getTestScores();
+        int totalFailedTestPresent = 6;//All are defined in GetAccountsDetailSOTest.java in "samplewefproject"
+        int actualTestFailuresCount = testScores.getAsJsonObject("score").get("totalTestFailures").getAsInt();
+        Assert.assertEquals(actualTestFailuresCount, totalFailedTestPresent);
     }
 }

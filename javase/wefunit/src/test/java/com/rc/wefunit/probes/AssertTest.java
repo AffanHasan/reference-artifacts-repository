@@ -73,11 +73,21 @@ public class AssertTest {
     }
 
     @Test
-    public void method_fail(){
+    public void method_fail_with_no_params(){
         try{
-            com.rc.wefunit.probes.Assert.fail("Explicit test failure");
+            com.rc.wefunit.probes.Assert.fail();
         }catch(AssertionError e){
-            Assert.fail("No Throwable is expected here");
+            Assert.assertTrue(e.getMessage() == null);
+        }
+    }
+
+    @Test
+    public void method_fail_with_string_argument(){
+        final String message = "Explicit failure";
+        try{
+            com.rc.wefunit.probes.Assert.fail(message);
+        }catch(AssertionError e){
+            Assert.assertEquals(e.getMessage() , message);
         }
     }
 }
