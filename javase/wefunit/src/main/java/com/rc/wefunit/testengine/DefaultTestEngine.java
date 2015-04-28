@@ -3,6 +3,7 @@ package com.rc.wefunit.testengine;
 import com.google.gson.JsonObject;
 import com.rc.wefunit.CommonUtils;
 import com.rc.wefunit.Factories;
+import com.rc.wefunit.GenericServiceOperationTest;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;

@@ -109,4 +109,29 @@ public class CommonUtilsTest {
         }
     }
 
+    @Test
+    public void method_getTestMethodsArray_test_for_GeneServiceOperationTest(){
+        class AbcTest extends GenericServiceOperationTest{
+
+            @com.rc.wefunit.annotations.Test
+            public void test1(){
+
+            }
+
+            @com.rc.wefunit.annotations.Test
+            public void test2(){
+
+            }
+
+            @com.rc.wefunit.annotations.Test
+            public void test3(){
+
+            }
+        }
+        Method[] testMethods = this._commonUtils.getTestMethodsArrayFromTestClass(AbcTest.class);
+        Assert.assertEquals(testMethods.length, 5);
+        for(Method m : testMethods){
+            Assert.assertTrue(m.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
+        }
+    }
 }

@@ -105,18 +105,7 @@
                     </excludes>
                 </configuration>
             </plugin>
-
         </plugins>
-        <!--Excluding class files to be packaged-->
-        <!--<resources>-->
-            <!--<resource>-->
-                <!--<directory>samplewefproject/WebContent/WEB-INF/work</directory>-->
-                <!--<filtering>true</filtering>-->
-                <!--<excludes>-->
-                    <!--<exclude>**/*.*</exclude>-->
-                <!--</excludes>-->
-            <!--</resource>-->
-        <!--</resources>-->
     </build>
 
   <dependencies>

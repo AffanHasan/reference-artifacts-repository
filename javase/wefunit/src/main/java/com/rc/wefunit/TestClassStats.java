@@ -3,6 +3,7 @@ package com.rc.wefunit;
 import com.rc.wefunit.annotations.Test;
 
 import java.lang.reflect.Method;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -11,6 +12,7 @@ import java.util.Set;
 public final class TestClassStats{
 
     private final Set<Class> _testClassesSet;
+    private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
 
     TestClassStats(Set<Class> testClassesSet){
         this._testClassesSet = testClassesSet;
@@ -47,6 +49,16 @@ public final class TestClassStats{
                         count++;
                 }
             }
+            Set<Class> superClassesSet = new LinkedHashSet<Class>();
+            this._commonUtils.getSuperClassesHierarchy(classObj, superClassesSet);
+            if(superClassesSet.contains(GenericServiceOperationTest.class))//If this is a GenericServiceOperationTest then add super class methods also
+                for(Method m : classObj.getSuperclass().getDeclaredMethods()){
+                    if(m.isAnnotationPresent(Test.class)){
+                        if(m.getAnnotation(Test.class).enabled())
+                            count++;
+                    }
+                }
+
         }
         return count;
     }

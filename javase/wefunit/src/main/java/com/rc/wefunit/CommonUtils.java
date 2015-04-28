@@ -39,6 +39,14 @@ public class CommonUtils {
             if(method.isAnnotationPresent(Test.class))
                 methods.add(method);
         }
+//        Getting a Set of super classes
+        Set<Class> superClasses = new LinkedHashSet<Class>();
+        this.getSuperClassesHierarchy(classObj, superClasses);
+        if(superClasses.contains(GenericServiceOperationTest.class))//If this is a Service Operation Test then add inherited methods
+            for(Method method :  classObj.getSuperclass().getDeclaredMethods() ){
+                    if(method.isAnnotationPresent(Test.class))
+                        methods.add(method);
+            }
         Method[] arr = new Method[methods.size()];
         return methods.toArray(arr);
     }

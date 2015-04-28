@@ -1,15 +1,21 @@
 package com.rc.wefunit;
 
+import com.bowstreet.webapp.DataService;
+import com.bowstreet.webapp.ServiceOperation;
+import com.bowstreet.webapp.WebApp;
 import com.bowstreet.webapp.WebAppAccess;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Inject;
 import com.rc.wefunit.annotations.ServiceConsumerFixtures;
 import com.rc.wefunit.enums.GenericSOInjectables;
 import mockit.Expectations;
+import mockit.Injectable;
+import mockit.Mocked;
 import org.omg.PortableServer.SERVANT_RETENTION_POLICY_ID;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import test.models.test.services.Service1Test.GetUserInfoSOTest;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -228,12 +234,40 @@ public class GenericServiceOperationTestTest {
     }
 
     @Test
-    public void is_service_operation_name_is_in_correct_format_Method_contains_BeforeClass_annotation(){
+    public void method_is_service_operation_name_is_in_correct_format_contains_Test_annotation(){
         try {
             Method method = GenericServiceOperationTest.class.getMethod("is_service_operation_name_is_in_correct_format", null);
             Assert.assertTrue(method.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
         } catch (NoSuchMethodException e) {
             Assert.fail("Method \"is_service_operation_name_is_in_correct_format\" not found");
+        }
+    }
+
+    @Test(enabled = false)
+    public void method_is_service_operation_name_is_in_correct_format_functional_test_1(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final Runner runner, @Mocked final GenericServiceOperationTest genericServiceOperationTest, @Injectable final WebAppAccess webAppAccess, @Injectable final WebApp webApp, @Injectable final DataService dataService, @Injectable final ServiceOperation serviceOperation){
+        new Expectations(){{
+
+            runnerFactory.getInstance();result = runner;
+            runner.getWebAppAccess();result = webAppAccess;
+            runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+
+            String serviceName = "SomeServiceSC";
+            String serviceOperationName = "abcSO";
+            genericServiceOperationTest.getWebAppAccessSCBuildersFixtureModel();result = webAppAccess;
+            genericServiceOperationTest.getDataServiceName();result = serviceName;
+            webAppAccess.getWebApp();result = webApp;
+            webApp.getDataService(serviceName); result = dataService;
+            dataService.getOperation("abcSO");result = serviceOperationName;
+            serviceOperation.getName();result = serviceOperationName;
+        }};
+        TestClassInstantiationUtility testClassInstantiationUtility = Factories.TestClassInstantiationUtilityFactory.getInstance();
+        GenericServiceOperationTest testObj = (GenericServiceOperationTest) testClassInstantiationUtility.instantiateTestClass(GetUserInfoSOTest.class);
+        Assert.assertNotNull(testObj);
+        try {
+            testObj.is_service_operation_name_is_in_correct_format();//Test
+            return;
+        }catch (Throwable e){
+            Assert.fail(e.getMessage());
         }
     }
 }

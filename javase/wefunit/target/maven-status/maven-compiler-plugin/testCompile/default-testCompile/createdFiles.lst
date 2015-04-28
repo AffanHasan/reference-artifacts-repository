@@ -16,6 +16,7 @@ com/rc/wefunit/annotations/GenericSODependencyTest.class
 com/rc/wefunit/CommonUtilsTest$1AbcTest.class
 com/rc/wefunit/RunnerTest.class
 com/rc/wefunit/annotations/ProducesTest.class
+com/rc/wefunit/CommonUtilsTest$2AbcTest.class
 com/rc/wefunit/annotations/BeforeClassTest.class
 com/rc/wefunit/RunnerTest$4.class
 com/rc/wefunit/GenericServiceOperationTestTest.class
@@ -27,6 +28,7 @@ com/rc/wefunit/TestClassInstantiationUtilityTest.class
 com/rc/wefunit/testengine/TestEngineTest$1.class
 com/rc/wefunit/RunnerTest$2.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest$1ABbcSO.class
+com/rc/wefunit/GenericServiceOperationTestTest$1.class
 com/rc/wefunit/DependencySignatureTest$1AbcSO.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest$1ATest.class
 com/rc/wefunit/CommonUtilsTest$1AbcSO.class
