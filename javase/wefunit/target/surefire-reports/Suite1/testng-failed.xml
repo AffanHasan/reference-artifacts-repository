@@ -3,16 +3,11 @@
 <suite verbose="0" name="Failed suite [Suite1]">
   <test name="Nopackage(failed)">
     <classes>
-      <class name="com.rc.wefunit.RunnerTest">
+      <class name="com.rc.wefunit.testengine.TestEngineTest">
         <methods>
-          <include name="beforeTest"/>
+          <include name="singleton_test"/>
         </methods>
-      </class> <!-- com.rc.wefunit.RunnerTest -->
-      <class name="com.rc.wefunit.TestClassInstantiationUtilityTest">
-        <methods>
-          <include name="instantiate_subclass_of_GenericServiceOperationTest_webAppAccess_field_injection" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.rc.wefunit.TestClassInstantiationUtilityTest -->
+      </class> <!-- com.rc.wefunit.testengine.TestEngineTest -->
     </classes>
   </test> <!-- Nopackage(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

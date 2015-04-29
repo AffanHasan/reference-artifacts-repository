@@ -64,6 +64,11 @@ public class TestEngineTest {
     }
 
     @Test
+    public void singleton_test(){
+        Assert.assertTrue(_testEngine == Factories.TestEngineFactory.getInstance());
+    }
+
+    @Test
     public void is_exist_Interface_TestEngine(){
         Assert.assertNotNull(getClassObject());//Test Not Null
     }
