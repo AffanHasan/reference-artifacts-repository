@@ -48,8 +48,10 @@ public class Factories {
 
     public static class TestEngineFactory {
 
+        private static final TestEngine testEngine = new DefaultTestEngine();
+
         public static TestEngine getInstance(){
-            return new DefaultTestEngine();
+            return testEngine;
         }
     }
 

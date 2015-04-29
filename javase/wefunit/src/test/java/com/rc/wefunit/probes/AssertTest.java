@@ -73,6 +73,39 @@ public class AssertTest {
     }
 
     @Test
+    public void method_assertNotNull_with_one_argument_Object(){
+        Class classObject = getClassObject();
+        try {
+            Method m = classObject.getMethod("assertNotNull", Object.class);
+            Assert.assertTrue(Modifier.isStatic(m.getModifiers()));//Method is static
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null(){
+        try{
+            com.rc.wefunit.probes.Assert.assertNotNull(new String("Hello World..."));
+        }catch(Throwable e){
+            Assert.fail("No Throwable is expected here");
+        }
+        return;
+    }
+
+    @Test
+    public void method_assertNotNull_throw_AssertionError_when_object_is_null(){
+        try{
+            com.rc.wefunit.probes.Assert.assertNotNull(null);
+        }catch(Throwable e){
+            Assert.assertEquals(e.getMessage(), "Expected object not to be null");
+            return;
+        }
+        Assert.fail("No Throwable is expected here");
+    }
+
+    @Test
     public void method_fail_with_no_params(){
         try{
             com.rc.wefunit.probes.Assert.fail();

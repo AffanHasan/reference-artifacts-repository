@@ -284,6 +284,63 @@ public class GenericServiceOperationTestTest {
         }
     }
 
+    @Test
+    public void method_is_service_operation_exists_functional_tests(@Injectable final DataService dataService, @Injectable final ServiceOperation serviceOperation, @Injectable final WebAppAccess webAppAccess, @Injectable final WebApp webApp){
+        final String dsName = "dsSC";
+        final String serviceOperationName = "myFirstSO";
+        final class AbcSOTest extends GenericServiceOperationTest{
+
+        }
+        AbcSOTest abcSOTest = new AbcSOTest();
+        Class classObj = AbcSOTest.class;
+        try {
+//            Set SO Name
+            Field serviceOperationNameField = classObj.getSuperclass().getDeclaredField("serviceOperationName");
+            serviceOperationNameField.setAccessible(true);
+            serviceOperationNameField.set(abcSOTest, serviceOperationName);
+//            Set DS Name
+            Field dataServiceName = classObj.getSuperclass().getDeclaredField("dataServiceName");
+            dataServiceName.setAccessible(true);
+            dataServiceName.set(abcSOTest, dsName);
+//            Set WebAppAccess
+            Field webAppAccessField = classObj.getSuperclass().getDeclaredField("webAppAccess");
+            webAppAccessField.setAccessible(true);
+            webAppAccessField.set(abcSOTest, webAppAccess);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+//        Setting Expectations
+        new Expectations(){{
+            webAppAccess.getWebApp();result = webApp;
+            webApp.getDataService(dsName);result = dataService;
+            dataService.getOperation(serviceOperationName);result = null;
+        }};
+        outer : {
+            try {
+                abcSOTest.is_service_operation_exists();
+            }catch (AssertionError e){
+                Assert.assertEquals(e.getMessage(), "Expected object not to be null");
+                break outer;
+            }
+            Assert.fail("No Throwable Expected Here");
+        }
+        //        Setting Expectations
+        new Expectations(){{
+            webAppAccess.getWebApp();result = webApp;
+            webApp.getDataService(dsName);result = dataService;
+            dataService.getOperation(serviceOperationName);result = serviceOperation;
+        }};
+        try {
+            abcSOTest.is_service_operation_exists();
+        }catch (Throwable e){
+            Assert.assertEquals(e.getMessage(), "Expected object not to be null");
+        }
+    }
+
     private final void _validSONameTest(final DataService dataService, final ServiceOperation serviceOperation, final WebAppAccess webAppAccess, final WebApp webApp, final String serviceOperationName){
         final class AbcSOTest extends GenericServiceOperationTest{
 

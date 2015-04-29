@@ -2,6 +2,7 @@ package com.rc.wefunit;
 
 import com.bowstreet.util.SystemProperties;
 import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.testengine.TestEngine;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -19,6 +20,7 @@ class DefaultRunner implements Runner {
     private WebAppAccess _webAppAccess;
     private ClassLoader _classLoader;
     private final TestClassInstantiationUtility _testClassInstantiationUtility = Factories.TestClassInstantiationUtilityFactory.getInstance();
+    private final TestEngine _testEngine = Factories.TestEngineFactory.getInstance();
 
     private boolean isWindows(){
         return System.getProperty("os.name").contains("Windows");
@@ -127,6 +129,7 @@ class DefaultRunner implements Runner {
     public void run(WebAppAccess webAppAccess, ClassLoader classLoader) {
         this._webAppAccess = webAppAccess;
         this._classLoader = classLoader;
+        _testEngine.executeTests(this.getExecutableTestObjectsQueue());
     }
 
     @Override

@@ -11,6 +11,11 @@ public class Assert{
             throw new AssertionError("Expected [ true ] but found [ false ]");
     }
 
+    public static void assertNotNull(Object object){
+        if(object == null)
+            throw new AssertionError("Expected object not to be null");
+    }
+
     public static void fail(){
         throw new AssertionError();
     }

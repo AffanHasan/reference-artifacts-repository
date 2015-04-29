@@ -51,6 +51,8 @@ public abstract class GenericServiceOperationTest {
 
     @Test
     public void is_service_operation_exists(){
-//        webAppAccess.getWebApp().getDataService("Service1Test").getOperation("SOOneTest");
+        DataService ds = this.getWebAppAccessSCBuildersFixtureModel().getWebApp().getDataService(this.getDataServiceName());
+        ServiceOperation so = ds.getOperation(this.getServiceOperationName());
+        Assert.assertNotNull(so);
     }
 }
