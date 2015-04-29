@@ -31,6 +31,16 @@ import java.util.Set;
  */
 public class GenericServiceOperationTestTest {
 
+    private Class _getClassObject(){
+        try {
+            return Class.forName("com.rc.wefunit.GenericServiceOperationTest");
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+            return null;
+        }
+    }
+
     @Test
     public void is_service_operation_exists_Method_exists(){
         try {
@@ -378,5 +388,50 @@ public class GenericServiceOperationTestTest {
         abcSOTest.is_service_operation_name_is_in_correct_format();//Perform the test
         return;
 
+    }
+
+//    @Test
+//    public void field_callableServiceOperationName_is_protected(){
+//        Class classObject = _getClassObject();
+//        try {
+//            Field callableServiceOperationName = classObject.getDeclaredField("callableServiceOperationName");
+//            Assert.assertTrue(Modifier.isProtected(callableServiceOperationName.getModifiers()));//Is protected
+//            Assert.assertTrue(callableServiceOperationName.isAnnotationPresent(Inject.class));//Injectable test
+//            Assert.assertTrue(callableServiceOperationName.isAnnotationPresent(GenericSODependency.class));//GenericSODependency presence
+//            Assert.assertEquals(callableServiceOperationName.getAnnotation(GenericSODependency.class).value(), GenericSOInjectables.CALLABLE_SERVICE_OPERATION_NAME);//GenericSODependency value correctness
+//        } catch (NoSuchFieldException e) {
+//            e.printStackTrace();
+//            Assert.fail(e.getMessage());
+//        }
+//    }
+
+    @Test
+    public void method_getCallableServiceOperationName_functional_test(){
+        final String dsName = "OurServiceSC";
+        final String serviceOperationName = "myFirstSO";
+        final class AbcSOTest extends GenericServiceOperationTest{
+
+        }
+        AbcSOTest abcSOTest = new AbcSOTest();
+        Class classObj = AbcSOTest.class;
+        try {
+//            Set SO Name
+            Field serviceOperationNameField = classObj.getSuperclass().getDeclaredField("serviceOperationName");
+            serviceOperationNameField.setAccessible(true);
+            serviceOperationNameField.set(abcSOTest, serviceOperationName);
+//            Set DS Name
+            Field dataServiceName = classObj.getSuperclass().getDeclaredField("dataServiceName");
+            dataServiceName.setAccessible(true);
+            dataServiceName.set(abcSOTest, dsName);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+        String resultName = abcSOTest.getCallableServiceOperationName();
+        final String expected = "OurServiceSCMyFirstSOWithArgs";
+        Assert.assertEquals(resultName , expected);
     }
 }

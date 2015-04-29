@@ -27,6 +27,10 @@ public abstract class GenericServiceOperationTest {
     @GenericSODependency(GenericSOInjectables.DATA_SERVICE_NAME)
     protected String dataServiceName;
 
+    @Inject
+    @GenericSODependency(GenericSOInjectables.CALLABLE_SERVICE_OPERATION_NAME)
+    protected String callableServiceOperationName;
+
     public String getServiceOperationName(){
         return this.serviceOperationName;
     }
@@ -37,6 +41,12 @@ public abstract class GenericServiceOperationTest {
 
     public WebAppAccess getWebAppAccessSCBuildersFixtureModel(){
         return this.webAppAccess;
+    }
+
+    public String getCallableServiceOperationName(){
+        String soName = new String(this.getServiceOperationName());
+        soName = soName.replaceFirst(soName.substring(0, 1), soName.substring(0, 1).toUpperCase());
+        return this.getDataServiceName() + soName + "WithArgs";
     }
 
     @Test
