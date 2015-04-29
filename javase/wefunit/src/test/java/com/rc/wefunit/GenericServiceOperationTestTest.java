@@ -1,5 +1,6 @@
 package com.rc.wefunit;
 
+import com.bowstreet.util.SystemProperties;
 import com.bowstreet.webapp.DataService;
 import com.bowstreet.webapp.ServiceOperation;
 import com.bowstreet.webapp.WebApp;
@@ -22,6 +23,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * Created by Affan Hasan on 3/23/15.
@@ -243,31 +246,80 @@ public class GenericServiceOperationTestTest {
         }
     }
 
-    @Test(enabled = false)
-    public void method_is_service_operation_name_is_in_correct_format_functional_test_1(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final Runner runner, @Mocked final GenericServiceOperationTest genericServiceOperationTest, @Injectable final WebAppAccess webAppAccess, @Injectable final WebApp webApp, @Injectable final DataService dataService, @Injectable final ServiceOperation serviceOperation){
-        new Expectations(){{
+    @Test
+    public void method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests(@Injectable final DataService dataService, @Injectable final ServiceOperation serviceOperation, @Injectable final WebAppAccess webAppAccess, @Injectable final WebApp webApp){
+//        Test For Valid Service Operation Names
+        Set<String> validSONames = new LinkedHashSet<String>();
+        validSONames.add("abcSO");
+        validSONames.add("aSO");
+        validSONames.add("aBcBSO");
+        validSONames.add("a10SO");
+        validSONames.add("a_0SO");
+        for(String validSoName : validSONames){
+            try {
+                this._validSONameTest(dataService, serviceOperation, webAppAccess, webApp, validSoName);
+            }catch (Throwable e){
+                e.printStackTrace();
+                Assert.fail(e.getMessage());
+            }
+        }
+//       Test For In Valid Service Operation Names
+        Set<String> inValidSONames = new LinkedHashSet<String>();
+        inValidSONames.add("SO");
+        inValidSONames.add("1SO");
+        inValidSONames.add("_SO");
+        inValidSONames.add(".SO");
+        inValidSONames.add("AbcSO");
+        inValidSONames.add("ABCSO");
+        inValidSONames.add("ZSO");
+        inValidSONames.add("ZSo");
+        inValidSONames.add("ZsO");
+        for(String inValidSOName : inValidSONames){
+            try {
+                this._validSONameTest(dataService, serviceOperation, webAppAccess, webApp, inValidSOName);
+            }catch (AssertionError e){
+                continue;
+            }
+            Assert.fail();
+        }
+    }
 
-            runnerFactory.getInstance();result = runner;
-            runner.getWebAppAccess();result = webAppAccess;
-            runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+    private final void _validSONameTest(final DataService dataService, final ServiceOperation serviceOperation, final WebAppAccess webAppAccess, final WebApp webApp, final String serviceOperationName){
+        final class AbcSOTest extends GenericServiceOperationTest{
 
-            String serviceName = "SomeServiceSC";
-            String serviceOperationName = "abcSO";
-            genericServiceOperationTest.getWebAppAccessSCBuildersFixtureModel();result = webAppAccess;
-            genericServiceOperationTest.getDataServiceName();result = serviceName;
-            webAppAccess.getWebApp();result = webApp;
-            webApp.getDataService(serviceName); result = dataService;
-            dataService.getOperation("abcSO");result = serviceOperationName;
-            serviceOperation.getName();result = serviceOperationName;
-        }};
-        TestClassInstantiationUtility testClassInstantiationUtility = Factories.TestClassInstantiationUtilityFactory.getInstance();
-        GenericServiceOperationTest testObj = (GenericServiceOperationTest) testClassInstantiationUtility.instantiateTestClass(GetUserInfoSOTest.class);
-        Assert.assertNotNull(testObj);
+        }
+        AbcSOTest abcSOTest = new AbcSOTest();
+        Class classObj = AbcSOTest.class;
+        final String dsName = "dsSC";
         try {
-            testObj.is_service_operation_name_is_in_correct_format();//Test
-            return;
-        }catch (Throwable e){
+//            Set SO Name
+            Field serviceOperationNameField = classObj.getSuperclass().getDeclaredField("serviceOperationName");
+            serviceOperationNameField.setAccessible(true);
+            serviceOperationNameField.set(abcSOTest, serviceOperationName);
+//            Set DS Name
+            Field dataServiceName = classObj.getSuperclass().getDeclaredField("dataServiceName");
+            dataServiceName.setAccessible(true);
+            dataServiceName.set(abcSOTest, dsName);
+//            Set WebAppAccess
+            Field webAppAccessField = classObj.getSuperclass().getDeclaredField("webAppAccess");
+            webAppAccessField.setAccessible(true);
+            webAppAccessField.set(abcSOTest, webAppAccess);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
             Assert.fail(e.getMessage());
         }
+//        Setting Expectations
+        new Expectations(){{
+            webAppAccess.getWebApp();result = webApp;
+            webApp.getDataService(dsName);result = dataService;
+            dataService.getOperation(serviceOperationName);result = serviceOperation;
+            serviceOperation.getName();result = serviceOperationName;
+        }};
+        abcSOTest.is_service_operation_name_is_in_correct_format();//Perform the test
+        return;
+
     }
 }
