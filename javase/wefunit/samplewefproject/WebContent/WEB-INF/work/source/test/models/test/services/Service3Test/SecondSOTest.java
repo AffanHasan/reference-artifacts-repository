@@ -6,4 +6,8 @@ import com.rc.wefunit.GenericServiceOperationTest;
  * Created by root on 4/24/15.
  */
 public class SecondSOTest extends GenericServiceOperationTest {
+    @Override
+    public void parameter_count_test() {
+
+    }
 }

@@ -35,6 +35,10 @@ public class DependencySignatureTest {
     public void compareTo_test_1(){
 
         class AbcSO extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
+
+            }
         }
         AbcSO abcSO = new AbcSO();
         try {
@@ -241,6 +245,10 @@ public class DependencySignatureTest {
     public void throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier(){
 
         class ABC extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
+
+            }
 
             @NonQualifierAnnotation
             public String aField;

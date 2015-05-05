@@ -7,7 +7,6 @@ import java.util.Locale;
 
 public class App {
     public static void main( String[] args ){
-        
 //      Invalid language range
 //        Locale.LanguageRange lrAllLangs1 = new Locale.LanguageRange(".");
         
@@ -40,7 +39,7 @@ public class App {
                 new Locale[]//Create a Collection of locales
                 {
                     new Locale("fr", "CA"),
-                    Locale.TAIWAN,
+                    Locale.JAPAN,
 //                  Any language spoken in the city of Karachi, Pakistan
                     Locale.forLanguageTag("ur-PK-KHI"),
 //                  French spoken in any region of the world
@@ -48,9 +47,10 @@ public class App {
                 });
         
 //      Create a language LanguagePriorityList
-        List<Locale.LanguageRange> userPriorityLst = Locale.LanguageRange.parse("*-PK;q=0.9,fr-*;q=1.0");
+        List<Locale.LanguageRange> userPriorityLst = Locale.LanguageRange.parse("*-PK;q=0.9,ja;q=0.0,fr-*;q=1.0");
 //      Now Filtering
-        List<Locale> localeList =  Locale.filter(userPriorityLst, availableLocales);
+
+        List<Locale> localeList =  Locale.filter(userPriorityLst, availableLocales, Locale.FilteringMode.AUTOSELECT_FILTERING);
         for( Locale locale : localeList){
             System.console().printf("\nLocale : %s\n", locale.getLanguage());
         }

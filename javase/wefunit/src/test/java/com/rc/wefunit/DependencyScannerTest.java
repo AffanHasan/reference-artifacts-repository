@@ -89,7 +89,10 @@ public class DependencyScannerTest {
     public void method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){
 //        Fixtures starts
         class ABbcSO extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         } ABbcSO aBbcSO = new ABbcSO();
         Annotation[] annArr = null;
         try {

@@ -71,7 +71,10 @@ public class FixtureDependencyTest {
     @Test
     public void method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency(){
         class ABCSOTest extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         }
         ABCSOTest so = new ABCSOTest();
         try {
@@ -179,7 +182,12 @@ public class FixtureDependencyTest {
     @Test
     public void method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model(@Mocked final FactoryProducers fp, @Injectable final WebAppAccess webAppAccess){
 //        Fixtures starts
-        class AbcSO extends GenericServiceOperationTest{}; AbcSO abcSO = new AbcSO();
+        class AbcSO extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
+
+            }
+        }; AbcSO abcSO = new AbcSO();
         Annotation[] qualifiers = null;
         try {
             qualifiers = Factories.CommonUtilsFactory.getInstance().filterQualifierAnnotations(abcSO.getClass().getSuperclass().getDeclaredField("webAppAccess").getAnnotations());

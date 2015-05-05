@@ -11,6 +11,11 @@ import java.lang.reflect.Method;
  */
 public class GetAccountsDetailSOTest extends GenericServiceOperationTest {
 
+    @Override
+    public void parameter_count_test() {
+
+    }
+
     @Test
     public void failedTest1(){
         Assert.fail();

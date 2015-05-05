@@ -65,4 +65,8 @@ public abstract class GenericServiceOperationTest {
         ServiceOperation so = ds.getOperation(this.getServiceOperationName());
         Assert.assertNotNull(so);
     }
+
+//    TODO:To implement an abstract method for checking the total number of parameters in a service operation
+    @Test
+    public abstract void parameter_count_test();
 }

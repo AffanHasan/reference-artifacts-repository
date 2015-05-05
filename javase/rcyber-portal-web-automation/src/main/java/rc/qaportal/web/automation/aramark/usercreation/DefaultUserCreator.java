@@ -22,7 +22,6 @@ public class DefaultUserCreator implements AramarkUserCreator {
 //                WebDriver wd = Factories.WebDriverFactory.getInstance();
 //                wd.get(getURL(env));
 //
-////                TODO Write user login utility
 //                WebElement e = wd.findElement(By.id("sizing_myprofile"));
 //                if(!e.getText().isEmpty()){
 //

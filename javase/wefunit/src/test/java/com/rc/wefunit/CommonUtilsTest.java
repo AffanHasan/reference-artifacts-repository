@@ -48,7 +48,10 @@ public class CommonUtilsTest {
     @Test
     public void filterQualifierAnnotations_functional_test(){
         class AbcSOTest extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         }
         AbcSOTest abcSOTest = new AbcSOTest();
         try {
@@ -73,7 +76,10 @@ public class CommonUtilsTest {
     @Test
     public void method_getSuperClassesHierarchy(){
         class AbcSO extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         }
         Set<Class> superClassesHierarchySet = new LinkedHashSet<Class>();
         this._commonUtils.getSuperClassesHierarchy(AbcSO.class, superClassesHierarchySet);
@@ -112,6 +118,10 @@ public class CommonUtilsTest {
     @Test
     public void method_getTestMethodsArray_test_for_GeneServiceOperationTest(){
         class AbcTest extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
+
+            }
 
             @com.rc.wefunit.annotations.Test
             public void test1(){
@@ -129,7 +139,7 @@ public class CommonUtilsTest {
             }
         }
         Method[] testMethods = this._commonUtils.getTestMethodsArrayFromTestClass(AbcTest.class);
-        Assert.assertEquals(testMethods.length, 5);
+        Assert.assertEquals(testMethods.length, 6);
         for(Method m : testMethods){
             Assert.assertTrue(m.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
         }

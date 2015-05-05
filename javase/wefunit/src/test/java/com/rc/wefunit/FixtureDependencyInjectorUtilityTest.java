@@ -30,6 +30,10 @@ public class FixtureDependencyInjectorUtilityTest {
     @Test
     public void must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method(){
         class ATest extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
+
+            }
 
             public String name = "Hello";//Non Injectable Field
 
@@ -141,7 +145,10 @@ public class FixtureDependencyInjectorUtilityTest {
     public void method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){
         //        Fixtures starts
         class ABbcSO extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         } ABbcSO aBbcSO = new ABbcSO();
         Annotation[] annArr = null;
         Field webAppAccessField = null;

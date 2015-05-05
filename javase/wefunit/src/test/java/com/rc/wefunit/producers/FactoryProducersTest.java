@@ -47,7 +47,10 @@ public class FactoryProducersTest {
             Assert.assertTrue(method.getAnnotation(GenericSODependency.class).value() == GenericSOInjectables.SERVICE_OPERATION_NAME);
 
             class ABC extends GenericServiceOperationTest {
+                @Override
+                public void parameter_count_test() {
 
+                }
             }
             ABC abc = new ABC();
             Field f = Class.forName("com.rc.wefunit.GenericServiceOperationTest").getField("serviceOperationName");

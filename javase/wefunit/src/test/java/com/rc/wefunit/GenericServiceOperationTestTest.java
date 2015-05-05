@@ -299,7 +299,10 @@ public class GenericServiceOperationTestTest {
         final String dsName = "dsSC";
         final String serviceOperationName = "myFirstSO";
         final class AbcSOTest extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         }
         AbcSOTest abcSOTest = new AbcSOTest();
         Class classObj = AbcSOTest.class;
@@ -353,7 +356,10 @@ public class GenericServiceOperationTestTest {
 
     private final void _validSONameTest(final DataService dataService, final ServiceOperation serviceOperation, final WebAppAccess webAppAccess, final WebApp webApp, final String serviceOperationName){
         final class AbcSOTest extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         }
         AbcSOTest abcSOTest = new AbcSOTest();
         Class classObj = AbcSOTest.class;
@@ -390,27 +396,15 @@ public class GenericServiceOperationTestTest {
 
     }
 
-//    @Test
-//    public void field_callableServiceOperationName_is_protected(){
-//        Class classObject = _getClassObject();
-//        try {
-//            Field callableServiceOperationName = classObject.getDeclaredField("callableServiceOperationName");
-//            Assert.assertTrue(Modifier.isProtected(callableServiceOperationName.getModifiers()));//Is protected
-//            Assert.assertTrue(callableServiceOperationName.isAnnotationPresent(Inject.class));//Injectable test
-//            Assert.assertTrue(callableServiceOperationName.isAnnotationPresent(GenericSODependency.class));//GenericSODependency presence
-//            Assert.assertEquals(callableServiceOperationName.getAnnotation(GenericSODependency.class).value(), GenericSOInjectables.CALLABLE_SERVICE_OPERATION_NAME);//GenericSODependency value correctness
-//        } catch (NoSuchFieldException e) {
-//            e.printStackTrace();
-//            Assert.fail(e.getMessage());
-//        }
-//    }
-
     @Test
     public void method_getCallableServiceOperationName_functional_test(){
         final String dsName = "OurServiceSC";
         final String serviceOperationName = "myFirstSO";
         final class AbcSOTest extends GenericServiceOperationTest{
+            @Override
+            public void parameter_count_test() {
 
+            }
         }
         AbcSOTest abcSOTest = new AbcSOTest();
         Class classObj = AbcSOTest.class;
@@ -434,4 +428,21 @@ public class GenericServiceOperationTestTest {
         final String expected = "OurServiceSCMyFirstSOWithArgs";
         Assert.assertEquals(resultName , expected);
     }
+
+    @Test
+    public void abstract_method_parameter_count_test(){
+        Class classObj = _getClassObject();
+        try {
+            Method m = classObj.getMethod("parameter_count_test");
+
+            Assert.assertNotNull(m);
+            Assert.assertTrue(Modifier.isAbstract(m.getModifiers()));
+            Assert.assertTrue(m.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
+
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
+
 }

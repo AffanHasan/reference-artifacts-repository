@@ -9,5 +9,8 @@ import com.rc.wefunit.annotations.Test;
  */
 public class GetUserInfoSOTest extends GenericServiceOperationTest {
 
+    @Override
+    public void parameter_count_test() {
 
+    }
 }

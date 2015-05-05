@@ -7,4 +7,8 @@ import com.rc.wefunit.GenericServiceOperationTest;
  */
 public class Service2FirstSOTest extends GenericServiceOperationTest {
 
+    @Override
+    public void parameter_count_test() {
+
+    }
 }
