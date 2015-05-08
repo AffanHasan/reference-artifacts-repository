@@ -2,6 +2,7 @@ package com.rc.wefunit.testengine;
 
 import com.google.gson.JsonObject;
 
+import java.util.Map;
 import java.util.Queue;
 
 /**
@@ -11,5 +12,5 @@ public interface TestEngine {
 
     public void executeTests(Queue<Object> objectsQueue);
 
-    public JsonObject getTestScores();
+    public Map<String, Object> getTestScores();
 }

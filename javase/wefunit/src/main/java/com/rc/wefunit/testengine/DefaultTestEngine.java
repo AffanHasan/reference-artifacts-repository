@@ -1,20 +1,24 @@
 package com.rc.wefunit.testengine;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.rc.wefunit.CommonUtils;
 import com.rc.wefunit.Factories;
 import com.rc.wefunit.GenericServiceOperationTest;
 
+import javax.json.Json;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Created by Affan Hasan on 4/24/15.
  */
 public class DefaultTestEngine implements TestEngine {
 
-    private final JsonObject _testScores = new JsonObject();
+    private final Map<String, Object> _testScores = new LinkedHashMap<String, Object>();
     private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
 
     public DefaultTestEngine(){
@@ -37,35 +41,63 @@ public class DefaultTestEngine implements TestEngine {
 //                    Incrementing the executed test count
                     this._incrementTotalExecutedTests();
                     m.invoke(testObj);//Execute the test
+//                    Incrementing the passed tests count
+                    this._incrementPassedTests(m);
                 } catch (Throwable e) {//If here it means that the test failed
 //                    e.printStackTrace();
-                    this._incrementTotalTestFailures();
+                    this._incrementTotalTestFailures(e);
                 }
             }
         }
     }
 
     private void _resetTestScoring(){
-        JsonObject score = new JsonObject();
-        score.addProperty("totalExecutedTests", 0);
-        score.addProperty("totalTestFailures", 0);
-        this._testScores.add("score", score);
+        Map<String, Object> score = new LinkedHashMap<String, Object>();
+        score.put("totalExecutedTests", 0);
+        score.put("totalTestFailures", 0);
+//        Reporting
+        Map<String, Object> report = new LinkedHashMap<String, Object>();
+        report.put("report", new LinkedHashMap<String, Object>());
+        List<Map<String, Object>> failedList = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> passedList = new ArrayList<Map<String, Object>>();
+        report.put("failed", failedList);
+        report.put("passed", passedList);
+
+        this._testScores.put("score", score);
+        this._testScores.put("report", report);
     }
 
     private void _incrementTotalExecutedTests(){
-        JsonObject score = this._testScores.get("score").getAsJsonObject();
-        int totalExecutedTests = score.get("totalExecutedTests").getAsInt();
-        score.addProperty("totalExecutedTests", ++totalExecutedTests);
+        Map<String, Object> score = (Map<String, Object> ) this._testScores.get("score");
+        int totalExecutedTests = (Integer) score.get("totalExecutedTests");
+        score.put("totalExecutedTests", ++totalExecutedTests);
     }
 
-    private void _incrementTotalTestFailures(){
-        JsonObject score = this._testScores.get("score").getAsJsonObject();
-        int totalTestFailures = score.get("totalTestFailures").getAsInt();
-         score.addProperty("totalTestFailures", ++totalTestFailures);
+    private void _incrementTotalTestFailures(Throwable e){
+//        Setting score
+        Map<String, Object>  score = (Map<String, Object> ) this._testScores.get("score");
+        int totalTestFailures = (Integer) score.get("totalTestFailures");
+        score.put("totalTestFailures", ++totalTestFailures);
+//        Reporting : Incrementing Total Test Failures
+        List<Map<String, Object>> failedArr = (List<Map<String, Object>>) ( ( (Map<String, Object>) this._testScores.get("report") ).get("failed") );
+        Map<String, Object> testItem = new LinkedHashMap<String, Object>();
+        testItem.put("class_name", e.getStackTrace()[0].getClassName());
+        testItem.put("test_name", e.getStackTrace()[0].getMethodName());
+        List<StackTraceElement> stackTrace = Arrays.asList(e.getStackTrace());
+        testItem.put("stack_trace", stackTrace);
+        failedArr.add(testItem);
+    }
+
+    private void _incrementPassedTests(Method m){
+        List<Map<String, Object>> passedTestsList = ( List<Map<String, Object>> ) ( (Map<String, Object>) this._testScores.get("report")).get("passed");
+        Map<String, Object> passedTest = new LinkedHashMap<String, Object>();
+        passedTest.put("class_name", m.getDeclaringClass().getName());
+        passedTest.put("test_name", m.getName());
+        passedTestsList.add(passedTest);
     }
 
     @Override
-    public JsonObject getTestScores() {
+    public Map<String, Object> getTestScores() {
         return _testScores;
     }
 }
